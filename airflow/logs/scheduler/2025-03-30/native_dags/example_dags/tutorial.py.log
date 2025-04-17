@@ -1,0 +1,7 @@
+[2025-03-30T10:42:10.922+0800] {processor.py:186} INFO - Started process (PID=3574) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py
+[2025-03-30T10:42:10.923+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-03-30T10:42:10.924+0800] {logging_mixin.py:190} INFO - [2025-03-30T10:42:10.924+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py
+[2025-03-30T10:42:10.931+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py
+[2025-03-30T10:42:11.044+0800] {logging_mixin.py:190} INFO - [2025-03-30T10:42:11.043+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-30T10:42:11.056+0800] {logging_mixin.py:190} INFO - [2025-03-30T10:42:11.055+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-03-29 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-30T10:42:11.067+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py took 0.146 seconds

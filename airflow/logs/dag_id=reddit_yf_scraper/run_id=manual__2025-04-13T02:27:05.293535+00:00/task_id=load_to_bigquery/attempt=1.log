@@ -1,0 +1,27 @@
+[2025-04-13T10:28:47.280+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-13T10:28:47.355+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.load_to_bigquery manual__2025-04-13T02:27:05.293535+00:00 [queued]>
+[2025-04-13T10:28:47.358+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.load_to_bigquery manual__2025-04-13T02:27:05.293535+00:00 [queued]>
+[2025-04-13T10:28:47.358+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-13T10:28:47.363+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): load_to_bigquery> on 2025-04-13 02:27:05.293535+00:00
+[2025-04-13T10:28:47.365+0800] {standard_task_runner.py:72} INFO - Started process 56610 to run task
+[2025-04-13T10:28:47.368+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'load_to_bigquery', 'manual__2025-04-13T02:27:05.293535+00:00', '--job-id', '414', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpggux09d_']
+[2025-04-13T10:28:47.369+0800] {standard_task_runner.py:105} INFO - Job 414: Subtask load_to_bigquery
+[2025-04-13T10:28:47.386+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.load_to_bigquery manual__2025-04-13T02:27:05.293535+00:00 [running]> on host ervins-air-2
+[2025-04-13T10:28:47.420+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='load_to_bigquery' AIRFLOW_CTX_EXECUTION_DATE='2025-04-13T02:27:05.293535+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-13T02:27:05.293535+00:00'
+[2025-04-13T10:28:47.421+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-13T10:28:47.421+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-13T10:28:47.421+0800] {logging_mixin.py:190} INFO - Current task name:load_to_bigquery state:running start_date:2025-04-13 02:28:47.355934+00:00
+[2025-04-13T10:28:47.421+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-13T10:28:47.422+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-13T10:28:47.600+0800] {logging_mixin.py:190} INFO - 📤 Uploading /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/AAPL_processed_20250413.csv to BigQuery...
+[2025-04-13T10:28:52.543+0800] {logging_mixin.py:190} INFO - ✅ Successfully loaded AAPL data into BigQuery.
+[2025-04-13T10:28:52.554+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-13T10:28:52.576+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-13T10:28:52.577+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=load_to_bigquery, run_id=manual__2025-04-13T02:27:05.293535+00:00, execution_date=20250413T022705, start_date=20250413T022847, end_date=20250413T022852
+[2025-04-13T10:28:52.586+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-13T10:28:52.586+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-13T10:28:52.586+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-13 02:27:05.316419+00:00
+[2025-04-13T10:28:52.586+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:_PythonDecoratedOperator
+[2025-04-13T10:28:52.609+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-13T10:28:52.621+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-13T10:28:52.622+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

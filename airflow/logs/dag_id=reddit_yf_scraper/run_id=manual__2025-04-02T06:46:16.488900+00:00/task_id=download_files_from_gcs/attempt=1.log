@@ -1,0 +1,27 @@
+[2025-04-02T14:47:31.638+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-02T14:47:31.728+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.download_files_from_gcs manual__2025-04-02T06:46:16.488900+00:00 [queued]>
+[2025-04-02T14:47:31.732+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.download_files_from_gcs manual__2025-04-02T06:46:16.488900+00:00 [queued]>
+[2025-04-02T14:47:31.733+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-02T14:47:31.739+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): download_files_from_gcs> on 2025-04-02 06:46:16.488900+00:00
+[2025-04-02T14:47:31.743+0800] {standard_task_runner.py:72} INFO - Started process 35003 to run task
+[2025-04-02T14:47:31.746+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'download_files_from_gcs', 'manual__2025-04-02T06:46:16.488900+00:00', '--job-id', '299', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmputzmdqm4']
+[2025-04-02T14:47:31.748+0800] {standard_task_runner.py:105} INFO - Job 299: Subtask download_files_from_gcs
+[2025-04-02T14:47:31.787+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.download_files_from_gcs manual__2025-04-02T06:46:16.488900+00:00 [running]> on host ervins-macbook-air-2.local
+[2025-04-02T14:47:31.821+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='download_files_from_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-04-02T06:46:16.488900+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-02T06:46:16.488900+00:00'
+[2025-04-02T14:47:31.821+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-02T14:47:31.822+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-02T14:47:31.822+0800] {logging_mixin.py:190} INFO - Current task name:download_files_from_gcs state:running start_date:2025-04-02 06:47:31.728719+00:00
+[2025-04-02T14:47:31.822+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-02T14:47:31.822+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-02T14:47:33.559+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NVDA_reddit_20250402.csv to /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/downloads/reddit/NVDA_reddit_20250402.csv
+[2025-04-02T14:47:33.864+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/downloads/reddit/NVDA_reddit_20250402.csv
+[2025-04-02T14:47:33.864+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-02T14:47:33.869+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-02T14:47:33.870+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=download_files_from_gcs, run_id=manual__2025-04-02T06:46:16.488900+00:00, execution_date=20250402T064616, start_date=20250402T064731, end_date=20250402T064733
+[2025-04-02T14:47:33.879+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-02T14:47:33.879+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-02T14:47:33.879+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-02 06:46:16.495501+00:00
+[2025-04-02T14:47:33.880+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-macbook-air-2.local operator:_PythonDecoratedOperator
+[2025-04-02T14:47:33.888+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-02T14:47:33.903+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-02T14:47:33.903+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

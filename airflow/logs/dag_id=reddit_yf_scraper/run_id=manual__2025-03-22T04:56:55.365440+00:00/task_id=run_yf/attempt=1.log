@@ -1,0 +1,44 @@
+[2025-03-22T12:57:02.762+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-22T12:57:02.771+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf manual__2025-03-22T04:56:55.365440+00:00 [queued]>
+[2025-03-22T12:57:02.774+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf manual__2025-03-22T04:56:55.365440+00:00 [queued]>
+[2025-03-22T12:57:02.774+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-22T12:57:02.779+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_yf> on 2025-03-22 04:56:55.365440+00:00
+[2025-03-22T12:57:02.781+0800] {standard_task_runner.py:72} INFO - Started process 68795 to run task
+[2025-03-22T12:57:02.785+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_yf', 'manual__2025-03-22T04:56:55.365440+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpp7mna2pv']
+[2025-03-22T12:57:02.786+0800] {standard_task_runner.py:105} INFO - Job 107: Subtask run_yf
+[2025-03-22T12:57:02.812+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_yf manual__2025-03-22T04:56:55.365440+00:00 [running]> on host ervins-air-2
+[2025-03-22T12:57:02.861+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_yf' AIRFLOW_CTX_EXECUTION_DATE='2025-03-22T04:56:55.365440+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-22T04:56:55.365440+00:00'
+[2025-03-22T12:57:02.861+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-22T12:57:02.862+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-22T12:57:02.862+0800] {logging_mixin.py:190} INFO - Current task name:run_yf state:running start_date:2025-03-22 04:57:02.771165+00:00
+[2025-03-22T12:57:02.862+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-03-22T12:57:02.862+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-22T12:57:02.863+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for AAPL (1/10)...
+[2025-03-22T12:57:03.702+0800] {logging_mixin.py:190} INFO - ✅ Saved 2 articles for AAPL
+[2025-03-22T12:57:15.706+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for NVDA (2/10)...
+[2025-03-22T12:57:16.605+0800] {logging_mixin.py:190} INFO - ✅ Saved 10 articles for NVDA
+[2025-03-22T12:57:28.609+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for MSFT (3/10)...
+[2025-03-22T12:57:29.404+0800] {logging_mixin.py:190} INFO - ✅ Saved 5 articles for MSFT
+[2025-03-22T12:57:41.408+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for AMZN (4/10)...
+[2025-03-22T12:57:42.308+0800] {logging_mixin.py:190} INFO - ✅ Saved 10 articles for AMZN
+[2025-03-22T12:57:54.311+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for GOOGL (5/10)...
+[2025-03-22T12:57:55.203+0800] {logging_mixin.py:190} INFO - ✅ Saved 6 articles for GOOGL
+[2025-03-22T12:58:07.205+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for GOOG (6/10)...
+[2025-03-22T12:58:07.900+0800] {logging_mixin.py:190} INFO - ✅ Saved 6 articles for GOOG
+[2025-03-22T12:58:19.904+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for META (7/10)...
+[2025-03-22T12:58:20.630+0800] {logging_mixin.py:190} INFO - ✅ Saved 4 articles for META
+[2025-03-22T12:58:32.635+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for TSLA (8/10)...
+[2025-03-22T12:58:33.501+0800] {logging_mixin.py:190} INFO - ✅ Saved 9 articles for TSLA
+[2025-03-22T12:58:45.505+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for AVGO (9/10)...
+[2025-03-22T12:58:46.301+0800] {logging_mixin.py:190} INFO - ✅ Saved 4 articles for AVGO
+[2025-03-22T12:58:58.305+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for BRK-B (10/10)...
+[2025-03-22T12:59:11.002+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-22T12:59:11.026+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-22T12:59:11.027+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=run_yf, run_id=manual__2025-03-22T04:56:55.365440+00:00, execution_date=20250322T045655, start_date=20250322T045702, end_date=20250322T045911
+[2025-03-22T12:59:11.051+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-22T12:59:11.052+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-22T12:59:11.052+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-03-22 04:56:55.373631+00:00
+[2025-03-22T12:59:11.052+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:_PythonDecoratedOperator
+[2025-03-22T12:59:11.068+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-22T12:59:11.087+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-22T12:59:11.089+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

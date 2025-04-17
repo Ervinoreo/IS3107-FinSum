@@ -1,0 +1,127 @@
+[2025-03-23T15:14:44.909+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-23T15:14:44.918+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_yf_to_gcs manual__2025-03-23T04:38:54.369279+00:00 [queued]>
+[2025-03-23T15:14:44.922+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_yf_to_gcs manual__2025-03-23T04:38:54.369279+00:00 [queued]>
+[2025-03-23T15:14:44.922+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-23T15:14:44.927+0800] {taskinstance.py:2890} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_yf_to_gcs> on 2025-03-23 04:38:54.369279+00:00
+[2025-03-23T15:14:44.930+0800] {standard_task_runner.py:72} INFO - Started process 9077 to run task
+[2025-03-23T15:14:44.933+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'upload_yf_to_gcs', 'manual__2025-03-23T04:38:54.369279+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpypzz8n1f']
+[2025-03-23T15:14:44.937+0800] {standard_task_runner.py:105} INFO - Job 150: Subtask upload_yf_to_gcs
+[2025-03-23T15:14:44.968+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.upload_yf_to_gcs manual__2025-03-23T04:38:54.369279+00:00 [running]> on host ervins-air-2
+[2025-03-23T15:14:44.999+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='upload_yf_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-03-23T04:38:54.369279+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-23T04:38:54.369279+00:00'
+[2025-03-23T15:14:44.999+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-23T15:14:45.000+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-23T15:14:45.000+0800] {logging_mixin.py:190} INFO - Current task name:upload_yf_to_gcs state:running start_date:2025-03-23 07:14:44.918781+00:00
+[2025-03-23T15:14:45.000+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-03-23T15:14:45.000+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-23T15:14:45.003+0800] {connection.py:277} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-03-23T15:14:45.005+0800] {base.py:84} INFO - Retrieving connection 'google_cloud_default'
+[2025-03-23T15:14:45.593+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/HII_yf_20250323.csv uploaded to yf/HII_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:45.594+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:46.719+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:46.721+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/TGT_yf_20250323.csv uploaded to yf/TGT_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:46.722+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:47.948+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:47.951+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/NEM_yf_20250323.csv uploaded to yf/NEM_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:47.952+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:48.360+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:48.362+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/WBA_yf_20250323.csv uploaded to yf/WBA_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:48.363+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:49.485+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:49.486+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/AMD_yf_20250323.csv uploaded to yf/AMD_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:49.487+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:51.020+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:51.022+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/NVDA_yf_20250323.csv uploaded to yf/NVDA_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:51.023+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:51.328+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:51.330+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/CVX_yf_20250323.csv uploaded to yf/CVX_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:51.331+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:52.555+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:52.556+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/PEP_yf_20250323.csv uploaded to yf/PEP_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:52.557+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:52.862+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:52.863+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/AXP_yf_20250323.csv uploaded to yf/AXP_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:52.864+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:54.092+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:54.094+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/WMT_yf_20250323.csv uploaded to yf/WMT_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:54.095+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:54.500+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:54.501+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/INTC_yf_20250323.csv uploaded to yf/INTC_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:54.502+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:55.584+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:55.586+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/UBER_yf_20250323.csv uploaded to yf/UBER_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:55.587+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:56.036+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:56.038+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/GOOGL_yf_20250323.csv uploaded to yf/GOOGL_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:56.039+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:57.060+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:57.062+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/MRNA_yf_20250323.csv uploaded to yf/MRNA_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:57.063+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:57.572+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:57.573+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/FDX_yf_20250323.csv uploaded to yf/FDX_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:57.574+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:58.597+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:58.597+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/XOM_yf_20250323.csv uploaded to yf/XOM_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:58.598+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:59.408+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:14:59.410+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/MSFT_yf_20250323.csv uploaded to yf/MSFT_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:14:59.411+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:00.134+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:00.135+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/GOOG_yf_20250323.csv uploaded to yf/GOOG_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:00.136+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:00.939+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:00.941+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/AMZN_yf_20250323.csv uploaded to yf/AMZN_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:00.942+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:01.652+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:01.654+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/IBM_yf_20250323.csv uploaded to yf/IBM_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:01.654+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:02.487+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:02.489+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/MNST_yf_20250323.csv uploaded to yf/MNST_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:02.489+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:03.140+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:03.142+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/BAC_yf_20250323.csv uploaded to yf/BAC_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:03.143+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:04.026+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:04.027+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/ULTA_yf_20250323.csv uploaded to yf/ULTA_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:04.028+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:04.741+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:04.742+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/AAPL_yf_20250323.csv uploaded to yf/AAPL_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:04.743+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:05.570+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:05.572+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/DG_yf_20250323.csv uploaded to yf/DG_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:05.573+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:06.893+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:06.895+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/PLTR_yf_20250323.csv uploaded to yf/PLTR_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:06.896+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:07.173+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:07.175+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/PYPL_yf_20250323.csv uploaded to yf/PYPL_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:07.176+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:08.428+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:08.430+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/DAL_yf_20250323.csv uploaded to yf/DAL_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:08.430+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:08.764+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:08.765+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/PG_yf_20250323.csv uploaded to yf/PG_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:08.766+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:09.964+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:09.965+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/HES_yf_20250323.csv uploaded to yf/HES_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:09.966+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:10.373+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:10.375+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/META_yf_20250323.csv uploaded to yf/META_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:10.376+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:11.458+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:11.460+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/PFE_yf_20250323.csv uploaded to yf/PFE_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:11.461+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:12.012+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:12.014+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/NFLX_yf_20250323.csv uploaded to yf/NFLX_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:12.014+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:12.940+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:12.944+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/TSLA_yf_20250323.csv uploaded to yf/TSLA_yf_20250323.csv in my-data-is3107 bucket
+[2025-03-23T15:15:12.945+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-23T15:15:12.958+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-23T15:15:12.959+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=upload_yf_to_gcs, run_id=manual__2025-03-23T04:38:54.369279+00:00, execution_date=20250323T043854, start_date=20250323T071444, end_date=20250323T071512
+[2025-03-23T15:15:12.972+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-23T15:15:12.973+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-23T15:15:12.973+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-03-23 04:38:54.407239+00:00
+[2025-03-23T15:15:12.973+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:LocalFilesystemToGCSOperator
+[2025-03-23T15:15:13.002+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-23T15:15:13.012+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-23T15:15:13.012+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,287 @@
+[2025-04-02T14:49:28.091+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-02T14:49:28.194+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T06:42:41.865674+00:00 [queued]>
+[2025-04-02T14:49:28.199+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T06:42:41.865674+00:00 [queued]>
+[2025-04-02T14:49:28.199+0800] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-04-02T14:49:28.205+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): preprocess_and_aggregate> on 2025-04-02 06:42:41.865674+00:00
+[2025-04-02T14:49:28.208+0800] {standard_task_runner.py:72} INFO - Started process 35156 to run task
+[2025-04-02T14:49:28.212+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'preprocess_and_aggregate', 'manual__2025-04-02T06:42:41.865674+00:00', '--job-id', '303', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmprx2r376u']
+[2025-04-02T14:49:28.213+0800] {standard_task_runner.py:105} INFO - Job 303: Subtask preprocess_and_aggregate
+[2025-04-02T14:49:28.237+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T06:42:41.865674+00:00 [running]> on host ervins-macbook-air-2.local
+[2025-04-02T14:49:28.269+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='preprocess_and_aggregate' AIRFLOW_CTX_EXECUTION_DATE='2025-04-02T06:42:41.865674+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-02T06:42:41.865674+00:00'
+[2025-04-02T14:49:28.270+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-02T14:49:28.270+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-02T14:49:28.271+0800] {logging_mixin.py:190} INFO - Current task name:preprocess_and_aggregate state:running start_date:2025-04-02 06:49:28.194614+00:00
+[2025-04-02T14:49:28.271+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-02T14:49:28.271+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-02T14:49:30.129+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:283 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T14:49:30.145+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/AAPL_processed_20250402.csv
+[2025-04-02T14:49:31.602+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:283 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T14:49:31.611+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/AMZN_processed_20250402.csv
+[2025-04-02T14:49:33.089+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:283 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T14:49:33.097+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/GOOGL_processed_20250402.csv
+[2025-04-02T14:49:34.425+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:283 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T14:49:34.436+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/MSFT_processed_20250402.csv
+[2025-04-02T14:49:34.445+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 248, in preprocess_and_aggregate
+    df_reddit["Sentiment"] = df_reddit["Text"].apply(preprocess_text).apply(analyze_sentiment)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/series.py", line 4764, in apply
+    ).apply()
+      ^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/apply.py", line 1209, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/apply.py", line 1289, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2926, in pandas._libs.lib.map_infer
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 191, in preprocess_text
+    tokens = word_tokenize(text)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/ervinyeoh/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/share/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+[2025-04-02T14:49:34.466+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-02T14:49:34.467+0800] {logging_mixin.py:190} INFO - Task start:2025-04-02 06:49:28.194614+00:00 end:2025-04-02 06:49:34.463879+00:00 duration:6.269265
+[2025-04-02T14:49:34.467+0800] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): preprocess_and_aggregate> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-04-02 06:42:41.865674+00:00: manual__2025-04-02T06:42:41.865674+00:00, state:running, queued_at: 2025-04-02 06:42:41.873089+00:00. externally triggered: True>
+[2025-04-02T14:49:34.468+0800] {logging_mixin.py:190} INFO - Failure caused by 
+**********************************************************************
+  Resource punkt_tab not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('punkt_tab')
+  
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load tokenizers/punkt_tab/english/
+
+  Searched in:
+    - '/Users/ervinyeoh/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/share/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+[2025-04-02T14:49:34.468+0800] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=reddit_yf_scraper, task_id=preprocess_and_aggregate, run_id=manual__2025-04-02T06:42:41.865674+00:00, execution_date=20250402T064241, start_date=20250402T064928, end_date=20250402T064934
+[2025-04-02T14:49:34.479+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-02T14:49:34.480+0800] {standard_task_runner.py:124} ERROR - Failed to execute job 303 for task preprocess_and_aggregate (
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/ervinyeoh/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/share/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+; 35156)
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 248, in preprocess_and_aggregate
+    df_reddit["Sentiment"] = df_reddit["Text"].apply(preprocess_text).apply(analyze_sentiment)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/series.py", line 4764, in apply
+    ).apply()
+      ^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/apply.py", line 1209, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/apply.py", line 1289, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2926, in pandas._libs.lib.map_infer
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 191, in preprocess_text
+    tokens = word_tokenize(text)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/ervinyeoh/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/share/nltk_data'
+    - '/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+[2025-04-02T14:49:34.499+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-02T14:49:34.510+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-02T14:49:34.510+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

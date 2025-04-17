@@ -1,0 +1,171 @@
+[2025-04-13T09:47:25.029+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-13T09:47:25.097+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-11T16:00:00+00:00 [queued]>
+[2025-04-13T09:47:25.099+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-11T16:00:00+00:00 [queued]>
+[2025-04-13T09:47:25.099+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-13T09:47:25.103+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_yf> on 2025-04-11 16:00:00+00:00
+[2025-04-13T09:47:25.105+0800] {standard_task_runner.py:72} INFO - Started process 52926 to run task
+[2025-04-13T09:47:25.107+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_yf', 'scheduled__2025-04-11T16:00:00+00:00', '--job-id', '350', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmp2me3s73h']
+[2025-04-13T09:47:25.108+0800] {standard_task_runner.py:105} INFO - Job 350: Subtask run_yf
+[2025-04-13T09:47:25.130+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-11T16:00:00+00:00 [running]> on host ervins-air-2
+[2025-04-13T09:47:25.151+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_yf' AIRFLOW_CTX_EXECUTION_DATE='2025-04-11T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-11T16:00:00+00:00'
+[2025-04-13T09:47:25.151+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-13T09:47:25.151+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-13T09:47:25.152+0800] {logging_mixin.py:190} INFO - Current task name:run_yf state:running start_date:2025-04-13 01:47:25.097284+00:00
+[2025-04-13T09:47:25.152+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-13T09:47:25.152+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-13T09:47:25.152+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for AAPL (1/3)...
+[2025-04-13T09:47:25.871+0800] {logging_mixin.py:190} INFO - ✅ Saved 2 articles for AAPL
+[2025-04-13T09:47:36.073+0800] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-13T09:47:36.086+0800] {process_utils.py:132} INFO - Sending 15 to group 52926. PIDs of all processes in the group: [52926]
+[2025-04-13T09:47:36.086+0800] {process_utils.py:87} INFO - Sending the signal 15 to group 52926
+[2025-04-13T09:47:36.087+0800] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-04-13T09:47:36.094+0800] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 101, in run_yf
+    run_yf_scraper(tickers)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/yf_scraper.py", line 56, in run_yf_scraper
+    time.sleep(12)  # Respect API rate limits
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-04-13T09:47:36.100+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 101, in run_yf
+    run_yf_scraper(tickers)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/yf_scraper.py", line 56, in run_yf_scraper
+    time.sleep(12)  # Respect API rate limits
+    ^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3097, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-04-13T09:47:36.105+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-13T09:47:36.105+0800] {logging_mixin.py:190} INFO - Task start:2025-04-13 01:47:25.097284+00:00 end:2025-04-13 01:47:36.104781+00:00 duration:11.007497
+[2025-04-13T09:47:36.106+0800] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): run_yf> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-04-11 16:00:00+00:00: scheduled__2025-04-11T16:00:00+00:00, state:running, queued_at: 2025-04-13 01:42:36.832929+00:00. externally triggered: False>
+[2025-04-13T09:47:36.106+0800] {logging_mixin.py:190} INFO - Failure caused by Task received SIGTERM signal
+[2025-04-13T09:47:36.106+0800] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=reddit_yf_scraper, task_id=run_yf, run_id=scheduled__2025-04-11T16:00:00+00:00, execution_date=20250411T160000, start_date=20250413T014725, end_date=20250413T014736
+[2025-04-13T09:47:36.120+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-13T09:47:36.145+0800] {process_utils.py:80} INFO - Process psutil.Process(pid=52926, status='terminated', exitcode=2, started='09:47:25') (52926) terminated with exit code 2
+[2025-04-13T09:47:42.167+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-13T09:47:42.233+0800] {taskinstance.py:2604} INFO - Dependencies not met for <TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-11T16:00:00+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2025-04-13T01:47:42.233921+00:00 and task will be retried at 2025-04-13T01:52:36.104781+00:00.
+[2025-04-13T09:47:42.234+0800] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2025-04-13T09:57:15.523+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-13T09:57:15.597+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-11T16:00:00+00:00 [queued]>
+[2025-04-13T09:57:15.600+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-11T16:00:00+00:00 [queued]>
+[2025-04-13T09:57:15.600+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-13T09:57:15.603+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_yf> on 2025-04-11 16:00:00+00:00
+[2025-04-13T09:57:15.605+0800] {standard_task_runner.py:72} INFO - Started process 53456 to run task
+[2025-04-13T09:57:15.608+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_yf', 'scheduled__2025-04-11T16:00:00+00:00', '--job-id', '358', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmp_0nv8687']
+[2025-04-13T09:57:15.609+0800] {standard_task_runner.py:105} INFO - Job 358: Subtask run_yf
+[2025-04-13T09:57:15.628+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-11T16:00:00+00:00 [running]> on host ervins-air-2
+[2025-04-13T09:57:15.655+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_yf' AIRFLOW_CTX_EXECUTION_DATE='2025-04-11T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-11T16:00:00+00:00'
+[2025-04-13T09:57:15.656+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-13T09:57:15.656+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-13T09:57:15.656+0800] {logging_mixin.py:190} INFO - Current task name:run_yf state:running start_date:2025-04-13 01:57:15.597557+00:00
+[2025-04-13T09:57:15.656+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-13T09:57:15.656+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-13T09:57:15.657+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for AAPL (1/3)...
+[2025-04-13T09:57:16.364+0800] {logging_mixin.py:190} INFO - ✅ Saved 2 articles for AAPL
+[2025-04-13T09:57:28.366+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for NVDA (2/3)...
+[2025-04-13T09:57:29.160+0800] {logging_mixin.py:190} INFO - ✅ Saved 5 articles for NVDA
+[2025-04-13T09:57:41.162+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for MSFT (3/3)...
+[2025-04-13T09:57:41.863+0800] {logging_mixin.py:190} INFO - ✅ Saved 2 articles for MSFT
+[2025-04-13T09:57:53.870+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-13T09:57:53.892+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-13T09:57:53.893+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=run_yf, run_id=scheduled__2025-04-11T16:00:00+00:00, execution_date=20250411T160000, start_date=20250413T015715, end_date=20250413T015753
+[2025-04-13T09:57:53.905+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-13T09:57:53.906+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-13T09:57:53.906+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-13 01:57:06.616802+00:00
+[2025-04-13T09:57:53.906+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:_PythonDecoratedOperator
+[2025-04-13T09:57:53.926+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-13T09:57:53.944+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-13T09:57:53.945+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

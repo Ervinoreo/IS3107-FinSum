@@ -1,0 +1,48 @@
+[2025-03-22T12:59:14.216+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-22T12:59:14.225+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-22T04:56:55.365440+00:00 [queued]>
+[2025-03-22T12:59:14.228+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-22T04:56:55.365440+00:00 [queued]>
+[2025-03-22T12:59:14.229+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-22T12:59:14.236+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_reddit> on 2025-03-22 04:56:55.365440+00:00
+[2025-03-22T12:59:14.238+0800] {standard_task_runner.py:72} INFO - Started process 68901 to run task
+[2025-03-22T12:59:14.242+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_reddit', 'manual__2025-03-22T04:56:55.365440+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmp288q75nq']
+[2025-03-22T12:59:14.243+0800] {standard_task_runner.py:105} INFO - Job 108: Subtask run_reddit
+[2025-03-22T12:59:14.274+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-22T04:56:55.365440+00:00 [running]> on host ervins-air-2
+[2025-03-22T12:59:14.308+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_reddit' AIRFLOW_CTX_EXECUTION_DATE='2025-03-22T04:56:55.365440+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-22T04:56:55.365440+00:00'
+[2025-03-22T12:59:14.309+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-22T12:59:14.310+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-22T12:59:14.310+0800] {logging_mixin.py:190} INFO - Current task name:run_reddit state:running start_date:2025-03-22 04:59:14.225702+00:00
+[2025-03-22T12:59:14.310+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-03-22T12:59:14.311+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-22T12:59:15.083+0800] {patcher.py:346} INFO - patching driver executable /Users/ervinyeoh/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2025-03-22T12:59:19.595+0800] {__init__.py:493} INFO - setting properties for headless
+[2025-03-22T12:59:19.597+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AAPL...
+[2025-03-22T12:59:22.895+0800] {logging_mixin.py:190} INFO - ✅ All posts for AAPL have been processed.
+[2025-03-22T12:59:22.895+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NVDA...
+[2025-03-22T12:59:26.115+0800] {logging_mixin.py:190} INFO - ✅ All posts for NVDA have been processed.
+[2025-03-22T12:59:26.117+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MSFT...
+[2025-03-22T12:59:29.246+0800] {logging_mixin.py:190} INFO - ✅ All posts for MSFT have been processed.
+[2025-03-22T12:59:29.247+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AMZN...
+[2025-03-22T12:59:32.465+0800] {logging_mixin.py:190} INFO - ✅ All posts for AMZN have been processed.
+[2025-03-22T12:59:32.467+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GOOGL...
+[2025-03-22T12:59:35.595+0800] {logging_mixin.py:190} INFO - ✅ All posts for GOOGL have been processed.
+[2025-03-22T12:59:35.596+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GOOG...
+[2025-03-22T12:59:38.664+0800] {logging_mixin.py:190} INFO - ✅ All posts for GOOG have been processed.
+[2025-03-22T12:59:38.665+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for META...
+[2025-03-22T12:59:41.037+0800] {logging_mixin.py:190} INFO - ✅ All posts for META have been processed.
+[2025-03-22T12:59:41.038+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TSLA...
+[2025-03-22T12:59:43.427+0800] {logging_mixin.py:190} INFO - ✅ All posts for TSLA have been processed.
+[2025-03-22T12:59:43.428+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AVGO...
+[2025-03-22T12:59:45.879+0800] {logging_mixin.py:190} INFO - ✅ All posts for AVGO have been processed.
+[2025-03-22T12:59:45.881+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BRK-B...
+[2025-03-22T12:59:48.998+0800] {logging_mixin.py:190} INFO - ✅ All posts for BRK-B have been processed.
+[2025-03-22T12:59:49.159+0800] {logging_mixin.py:190} INFO - ✅ Done scraping Reddit posts for all S&P 500 tickers.
+[2025-03-22T12:59:49.160+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-22T12:59:49.169+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-22T12:59:49.169+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=run_reddit, run_id=manual__2025-03-22T04:56:55.365440+00:00, execution_date=20250322T045655, start_date=20250322T045914, end_date=20250322T045949
+[2025-03-22T12:59:49.182+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-22T12:59:49.182+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-22T12:59:49.183+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-03-22 04:56:55.373631+00:00
+[2025-03-22T12:59:49.183+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:_PythonDecoratedOperator
+[2025-03-22T12:59:49.221+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-22T12:59:49.244+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-22T12:59:49.244+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

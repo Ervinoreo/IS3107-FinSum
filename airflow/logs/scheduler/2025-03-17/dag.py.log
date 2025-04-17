@@ -1,0 +1,539 @@
+[2025-03-17T17:05:54.903+0800] {processor.py:186} INFO - Started process (PID=12564) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:05:54.903+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:05:54.904+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:05:54.904+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:05:54.906+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:05:54.905+0800] {dagbag.py:387} ERROR - Failed to import: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 13, in <module>
+    from load_tickers import load_sp500_tickers
+ModuleNotFoundError: No module named 'load_tickers'
+[2025-03-17T17:05:54.907+0800] {processor.py:927} WARNING - No viable dags retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:05:55.370+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.469 seconds
+[2025-03-17T17:08:04.608+0800] {processor.py:186} INFO - Started process (PID=12889) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:08:04.608+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:08:04.609+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:08:04.609+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:08:04.611+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:08:04.610+0800] {dagbag.py:387} ERROR - Failed to import: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 13, in <module>
+    from load_tickers import load_sp500_tickers
+ModuleNotFoundError: No module named 'load_tickers'
+[2025-03-17T17:08:04.611+0800] {processor.py:927} WARNING - No viable dags retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:08:05.089+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.483 seconds
+[2025-03-17T17:09:44.797+0800] {processor.py:186} INFO - Started process (PID=13083) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:09:44.798+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:09:44.799+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:09:44.799+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:09:44.801+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:09:44.800+0800] {dagbag.py:387} ERROR - Failed to import: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 13, in <module>
+    from load_tickers import load_sp500_tickers
+ModuleNotFoundError: No module named 'load_tickers'
+[2025-03-17T17:09:44.801+0800] {processor.py:927} WARNING - No viable dags retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:09:45.258+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.463 seconds
+[2025-03-17T17:11:27.426+0800] {processor.py:186} INFO - Started process (PID=13264) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:11:27.427+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:11:27.428+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:11:27.428+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:11:27.430+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:11:27.429+0800] {dagbag.py:387} ERROR - Failed to import: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 13, in <module>
+    from load_tickers import load_sp500_tickers
+ModuleNotFoundError: No module named 'load_tickers'
+[2025-03-17T17:11:27.430+0800] {processor.py:927} WARNING - No viable dags retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:11:27.949+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.525 seconds
+[2025-03-17T17:13:07.397+0800] {processor.py:186} INFO - Started process (PID=13386) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:13:07.399+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:13:07.399+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:13:07.399+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:13:07.402+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:13:07.401+0800] {dagbag.py:387} ERROR - Failed to import: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 13, in <module>
+    from load_tickers import load_sp500_tickers
+ModuleNotFoundError: No module named 'load_tickers'
+[2025-03-17T17:13:07.402+0800] {processor.py:927} WARNING - No viable dags retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:13:07.860+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.464 seconds
+[2025-03-17T17:14:44.648+0800] {processor.py:186} INFO - Started process (PID=13535) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:14:44.650+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:14:44.651+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:14:44.650+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:14:44.654+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:14:44.653+0800] {dagbag.py:387} ERROR - Failed to import: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 9, in <module>
+    from load_tickers import load_sp500_tickers
+ModuleNotFoundError: No module named 'load_tickers'
+[2025-03-17T17:14:44.654+0800] {processor.py:927} WARNING - No viable dags retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:14:45.131+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.484 seconds
+[2025-03-17T17:16:22.699+0800] {processor.py:186} INFO - Started process (PID=13725) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:16:22.699+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:16:22.700+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:16:22.700+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:16:23.555+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:16:23.553+0800] {dagbag.py:387} ERROR - Failed to import: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 72, in <module>
+    reddit_yf_scraper()
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 70, in reddit_yf_scraper
+    [yf_task, reddit_task] >> [upload_reddit_to_gcs, upload_yf_to_gcs]
+    ~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for >>: 'list' and 'list'
+[2025-03-17T17:16:23.556+0800] {processor.py:927} WARNING - No viable dags retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:16:23.619+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.922 seconds
+[2025-03-17T17:18:02.690+0800] {processor.py:186} INFO - Started process (PID=13843) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:18:02.691+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:18:02.692+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:02.692+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:18:03.573+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:18:03.682+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.682+0800] {override.py:1912} INFO - Created Permission View: can read on DAG:reddit_yf_scraper
+[2025-03-17T17:18:03.688+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.688+0800] {override.py:1912} INFO - Created Permission View: can delete on DAG:reddit_yf_scraper
+[2025-03-17T17:18:03.694+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.693+0800] {override.py:1912} INFO - Created Permission View: can edit on DAG:reddit_yf_scraper
+[2025-03-17T17:18:03.699+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.698+0800] {override.py:1912} INFO - Created Permission View: can read on DAG Run:reddit_yf_scraper
+[2025-03-17T17:18:03.702+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.702+0800] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:reddit_yf_scraper
+[2025-03-17T17:18:03.705+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.705+0800] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:reddit_yf_scraper
+[2025-03-17T17:18:03.708+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.708+0800] {override.py:1912} INFO - Created Permission View: can create on DAG Run:reddit_yf_scraper
+[2025-03-17T17:18:03.708+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.708+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:18:03.716+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.716+0800] {dag.py:3262} INFO - Creating ORM DAG for reddit_yf_scraper
+[2025-03-17T17:18:03.721+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:18:03.721+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:18:03.730+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.042 seconds
+[2025-03-17T17:19:40.161+0800] {processor.py:186} INFO - Started process (PID=13948) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:19:40.162+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:19:40.163+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:19:40.163+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:19:41.060+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:19:41.111+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:19:41.111+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:19:41.122+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:19:41.121+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:19:41.131+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.972 seconds
+[2025-03-17T17:21:16.910+0800] {processor.py:186} INFO - Started process (PID=14076) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:21:16.911+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:21:16.911+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:21:16.911+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:21:17.826+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:21:17.878+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:21:17.877+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:21:17.888+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:21:17.888+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:21:17.898+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.990 seconds
+[2025-03-17T17:22:56.017+0800] {processor.py:186} INFO - Started process (PID=14185) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:22:56.018+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:22:56.019+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:22:56.018+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:22:56.868+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:22:56.919+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:22:56.919+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:22:56.929+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:22:56.929+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:22:56.940+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.925 seconds
+[2025-03-17T17:24:35.136+0800] {processor.py:186} INFO - Started process (PID=14311) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:24:35.137+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:24:35.138+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:24:35.137+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:24:35.992+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:24:36.045+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:24:36.044+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:24:36.055+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:24:36.055+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:24:36.065+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.931 seconds
+[2025-03-17T17:52:37.934+0800] {processor.py:186} INFO - Started process (PID=14572) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:52:37.935+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T17:52:37.936+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:52:37.936+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:52:38.841+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T17:52:38.892+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:52:38.892+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T17:52:38.901+0800] {logging_mixin.py:190} INFO - [2025-03-17T17:52:38.901+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T17:52:38.911+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.979 seconds
+[2025-03-17T19:40:08.438+0800] {processor.py:186} INFO - Started process (PID=14938) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:40:08.439+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:40:08.439+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:40:08.439+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:40:09.274+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:40:09.325+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:40:09.325+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:40:09.334+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:40:09.334+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:40:09.344+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.908 seconds
+[2025-03-17T19:40:13.706+0800] {processor.py:186} INFO - Started process (PID=14953) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:40:13.707+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:40:13.708+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:40:13.707+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:40:14.720+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:40:14.771+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:40:14.770+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:40:14.781+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:40:14.781+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:40:14.790+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.086 seconds
+[2025-03-17T19:41:57.245+0800] {processor.py:186} INFO - Started process (PID=15185) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:41:57.247+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:41:57.247+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:41:57.247+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:41:58.015+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:41:58.067+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:41:58.067+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:41:58.077+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:41:58.076+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:41:58.087+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.843 seconds
+[2025-03-17T19:42:23.063+0800] {processor.py:186} INFO - Started process (PID=15244) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:42:23.064+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:42:23.065+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:42:23.065+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:42:24.099+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:42:24.154+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:42:24.154+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:42:24.164+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:42:24.164+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:42:24.175+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.114 seconds
+[2025-03-17T19:43:01.714+0800] {processor.py:186} INFO - Started process (PID=15319) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:43:01.716+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:43:01.717+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:43:01.716+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:43:02.515+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:43:02.567+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:43:02.567+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:43:02.576+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:43:02.576+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:43:02.586+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.874 seconds
+[2025-03-17T19:44:00.213+0800] {processor.py:186} INFO - Started process (PID=15437) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:44:00.214+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:44:00.215+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:44:00.215+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:44:01.089+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:44:01.139+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:44:01.139+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:44:01.149+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:44:01.149+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:44:01.158+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.947 seconds
+[2025-03-17T19:45:11.581+0800] {processor.py:186} INFO - Started process (PID=15601) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:45:11.582+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:45:11.583+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:45:11.583+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:45:12.489+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:45:12.540+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:45:12.539+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:45:12.549+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:45:12.549+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:45:12.559+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.979 seconds
+[2025-03-17T19:46:13.707+0800] {processor.py:186} INFO - Started process (PID=15779) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:46:13.708+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:46:13.709+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:46:13.709+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:46:14.810+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:46:14.861+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:46:14.860+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:46:14.870+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:46:14.870+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:46:14.882+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.178 seconds
+[2025-03-17T19:46:51.629+0800] {processor.py:186} INFO - Started process (PID=15856) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:46:51.630+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:46:51.631+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:46:51.631+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:46:52.511+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:46:52.588+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:46:52.587+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:46:52.600+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:46:52.600+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:46:52.610+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.982 seconds
+[2025-03-17T19:47:55.550+0800] {processor.py:186} INFO - Started process (PID=15975) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:47:55.551+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:47:55.552+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:47:55.552+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:47:56.578+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:47:56.630+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:47:56.630+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:47:56.641+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:47:56.640+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:47:56.650+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.102 seconds
+[2025-03-17T19:48:35.607+0800] {processor.py:186} INFO - Started process (PID=16059) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:48:35.608+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:48:35.608+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:48:35.608+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:48:36.681+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:48:36.749+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:48:36.749+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:48:36.760+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:48:36.760+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:48:36.773+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.168 seconds
+[2025-03-17T19:49:40.725+0800] {processor.py:186} INFO - Started process (PID=16186) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:49:40.726+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:49:40.727+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:49:40.727+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:49:41.678+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:49:41.728+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:49:41.728+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:49:41.738+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:49:41.738+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:49:41.748+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.025 seconds
+[2025-03-17T19:50:18.584+0800] {processor.py:186} INFO - Started process (PID=16267) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:50:18.585+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:50:18.585+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:50:18.585+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:50:19.504+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:50:19.558+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:50:19.557+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:50:19.568+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:50:19.568+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:50:19.578+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.996 seconds
+[2025-03-17T19:51:21.129+0800] {processor.py:186} INFO - Started process (PID=16391) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:51:21.130+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:51:21.130+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:51:21.130+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:51:22.133+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:51:22.185+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:51:22.185+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:51:22.195+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:51:22.195+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:51:22.205+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.078 seconds
+[2025-03-17T19:51:58.359+0800] {processor.py:186} INFO - Started process (PID=16461) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:51:58.360+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:51:58.361+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:51:58.360+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:51:59.342+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:51:59.396+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:51:59.395+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:51:59.406+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:51:59.406+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:51:59.416+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.059 seconds
+[2025-03-17T19:52:59.727+0800] {processor.py:186} INFO - Started process (PID=16583) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:52:59.728+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:52:59.728+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:52:59.728+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:53:00.793+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:53:00.858+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:53:00.858+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:53:00.870+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:53:00.870+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:53:00.882+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.157 seconds
+[2025-03-17T19:53:36.839+0800] {processor.py:186} INFO - Started process (PID=16655) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:53:36.840+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:53:36.841+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:53:36.841+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:53:37.703+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:53:37.756+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:53:37.756+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:53:37.767+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:53:37.766+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:53:37.776+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.939 seconds
+[2025-03-17T19:54:43.464+0800] {processor.py:186} INFO - Started process (PID=16884) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:54:43.465+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:54:43.465+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:54:43.465+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:54:44.571+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:54:44.623+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:54:44.623+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:54:44.633+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:54:44.633+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:54:44.643+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.181 seconds
+[2025-03-17T19:55:21.947+0800] {processor.py:186} INFO - Started process (PID=16961) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:55:21.948+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:55:21.949+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:55:21.949+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:55:22.903+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:55:22.954+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:55:22.954+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:55:22.964+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:55:22.964+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:55:22.974+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.029 seconds
+[2025-03-17T19:56:28.544+0800] {processor.py:186} INFO - Started process (PID=17131) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:56:28.546+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:56:28.546+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:56:28.546+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:56:29.370+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:56:29.421+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:56:29.420+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:56:29.430+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:56:29.430+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:56:29.441+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.898 seconds
+[2025-03-17T19:57:05.250+0800] {processor.py:186} INFO - Started process (PID=17221) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:57:05.250+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:57:05.251+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:57:05.251+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:57:06.098+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:57:06.150+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:57:06.150+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:57:06.160+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:57:06.160+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:57:06.169+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.921 seconds
+[2025-03-17T19:58:09.794+0800] {processor.py:186} INFO - Started process (PID=17382) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:58:09.795+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:58:09.796+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:58:09.796+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:58:10.624+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:58:10.676+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:58:10.676+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:58:10.687+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:58:10.686+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:58:10.696+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.904 seconds
+[2025-03-17T19:58:45.525+0800] {processor.py:186} INFO - Started process (PID=17453) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:58:45.527+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:58:45.528+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:58:45.528+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:58:46.370+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:58:46.421+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:58:46.420+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:58:46.431+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:58:46.431+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:58:46.441+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.918 seconds
+[2025-03-17T19:59:50.027+0800] {processor.py:186} INFO - Started process (PID=17601) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:59:50.028+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T19:59:50.029+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:59:50.028+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:59:51.046+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T19:59:51.101+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:59:51.101+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T19:59:51.112+0800] {logging_mixin.py:190} INFO - [2025-03-17T19:59:51.112+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T19:59:51.122+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.097 seconds
+[2025-03-17T20:00:26.915+0800] {processor.py:186} INFO - Started process (PID=17684) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:00:26.917+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:00:26.917+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:26.917+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:00:27.127+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:00:27.324+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.324+0800] {override.py:1912} INFO - Created Permission View: can delete on DAG:test_gcs_upload
+[2025-03-17T20:00:27.330+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.330+0800] {override.py:1912} INFO - Created Permission View: can edit on DAG:test_gcs_upload
+[2025-03-17T20:00:27.340+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.340+0800] {override.py:1912} INFO - Created Permission View: can read on DAG:test_gcs_upload
+[2025-03-17T20:00:27.351+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.351+0800] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:test_gcs_upload
+[2025-03-17T20:00:27.370+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.369+0800] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:test_gcs_upload
+[2025-03-17T20:00:27.409+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.409+0800] {override.py:1912} INFO - Created Permission View: can read on DAG Run:test_gcs_upload
+[2025-03-17T20:00:27.416+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.416+0800] {override.py:1912} INFO - Created Permission View: can create on DAG Run:test_gcs_upload
+[2025-03-17T20:00:27.417+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.417+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:00:27.425+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.425+0800] {dag.py:3262} INFO - Creating ORM DAG for test_gcs_upload
+[2025-03-17T20:00:27.425+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:00:27.425+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:00:27.434+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.521 seconds
+[2025-03-17T20:01:42.341+0800] {processor.py:186} INFO - Started process (PID=17861) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:01:42.341+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:01:42.342+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:01:42.342+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:01:42.549+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:01:42.600+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:01:42.600+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:01:42.607+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:01:42.607+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:01:42.618+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.279 seconds
+[2025-03-17T20:02:08.943+0800] {processor.py:186} INFO - Started process (PID=17910) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:02:08.944+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:02:08.944+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:02:08.944+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:02:09.228+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:02:09.283+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:02:09.282+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:02:09.290+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:02:09.290+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:02:09.302+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.361 seconds
+[2025-03-17T20:03:27.804+0800] {processor.py:186} INFO - Started process (PID=18113) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:03:27.805+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:03:27.806+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:03:27.806+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:03:28.034+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:03:28.082+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:03:28.082+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:03:28.089+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:03:28.089+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:03:28.098+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.296 seconds
+[2025-03-17T20:03:48.897+0800] {processor.py:186} INFO - Started process (PID=18161) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:03:48.897+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:03:48.898+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:03:48.898+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:03:49.120+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:03:49.171+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:03:49.171+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:03:49.178+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:03:49.177+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:03:49.188+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.293 seconds
+[2025-03-17T20:05:07.232+0800] {processor.py:186} INFO - Started process (PID=18319) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:05:07.232+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:05:07.233+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:05:07.233+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:05:07.438+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:05:07.488+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:05:07.488+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:05:07.494+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:05:07.494+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:05:07.505+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.275 seconds
+[2025-03-17T20:05:27.836+0800] {processor.py:186} INFO - Started process (PID=18365) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:05:27.836+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:05:27.837+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:05:27.837+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:05:28.103+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:05:28.152+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:05:28.152+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:05:28.158+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:05:28.158+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:05:28.168+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.334 seconds
+[2025-03-17T20:06:47.719+0800] {processor.py:186} INFO - Started process (PID=18541) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:06:47.720+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:06:47.721+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:06:47.721+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:06:47.956+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:06:48.005+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:06:48.005+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:06:48.011+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:06:48.011+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:06:48.021+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.304 seconds
+[2025-03-17T20:07:07.648+0800] {processor.py:186} INFO - Started process (PID=18577) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:07:07.648+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:07:07.649+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:07:07.649+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:07:07.883+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:07:07.936+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:07:07.936+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:07:07.943+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:07:07.942+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:07:07.953+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.307 seconds
+[2025-03-17T20:08:34.573+0800] {processor.py:186} INFO - Started process (PID=18802) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:08:34.574+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:08:34.575+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:08:34.575+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:08:34.815+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:08:34.870+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:08:34.870+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:08:34.877+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:08:34.877+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:08:34.888+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.317 seconds
+[2025-03-17T20:08:49.888+0800] {processor.py:186} INFO - Started process (PID=18831) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:08:49.889+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:08:49.890+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:08:49.889+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:08:50.161+0800] {processor.py:925} INFO - DAG(s) 'test_gcs_upload' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:08:50.215+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:08:50.215+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:08:50.222+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:08:50.222+0800] {dag.py:4180} INFO - Setting next_dagrun for test_gcs_upload to None, run_after=None
+[2025-03-17T20:08:50.234+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.347 seconds
+[2025-03-17T20:10:23.461+0800] {processor.py:186} INFO - Started process (PID=19061) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:10:23.462+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:10:23.462+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:10:23.462+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:10:24.368+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:10:24.469+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:10:24.468+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:10:24.480+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:10:24.479+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T20:10:24.491+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.031 seconds
+[2025-03-17T20:10:36.998+0800] {processor.py:186} INFO - Started process (PID=19089) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:10:36.999+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:10:37.000+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:10:37.000+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:10:37.908+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:10:37.912+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:10:37.912+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:10:37.967+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:10:37.966+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T20:10:37.976+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.981 seconds
+[2025-03-17T20:12:07.806+0800] {processor.py:186} INFO - Started process (PID=19328) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:12:07.808+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:12:07.809+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:12:07.808+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:12:08.889+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:12:08.943+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:12:08.942+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:12:08.952+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:12:08.952+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T20:12:08.963+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.159 seconds
+[2025-03-17T20:12:21.339+0800] {processor.py:186} INFO - Started process (PID=19361) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:12:21.340+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:12:21.340+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:12:21.340+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:12:22.258+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:12:22.309+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:12:22.309+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:12:22.320+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:12:22.320+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-16 00:00:00+00:00, run_after=2025-03-17 00:00:00+00:00
+[2025-03-17T20:12:22.330+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.992 seconds
+[2025-03-17T20:13:37.751+0800] {processor.py:186} INFO - Started process (PID=19565) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:13:37.752+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:13:37.752+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:13:37.752+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:13:38.185+0800] {processor.py:186} INFO - Started process (PID=19566) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:13:38.186+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:13:38.187+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:13:38.187+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:13:38.879+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:13:38.935+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:13:38.934+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:13:38.945+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:13:38.945+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:13:38.956+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.207 seconds
+[2025-03-17T20:13:39.309+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:13:39.367+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:13:39.367+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:13:39.378+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:13:39.377+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:13:39.388+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.206 seconds
+[2025-03-17T20:15:55.799+0800] {processor.py:186} INFO - Started process (PID=19954) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:15:55.800+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:15:55.801+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:15:55.801+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:15:56.738+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:15:56.788+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:15:56.788+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:15:56.798+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:15:56.798+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:15:56.808+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.010 seconds
+[2025-03-17T20:15:58.395+0800] {processor.py:186} INFO - Started process (PID=19958) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:15:58.396+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:15:58.396+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:15:58.396+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:15:59.208+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:15:59.261+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:15:59.261+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:15:59.272+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:15:59.272+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:15:59.282+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.889 seconds
+[2025-03-17T20:17:08.188+0800] {processor.py:186} INFO - Started process (PID=20147) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:17:08.189+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:17:08.189+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:17:08.189+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:17:09.100+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:17:09.219+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:17:09.218+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:17:09.229+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:17:09.229+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:17:09.239+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.054 seconds
+[2025-03-17T20:17:57.799+0800] {processor.py:186} INFO - Started process (PID=20246) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:17:57.800+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:17:57.801+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:17:57.801+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:17:58.648+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:17:58.699+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:17:58.699+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:17:58.709+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:17:58.709+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:17:58.719+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.922 seconds
+[2025-03-17T20:18:26.569+0800] {processor.py:186} INFO - Started process (PID=20369) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:18:26.570+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:18:26.570+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:18:26.570+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:18:27.437+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:18:27.492+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:18:27.491+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:18:27.503+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:18:27.503+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:18:27.513+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.946 seconds
+[2025-03-17T20:19:53.530+0800] {processor.py:186} INFO - Started process (PID=20597) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:19:53.531+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:19:53.531+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:19:53.531+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:19:54.471+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:19:54.523+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:19:54.523+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:19:54.533+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:19:54.533+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:19:54.542+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.014 seconds
+[2025-03-17T20:20:37.874+0800] {processor.py:186} INFO - Started process (PID=20705) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:20:37.875+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:20:37.875+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:20:37.875+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:20:38.832+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:20:38.883+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:20:38.883+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:20:38.893+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:20:38.893+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:20:38.903+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.031 seconds
+[2025-03-17T20:21:34.310+0800] {processor.py:186} INFO - Started process (PID=20819) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:21:34.310+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:21:34.311+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:21:34.311+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:21:35.310+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:21:35.363+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:21:35.362+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:21:35.373+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:21:35.373+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:21:35.383+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.076 seconds
+[2025-03-17T20:22:16.367+0800] {processor.py:186} INFO - Started process (PID=20922) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:22:16.368+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:22:16.369+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:22:16.369+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:22:17.225+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:22:17.276+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:22:17.276+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:22:17.286+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:22:17.286+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:22:17.296+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.930 seconds
+[2025-03-17T20:23:16.122+0800] {processor.py:186} INFO - Started process (PID=21041) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:23:16.123+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:23:16.124+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:23:16.124+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:23:17.023+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:23:17.097+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:23:17.097+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:23:17.122+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:23:17.122+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:23:17.131+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.010 seconds
+[2025-03-17T20:23:54.975+0800] {processor.py:186} INFO - Started process (PID=21148) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:23:54.975+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:23:54.976+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:23:54.976+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:23:56.004+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:23:56.074+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:23:56.074+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:23:56.086+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:23:56.086+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:23:56.098+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.125 seconds
+[2025-03-17T20:24:58.718+0800] {processor.py:186} INFO - Started process (PID=21272) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:24:58.719+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:24:58.720+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:24:58.720+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:24:59.601+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:24:59.652+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:24:59.652+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:24:59.663+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:24:59.663+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:24:59.672+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 0.956 seconds
+[2025-03-17T20:36:59.521+0800] {processor.py:186} INFO - Started process (PID=21415) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:36:59.522+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-03-17T20:36:59.523+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:36:59.522+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:37:00.765+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-03-17T20:37:00.816+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:37:00.815+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-17T20:37:00.826+0800] {logging_mixin.py:190} INFO - [2025-03-17T20:37:00.826+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-03-17 00:00:00+00:00, run_after=2025-03-18 00:00:00+00:00
+[2025-03-17T20:37:00.835+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 1.316 seconds

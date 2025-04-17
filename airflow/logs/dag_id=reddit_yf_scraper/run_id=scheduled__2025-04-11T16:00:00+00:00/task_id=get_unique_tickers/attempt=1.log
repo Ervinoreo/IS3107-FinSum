@@ -1,0 +1,27 @@
+[2025-04-13T10:00:00.383+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-13T10:00:00.451+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.get_unique_tickers scheduled__2025-04-11T16:00:00+00:00 [queued]>
+[2025-04-13T10:00:00.454+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.get_unique_tickers scheduled__2025-04-11T16:00:00+00:00 [queued]>
+[2025-04-13T10:00:00.454+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-13T10:00:00.459+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): get_unique_tickers> on 2025-04-11 16:00:00+00:00
+[2025-04-13T10:00:00.461+0800] {standard_task_runner.py:72} INFO - Started process 53762 to run task
+[2025-04-13T10:00:00.464+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'get_unique_tickers', 'scheduled__2025-04-11T16:00:00+00:00', '--job-id', '367', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpaqgovm4y']
+[2025-04-13T10:00:00.466+0800] {standard_task_runner.py:105} INFO - Job 367: Subtask get_unique_tickers
+[2025-04-13T10:00:00.495+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.get_unique_tickers scheduled__2025-04-11T16:00:00+00:00 [running]> on host ervins-air-2
+[2025-04-13T10:00:00.514+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='get_unique_tickers' AIRFLOW_CTX_EXECUTION_DATE='2025-04-11T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-11T16:00:00+00:00'
+[2025-04-13T10:00:00.515+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-13T10:00:00.515+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-13T10:00:00.515+0800] {logging_mixin.py:190} INFO - Current task name:get_unique_tickers state:running start_date:2025-04-13 02:00:00.451545+00:00
+[2025-04-13T10:00:00.515+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-13T10:00:00.515+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-13T10:00:00.516+0800] {logging_mixin.py:190} INFO - ✅ Unique tickers: ['AAPL', 'AMZN', 'GOOGL', 'MSFT', 'NVDA']
+[2025-04-13T10:00:00.516+0800] {logging_mixin.py:190} INFO - ✅ Date: 20250402
+[2025-04-13T10:00:00.516+0800] {python.py:240} INFO - Done. Returned value was: (['AAPL', 'AMZN', 'GOOGL', 'MSFT', 'NVDA'], '20250402')
+[2025-04-13T10:00:00.521+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-13T10:00:00.521+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=get_unique_tickers, run_id=scheduled__2025-04-11T16:00:00+00:00, execution_date=20250411T160000, start_date=20250413T020000, end_date=20250413T020000
+[2025-04-13T10:00:00.526+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-13T10:00:00.526+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-13T10:00:00.526+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-13 01:57:06.616802+00:00
+[2025-04-13T10:00:00.526+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:_PythonDecoratedOperator
+[2025-04-13T10:00:00.571+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-13T10:00:00.581+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-13T10:00:00.582+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

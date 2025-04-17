@@ -1,0 +1,34 @@
+[2025-03-21T21:38:21.980+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-21T21:38:21.986+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_yf_to_gcs scheduled__2025-03-20T00:00:00+00:00 [queued]>
+[2025-03-21T21:38:21.989+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_yf_to_gcs scheduled__2025-03-20T00:00:00+00:00 [queued]>
+[2025-03-21T21:38:21.989+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-21T21:38:21.993+0800] {taskinstance.py:2890} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_yf_to_gcs> on 2025-03-20 00:00:00+00:00
+[2025-03-21T21:38:21.994+0800] {standard_task_runner.py:72} INFO - Started process 52043 to run task
+[2025-03-21T21:38:21.997+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'upload_yf_to_gcs', 'scheduled__2025-03-20T00:00:00+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpmtv31olg']
+[2025-03-21T21:38:21.998+0800] {standard_task_runner.py:105} INFO - Job 58: Subtask upload_yf_to_gcs
+[2025-03-21T21:38:22.012+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.upload_yf_to_gcs scheduled__2025-03-20T00:00:00+00:00 [running]> on host ervins-air-2
+[2025-03-21T21:38:22.040+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='upload_yf_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-03-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-20T00:00:00+00:00'
+[2025-03-21T21:38:22.040+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-21T21:38:22.041+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-21T21:38:22.041+0800] {logging_mixin.py:190} INFO - Current task name:upload_yf_to_gcs state:running start_date:2025-03-21 13:38:21.986908+00:00
+[2025-03-21T21:38:22.041+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-03-21T21:38:22.041+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-21T21:38:22.042+0800] {connection.py:277} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-03-21T21:38:22.044+0800] {base.py:84} INFO - Retrieving connection 'google_cloud_default'
+[2025-03-21T21:38:23.690+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/MSFT_yf_last24hours.csv uploaded to yf/MSFT_yf_last24hours.csv in my-data-is3107 bucket
+[2025-03-21T21:38:23.690+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-21T21:38:24.044+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-21T21:38:24.045+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/NVDA_yf_last24hours.csv uploaded to yf/NVDA_yf_last24hours.csv in my-data-is3107 bucket
+[2025-03-21T21:38:24.046+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-21T21:38:25.223+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-21T21:38:25.225+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-yf/AAPL_yf_last24hours.csv uploaded to yf/AAPL_yf_last24hours.csv in my-data-is3107 bucket
+[2025-03-21T21:38:25.225+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-03-21T21:38:25.237+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-21T21:38:25.238+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=upload_yf_to_gcs, run_id=scheduled__2025-03-20T00:00:00+00:00, execution_date=20250320T000000, start_date=20250321T133821, end_date=20250321T133825
+[2025-03-21T21:38:25.249+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-21T21:38:25.249+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-21T21:38:25.250+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-03-21 13:31:29.336481+00:00
+[2025-03-21T21:38:25.250+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:LocalFilesystemToGCSOperator
+[2025-03-21T21:38:25.256+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-21T21:38:25.267+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-21T21:38:25.268+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,7 @@
+[2025-03-30T10:42:03.076+0800] {processor.py:186} INFO - Started process (PID=3560) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-03-30T10:42:03.077+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2025-03-30T10:42:03.077+0800] {logging_mixin.py:190} INFO - [2025-03-30T10:42:03.077+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-03-30T10:42:03.130+0800] {processor.py:925} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-03-30T10:42:03.181+0800] {logging_mixin.py:190} INFO - [2025-03-30T10:42:03.181+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-30T10:42:03.187+0800] {logging_mixin.py:190} INFO - [2025-03-30T10:42:03.187+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2025-03-30T10:42:03.199+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.124 seconds

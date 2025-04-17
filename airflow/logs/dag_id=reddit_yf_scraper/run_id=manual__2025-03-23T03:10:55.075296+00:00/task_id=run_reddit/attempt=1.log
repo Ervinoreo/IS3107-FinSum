@@ -1,0 +1,845 @@
+[2025-03-23T11:57:25.706+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-23T11:57:25.715+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-23T03:10:55.075296+00:00 [queued]>
+[2025-03-23T11:57:25.719+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-23T03:10:55.075296+00:00 [queued]>
+[2025-03-23T11:57:25.719+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-23T11:57:25.724+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_reddit> on 2025-03-23 03:10:55.075296+00:00
+[2025-03-23T11:57:25.726+0800] {standard_task_runner.py:72} INFO - Started process 1335 to run task
+[2025-03-23T11:57:25.730+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_reddit', 'manual__2025-03-23T03:10:55.075296+00:00', '--job-id', '138', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpv562wau9']
+[2025-03-23T11:57:25.731+0800] {standard_task_runner.py:105} INFO - Job 138: Subtask run_reddit
+[2025-03-23T11:57:25.753+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-23T03:10:55.075296+00:00 [running]> on host ervins-air-2
+[2025-03-23T11:57:25.788+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_reddit' AIRFLOW_CTX_EXECUTION_DATE='2025-03-23T03:10:55.075296+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-23T03:10:55.075296+00:00'
+[2025-03-23T11:57:25.788+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-23T11:57:25.789+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-23T11:57:25.789+0800] {logging_mixin.py:190} INFO - Current task name:run_reddit state:running start_date:2025-03-23 03:57:25.715779+00:00
+[2025-03-23T11:57:25.789+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-03-23T11:57:25.789+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-23T11:57:26.550+0800] {patcher.py:346} INFO - patching driver executable /Users/ervinyeoh/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2025-03-23T12:09:04.734+0800] {job.py:229} INFO - Heartbeat recovered after 699.16 seconds
+[2025-03-23T12:09:09.189+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AAPL...
+[2025-03-23T12:09:13.044+0800] {logging_mixin.py:190} INFO - ✅ All posts for AAPL have been processed.
+[2025-03-23T12:09:13.049+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NVDA...
+[2025-03-23T12:09:17.254+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for NVDA successfully!
+[2025-03-23T12:09:21.128+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:09:23.158+0800] {logging_mixin.py:190} INFO - ✅ All posts for NVDA have been processed.
+[2025-03-23T12:09:23.224+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/NVDA_reddit_last24hours.csv
+[2025-03-23T12:09:23.224+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MSFT...
+[2025-03-23T12:09:26.558+0800] {logging_mixin.py:190} INFO - ✅ All posts for MSFT have been processed.
+[2025-03-23T12:09:26.560+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AMZN...
+[2025-03-23T12:09:30.087+0800] {logging_mixin.py:190} INFO - ✅ All posts for AMZN have been processed.
+[2025-03-23T12:09:30.090+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GOOGL...
+[2025-03-23T12:09:35.397+0800] {logging_mixin.py:190} INFO - ✅ All posts for GOOGL have been processed.
+[2025-03-23T12:09:35.400+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GOOG...
+[2025-03-23T12:09:38.596+0800] {logging_mixin.py:190} INFO - ✅ All posts for GOOG have been processed.
+[2025-03-23T12:09:38.597+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for META...
+[2025-03-23T12:09:43.609+0800] {logging_mixin.py:190} INFO - ✅ All posts for META have been processed.
+[2025-03-23T12:09:43.612+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TSLA...
+[2025-03-23T12:09:52.105+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for TSLA successfully!
+[2025-03-23T12:09:56.022+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:09:58.905+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for TSLA successfully!
+[2025-03-23T12:10:02.847+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:10:04.864+0800] {logging_mixin.py:190} INFO - ✅ All posts for TSLA have been processed.
+[2025-03-23T12:10:04.892+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/TSLA_reddit_last24hours.csv
+[2025-03-23T12:10:04.893+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AVGO...
+[2025-03-23T12:10:09.257+0800] {logging_mixin.py:190} INFO - ✅ All posts for AVGO have been processed.
+[2025-03-23T12:10:09.260+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BRK-B...
+[2025-03-23T12:10:14.155+0800] {logging_mixin.py:190} INFO - ✅ All posts for BRK-B have been processed.
+[2025-03-23T12:10:14.157+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for WMT...
+[2025-03-23T12:10:17.654+0800] {logging_mixin.py:190} INFO - ✅ All posts for WMT have been processed.
+[2025-03-23T12:10:17.676+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for LLY...
+[2025-03-23T12:10:21.484+0800] {logging_mixin.py:190} INFO - ✅ All posts for LLY have been processed.
+[2025-03-23T12:10:21.507+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for JPM...
+[2025-03-23T12:10:25.918+0800] {logging_mixin.py:190} INFO - ✅ All posts for JPM have been processed.
+[2025-03-23T12:10:25.919+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for V...
+[2025-03-23T12:10:30.219+0800] {logging_mixin.py:190} INFO - ✅ All posts for V have been processed.
+[2025-03-23T12:10:30.224+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MA...
+[2025-03-23T12:10:34.511+0800] {logging_mixin.py:190} INFO - ✅ All posts for MA have been processed.
+[2025-03-23T12:10:34.514+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ORCL...
+[2025-03-23T12:10:37.018+0800] {logging_mixin.py:190} INFO - ✅ All posts for ORCL have been processed.
+[2025-03-23T12:10:37.020+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for XOM...
+[2025-03-23T12:10:42.163+0800] {logging_mixin.py:190} INFO - ✅ All posts for XOM have been processed.
+[2025-03-23T12:10:42.164+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for UNH...
+[2025-03-23T12:10:47.249+0800] {logging_mixin.py:190} INFO - ✅ All posts for UNH have been processed.
+[2025-03-23T12:10:47.251+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for COST...
+[2025-03-23T12:10:52.365+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for COST successfully!
+[2025-03-23T12:10:56.144+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:10:59.064+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for COST successfully!
+[2025-03-23T12:11:02.868+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:11:04.917+0800] {logging_mixin.py:190} INFO - ✅ All posts for COST have been processed.
+[2025-03-23T12:11:04.939+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/COST_reddit_last24hours.csv
+[2025-03-23T12:11:04.940+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PG...
+[2025-03-23T12:11:09.305+0800] {logging_mixin.py:190} INFO - ✅ All posts for PG have been processed.
+[2025-03-23T12:11:09.308+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for HD...
+[2025-03-23T12:11:13.755+0800] {logging_mixin.py:190} INFO - ✅ All posts for HD have been processed.
+[2025-03-23T12:11:13.758+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NFLX...
+[2025-03-23T12:11:18.716+0800] {logging_mixin.py:190} INFO - ✅ All posts for NFLX have been processed.
+[2025-03-23T12:11:18.719+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for JNJ...
+[2025-03-23T12:11:25.104+0800] {logging_mixin.py:190} INFO - ✅ All posts for JNJ have been processed.
+[2025-03-23T12:11:25.106+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BAC...
+[2025-03-23T12:11:30.105+0800] {logging_mixin.py:190} INFO - ✅ All posts for BAC have been processed.
+[2025-03-23T12:11:30.107+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CRM...
+[2025-03-23T12:11:33.455+0800] {logging_mixin.py:190} INFO - ✅ All posts for CRM have been processed.
+[2025-03-23T12:11:33.458+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ABBV...
+[2025-03-23T12:11:37.067+0800] {logging_mixin.py:190} INFO - ✅ All posts for ABBV have been processed.
+[2025-03-23T12:11:37.069+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for KO...
+[2025-03-23T12:11:41.997+0800] {logging_mixin.py:190} INFO - ✅ All posts for KO have been processed.
+[2025-03-23T12:11:42.000+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TMUS...
+[2025-03-23T12:11:45.162+0800] {logging_mixin.py:190} INFO - ✅ All posts for TMUS have been processed.
+[2025-03-23T12:11:45.167+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CVX...
+[2025-03-23T12:11:49.385+0800] {logging_mixin.py:190} INFO - ✅ All posts for CVX have been processed.
+[2025-03-23T12:11:49.390+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MRK...
+[2025-03-23T12:11:52.654+0800] {logging_mixin.py:190} INFO - ✅ All posts for MRK have been processed.
+[2025-03-23T12:11:52.655+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for WFC...
+[2025-03-23T12:11:55.947+0800] {logging_mixin.py:190} INFO - ✅ All posts for WFC have been processed.
+[2025-03-23T12:11:55.950+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CSCO...
+[2025-03-23T12:11:59.184+0800] {logging_mixin.py:190} INFO - ✅ All posts for CSCO have been processed.
+[2025-03-23T12:11:59.186+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ACN...
+[2025-03-23T12:12:05.077+0800] {logging_mixin.py:190} INFO - ✅ All posts for ACN have been processed.
+[2025-03-23T12:12:05.079+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NOW...
+[2025-03-23T12:12:10.248+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for NOW successfully!
+[2025-03-23T12:12:14.145+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:12:17.932+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for NOW successfully!
+[2025-03-23T12:12:21.656+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:12:24.486+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for NOW successfully!
+[2025-03-23T12:12:28.292+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:12:30.318+0800] {logging_mixin.py:190} INFO - ✅ All posts for NOW have been processed.
+[2025-03-23T12:12:30.349+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/NOW_reddit_last24hours.csv
+[2025-03-23T12:12:30.350+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AXP...
+[2025-03-23T12:12:34.647+0800] {logging_mixin.py:190} INFO - ✅ All posts for AXP have been processed.
+[2025-03-23T12:12:34.649+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MCD...
+[2025-03-23T12:12:37.944+0800] {logging_mixin.py:190} INFO - ✅ All posts for MCD have been processed.
+[2025-03-23T12:12:37.947+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PEP...
+[2025-03-23T12:12:41.496+0800] {logging_mixin.py:190} INFO - ✅ All posts for PEP have been processed.
+[2025-03-23T12:12:41.498+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BX...
+[2025-03-23T12:12:45.647+0800] {logging_mixin.py:190} INFO - ✅ All posts for BX have been processed.
+[2025-03-23T12:12:45.648+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for IBM...
+[2025-03-23T12:12:50.647+0800] {logging_mixin.py:190} INFO - ✅ All posts for IBM have been processed.
+[2025-03-23T12:12:50.649+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DIS...
+[2025-03-23T12:12:54.642+0800] {logging_mixin.py:190} INFO - ✅ All posts for DIS have been processed.
+[2025-03-23T12:12:54.645+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for LIN...
+[2025-03-23T12:12:59.013+0800] {logging_mixin.py:190} INFO - ✅ All posts for LIN have been processed.
+[2025-03-23T12:12:59.017+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TMO...
+[2025-03-23T12:13:04.045+0800] {logging_mixin.py:190} INFO - ✅ All posts for TMO have been processed.
+[2025-03-23T12:13:04.048+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MS...
+[2025-03-23T12:13:08.971+0800] {logging_mixin.py:190} INFO - ✅ All posts for MS have been processed.
+[2025-03-23T12:13:08.974+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ABT...
+[2025-03-23T12:13:12.088+0800] {logging_mixin.py:190} INFO - ✅ All posts for ABT have been processed.
+[2025-03-23T12:13:12.090+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ADBE...
+[2025-03-23T12:13:16.292+0800] {logging_mixin.py:190} INFO - ✅ All posts for ADBE have been processed.
+[2025-03-23T12:13:16.295+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AMD...
+[2025-03-23T12:13:21.267+0800] {logging_mixin.py:190} INFO - ✅ All posts for AMD have been processed.
+[2025-03-23T12:13:21.272+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PM...
+[2025-03-23T12:13:26.437+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for PM successfully!
+[2025-03-23T12:13:30.279+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:13:32.293+0800] {logging_mixin.py:190} INFO - ✅ All posts for PM have been processed.
+[2025-03-23T12:13:32.305+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/PM_reddit_last24hours.csv
+[2025-03-23T12:13:32.306+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ISRG...
+[2025-03-23T12:13:36.585+0800] {logging_mixin.py:190} INFO - ✅ All posts for ISRG have been processed.
+[2025-03-23T12:13:36.589+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PLTR...
+[2025-03-23T12:13:40.194+0800] {logging_mixin.py:190} INFO - ✅ All posts for PLTR have been processed.
+[2025-03-23T12:13:40.196+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GE...
+[2025-03-23T12:13:44.447+0800] {logging_mixin.py:190} INFO - ✅ All posts for GE have been processed.
+[2025-03-23T12:13:44.449+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for INTU...
+[2025-03-23T12:13:49.184+0800] {logging_mixin.py:190} INFO - ✅ All posts for INTU have been processed.
+[2025-03-23T12:13:49.186+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GS...
+[2025-03-23T12:13:53.564+0800] {logging_mixin.py:190} INFO - ✅ All posts for GS have been processed.
+[2025-03-23T12:13:53.568+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CAT...
+[2025-03-23T12:13:58.581+0800] {logging_mixin.py:190} INFO - ✅ All posts for CAT have been processed.
+[2025-03-23T12:13:58.584+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TXN...
+[2025-03-23T12:14:03.579+0800] {logging_mixin.py:190} INFO - ✅ All posts for TXN have been processed.
+[2025-03-23T12:14:03.583+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for QCOM...
+[2025-03-23T12:14:08.587+0800] {logging_mixin.py:190} INFO - ✅ All posts for QCOM have been processed.
+[2025-03-23T12:14:08.590+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for VZ...
+[2025-03-23T12:14:11.692+0800] {logging_mixin.py:190} INFO - ✅ All posts for VZ have been processed.
+[2025-03-23T12:14:11.695+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BKNG...
+[2025-03-23T12:14:15.100+0800] {logging_mixin.py:190} INFO - ✅ All posts for BKNG have been processed.
+[2025-03-23T12:14:15.102+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DHR...
+[2025-03-23T12:14:20.152+0800] {logging_mixin.py:190} INFO - ✅ All posts for DHR have been processed.
+[2025-03-23T12:14:20.155+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for T...
+[2025-03-23T12:14:25.042+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for T successfully!
+[2025-03-23T12:14:28.825+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:14:30.863+0800] {logging_mixin.py:190} INFO - ✅ All posts for T have been processed.
+[2025-03-23T12:14:30.873+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/T_reddit_last24hours.csv
+[2025-03-23T12:14:30.873+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BLK...
+[2025-03-23T12:14:34.432+0800] {logging_mixin.py:190} INFO - ✅ All posts for BLK have been processed.
+[2025-03-23T12:14:34.434+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for RTX...
+[2025-03-23T12:14:38.024+0800] {logging_mixin.py:190} INFO - ✅ All posts for RTX have been processed.
+[2025-03-23T12:14:38.027+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SPGI...
+[2025-03-23T12:14:41.492+0800] {logging_mixin.py:190} INFO - ✅ All posts for SPGI have been processed.
+[2025-03-23T12:14:41.495+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PFE...
+[2025-03-23T12:14:45.502+0800] {logging_mixin.py:190} INFO - ✅ All posts for PFE have been processed.
+[2025-03-23T12:14:45.504+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for HON...
+[2025-03-23T12:14:49.803+0800] {logging_mixin.py:190} INFO - ✅ All posts for HON have been processed.
+[2025-03-23T12:14:49.805+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NEE...
+[2025-03-23T12:14:53.882+0800] {logging_mixin.py:190} INFO - ✅ All posts for NEE have been processed.
+[2025-03-23T12:14:53.884+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CMCSA...
+[2025-03-23T12:14:58.881+0800] {logging_mixin.py:190} INFO - ✅ All posts for CMCSA have been processed.
+[2025-03-23T12:14:58.884+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ANET...
+[2025-03-23T12:15:02.045+0800] {logging_mixin.py:190} INFO - ✅ All posts for ANET have been processed.
+[2025-03-23T12:15:02.046+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AMGN...
+[2025-03-23T12:15:07.052+0800] {logging_mixin.py:190} INFO - ✅ All posts for AMGN have been processed.
+[2025-03-23T12:15:07.055+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PGR...
+[2025-03-23T12:15:10.581+0800] {logging_mixin.py:190} INFO - ✅ All posts for PGR have been processed.
+[2025-03-23T12:15:10.583+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for LOW...
+[2025-03-23T12:15:16.601+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for LOW successfully!
+[2025-03-23T12:15:20.390+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:15:22.432+0800] {logging_mixin.py:190} INFO - ✅ All posts for LOW have been processed.
+[2025-03-23T12:15:22.442+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/LOW_reddit_last24hours.csv
+[2025-03-23T12:15:22.442+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SYK...
+[2025-03-23T12:15:27.415+0800] {logging_mixin.py:190} INFO - ✅ All posts for SYK have been processed.
+[2025-03-23T12:15:27.418+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for UNP...
+[2025-03-23T12:15:31.642+0800] {logging_mixin.py:190} INFO - ✅ All posts for UNP have been processed.
+[2025-03-23T12:15:31.644+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TJX...
+[2025-03-23T12:15:35.782+0800] {logging_mixin.py:190} INFO - ✅ All posts for TJX have been processed.
+[2025-03-23T12:15:35.784+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for KKR...
+[2025-03-23T12:15:39.225+0800] {logging_mixin.py:190} INFO - ✅ All posts for KKR have been processed.
+[2025-03-23T12:15:39.232+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SCHW...
+[2025-03-23T12:15:43.557+0800] {logging_mixin.py:190} INFO - ✅ All posts for SCHW have been processed.
+[2025-03-23T12:15:43.560+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ETN...
+[2025-03-23T12:15:48.638+0800] {logging_mixin.py:190} INFO - ✅ All posts for ETN have been processed.
+[2025-03-23T12:15:48.642+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AMAT...
+[2025-03-23T12:15:53.723+0800] {logging_mixin.py:190} INFO - ✅ All posts for AMAT have been processed.
+[2025-03-23T12:15:53.726+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BA...
+[2025-03-23T12:15:58.650+0800] {logging_mixin.py:190} INFO - ✅ All posts for BA have been processed.
+[2025-03-23T12:15:58.653+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BSX...
+[2025-03-23T12:16:02.906+0800] {logging_mixin.py:190} INFO - ✅ All posts for BSX have been processed.
+[2025-03-23T12:16:02.909+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for C...
+[2025-03-23T12:16:07.894+0800] {logging_mixin.py:190} INFO - ✅ All posts for C have been processed.
+[2025-03-23T12:16:07.896+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for UBER...
+[2025-03-23T12:16:12.116+0800] {logging_mixin.py:190} INFO - ✅ All posts for UBER have been processed.
+[2025-03-23T12:16:12.119+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for COP...
+[2025-03-23T12:16:15.545+0800] {logging_mixin.py:190} INFO - ✅ All posts for COP have been processed.
+[2025-03-23T12:16:15.548+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PANW...
+[2025-03-23T12:16:18.816+0800] {logging_mixin.py:190} INFO - ✅ All posts for PANW have been processed.
+[2025-03-23T12:16:18.817+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ADP...
+[2025-03-23T12:16:23.944+0800] {logging_mixin.py:190} INFO - ✅ All posts for ADP have been processed.
+[2025-03-23T12:16:23.947+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DE...
+[2025-03-23T12:16:28.920+0800] {logging_mixin.py:190} INFO - ✅ All posts for DE have been processed.
+[2025-03-23T12:16:28.922+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for FI...
+[2025-03-23T12:16:33.432+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for FI successfully!
+[2025-03-23T12:16:37.255+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:16:39.283+0800] {logging_mixin.py:190} INFO - ✅ All posts for FI have been processed.
+[2025-03-23T12:16:39.291+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/FI_reddit_last24hours.csv
+[2025-03-23T12:16:39.292+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BMY...
+[2025-03-23T12:16:44.251+0800] {logging_mixin.py:190} INFO - ✅ All posts for BMY have been processed.
+[2025-03-23T12:16:44.254+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for LMT...
+[2025-03-23T12:16:48.568+0800] {logging_mixin.py:190} INFO - ✅ All posts for LMT have been processed.
+[2025-03-23T12:16:48.571+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GILD...
+[2025-03-23T12:16:52.842+0800] {logging_mixin.py:190} INFO - ✅ All posts for GILD have been processed.
+[2025-03-23T12:16:52.845+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NKE...
+[2025-03-23T12:16:57.856+0800] {logging_mixin.py:190} INFO - ✅ All posts for NKE have been processed.
+[2025-03-23T12:16:57.858+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CB...
+[2025-03-23T12:17:02.891+0800] {logging_mixin.py:190} INFO - ✅ All posts for CB have been processed.
+[2025-03-23T12:17:02.894+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for UPS...
+[2025-03-23T12:17:07.138+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for UPS successfully!
+[2025-03-23T12:17:10.972+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:17:13.838+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for UPS successfully!
+[2025-03-23T12:17:17.628+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:17:20.469+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for UPS successfully!
+[2025-03-23T12:17:24.240+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:17:27.269+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for UPS successfully!
+[2025-03-23T12:17:31.039+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:17:34.872+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for UPS successfully!
+[2025-03-23T12:17:38.686+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:17:41.703+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 6 for UPS successfully!
+[2025-03-23T12:17:45.490+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:17:47.516+0800] {logging_mixin.py:190} INFO - ✅ All posts for UPS have been processed.
+[2025-03-23T12:17:47.525+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/UPS_reddit_last24hours.csv
+[2025-03-23T12:17:47.526+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ADI...
+[2025-03-23T12:17:51.840+0800] {logging_mixin.py:190} INFO - ✅ All posts for ADI have been processed.
+[2025-03-23T12:17:51.842+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MMC...
+[2025-03-23T12:17:56.144+0800] {logging_mixin.py:190} INFO - ✅ All posts for MMC have been processed.
+[2025-03-23T12:17:56.146+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MDT...
+[2025-03-23T12:17:59.686+0800] {logging_mixin.py:190} INFO - ✅ All posts for MDT have been processed.
+[2025-03-23T12:17:59.700+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for VRTX...
+[2025-03-23T12:18:04.050+0800] {logging_mixin.py:190} INFO - ✅ All posts for VRTX have been processed.
+[2025-03-23T12:18:04.052+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MU...
+[2025-03-23T12:18:10.596+0800] {logging_mixin.py:190} INFO - ✅ All posts for MU have been processed.
+[2025-03-23T12:18:10.599+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SBUX...
+[2025-03-23T12:18:13.903+0800] {logging_mixin.py:190} INFO - ✅ All posts for SBUX have been processed.
+[2025-03-23T12:18:13.905+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PLD...
+[2025-03-23T12:18:18.342+0800] {logging_mixin.py:190} INFO - ✅ All posts for PLD have been processed.
+[2025-03-23T12:18:18.344+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GEV...
+[2025-03-23T12:18:21.615+0800] {logging_mixin.py:190} INFO - ✅ All posts for GEV have been processed.
+[2025-03-23T12:18:21.616+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for LRCX...
+[2025-03-23T12:18:25.164+0800] {logging_mixin.py:190} INFO - ✅ All posts for LRCX have been processed.
+[2025-03-23T12:18:25.165+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MO...
+[2025-03-23T12:18:28.416+0800] {logging_mixin.py:190} INFO - ✅ All posts for MO have been processed.
+[2025-03-23T12:18:28.418+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SO...
+[2025-03-23T12:18:33.446+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for SO successfully!
+[2025-03-23T12:18:37.214+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:18:40.035+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for SO successfully!
+[2025-03-23T12:18:43.862+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:18:46.695+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for SO successfully!
+[2025-03-23T12:18:50.484+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:18:52.506+0800] {logging_mixin.py:190} INFO - ✅ All posts for SO have been processed.
+[2025-03-23T12:18:52.515+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/SO_reddit_last24hours.csv
+[2025-03-23T12:18:52.516+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for EQIX...
+[2025-03-23T12:18:57.032+0800] {logging_mixin.py:190} INFO - ✅ All posts for EQIX have been processed.
+[2025-03-23T12:18:57.034+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CRWD...
+[2025-03-23T12:19:01.326+0800] {logging_mixin.py:190} INFO - ✅ All posts for CRWD have been processed.
+[2025-03-23T12:19:01.329+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PYPL...
+[2025-03-23T12:19:04.746+0800] {logging_mixin.py:190} INFO - ✅ All posts for PYPL have been processed.
+[2025-03-23T12:19:04.748+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SHW...
+[2025-03-23T12:19:09.849+0800] {logging_mixin.py:190} INFO - ✅ All posts for SHW have been processed.
+[2025-03-23T12:19:09.851+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ICE...
+[2025-03-23T12:19:14.652+0800] {logging_mixin.py:190} INFO - ✅ All posts for ICE have been processed.
+[2025-03-23T12:19:14.656+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CME...
+[2025-03-23T12:19:19.458+0800] {logging_mixin.py:190} INFO - ✅ All posts for CME have been processed.
+[2025-03-23T12:19:19.461+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AMT...
+[2025-03-23T12:19:23.831+0800] {logging_mixin.py:190} INFO - ✅ All posts for AMT have been processed.
+[2025-03-23T12:19:23.833+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for APH...
+[2025-03-23T12:19:28.139+0800] {logging_mixin.py:190} INFO - ✅ All posts for APH have been processed.
+[2025-03-23T12:19:28.142+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ELV...
+[2025-03-23T12:19:33.141+0800] {logging_mixin.py:190} INFO - ✅ All posts for ELV have been processed.
+[2025-03-23T12:19:33.145+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TT...
+[2025-03-23T12:19:37.501+0800] {logging_mixin.py:190} INFO - ✅ All posts for TT have been processed.
+[2025-03-23T12:19:37.503+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MCO...
+[2025-03-23T12:19:42.545+0800] {logging_mixin.py:190} INFO - ✅ All posts for MCO have been processed.
+[2025-03-23T12:19:42.548+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CMG...
+[2025-03-23T12:19:46.908+0800] {logging_mixin.py:190} INFO - ✅ All posts for CMG have been processed.
+[2025-03-23T12:19:46.910+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for INTC...
+[2025-03-23T12:19:51.198+0800] {logging_mixin.py:190} INFO - ✅ All posts for INTC have been processed.
+[2025-03-23T12:19:51.201+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for KLAC...
+[2025-03-23T12:19:55.434+0800] {logging_mixin.py:190} INFO - ✅ All posts for KLAC have been processed.
+[2025-03-23T12:19:55.436+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ABNB...
+[2025-03-23T12:19:59.729+0800] {logging_mixin.py:190} INFO - ✅ All posts for ABNB have been processed.
+[2025-03-23T12:19:59.732+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DUK...
+[2025-03-23T12:20:04.096+0800] {logging_mixin.py:190} INFO - ✅ All posts for DUK have been processed.
+[2025-03-23T12:20:04.098+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PH...
+[2025-03-23T12:20:09.230+0800] {logging_mixin.py:190} INFO - ✅ All posts for PH have been processed.
+[2025-03-23T12:20:09.233+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CDNS...
+[2025-03-23T12:20:12.329+0800] {logging_mixin.py:190} INFO - ✅ All posts for CDNS have been processed.
+[2025-03-23T12:20:12.330+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for WM...
+[2025-03-23T12:20:16.681+0800] {logging_mixin.py:190} INFO - ✅ All posts for WM have been processed.
+[2025-03-23T12:20:16.684+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DELL...
+[2025-03-23T12:20:21.631+0800] {logging_mixin.py:190} INFO - ✅ All posts for DELL have been processed.
+[2025-03-23T12:20:21.634+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MDLZ...
+[2025-03-23T12:20:25.152+0800] {logging_mixin.py:190} INFO - ✅ All posts for MDLZ have been processed.
+[2025-03-23T12:20:25.154+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MAR...
+[2025-03-23T12:20:28.708+0800] {logging_mixin.py:190} INFO - ✅ All posts for MAR have been processed.
+[2025-03-23T12:20:28.710+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MSI...
+[2025-03-23T12:20:33.890+0800] {logging_mixin.py:190} INFO - ✅ All posts for MSI have been processed.
+[2025-03-23T12:20:33.893+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for WELL...
+[2025-03-23T12:20:39.811+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for WELL successfully!
+[2025-03-23T12:20:43.584+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:20:46.681+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for WELL successfully!
+[2025-03-23T12:20:50.446+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:20:53.457+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for WELL successfully!
+[2025-03-23T12:20:57.244+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:20:59.261+0800] {logging_mixin.py:190} INFO - ✅ All posts for WELL have been processed.
+[2025-03-23T12:20:59.281+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/WELL_reddit_last24hours.csv
+[2025-03-23T12:20:59.281+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AON...
+[2025-03-23T12:21:02.419+0800] {logging_mixin.py:190} INFO - ✅ All posts for AON have been processed.
+[2025-03-23T12:21:02.424+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for REGN...
+[2025-03-23T12:21:06.008+0800] {logging_mixin.py:190} INFO - ✅ All posts for REGN have been processed.
+[2025-03-23T12:21:06.010+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CI...
+[2025-03-23T12:21:10.480+0800] {logging_mixin.py:190} INFO - ✅ All posts for CI have been processed.
+[2025-03-23T12:21:10.482+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for HCA...
+[2025-03-23T12:21:14.948+0800] {logging_mixin.py:190} INFO - ✅ All posts for HCA have been processed.
+[2025-03-23T12:21:14.951+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PNC...
+[2025-03-23T12:21:20.023+0800] {logging_mixin.py:190} INFO - ✅ All posts for PNC have been processed.
+[2025-03-23T12:21:20.025+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ITW...
+[2025-03-23T12:21:24.329+0800] {logging_mixin.py:190} INFO - ✅ All posts for ITW have been processed.
+[2025-03-23T12:21:24.332+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SNPS...
+[2025-03-23T12:21:28.598+0800] {logging_mixin.py:190} INFO - ✅ All posts for SNPS have been processed.
+[2025-03-23T12:21:28.600+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CTAS...
+[2025-03-23T12:21:33.728+0800] {logging_mixin.py:190} INFO - ✅ All posts for CTAS have been processed.
+[2025-03-23T12:21:33.731+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CL...
+[2025-03-23T12:21:38.206+0800] {logging_mixin.py:190} INFO - ✅ All posts for CL have been processed.
+[2025-03-23T12:21:38.207+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for USB...
+[2025-03-23T12:21:41.381+0800] {logging_mixin.py:190} INFO - ✅ All posts for USB have been processed.
+[2025-03-23T12:21:41.382+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for FTNT...
+[2025-03-23T12:21:46.430+0800] {logging_mixin.py:190} INFO - ✅ All posts for FTNT have been processed.
+[2025-03-23T12:21:46.432+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ZTS...
+[2025-03-23T12:21:50.477+0800] {logging_mixin.py:190} INFO - ✅ All posts for ZTS have been processed.
+[2025-03-23T12:21:50.479+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MCK...
+[2025-03-23T12:21:53.734+0800] {logging_mixin.py:190} INFO - ✅ All posts for MCK have been processed.
+[2025-03-23T12:21:53.736+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GD...
+[2025-03-23T12:21:58.048+0800] {logging_mixin.py:190} INFO - ✅ All posts for GD have been processed.
+[2025-03-23T12:21:58.050+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TDG...
+[2025-03-23T12:22:02.442+0800] {logging_mixin.py:190} INFO - ✅ All posts for TDG have been processed.
+[2025-03-23T12:22:02.444+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CEG...
+[2025-03-23T12:22:05.699+0800] {logging_mixin.py:190} INFO - ✅ All posts for CEG have been processed.
+[2025-03-23T12:22:05.703+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AJG...
+[2025-03-23T12:22:10.037+0800] {logging_mixin.py:190} INFO - ✅ All posts for AJG have been processed.
+[2025-03-23T12:22:10.039+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for EMR...
+[2025-03-23T12:22:14.303+0800] {logging_mixin.py:190} INFO - ✅ All posts for EMR have been processed.
+[2025-03-23T12:22:14.306+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MMM...
+[2025-03-23T12:22:17.970+0800] {logging_mixin.py:190} INFO - ✅ All posts for MMM have been processed.
+[2025-03-23T12:22:17.972+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ORLY...
+[2025-03-23T12:22:22.447+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for ORLY successfully!
+[2025-03-23T12:22:26.215+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:22:29.197+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for ORLY successfully!
+[2025-03-23T12:22:32.976+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:22:36.005+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for ORLY successfully!
+[2025-03-23T12:22:39.783+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:22:42.621+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for ORLY successfully!
+[2025-03-23T12:22:46.406+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:22:50.144+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for ORLY successfully!
+[2025-03-23T12:22:53.857+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:22:55.886+0800] {logging_mixin.py:190} INFO - ✅ All posts for ORLY have been processed.
+[2025-03-23T12:22:55.904+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/ORLY_reddit_last24hours.csv
+[2025-03-23T12:22:55.904+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NOC...
+[2025-03-23T12:23:00.175+0800] {logging_mixin.py:190} INFO - ✅ All posts for NOC have been processed.
+[2025-03-23T12:23:00.178+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for COF...
+[2025-03-23T12:23:04.490+0800] {logging_mixin.py:190} INFO - ✅ All posts for COF have been processed.
+[2025-03-23T12:23:04.493+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ECL...
+[2025-03-23T12:23:08.748+0800] {logging_mixin.py:190} INFO - ✅ All posts for ECL have been processed.
+[2025-03-23T12:23:08.750+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for EOG...
+[2025-03-23T12:23:13.164+0800] {logging_mixin.py:190} INFO - ✅ All posts for EOG have been processed.
+[2025-03-23T12:23:13.167+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for FDX...
+[2025-03-23T12:23:16.485+0800] {logging_mixin.py:190} INFO - ✅ All posts for FDX have been processed.
+[2025-03-23T12:23:16.488+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BDX...
+[2025-03-23T12:23:19.735+0800] {logging_mixin.py:190} INFO - ✅ All posts for BDX have been processed.
+[2025-03-23T12:23:19.737+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for APD...
+[2025-03-23T12:23:23.972+0800] {logging_mixin.py:190} INFO - ✅ All posts for APD have been processed.
+[2025-03-23T12:23:23.974+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for WMB...
+[2025-03-23T12:23:27.299+0800] {logging_mixin.py:190} INFO - ✅ All posts for WMB have been processed.
+[2025-03-23T12:23:27.300+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SPG...
+[2025-03-23T12:23:30.880+0800] {logging_mixin.py:190} INFO - ✅ All posts for SPG have been processed.
+[2025-03-23T12:23:30.882+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ADSK...
+[2025-03-23T12:23:34.648+0800] {logging_mixin.py:190} INFO - ✅ All posts for ADSK have been processed.
+[2025-03-23T12:23:34.649+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for RCL...
+[2025-03-23T12:23:37.984+0800] {logging_mixin.py:190} INFO - ✅ All posts for RCL have been processed.
+[2025-03-23T12:23:37.986+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for RSG...
+[2025-03-23T12:23:42.127+0800] {logging_mixin.py:190} INFO - ✅ All posts for RSG have been processed.
+[2025-03-23T12:23:42.129+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CARR...
+[2025-03-23T12:23:46.502+0800] {logging_mixin.py:190} INFO - ✅ All posts for CARR have been processed.
+[2025-03-23T12:23:46.504+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CSX...
+[2025-03-23T12:23:49.890+0800] {logging_mixin.py:190} INFO - ✅ All posts for CSX have been processed.
+[2025-03-23T12:23:49.892+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for HLT...
+[2025-03-23T12:23:54.019+0800] {logging_mixin.py:190} INFO - ✅ All posts for HLT have been processed.
+[2025-03-23T12:23:54.021+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DLR...
+[2025-03-23T12:23:58.463+0800] {logging_mixin.py:190} INFO - ✅ All posts for DLR have been processed.
+[2025-03-23T12:23:58.466+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TGT...
+[2025-03-23T12:24:02.678+0800] {logging_mixin.py:190} INFO - ✅ All posts for TGT have been processed.
+[2025-03-23T12:24:02.679+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for KMI...
+[2025-03-23T12:24:05.056+0800] {logging_mixin.py:190} INFO - ✅ All posts for KMI have been processed.
+[2025-03-23T12:24:05.058+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for OKE...
+[2025-03-23T12:24:08.594+0800] {logging_mixin.py:190} INFO - ✅ All posts for OKE have been processed.
+[2025-03-23T12:24:08.595+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TFC...
+[2025-03-23T12:24:12.933+0800] {logging_mixin.py:190} INFO - ✅ All posts for TFC have been processed.
+[2025-03-23T12:24:12.935+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AFL...
+[2025-03-23T12:24:17.361+0800] {logging_mixin.py:190} INFO - ✅ All posts for AFL have been processed.
+[2025-03-23T12:24:17.364+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GM...
+[2025-03-23T12:24:21.744+0800] {logging_mixin.py:190} INFO - ✅ All posts for GM have been processed.
+[2025-03-23T12:24:21.748+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BK...
+[2025-03-23T12:24:25.976+0800] {logging_mixin.py:190} INFO - ✅ All posts for BK have been processed.
+[2025-03-23T12:24:25.978+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ROP...
+[2025-03-23T12:24:29.207+0800] {logging_mixin.py:190} INFO - ✅ All posts for ROP have been processed.
+[2025-03-23T12:24:29.209+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MET...
+[2025-03-23T12:24:34.231+0800] {logging_mixin.py:190} INFO - ✅ All posts for MET have been processed.
+[2025-03-23T12:24:34.232+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CPRT...
+[2025-03-23T12:24:39.298+0800] {logging_mixin.py:190} INFO - ✅ All posts for CPRT have been processed.
+[2025-03-23T12:24:39.301+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for FCX...
+[2025-03-23T12:24:44.351+0800] {logging_mixin.py:190} INFO - ✅ All posts for FCX have been processed.
+[2025-03-23T12:24:44.353+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CVS...
+[2025-03-23T12:24:48.669+0800] {logging_mixin.py:190} INFO - ✅ All posts for CVS have been processed.
+[2025-03-23T12:24:48.673+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PCAR...
+[2025-03-23T12:24:52.991+0800] {logging_mixin.py:190} INFO - ✅ All posts for PCAR have been processed.
+[2025-03-23T12:24:52.993+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SRE...
+[2025-03-23T12:24:58.017+0800] {logging_mixin.py:190} INFO - ✅ All posts for SRE have been processed.
+[2025-03-23T12:24:58.020+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AZO...
+[2025-03-23T12:25:01.659+0800] {logging_mixin.py:190} INFO - ✅ All posts for AZO have been processed.
+[2025-03-23T12:25:01.661+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TRV...
+[2025-03-23T12:25:05.256+0800] {logging_mixin.py:190} INFO - ✅ All posts for TRV have been processed.
+[2025-03-23T12:25:05.260+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NXPI...
+[2025-03-23T12:25:09.562+0800] {logging_mixin.py:190} INFO - ✅ All posts for NXPI have been processed.
+[2025-03-23T12:25:09.563+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for JCI...
+[2025-03-23T12:25:13.945+0800] {logging_mixin.py:190} INFO - ✅ All posts for JCI have been processed.
+[2025-03-23T12:25:13.949+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GWW...
+[2025-03-23T12:25:19.128+0800] {logging_mixin.py:190} INFO - ✅ All posts for GWW have been processed.
+[2025-03-23T12:25:19.131+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NSC...
+[2025-03-23T12:25:23.519+0800] {logging_mixin.py:190} INFO - ✅ All posts for NSC have been processed.
+[2025-03-23T12:25:23.523+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PSA...
+[2025-03-23T12:25:27.782+0800] {logging_mixin.py:190} INFO - ✅ All posts for PSA have been processed.
+[2025-03-23T12:25:27.784+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for SLB...
+[2025-03-23T12:25:32.175+0800] {logging_mixin.py:190} INFO - ✅ All posts for SLB have been processed.
+[2025-03-23T12:25:32.177+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AMP...
+[2025-03-23T12:25:35.555+0800] {logging_mixin.py:190} INFO - ✅ All posts for AMP have been processed.
+[2025-03-23T12:25:35.557+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ALL...
+[2025-03-23T12:25:42.210+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for ALL successfully!
+[2025-03-23T12:25:46.001+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:25:48.845+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for ALL successfully!
+[2025-03-23T12:25:52.650+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:25:56.432+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for ALL successfully!
+[2025-03-23T12:26:00.191+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:26:02.204+0800] {logging_mixin.py:190} INFO - ✅ All posts for ALL have been processed.
+[2025-03-23T12:26:02.222+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/ALL_reddit_last24hours.csv
+[2025-03-23T12:26:02.223+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for FICO...
+[2025-03-23T12:26:07.243+0800] {logging_mixin.py:190} INFO - ✅ All posts for FICO have been processed.
+[2025-03-23T12:26:07.245+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MNST...
+[2025-03-23T12:26:12.283+0800] {logging_mixin.py:190} INFO - ✅ All posts for MNST have been processed.
+[2025-03-23T12:26:12.288+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PAYX...
+[2025-03-23T12:26:16.644+0800] {logging_mixin.py:190} INFO - ✅ All posts for PAYX have been processed.
+[2025-03-23T12:26:16.646+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CHTR...
+[2025-03-23T12:26:20.948+0800] {logging_mixin.py:190} INFO - ✅ All posts for CHTR have been processed.
+[2025-03-23T12:26:20.950+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AEP...
+[2025-03-23T12:26:23.401+0800] {logging_mixin.py:190} INFO - ✅ All posts for AEP have been processed.
+[2025-03-23T12:26:23.402+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ROST...
+[2025-03-23T12:26:27.640+0800] {logging_mixin.py:190} INFO - ✅ All posts for ROST have been processed.
+[2025-03-23T12:26:27.642+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PWR...
+[2025-03-23T12:26:31.247+0800] {logging_mixin.py:190} INFO - ✅ All posts for PWR have been processed.
+[2025-03-23T12:26:31.249+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CMI...
+[2025-03-23T12:26:35.680+0800] {logging_mixin.py:190} INFO - ✅ All posts for CMI have been processed.
+[2025-03-23T12:26:35.682+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AXON...
+[2025-03-23T12:26:40.087+0800] {logging_mixin.py:190} INFO - ✅ All posts for AXON have been processed.
+[2025-03-23T12:26:40.090+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for VST...
+[2025-03-23T12:26:42.495+0800] {logging_mixin.py:190} INFO - ✅ All posts for VST have been processed.
+[2025-03-23T12:26:42.497+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for URI...
+[2025-03-23T12:26:46.513+0800] {logging_mixin.py:190} INFO - ✅ All posts for URI have been processed.
+[2025-03-23T12:26:46.515+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MSCI...
+[2025-03-23T12:26:50.977+0800] {logging_mixin.py:190} INFO - ✅ All posts for MSCI have been processed.
+[2025-03-23T12:26:50.979+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for LULU...
+[2025-03-23T12:26:54.636+0800] {logging_mixin.py:190} INFO - ✅ All posts for LULU have been processed.
+[2025-03-23T12:26:54.637+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for O...
+[2025-03-23T12:26:58.930+0800] {logging_mixin.py:190} INFO - ✅ All posts for O have been processed.
+[2025-03-23T12:26:58.932+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PSX...
+[2025-03-23T12:27:02.975+0800] {logging_mixin.py:190} INFO - ✅ All posts for PSX have been processed.
+[2025-03-23T12:27:02.977+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AIG...
+[2025-03-23T12:27:06.609+0800] {logging_mixin.py:190} INFO - ✅ All posts for AIG have been processed.
+[2025-03-23T12:27:06.612+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for FANG...
+[2025-03-23T12:27:10.778+0800] {logging_mixin.py:190} INFO - ✅ All posts for FANG have been processed.
+[2025-03-23T12:27:10.780+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for D...
+[2025-03-23T12:27:15.080+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for D successfully!
+[2025-03-23T12:27:18.898+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:27:21.830+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for D successfully!
+[2025-03-23T12:27:25.605+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:27:27.643+0800] {logging_mixin.py:190} INFO - ✅ All posts for D have been processed.
+[2025-03-23T12:27:27.651+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/D_reddit_last24hours.csv
+[2025-03-23T12:27:27.651+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for HWM...
+[2025-03-23T12:27:31.922+0800] {logging_mixin.py:190} INFO - ✅ All posts for HWM have been processed.
+[2025-03-23T12:27:31.926+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DHI...
+[2025-03-23T12:27:35.094+0800] {logging_mixin.py:190} INFO - ✅ All posts for DHI have been processed.
+[2025-03-23T12:27:35.096+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for KR...
+[2025-03-23T12:27:39.372+0800] {logging_mixin.py:190} INFO - ✅ All posts for KR have been processed.
+[2025-03-23T12:27:39.375+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NDAQ...
+[2025-03-23T12:27:43.847+0800] {logging_mixin.py:190} INFO - ✅ All posts for NDAQ have been processed.
+[2025-03-23T12:27:43.850+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for OXY...
+[2025-03-23T12:27:50.112+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for OXY successfully!
+[2025-03-23T12:27:53.834+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:27:55.854+0800] {logging_mixin.py:190} INFO - ✅ All posts for OXY have been processed.
+[2025-03-23T12:27:55.884+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/OXY_reddit_last24hours.csv
+[2025-03-23T12:27:55.886+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for EW...
+[2025-03-23T12:28:00.256+0800] {logging_mixin.py:190} INFO - ✅ All posts for EW have been processed.
+[2025-03-23T12:28:00.258+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for COR...
+[2025-03-23T12:28:05.283+0800] {logging_mixin.py:190} INFO - ✅ All posts for COR have been processed.
+[2025-03-23T12:28:05.285+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for KDP...
+[2025-03-23T12:28:09.680+0800] {logging_mixin.py:190} INFO - ✅ All posts for KDP have been processed.
+[2025-03-23T12:28:09.682+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for FIS...
+[2025-03-23T12:28:15.118+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for FIS successfully!
+[2025-03-23T12:28:18.868+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:28:20.884+0800] {logging_mixin.py:190} INFO - ✅ All posts for FIS have been processed.
+[2025-03-23T12:28:20.894+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/FIS_reddit_last24hours.csv
+[2025-03-23T12:28:20.894+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for KMB...
+[2025-03-23T12:28:26.040+0800] {logging_mixin.py:190} INFO - ✅ All posts for KMB have been processed.
+[2025-03-23T12:28:26.042+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NEM...
+[2025-03-23T12:28:30.374+0800] {logging_mixin.py:190} INFO - ✅ All posts for NEM have been processed.
+[2025-03-23T12:28:30.378+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DFS...
+[2025-03-23T12:28:34.805+0800] {logging_mixin.py:190} INFO - ✅ All posts for DFS have been processed.
+[2025-03-23T12:28:34.818+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PCG...
+[2025-03-23T12:28:39.333+0800] {logging_mixin.py:190} INFO - ✅ All posts for PCG have been processed.
+[2025-03-23T12:28:39.337+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TEL...
+[2025-03-23T12:28:43.758+0800] {logging_mixin.py:190} INFO - ✅ All posts for TEL have been processed.
+[2025-03-23T12:28:43.761+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MPC...
+[2025-03-23T12:28:48.098+0800] {logging_mixin.py:190} INFO - ✅ All posts for MPC have been processed.
+[2025-03-23T12:28:48.101+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for FAST...
+[2025-03-23T12:28:52.551+0800] {logging_mixin.py:190} INFO - ✅ All posts for FAST have been processed.
+[2025-03-23T12:28:52.552+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AME...
+[2025-03-23T12:28:56.887+0800] {logging_mixin.py:190} INFO - ✅ All posts for AME have been processed.
+[2025-03-23T12:28:56.890+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PEG...
+[2025-03-23T12:29:00.904+0800] {logging_mixin.py:190} INFO - ✅ All posts for PEG have been processed.
+[2025-03-23T12:29:00.906+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for PRU...
+[2025-03-23T12:29:04.582+0800] {logging_mixin.py:190} INFO - ✅ All posts for PRU have been processed.
+[2025-03-23T12:29:04.586+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for KVUE...
+[2025-03-23T12:29:09.028+0800] {logging_mixin.py:190} INFO - ✅ All posts for KVUE have been processed.
+[2025-03-23T12:29:09.031+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for STZ...
+[2025-03-23T12:29:12.613+0800] {logging_mixin.py:190} INFO - ✅ All posts for STZ have been processed.
+[2025-03-23T12:29:12.616+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GLW...
+[2025-03-23T12:29:17.100+0800] {logging_mixin.py:190} INFO - ✅ All posts for GLW have been processed.
+[2025-03-23T12:29:17.102+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for LHX...
+[2025-03-23T12:29:21.556+0800] {logging_mixin.py:190} INFO - ✅ All posts for LHX have been processed.
+[2025-03-23T12:29:21.559+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GRMN...
+[2025-03-23T12:29:25.952+0800] {logging_mixin.py:190} INFO - ✅ All posts for GRMN have been processed.
+[2025-03-23T12:29:25.954+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BKR...
+[2025-03-23T12:29:29.670+0800] {logging_mixin.py:190} INFO - ✅ All posts for BKR have been processed.
+[2025-03-23T12:29:29.674+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CBRE...
+[2025-03-23T12:29:34.984+0800] {logging_mixin.py:190} INFO - ✅ All posts for CBRE have been processed.
+[2025-03-23T12:29:34.986+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CTVA...
+[2025-03-23T12:29:39.593+0800] {logging_mixin.py:190} INFO - ✅ All posts for CTVA have been processed.
+[2025-03-23T12:29:39.595+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for HES...
+[2025-03-23T12:29:42.236+0800] {logging_mixin.py:190} INFO - ✅ All posts for HES have been processed.
+[2025-03-23T12:29:42.238+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CCI...
+[2025-03-23T12:29:45.841+0800] {logging_mixin.py:190} INFO - ✅ All posts for CCI have been processed.
+[2025-03-23T12:29:45.844+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for DAL...
+[2025-03-23T12:29:52.118+0800] {logging_mixin.py:190} INFO - ✅ All posts for DAL have been processed.
+[2025-03-23T12:29:52.120+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for CTSH...
+[2025-03-23T12:29:57.378+0800] {logging_mixin.py:190} INFO - ✅ All posts for CTSH have been processed.
+[2025-03-23T12:29:57.381+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for F...
+[2025-03-23T12:30:02.505+0800] {logging_mixin.py:190} INFO - ✅ All posts for F have been processed.
+[2025-03-23T12:30:02.507+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for VRSK...
+[2025-03-23T12:30:07.142+0800] {logging_mixin.py:190} INFO - ✅ All posts for VRSK have been processed.
+[2025-03-23T12:30:07.147+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for EA...
+[2025-03-23T12:30:12.235+0800] {logging_mixin.py:190} INFO - ✅ All posts for EA have been processed.
+[2025-03-23T12:30:12.237+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for ODFL...
+[2025-03-23T12:30:16.705+0800] {logging_mixin.py:190} INFO - ✅ All posts for ODFL have been processed.
+[2025-03-23T12:30:16.707+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for XEL...
+[2025-03-23T12:30:21.992+0800] {logging_mixin.py:190} INFO - ✅ All posts for XEL have been processed.
+[2025-03-23T12:30:21.995+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TRGP...
+[2025-03-23T12:30:26.494+0800] {logging_mixin.py:190} INFO - ✅ All posts for TRGP have been processed.
+[2025-03-23T12:30:26.496+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for A...
+[2025-03-23T12:30:32.044+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for A successfully!
+[2025-03-23T12:30:35.801+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:30:38.987+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for A successfully!
+[2025-03-23T12:30:42.767+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:30:45.652+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for A successfully!
+[2025-03-23T12:30:49.404+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:30:52.293+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for A successfully!
+[2025-03-23T12:30:56.073+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:30:59.192+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for A successfully!
+[2025-03-23T12:31:02.940+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:31:05.802+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 6 for A successfully!
+[2025-03-23T12:31:09.572+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:31:11.598+0800] {logging_mixin.py:190} INFO - ✅ All posts for A have been processed.
+[2025-03-23T12:31:11.607+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/A_reddit_last24hours.csv
+[2025-03-23T12:31:11.608+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for IT...
+[2025-03-23T12:31:17.748+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for IT successfully!
+[2025-03-23T12:31:21.489+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-23T12:31:25.216+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for IT successfully!
+[2025-03-23T12:31:28.847+0800] {logging_mixin.py:190} INFO - ❌ Error extracting comments: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.118)
+Stacktrace:
+0   undetected_chromedriver             0x0000000104fb7568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x0000000104faf17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x0000000104a4e540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x0000000104a340bd undetected_chromedriver + 307389
+4   undetected_chromedriver             0x0000000104a5d0ca undetected_chromedriver + 475338
+5   undetected_chromedriver             0x0000000104aceb59 undetected_chromedriver + 940889
+6   undetected_chromedriver             0x0000000104aed3ac undetected_chromedriver + 1065900
+7   undetected_chromedriver             0x0000000104ac61c3 undetected_chromedriver + 905667
+8   undetected_chromedriver             0x0000000104a9205a undetected_chromedriver + 692314
+9   undetected_chromedriver             0x0000000104a931b1 undetected_chromedriver + 696753
+10  undetected_chromedriver             0x0000000104f76c90 undetected_chromedriver + 5823632
+11  undetected_chromedriver             0x0000000104f7ab44 undetected_chromedriver + 5839684
+12  undetected_chromedriver             0x0000000104f51e86 undetected_chromedriver + 5672582
+13  undetected_chromedriver             0x0000000104f7b53b undetected_chromedriver + 5842235
+14  undetected_chromedriver             0x0000000104f40824 undetected_chromedriver + 5601316
+15  undetected_chromedriver             0x0000000104f9d618 undetected_chromedriver + 5981720
+16  undetected_chromedriver             0x0000000104f9d7df undetected_chromedriver + 5982175
+17  undetected_chromedriver             0x0000000104faed58 undetected_chromedriver + 6053208
+18  libsystem_pthread.dylib             0x00007ff80802d259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808028c7b thread_start + 15
+[2025-03-23T12:31:28.894+0800] {logging_mixin.py:190} INFO - ❌ Error clicking post 2 for IT: Message: invalid session id
+Stacktrace:
+0   undetected_chromedriver             0x0000000104fb7568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x0000000104faf17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x0000000104a4e383 undetected_chromedriver + 414595
+3   undetected_chromedriver             0x0000000104a9134f undetected_chromedriver + 688975
+4   undetected_chromedriver             0x0000000104ac62f6 undetected_chromedriver + 905974
+5   undetected_chromedriver             0x0000000104ac0cfa undetected_chromedriver + 883962
+6   undetected_chromedriver             0x0000000104abfe67 undetected_chromedriver + 880231
+7   undetected_chromedriver             0x0000000104a1729f undetected_chromedriver + 189087
+8   undetected_chromedriver             0x0000000104f76c90 undetected_chromedriver + 5823632
+9   undetected_chromedriver             0x0000000104f7ab44 undetected_chromedriver + 5839684
+10  undetected_chromedriver             0x0000000104f51e86 undetected_chromedriver + 5672582
+11  undetected_chromedriver             0x0000000104f7b53b undetected_chromedriver + 5842235
+12  undetected_chromedriver             0x0000000104f40824 undetected_chromedriver + 5601316
+13  undetected_chromedriver             0x0000000104a15b9f undetected_chromedriver + 183199
+14  dyld                                0x0000000205aad310 start + 2432
+[2025-03-23T12:31:29.100+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/IT_reddit_last24hours.csv
+[2025-03-23T12:31:29.107+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for LVS...
+[2025-03-23T12:31:29.220+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 46, in run_reddit
+    run_reddit_scraper(tickers)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/reddit_scraper.py", line 30, in run_reddit_scraper
+    driver.get(search_url)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/undetected_chromedriver/__init__.py", line 665, in get
+    return super().get(url)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+0   undetected_chromedriver             0x0000000104fb7568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x0000000104faf17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x0000000104a4e383 undetected_chromedriver + 414595
+3   undetected_chromedriver             0x0000000104a9134f undetected_chromedriver + 688975
+4   undetected_chromedriver             0x0000000104ac62f6 undetected_chromedriver + 905974
+5   undetected_chromedriver             0x0000000104ac0cfa undetected_chromedriver + 883962
+6   undetected_chromedriver             0x0000000104abfe67 undetected_chromedriver + 880231
+7   undetected_chromedriver             0x0000000104a1729f undetected_chromedriver + 189087
+8   undetected_chromedriver             0x0000000104f76c90 undetected_chromedriver + 5823632
+9   undetected_chromedriver             0x0000000104f7ab44 undetected_chromedriver + 5839684
+10  undetected_chromedriver             0x0000000104f51e86 undetected_chromedriver + 5672582
+11  undetected_chromedriver             0x0000000104f7b53b undetected_chromedriver + 5842235
+12  undetected_chromedriver             0x0000000104f40824 undetected_chromedriver + 5601316
+13  undetected_chromedriver             0x0000000104a15b9f undetected_chromedriver + 183199
+14  dyld                                0x0000000205aad310 start + 2432
+
+[2025-03-23T12:31:29.407+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-23T12:31:29.408+0800] {logging_mixin.py:190} INFO - Task start:2025-03-23 03:57:25.715779+00:00 end:2025-03-23 04:31:29.401943+00:00 duration:2043.686164
+[2025-03-23T12:31:29.410+0800] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): run_reddit> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-03-23 03:10:55.075296+00:00: manual__2025-03-23T03:10:55.075296+00:00, state:running, queued_at: 2025-03-23 03:10:55.104993+00:00. externally triggered: True>
+[2025-03-23T12:31:29.410+0800] {logging_mixin.py:190} INFO - Failure caused by Message: invalid session id
+Stacktrace:
+0   undetected_chromedriver             0x0000000104fb7568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x0000000104faf17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x0000000104a4e383 undetected_chromedriver + 414595
+3   undetected_chromedriver             0x0000000104a9134f undetected_chromedriver + 688975
+4   undetected_chromedriver             0x0000000104ac62f6 undetected_chromedriver + 905974
+5   undetected_chromedriver             0x0000000104ac0cfa undetected_chromedriver + 883962
+6   undetected_chromedriver             0x0000000104abfe67 undetected_chromedriver + 880231
+7   undetected_chromedriver             0x0000000104a1729f undetected_chromedriver + 189087
+8   undetected_chromedriver             0x0000000104f76c90 undetected_chromedriver + 5823632
+9   undetected_chromedriver             0x0000000104f7ab44 undetected_chromedriver + 5839684
+10  undetected_chromedriver             0x0000000104f51e86 undetected_chromedriver + 5672582
+11  undetected_chromedriver             0x0000000104f7b53b undetected_chromedriver + 5842235
+12  undetected_chromedriver             0x0000000104f40824 undetected_chromedriver + 5601316
+13  undetected_chromedriver             0x0000000104a15b9f undetected_chromedriver + 183199
+14  dyld                                0x0000000205aad310 start + 2432
+[2025-03-23T12:31:29.411+0800] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=reddit_yf_scraper, task_id=run_reddit, run_id=manual__2025-03-23T03:10:55.075296+00:00, execution_date=20250323T031055, start_date=20250323T035725, end_date=20250323T043129
+[2025-03-23T12:31:29.446+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-23T12:31:29.450+0800] {standard_task_runner.py:124} ERROR - Failed to execute job 138 for task run_reddit (Message: invalid session id
+Stacktrace:
+0   undetected_chromedriver             0x0000000104fb7568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x0000000104faf17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x0000000104a4e383 undetected_chromedriver + 414595
+3   undetected_chromedriver             0x0000000104a9134f undetected_chromedriver + 688975
+4   undetected_chromedriver             0x0000000104ac62f6 undetected_chromedriver + 905974
+5   undetected_chromedriver             0x0000000104ac0cfa undetected_chromedriver + 883962
+6   undetected_chromedriver             0x0000000104abfe67 undetected_chromedriver + 880231
+7   undetected_chromedriver             0x0000000104a1729f undetected_chromedriver + 189087
+8   undetected_chromedriver             0x0000000104f76c90 undetected_chromedriver + 5823632
+9   undetected_chromedriver             0x0000000104f7ab44 undetected_chromedriver + 5839684
+10  undetected_chromedriver             0x0000000104f51e86 undetected_chromedriver + 5672582
+11  undetected_chromedriver             0x0000000104f7b53b undetected_chromedriver + 5842235
+12  undetected_chromedriver             0x0000000104f40824 undetected_chromedriver + 5601316
+13  undetected_chromedriver             0x0000000104a15b9f undetected_chromedriver + 183199
+14  dyld                                0x0000000205aad310 start + 2432
+; 1335)
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 46, in run_reddit
+    run_reddit_scraper(tickers)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/reddit_scraper.py", line 30, in run_reddit_scraper
+    driver.get(search_url)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/undetected_chromedriver/__init__.py", line 665, in get
+    return super().get(url)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+0   undetected_chromedriver             0x0000000104fb7568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x0000000104faf17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x0000000104a4e383 undetected_chromedriver + 414595
+3   undetected_chromedriver             0x0000000104a9134f undetected_chromedriver + 688975
+4   undetected_chromedriver             0x0000000104ac62f6 undetected_chromedriver + 905974
+5   undetected_chromedriver             0x0000000104ac0cfa undetected_chromedriver + 883962
+6   undetected_chromedriver             0x0000000104abfe67 undetected_chromedriver + 880231
+7   undetected_chromedriver             0x0000000104a1729f undetected_chromedriver + 189087
+8   undetected_chromedriver             0x0000000104f76c90 undetected_chromedriver + 5823632
+9   undetected_chromedriver             0x0000000104f7ab44 undetected_chromedriver + 5839684
+10  undetected_chromedriver             0x0000000104f51e86 undetected_chromedriver + 5672582
+11  undetected_chromedriver             0x0000000104f7b53b undetected_chromedriver + 5842235
+12  undetected_chromedriver             0x0000000104f40824 undetected_chromedriver + 5601316
+13  undetected_chromedriver             0x0000000104a15b9f undetected_chromedriver + 183199
+14  dyld                                0x0000000205aad310 start + 2432
+
+[2025-03-23T12:31:29.513+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-23T12:31:29.593+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-23T12:31:29.595+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

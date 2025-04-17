@@ -1,0 +1,14 @@
+[2025-04-17T13:30:26.931+0800] {processor.py:186} INFO - Started process (PID=20323) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-04-17T13:30:26.931+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py for tasks to queue
+[2025-04-17T13:30:26.932+0800] {logging_mixin.py:190} INFO - [2025-04-17T13:30:26.932+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-04-17T13:30:26.991+0800] {processor.py:925} INFO - DAG(s) 'example_bash_decorator' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-04-17T13:30:27.102+0800] {logging_mixin.py:190} INFO - [2025-04-17T13:30:27.102+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T13:30:27.107+0800] {logging_mixin.py:190} INFO - [2025-04-17T13:30:27.107+0800] {dag.py:4180} INFO - Setting next_dagrun for example_bash_decorator to None, run_after=None
+[2025-04-17T13:30:27.116+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py took 0.187 seconds
+[2025-04-17T19:37:48.659+0800] {processor.py:186} INFO - Started process (PID=21529) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-04-17T19:37:48.660+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py for tasks to queue
+[2025-04-17T19:37:48.661+0800] {logging_mixin.py:190} INFO - [2025-04-17T19:37:48.661+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-04-17T19:37:48.722+0800] {processor.py:925} INFO - DAG(s) 'example_bash_decorator' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-04-17T19:37:48.834+0800] {logging_mixin.py:190} INFO - [2025-04-17T19:37:48.834+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T19:37:48.840+0800] {logging_mixin.py:190} INFO - [2025-04-17T19:37:48.840+0800] {dag.py:4180} INFO - Setting next_dagrun for example_bash_decorator to None, run_after=None
+[2025-04-17T19:37:48.849+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py took 0.192 seconds

@@ -1,0 +1,28 @@
+[2025-04-02T12:59:29.747+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-02T12:59:29.754+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.list_gcs_files manual__2025-04-02T04:59:22.463630+00:00 [queued]>
+[2025-04-02T12:59:29.757+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.list_gcs_files manual__2025-04-02T04:59:22.463630+00:00 [queued]>
+[2025-04-02T12:59:29.757+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-02T12:59:29.763+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): list_gcs_files> on 2025-04-02 04:59:22.463630+00:00
+[2025-04-02T12:59:29.765+0800] {standard_task_runner.py:72} INFO - Started process 26393 to run task
+[2025-04-02T12:59:29.768+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'list_gcs_files', 'manual__2025-04-02T04:59:22.463630+00:00', '--job-id', '220', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpwa74b2u9']
+[2025-04-02T12:59:29.770+0800] {standard_task_runner.py:105} INFO - Job 220: Subtask list_gcs_files
+[2025-04-02T12:59:29.790+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.list_gcs_files manual__2025-04-02T04:59:22.463630+00:00 [running]> on host ervins-macbook-air-2.local
+[2025-04-02T12:59:29.821+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='list_gcs_files' AIRFLOW_CTX_EXECUTION_DATE='2025-04-02T04:59:22.463630+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-02T04:59:22.463630+00:00'
+[2025-04-02T12:59:29.822+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-02T12:59:29.822+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-02T12:59:29.823+0800] {logging_mixin.py:190} INFO - Current task name:list_gcs_files state:running start_date:2025-04-02 04:59:29.754805+00:00
+[2025-04-02T12:59:29.823+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-02T12:59:29.823+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-02T12:59:29.827+0800] {connection.py:277} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-04-02T12:59:29.829+0800] {base.py:84} INFO - Retrieving connection 'google_cloud_default'
+[2025-04-02T12:59:30.407+0800] {logging_mixin.py:190} INFO - Found files: []
+[2025-04-02T12:59:30.409+0800] {python.py:240} INFO - Done. Returned value was: []
+[2025-04-02T12:59:30.426+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-02T12:59:30.427+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=list_gcs_files, run_id=manual__2025-04-02T04:59:22.463630+00:00, execution_date=20250402T045922, start_date=20250402T045929, end_date=20250402T045930
+[2025-04-02T12:59:30.437+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-02T12:59:30.437+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-02T12:59:30.438+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-02 04:59:22.470877+00:00
+[2025-04-02T12:59:30.438+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-macbook-air-2.local operator:_PythonDecoratedOperator
+[2025-04-02T12:59:30.458+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-02T12:59:30.475+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-02T12:59:30.475+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

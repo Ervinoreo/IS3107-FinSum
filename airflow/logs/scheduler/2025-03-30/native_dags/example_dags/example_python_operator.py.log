@@ -1,0 +1,8 @@
+[2025-03-30T08:13:48.314+0800] {processor.py:186} INFO - Started process (PID=3327) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2025-03-30T08:13:48.314+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-03-30T08:13:48.315+0800] {logging_mixin.py:190} INFO - [2025-03-30T08:13:48.315+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2025-03-30T08:13:48.358+0800] {logging_mixin.py:190} INFO - [2025-03-30T08:13:48.358+0800] {example_python_operator.py:93} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2025-03-30T08:13:48.360+0800] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2025-03-30T08:13:48.412+0800] {logging_mixin.py:190} INFO - [2025-03-30T08:13:48.412+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-30T08:13:48.418+0800] {logging_mixin.py:190} INFO - [2025-03-30T08:13:48.418+0800] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-03-30T08:13:48.427+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py took 0.115 seconds

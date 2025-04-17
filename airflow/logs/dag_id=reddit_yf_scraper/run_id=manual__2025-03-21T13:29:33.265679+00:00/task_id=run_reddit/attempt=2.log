@@ -1,0 +1,242 @@
+[2025-03-21T21:36:45.614+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-21T21:36:45.620+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-21T13:29:33.265679+00:00 [queued]>
+[2025-03-21T21:36:45.623+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-21T13:29:33.265679+00:00 [queued]>
+[2025-03-21T21:36:45.623+0800] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-03-21T21:36:45.626+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_reddit> on 2025-03-21 13:29:33.265679+00:00
+[2025-03-21T21:36:45.628+0800] {standard_task_runner.py:72} INFO - Started process 51775 to run task
+[2025-03-21T21:36:45.630+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_reddit', 'manual__2025-03-21T13:29:33.265679+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpk4hhjz0c']
+[2025-03-21T21:36:45.631+0800] {standard_task_runner.py:105} INFO - Job 47: Subtask run_reddit
+[2025-03-21T21:36:45.649+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-21T13:29:33.265679+00:00 [running]> on host ervins-air-2
+[2025-03-21T21:36:45.669+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_reddit' AIRFLOW_CTX_EXECUTION_DATE='2025-03-21T13:29:33.265679+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-21T13:29:33.265679+00:00'
+[2025-03-21T21:36:45.669+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-21T21:36:45.670+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-21T21:36:45.670+0800] {logging_mixin.py:190} INFO - Current task name:run_reddit state:running start_date:2025-03-21 13:36:45.620987+00:00
+[2025-03-21T21:36:45.670+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-03-21T21:36:45.670+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-21T21:36:46.295+0800] {patcher.py:346} INFO - patching driver executable /Users/ervinyeoh/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2025-03-21T21:36:49.920+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AAPL...
+[2025-03-21T21:36:54.338+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for AAPL successfully!
+[2025-03-21T21:36:58.138+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-21T21:37:00.986+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for AAPL successfully!
+[2025-03-21T21:37:04.706+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-21T21:37:06.753+0800] {logging_mixin.py:190} INFO - ✅ All posts for AAPL have been processed.
+[2025-03-21T21:37:06.768+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/AAPL_reddit_last24hours.csv
+[2025-03-21T21:37:06.769+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NVDA...
+[2025-03-21T21:37:06.771+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 45, in run_reddit
+    run_reddit_scraper(tickers)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/reddit_scraper.py", line 21, in run_reddit_scraper
+    driver.get(search_url)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/undetected_chromedriver/__init__.py", line 665, in get
+    return super().get(url)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.118)
+Stacktrace:
+0   undetected_chromedriver             0x0000000103384818 undetected_chromedriver + 6105112
+1   undetected_chromedriver             0x000000010337c41a undetected_chromedriver + 6071322
+2   undetected_chromedriver             0x0000000102e17600 undetected_chromedriver + 415232
+3   undetected_chromedriver             0x0000000102deb675 undetected_chromedriver + 235125
+4   undetected_chromedriver             0x0000000102e97bde undetected_chromedriver + 941022
+5   undetected_chromedriver             0x0000000102eb65d5 undetected_chromedriver + 1066453
+6   undetected_chromedriver             0x0000000102e8f3e3 undetected_chromedriver + 906211
+7   undetected_chromedriver             0x0000000102e5b29a undetected_chromedriver + 692890
+8   undetected_chromedriver             0x0000000102e5c3f1 undetected_chromedriver + 697329
+9   undetected_chromedriver             0x0000000103343d10 undetected_chromedriver + 5840144
+10  undetected_chromedriver             0x0000000103347be4 undetected_chromedriver + 5856228
+11  undetected_chromedriver             0x000000010331e946 undetected_chromedriver + 5687622
+12  undetected_chromedriver             0x00000001033485db undetected_chromedriver + 5858779
+13  undetected_chromedriver             0x000000010330d034 undetected_chromedriver + 5615668
+14  undetected_chromedriver             0x000000010336a378 undetected_chromedriver + 5997432
+15  undetected_chromedriver             0x000000010336a53f undetected_chromedriver + 5997887
+16  undetected_chromedriver             0x000000010337bff8 undetected_chromedriver + 6070264
+17  libsystem_pthread.dylib             0x00007ff80802d259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff808028c7b thread_start + 15
+
+[2025-03-21T21:37:06.789+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-21T21:37:06.790+0800] {logging_mixin.py:190} INFO - Task start:2025-03-21 13:36:45.620987+00:00 end:2025-03-21 13:37:06.788560+00:00 duration:21.167573
+[2025-03-21T21:37:06.791+0800] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): run_reddit> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-03-21 13:29:33.265679+00:00: manual__2025-03-21T13:29:33.265679+00:00, state:running, queued_at: 2025-03-21 13:29:33.270858+00:00. externally triggered: True>
+[2025-03-21T21:37:06.792+0800] {logging_mixin.py:190} INFO - Failure caused by Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.118)
+Stacktrace:
+0   undetected_chromedriver             0x0000000103384818 undetected_chromedriver + 6105112
+1   undetected_chromedriver             0x000000010337c41a undetected_chromedriver + 6071322
+2   undetected_chromedriver             0x0000000102e17600 undetected_chromedriver + 415232
+3   undetected_chromedriver             0x0000000102deb675 undetected_chromedriver + 235125
+4   undetected_chromedriver             0x0000000102e97bde undetected_chromedriver + 941022
+5   undetected_chromedriver             0x0000000102eb65d5 undetected_chromedriver + 1066453
+6   undetected_chromedriver             0x0000000102e8f3e3 undetected_chromedriver + 906211
+7   undetected_chromedriver             0x0000000102e5b29a undetected_chromedriver + 692890
+8   undetected_chromedriver             0x0000000102e5c3f1 undetected_chromedriver + 697329
+9   undetected_chromedriver             0x0000000103343d10 undetected_chromedriver + 5840144
+10  undetected_chromedriver             0x0000000103347be4 undetected_chromedriver + 5856228
+11  undetected_chromedriver             0x000000010331e946 undetected_chromedriver + 5687622
+12  undetected_chromedriver             0x00000001033485db undetected_chromedriver + 5858779
+13  undetected_chromedriver             0x000000010330d034 undetected_chromedriver + 5615668
+14  undetected_chromedriver             0x000000010336a378 undetected_chromedriver + 5997432
+15  undetected_chromedriver             0x000000010336a53f undetected_chromedriver + 5997887
+16  undetected_chromedriver             0x000000010337bff8 undetected_chromedriver + 6070264
+17  libsystem_pthread.dylib             0x00007ff80802d259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff808028c7b thread_start + 15
+[2025-03-21T21:37:06.792+0800] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=reddit_yf_scraper, task_id=run_reddit, run_id=manual__2025-03-21T13:29:33.265679+00:00, execution_date=20250321T132933, start_date=20250321T133645, end_date=20250321T133706
+[2025-03-21T21:37:06.801+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-21T21:37:06.801+0800] {standard_task_runner.py:124} ERROR - Failed to execute job 47 for task run_reddit (Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.118)
+Stacktrace:
+0   undetected_chromedriver             0x0000000103384818 undetected_chromedriver + 6105112
+1   undetected_chromedriver             0x000000010337c41a undetected_chromedriver + 6071322
+2   undetected_chromedriver             0x0000000102e17600 undetected_chromedriver + 415232
+3   undetected_chromedriver             0x0000000102deb675 undetected_chromedriver + 235125
+4   undetected_chromedriver             0x0000000102e97bde undetected_chromedriver + 941022
+5   undetected_chromedriver             0x0000000102eb65d5 undetected_chromedriver + 1066453
+6   undetected_chromedriver             0x0000000102e8f3e3 undetected_chromedriver + 906211
+7   undetected_chromedriver             0x0000000102e5b29a undetected_chromedriver + 692890
+8   undetected_chromedriver             0x0000000102e5c3f1 undetected_chromedriver + 697329
+9   undetected_chromedriver             0x0000000103343d10 undetected_chromedriver + 5840144
+10  undetected_chromedriver             0x0000000103347be4 undetected_chromedriver + 5856228
+11  undetected_chromedriver             0x000000010331e946 undetected_chromedriver + 5687622
+12  undetected_chromedriver             0x00000001033485db undetected_chromedriver + 5858779
+13  undetected_chromedriver             0x000000010330d034 undetected_chromedriver + 5615668
+14  undetected_chromedriver             0x000000010336a378 undetected_chromedriver + 5997432
+15  undetected_chromedriver             0x000000010336a53f undetected_chromedriver + 5997887
+16  undetected_chromedriver             0x000000010337bff8 undetected_chromedriver + 6070264
+17  libsystem_pthread.dylib             0x00007ff80802d259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff808028c7b thread_start + 15
+; 51775)
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 45, in run_reddit
+    run_reddit_scraper(tickers)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/reddit_scraper.py", line 21, in run_reddit_scraper
+    driver.get(search_url)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/undetected_chromedriver/__init__.py", line 665, in get
+    return super().get(url)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.118)
+Stacktrace:
+0   undetected_chromedriver             0x0000000103384818 undetected_chromedriver + 6105112
+1   undetected_chromedriver             0x000000010337c41a undetected_chromedriver + 6071322
+2   undetected_chromedriver             0x0000000102e17600 undetected_chromedriver + 415232
+3   undetected_chromedriver             0x0000000102deb675 undetected_chromedriver + 235125
+4   undetected_chromedriver             0x0000000102e97bde undetected_chromedriver + 941022
+5   undetected_chromedriver             0x0000000102eb65d5 undetected_chromedriver + 1066453
+6   undetected_chromedriver             0x0000000102e8f3e3 undetected_chromedriver + 906211
+7   undetected_chromedriver             0x0000000102e5b29a undetected_chromedriver + 692890
+8   undetected_chromedriver             0x0000000102e5c3f1 undetected_chromedriver + 697329
+9   undetected_chromedriver             0x0000000103343d10 undetected_chromedriver + 5840144
+10  undetected_chromedriver             0x0000000103347be4 undetected_chromedriver + 5856228
+11  undetected_chromedriver             0x000000010331e946 undetected_chromedriver + 5687622
+12  undetected_chromedriver             0x00000001033485db undetected_chromedriver + 5858779
+13  undetected_chromedriver             0x000000010330d034 undetected_chromedriver + 5615668
+14  undetected_chromedriver             0x000000010336a378 undetected_chromedriver + 5997432
+15  undetected_chromedriver             0x000000010336a53f undetected_chromedriver + 5997887
+16  undetected_chromedriver             0x000000010337bff8 undetected_chromedriver + 6070264
+17  libsystem_pthread.dylib             0x00007ff80802d259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff808028c7b thread_start + 15
+
+[2025-03-21T21:37:06.821+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-21T21:37:06.834+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-21T21:37:06.836+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

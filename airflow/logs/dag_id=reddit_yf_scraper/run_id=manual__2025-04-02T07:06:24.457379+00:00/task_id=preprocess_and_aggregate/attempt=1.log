@@ -1,0 +1,34 @@
+[2025-04-02T15:08:05.246+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-02T15:08:05.335+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T07:06:24.457379+00:00 [queued]>
+[2025-04-02T15:08:05.339+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T07:06:24.457379+00:00 [queued]>
+[2025-04-02T15:08:05.340+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-02T15:08:05.345+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): preprocess_and_aggregate> on 2025-04-02 07:06:24.457379+00:00
+[2025-04-02T15:08:05.348+0800] {standard_task_runner.py:72} INFO - Started process 36841 to run task
+[2025-04-02T15:08:05.352+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'preprocess_and_aggregate', 'manual__2025-04-02T07:06:24.457379+00:00', '--job-id', '341', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpvowtjaf_']
+[2025-04-02T15:08:05.353+0800] {standard_task_runner.py:105} INFO - Job 341: Subtask preprocess_and_aggregate
+[2025-04-02T15:08:05.387+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T07:06:24.457379+00:00 [running]> on host ervins-macbook-air-2.local
+[2025-04-02T15:08:05.419+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='preprocess_and_aggregate' AIRFLOW_CTX_EXECUTION_DATE='2025-04-02T07:06:24.457379+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-02T07:06:24.457379+00:00'
+[2025-04-02T15:08:05.420+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-02T15:08:05.420+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-02T15:08:05.421+0800] {logging_mixin.py:190} INFO - Current task name:preprocess_and_aggregate state:running start_date:2025-04-02 07:08:05.336046+00:00
+[2025-04-02T15:08:05.421+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-02T15:08:05.421+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-02T15:08:07.558+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:305 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T15:08:07.583+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/AAPL_processed_20250402.csv
+[2025-04-02T15:08:09.084+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:305 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T15:08:09.096+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/AMZN_processed_20250402.csv
+[2025-04-02T15:08:10.516+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:305 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T15:08:10.528+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/GOOGL_processed_20250402.csv
+[2025-04-02T15:08:12.017+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:305 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T15:08:12.025+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/MSFT_processed_20250402.csv
+[2025-04-02T15:08:15.896+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/NVDA_processed_20250402.csv
+[2025-04-02T15:08:15.897+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-02T15:08:15.903+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-02T15:08:15.904+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=preprocess_and_aggregate, run_id=manual__2025-04-02T07:06:24.457379+00:00, execution_date=20250402T070624, start_date=20250402T070805, end_date=20250402T070815
+[2025-04-02T15:08:15.913+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-02T15:08:15.913+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-02T15:08:15.914+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-02 07:06:24.472224+00:00
+[2025-04-02T15:08:15.914+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-macbook-air-2.local operator:_PythonDecoratedOperator
+[2025-04-02T15:08:15.935+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-02T15:08:15.946+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-02T15:08:15.947+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

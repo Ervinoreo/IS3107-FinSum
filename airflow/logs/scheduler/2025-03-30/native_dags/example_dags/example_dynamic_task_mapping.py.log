@@ -1,0 +1,7 @@
+[2025-03-30T09:18:05.495+0800] {processor.py:186} INFO - Started process (PID=3409) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-30T09:18:05.496+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2025-03-30T09:18:05.497+0800] {logging_mixin.py:190} INFO - [2025-03-30T09:18:05.497+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-30T09:18:05.548+0800] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2025-03-30T09:18:05.599+0800] {logging_mixin.py:190} INFO - [2025-03-30T09:18:05.598+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-30T09:18:05.604+0800] {logging_mixin.py:190} INFO - [2025-03-30T09:18:05.604+0800] {dag.py:4180} INFO - Setting next_dagrun for example_dynamic_task_mapping to None, run_after=None
+[2025-03-30T09:18:05.614+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.120 seconds

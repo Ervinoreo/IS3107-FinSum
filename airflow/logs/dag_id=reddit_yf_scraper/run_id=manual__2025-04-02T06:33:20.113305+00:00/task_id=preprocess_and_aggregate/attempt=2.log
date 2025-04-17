@@ -1,0 +1,188 @@
+[2025-04-02T14:40:11.359+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-02T14:40:11.367+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T06:33:20.113305+00:00 [queued]>
+[2025-04-02T14:40:11.372+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T06:33:20.113305+00:00 [queued]>
+[2025-04-02T14:40:11.372+0800] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-04-02T14:40:11.458+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): preprocess_and_aggregate> on 2025-04-02 06:33:20.113305+00:00
+[2025-04-02T14:40:11.461+0800] {standard_task_runner.py:72} INFO - Started process 34358 to run task
+[2025-04-02T14:40:11.464+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'preprocess_and_aggregate', 'manual__2025-04-02T06:33:20.113305+00:00', '--job-id', '278', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpiqignc0t']
+[2025-04-02T14:40:11.465+0800] {standard_task_runner.py:105} INFO - Job 278: Subtask preprocess_and_aggregate
+[2025-04-02T14:40:11.494+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.preprocess_and_aggregate manual__2025-04-02T06:33:20.113305+00:00 [running]> on host ervins-macbook-air-2.local
+[2025-04-02T14:40:11.525+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='preprocess_and_aggregate' AIRFLOW_CTX_EXECUTION_DATE='2025-04-02T06:33:20.113305+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-02T06:33:20.113305+00:00'
+[2025-04-02T14:40:11.526+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-02T14:40:11.526+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-02T14:40:11.527+0800] {logging_mixin.py:190} INFO - Current task name:preprocess_and_aggregate state:running start_date:2025-04-02 06:40:11.367575+00:00
+[2025-04-02T14:40:11.527+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-02T14:40:11.527+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-02T14:40:13.221+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:281 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T14:40:13.234+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/AAPL_processed_20250402.csv
+[2025-04-02T14:40:14.687+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:281 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T14:40:14.698+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/AMZN_processed_20250402.csv
+[2025-04-02T14:40:15.905+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:281 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T14:40:15.914+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/GOOGL_processed_20250402.csv
+[2025-04-02T14:40:17.453+0800] {logging_mixin.py:190} WARNING - /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py:281 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-02T14:40:17.462+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/processed/MSFT_processed_20250402.csv
+[2025-04-02T14:40:17.466+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 220, in _na_arithmetic_op
+    result = func(left, right)
+             ^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'PlainXComArg' and 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 243, in preprocess_and_aggregate
+    df_reddit["Text"] = df_reddit["post"] + " " + df_reddit["comments"]
+                        ~~~~~~~~~~~~~~~~~~^~~~~
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 186, in __add__
+    return self._arith_method(other, operator.add)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/series.py", line 5819, in _arith_method
+    return base.IndexOpsMixin._arith_method(self, other, op)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 1381, in _arith_method
+    result = ops.arithmetic_op(lvalues, rvalues, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 285, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 229, in _na_arithmetic_op
+    result = _masked_arith_op(left, right, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 184, in _masked_arith_op
+    result[mask] = op(xrav[mask], y)
+                   ^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'PlainXComArg' and 'str'
+[2025-04-02T14:40:17.478+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-02T14:40:17.478+0800] {logging_mixin.py:190} INFO - Task start:2025-04-02 06:40:11.367575+00:00 end:2025-04-02 06:40:17.478164+00:00 duration:6.110589
+[2025-04-02T14:40:17.479+0800] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): preprocess_and_aggregate> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-04-02 06:33:20.113305+00:00: manual__2025-04-02T06:33:20.113305+00:00, state:running, queued_at: 2025-04-02 06:33:20.127953+00:00. externally triggered: True>
+[2025-04-02T14:40:17.479+0800] {logging_mixin.py:190} INFO - Failure caused by unsupported operand type(s) for +: 'PlainXComArg' and 'str'
+[2025-04-02T14:40:17.479+0800] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=reddit_yf_scraper, task_id=preprocess_and_aggregate, run_id=manual__2025-04-02T06:33:20.113305+00:00, execution_date=20250402T063320, start_date=20250402T064011, end_date=20250402T064017
+[2025-04-02T14:40:17.489+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-02T14:40:17.489+0800] {standard_task_runner.py:124} ERROR - Failed to execute job 278 for task preprocess_and_aggregate (unsupported operand type(s) for +: 'PlainXComArg' and 'str'; 34358)
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 220, in _na_arithmetic_op
+    result = func(left, right)
+             ^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'PlainXComArg' and 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py", line 243, in preprocess_and_aggregate
+    df_reddit["Text"] = df_reddit["post"] + " " + df_reddit["comments"]
+                        ~~~~~~~~~~~~~~~~~~^~~~~
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 186, in __add__
+    return self._arith_method(other, operator.add)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/series.py", line 5819, in _arith_method
+    return base.IndexOpsMixin._arith_method(self, other, op)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 1381, in _arith_method
+    result = ops.arithmetic_op(lvalues, rvalues, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 285, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 229, in _na_arithmetic_op
+    result = _masked_arith_op(left, right, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 184, in _masked_arith_op
+    result[mask] = op(xrav[mask], y)
+                   ^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'PlainXComArg' and 'str'
+[2025-04-02T14:40:17.542+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-02T14:40:17.551+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-02T14:40:17.552+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

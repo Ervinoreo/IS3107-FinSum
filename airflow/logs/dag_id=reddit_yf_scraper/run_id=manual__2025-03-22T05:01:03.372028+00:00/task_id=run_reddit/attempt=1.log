@@ -1,0 +1,173 @@
+[2025-03-22T13:03:26.101+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-22T13:03:26.109+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-22T05:01:03.372028+00:00 [queued]>
+[2025-03-22T13:03:26.113+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-22T05:01:03.372028+00:00 [queued]>
+[2025-03-22T13:03:26.113+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-22T13:03:26.118+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_reddit> on 2025-03-22 05:01:03.372028+00:00
+[2025-03-22T13:03:26.120+0800] {standard_task_runner.py:72} INFO - Started process 69227 to run task
+[2025-03-22T13:03:26.124+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_reddit', 'manual__2025-03-22T05:01:03.372028+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpb4s_8ew0']
+[2025-03-22T13:03:26.125+0800] {standard_task_runner.py:105} INFO - Job 114: Subtask run_reddit
+[2025-03-22T13:03:26.158+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_reddit manual__2025-03-22T05:01:03.372028+00:00 [running]> on host ervins-air-2
+[2025-03-22T13:03:26.191+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_reddit' AIRFLOW_CTX_EXECUTION_DATE='2025-03-22T05:01:03.372028+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-22T05:01:03.372028+00:00'
+[2025-03-22T13:03:26.192+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-22T13:03:26.192+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-22T13:03:26.192+0800] {logging_mixin.py:190} INFO - Current task name:run_reddit state:running start_date:2025-03-22 05:03:26.109930+00:00
+[2025-03-22T13:03:26.192+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-03-22T13:03:26.193+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-22T13:03:27.104+0800] {patcher.py:346} INFO - patching driver executable /Users/ervinyeoh/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2025-03-22T13:03:32.217+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AAPL...
+[2025-03-22T13:03:38.412+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for AAPL successfully!
+[2025-03-22T13:03:42.333+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:03:45.105+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for AAPL successfully!
+[2025-03-22T13:03:48.812+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:03:51.652+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for AAPL successfully!
+[2025-03-22T13:03:55.323+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:03:57.339+0800] {logging_mixin.py:190} INFO - ✅ All posts for AAPL have been processed.
+[2025-03-22T13:03:57.369+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/AAPL_reddit_last24hours.csv
+[2025-03-22T13:03:57.369+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for NVDA...
+[2025-03-22T13:04:02.368+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for NVDA successfully!
+[2025-03-22T13:04:06.098+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:04:08.930+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for NVDA successfully!
+[2025-03-22T13:04:12.629+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:04:15.651+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for NVDA successfully!
+[2025-03-22T13:04:19.422+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:04:22.577+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for NVDA successfully!
+[2025-03-22T13:04:26.400+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:04:29.225+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for NVDA successfully!
+[2025-03-22T13:04:32.962+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:04:34.982+0800] {logging_mixin.py:190} INFO - ✅ All posts for NVDA have been processed.
+[2025-03-22T13:04:34.991+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/NVDA_reddit_last24hours.csv
+[2025-03-22T13:04:34.992+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for MSFT...
+[2025-03-22T13:04:41.438+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for MSFT successfully!
+[2025-03-22T13:04:45.273+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:04:48.149+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for MSFT successfully!
+[2025-03-22T13:04:51.839+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:04:54.964+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for MSFT successfully!
+[2025-03-22T13:04:58.644+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:05:01.501+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for MSFT successfully!
+[2025-03-22T13:05:05.207+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:05:07.228+0800] {logging_mixin.py:190} INFO - ✅ All posts for MSFT have been processed.
+[2025-03-22T13:05:07.236+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/MSFT_reddit_last24hours.csv
+[2025-03-22T13:05:07.236+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AMZN...
+[2025-03-22T13:05:11.487+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for AMZN successfully!
+[2025-03-22T13:05:15.329+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:05:17.363+0800] {logging_mixin.py:190} INFO - ✅ All posts for AMZN have been processed.
+[2025-03-22T13:05:17.371+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/AMZN_reddit_last24hours.csv
+[2025-03-22T13:05:17.371+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GOOGL...
+[2025-03-22T13:05:21.671+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for GOOGL successfully!
+[2025-03-22T13:05:25.343+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:05:28.447+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for GOOGL successfully!
+[2025-03-22T13:05:32.246+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:05:35.225+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for GOOGL successfully!
+[2025-03-22T13:05:38.918+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:05:42.004+0800] {logging_mixin.py:190} INFO - ❌ Error clicking post 4 for GOOGL: Message: element click intercepted: Element <a data-testid="post-title" href="/r/goons/comments/1jgem8s/those_arent_deep_fakes_its_just_dooos_leaks/" class="absolute inset-0" aria-label="Deep fakes were a problem before, but Ai is really taking this problem to the next level">...</a> is not clickable at point (701, 686). Other element would receive the click: <a data-testid="post-title" href="/r/aiwars/comments/1jfz6tx/deep_fakes_were_a_problem_before_but_ai_is_really/" class="absolute inset-0" aria-label="Deep fakes were a problem before, but Ai is really taking this problem to the next level">...</a>
+  (Session info: chrome=134.0.6998.118)
+Stacktrace:
+0   undetected_chromedriver             0x0000000102ce0568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x0000000102cd817a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x0000000102777540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x00000001027cff40 undetected_chromedriver + 778048
+4   undetected_chromedriver             0x00000001027cdda1 undetected_chromedriver + 769441
+5   undetected_chromedriver             0x00000001027cb432 undetected_chromedriver + 758834
+6   undetected_chromedriver             0x00000001027ca611 undetected_chromedriver + 755217
+7   undetected_chromedriver             0x00000001027bd1ad undetected_chromedriver + 700845
+8   undetected_chromedriver             0x00000001027ef3f2 undetected_chromedriver + 906226
+9   undetected_chromedriver             0x00000001027bcb28 undetected_chromedriver + 699176
+10  undetected_chromedriver             0x00000001027ef5ae undetected_chromedriver + 906670
+11  undetected_chromedriver             0x0000000102816a19 undetected_chromedriver + 1067545
+12  undetected_chromedriver             0x00000001027ef1c3 undetected_chromedriver + 905667
+13  undetected_chromedriver             0x00000001027bb05a undetected_chromedriver + 692314
+14  undetected_chromedriver             0x00000001027bc1b1 undetected_chromedriver + 696753
+15  undetected_chromedriver             0x0000000102c9fc90 undetected_chromedriver + 5823632
+16  undetected_chromedriver             0x0000000102ca3b44 undetected_chromedriver + 5839684
+17  undetected_chromedriver             0x0000000102c7ae86 undetected_chromedriver + 5672582
+18  undetected_chromedriver             0x0000000102ca453b undetected_chromedriver + 5842235
+19  undetected_chromedriver             0x0000000102c69824 undetected_chromedriver + 5601316
+20  undetected_chromedriver             0x0000000102cc6618 undetected_chromedriver + 5981720
+21  undetected_chromedriver             0x0000000102cc67df undetected_chromedriver + 5982175
+22  undetected_chromedriver             0x0000000102cd7d58 undetected_chromedriver + 6053208
+23  libsystem_pthread.dylib             0x00007ff80802d259 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808028c7b thread_start + 15
+[2025-03-22T13:05:42.011+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/GOOGL_reddit_last24hours.csv
+[2025-03-22T13:05:42.012+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for GOOG...
+[2025-03-22T13:05:45.170+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for GOOG successfully!
+[2025-03-22T13:05:48.831+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:05:51.859+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for GOOG successfully!
+[2025-03-22T13:05:55.544+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:05:58.605+0800] {logging_mixin.py:190} INFO - ❌ Error clicking post 3 for GOOG: Message: element click intercepted: Element <a data-testid="post-title" href="/r/goons/comments/1jgem8s/those_arent_deep_fakes_its_just_dooos_leaks/" class="absolute inset-0" aria-label="Deep fakes were a problem before, but Ai is really taking this problem to the next level">...</a> is not clickable at point (701, 614). Other element would receive the click: <a data-testid="post-title" href="/r/aiwars/comments/1jfz6tx/deep_fakes_were_a_problem_before_but_ai_is_really/" class="absolute inset-0" aria-label="Deep fakes were a problem before, but Ai is really taking this problem to the next level">...</a>
+  (Session info: chrome=134.0.6998.118)
+Stacktrace:
+0   undetected_chromedriver             0x0000000102ce0568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x0000000102cd817a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x0000000102777540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x00000001027cff40 undetected_chromedriver + 778048
+4   undetected_chromedriver             0x00000001027cdda1 undetected_chromedriver + 769441
+5   undetected_chromedriver             0x00000001027cb432 undetected_chromedriver + 758834
+6   undetected_chromedriver             0x00000001027ca611 undetected_chromedriver + 755217
+7   undetected_chromedriver             0x00000001027bd1ad undetected_chromedriver + 700845
+8   undetected_chromedriver             0x00000001027ef3f2 undetected_chromedriver + 906226
+9   undetected_chromedriver             0x00000001027bcb28 undetected_chromedriver + 699176
+10  undetected_chromedriver             0x00000001027ef5ae undetected_chromedriver + 906670
+11  undetected_chromedriver             0x0000000102816a19 undetected_chromedriver + 1067545
+12  undetected_chromedriver             0x00000001027ef1c3 undetected_chromedriver + 905667
+13  undetected_chromedriver             0x00000001027bb05a undetected_chromedriver + 692314
+14  undetected_chromedriver             0x00000001027bc1b1 undetected_chromedriver + 696753
+15  undetected_chromedriver             0x0000000102c9fc90 undetected_chromedriver + 5823632
+16  undetected_chromedriver             0x0000000102ca3b44 undetected_chromedriver + 5839684
+17  undetected_chromedriver             0x0000000102c7ae86 undetected_chromedriver + 5672582
+18  undetected_chromedriver             0x0000000102ca453b undetected_chromedriver + 5842235
+19  undetected_chromedriver             0x0000000102c69824 undetected_chromedriver + 5601316
+20  undetected_chromedriver             0x0000000102cc6618 undetected_chromedriver + 5981720
+21  undetected_chromedriver             0x0000000102cc67df undetected_chromedriver + 5982175
+22  undetected_chromedriver             0x0000000102cd7d58 undetected_chromedriver + 6053208
+23  libsystem_pthread.dylib             0x00007ff80802d259 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808028c7b thread_start + 15
+[2025-03-22T13:05:58.614+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/GOOG_reddit_last24hours.csv
+[2025-03-22T13:05:58.615+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for META...
+[2025-03-22T13:06:02.829+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for META successfully!
+[2025-03-22T13:06:06.710+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:06:08.734+0800] {logging_mixin.py:190} INFO - ✅ All posts for META have been processed.
+[2025-03-22T13:06:08.741+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/META_reddit_last24hours.csv
+[2025-03-22T13:06:08.742+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for TSLA...
+[2025-03-22T13:06:15.293+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for TSLA successfully!
+[2025-03-22T13:06:19.126+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:06:21.835+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for TSLA successfully!
+[2025-03-22T13:06:25.524+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:06:28.451+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for TSLA successfully!
+[2025-03-22T13:06:32.251+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:06:35.200+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for TSLA successfully!
+[2025-03-22T13:06:38.961+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:06:42.051+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for TSLA successfully!
+[2025-03-22T13:06:45.822+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:06:47.837+0800] {logging_mixin.py:190} INFO - ✅ All posts for TSLA have been processed.
+[2025-03-22T13:06:47.851+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/TSLA_reddit_last24hours.csv
+[2025-03-22T13:06:47.851+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AVGO...
+[2025-03-22T13:06:52.255+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for AVGO successfully!
+[2025-03-22T13:06:55.964+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:06:58.777+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for AVGO successfully!
+[2025-03-22T13:07:02.459+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:07:05.312+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for AVGO successfully!
+[2025-03-22T13:07:09.167+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:07:12.720+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for AVGO successfully!
+[2025-03-22T13:07:16.406+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:07:18.421+0800] {logging_mixin.py:190} INFO - ✅ All posts for AVGO have been processed.
+[2025-03-22T13:07:18.426+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/AVGO_reddit_last24hours.csv
+[2025-03-22T13:07:18.427+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for BRK-B...
+[2025-03-22T13:07:22.761+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for BRK-B successfully!
+[2025-03-22T13:07:26.483+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:07:30.091+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for BRK-B successfully!
+[2025-03-22T13:07:33.806+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:07:36.637+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for BRK-B successfully!
+[2025-03-22T13:07:40.295+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-03-22T13:07:42.312+0800] {logging_mixin.py:190} INFO - ✅ All posts for BRK-B have been processed.
+[2025-03-22T13:07:42.319+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit/BRK-B_reddit_last24hours.csv
+[2025-03-22T13:07:42.736+0800] {logging_mixin.py:190} INFO - ✅ Done scraping Reddit posts for all S&P 500 tickers.
+[2025-03-22T13:07:42.738+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-22T13:07:42.753+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-22T13:07:42.754+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=run_reddit, run_id=manual__2025-03-22T05:01:03.372028+00:00, execution_date=20250322T050103, start_date=20250322T050326, end_date=20250322T050742
+[2025-03-22T13:07:42.768+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-22T13:07:42.768+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-22T13:07:42.768+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-03-22 05:01:03.392781+00:00
+[2025-03-22T13:07:42.769+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:_PythonDecoratedOperator
+[2025-03-22T13:07:42.811+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-22T13:07:42.838+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-22T13:07:42.839+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

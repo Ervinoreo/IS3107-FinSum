@@ -1,0 +1,21 @@
+[2025-03-22T12:59:56.762+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-22T12:59:56.771+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.check_files_exist manual__2025-03-22T04:56:55.365440+00:00 [queued]>
+[2025-03-22T12:59:56.774+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.check_files_exist manual__2025-03-22T04:56:55.365440+00:00 [queued]>
+[2025-03-22T12:59:56.774+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-22T12:59:56.779+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): check_files_exist> on 2025-03-22 04:56:55.365440+00:00
+[2025-03-22T12:59:56.782+0800] {standard_task_runner.py:72} INFO - Started process 68996 to run task
+[2025-03-22T12:59:56.785+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'check_files_exist', 'manual__2025-03-22T04:56:55.365440+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpsd6v8jzo']
+[2025-03-22T12:59:56.786+0800] {standard_task_runner.py:105} INFO - Job 109: Subtask check_files_exist
+[2025-03-22T12:59:56.827+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.check_files_exist manual__2025-03-22T04:56:55.365440+00:00 [running]> on host ervins-air-2
+[2025-03-22T12:59:56.859+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='check_files_exist' AIRFLOW_CTX_EXECUTION_DATE='2025-03-22T04:56:55.365440+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-22T04:56:55.365440+00:00'
+[2025-03-22T12:59:56.860+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-22T12:59:56.860+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-22T12:59:56.860+0800] {logging_mixin.py:190} INFO - Current task name:check_files_exist state:running start_date:2025-03-22 04:59:56.771380+00:00
+[2025-03-22T12:59:56.861+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-03-22T12:59:56.861+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-22T12:59:56.862+0800] {taskinstance.py:302} INFO - No CSV files found in /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit, skipping upload.
+[2025-03-22T12:59:56.869+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-22T12:59:56.869+0800] {taskinstance.py:353} INFO - Marking task as SKIPPED. dag_id=reddit_yf_scraper, task_id=check_files_exist, run_id=manual__2025-03-22T04:56:55.365440+00:00, execution_date=20250322T045655, start_date=20250322T045956, end_date=20250322T045956
+[2025-03-22T12:59:56.892+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-22T12:59:56.902+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-22T12:59:56.904+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

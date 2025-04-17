@@ -1,0 +1,36 @@
+[2025-04-13T10:27:29.050+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-13T10:27:29.120+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-13T02:27:05.293535+00:00 [queued]>
+[2025-04-13T10:27:29.123+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-13T02:27:05.293535+00:00 [queued]>
+[2025-04-13T10:27:29.123+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-13T10:27:29.127+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_reddit> on 2025-04-13 02:27:05.293535+00:00
+[2025-04-13T10:27:29.129+0800] {standard_task_runner.py:72} INFO - Started process 56439 to run task
+[2025-04-13T10:27:29.136+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_reddit', 'manual__2025-04-13T02:27:05.293535+00:00', '--job-id', '404', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpwzqq570h']
+[2025-04-13T10:27:29.137+0800] {standard_task_runner.py:105} INFO - Job 404: Subtask run_reddit
+[2025-04-13T10:27:29.161+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-13T02:27:05.293535+00:00 [running]> on host ervins-air-2
+[2025-04-13T10:27:29.181+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_reddit' AIRFLOW_CTX_EXECUTION_DATE='2025-04-13T02:27:05.293535+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-13T02:27:05.293535+00:00'
+[2025-04-13T10:27:29.182+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-13T10:27:29.182+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-13T10:27:29.182+0800] {logging_mixin.py:190} INFO - Current task name:run_reddit state:running start_date:2025-04-13 02:27:29.120604+00:00
+[2025-04-13T10:27:29.182+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-13T10:27:29.182+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-13T10:27:31.224+0800] {patcher.py:346} INFO - patching driver executable /Users/ervinyeoh/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2025-04-13T10:27:34.208+0800] {logging_mixin.py:190} INFO - 🔍 Searching Reddit for AAPL...
+[2025-04-13T10:27:39.760+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for AAPL successfully!
+[2025-04-13T10:27:43.465+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-13T10:27:46.287+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for AAPL successfully!
+[2025-04-13T10:27:49.982+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-13T10:27:52.736+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for AAPL successfully!
+[2025-04-13T10:27:56.406+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-13T10:27:58.452+0800] {logging_mixin.py:190} INFO - ✅ All posts for AAPL have been processed.
+[2025-04-13T10:27:58.476+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit-test/AAPL_reddit_20250413.csv
+[2025-04-13T10:27:58.699+0800] {logging_mixin.py:190} INFO - ✅ Done scraping Reddit posts for all S&P 500 tickers.
+[2025-04-13T10:27:58.700+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-13T10:27:58.708+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-13T10:27:58.708+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=run_reddit, run_id=manual__2025-04-13T02:27:05.293535+00:00, execution_date=20250413T022705, start_date=20250413T022729, end_date=20250413T022758
+[2025-04-13T10:27:58.718+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-13T10:27:58.718+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-13T10:27:58.718+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-13 02:27:05.316419+00:00
+[2025-04-13T10:27:58.718+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-air-2 operator:_PythonDecoratedOperator
+[2025-04-13T10:27:58.750+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-13T10:27:58.771+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-13T10:27:58.772+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

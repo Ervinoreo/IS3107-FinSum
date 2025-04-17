@@ -1,0 +1,7 @@
+[2025-03-30T08:48:26.243+0800] {processor.py:186} INFO - Started process (PID=3370) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-03-30T08:48:26.244+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2025-03-30T08:48:26.244+0800] {logging_mixin.py:190} INFO - [2025-03-30T08:48:26.244+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-03-30T08:48:26.331+0800] {processor.py:925} INFO - DAG(s) 'example_nested_branch_dag' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-03-30T08:48:26.415+0800] {logging_mixin.py:190} INFO - [2025-03-30T08:48:26.414+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-30T08:48:26.431+0800] {logging_mixin.py:190} INFO - [2025-03-30T08:48:26.431+0800] {dag.py:4180} INFO - Setting next_dagrun for example_nested_branch_dag to 2025-03-29 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-30T08:48:26.442+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.201 seconds
