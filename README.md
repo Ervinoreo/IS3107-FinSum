@@ -69,3 +69,4 @@ deactivate
 - Commands to start airflow standalone:
   airflow webserver --port 8080
   airflow scheduler
+- Add service account in google cloud, enable gcs and bigquery roles, then get the key json file. In the airflow ui, add connection and enter the local path of the key json file then save the connection. This connection name will be used in the code.
