@@ -167,3 +167,193 @@
 [2025-04-17T20:10:59.878+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:10:59.878+0800] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-17T20:10:59.890+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:10:59.890+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-04-15 16:00:00+00:00, run_after=2025-04-16 16:00:00+00:00
 [2025-04-17T20:10:59.901+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 2.542 seconds
+[2025-04-17T20:12:39.574+0800] {processor.py:186} INFO - Started process (PID=22093) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:12:39.575+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-04-17T20:12:39.575+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:12:39.575+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:12:41.544+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.547+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:12:41.547+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.607+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:12:41.607+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt_tab to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.624+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt_tab is already up-to-date!
+[2025-04-17T20:12:41.625+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.625+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:12:41.625+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: stopwords
+[2025-04-17T20:12:41.625+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.625+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:12:41.625+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: punkt
+[2025-04-17T20:12:41.626+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.670+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:12:41.670+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:12:41.672+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.672+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:12:41.672+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:12:41.672+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.673+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:12:41.673+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:12:41.674+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:12:41.674+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:12:41.674+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:12:42.286+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:12:42.340+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:12:42.340+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:12:42.350+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:12:42.350+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-04-15 16:00:00+00:00, run_after=2025-04-16 16:00:00+00:00
+[2025-04-17T20:12:42.360+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 2.787 seconds
+[2025-04-17T20:14:25.632+0800] {processor.py:186} INFO - Started process (PID=22314) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:14:25.632+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-04-17T20:14:25.633+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:14:25.633+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:14:27.394+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.396+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:14:27.396+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.445+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:14:27.446+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt_tab to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.464+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt_tab is already up-to-date!
+[2025-04-17T20:14:27.464+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.464+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:14:27.464+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: stopwords
+[2025-04-17T20:14:27.465+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.465+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:14:27.465+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: punkt
+[2025-04-17T20:14:27.465+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.514+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:14:27.514+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:14:27.515+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.515+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:14:27.515+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:14:27.515+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.517+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:14:27.517+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:14:27.517+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:14:27.517+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:14:27.517+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:14:28.096+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:14:28.150+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:14:28.150+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:14:28.160+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:14:28.160+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-04-15 16:00:00+00:00, run_after=2025-04-16 16:00:00+00:00
+[2025-04-17T20:14:28.171+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 2.541 seconds
+[2025-04-17T20:16:27.566+0800] {processor.py:186} INFO - Started process (PID=22633) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:16:27.567+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-04-17T20:16:27.568+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:16:27.568+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:16:29.181+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.183+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:16:29.183+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.233+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:16:29.234+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt_tab to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.253+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt_tab is already up-to-date!
+[2025-04-17T20:16:29.253+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.253+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:16:29.253+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: stopwords
+[2025-04-17T20:16:29.254+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.254+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:16:29.254+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: punkt
+[2025-04-17T20:16:29.254+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.293+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:16:29.293+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:16:29.294+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.294+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:16:29.294+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:16:29.295+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.296+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:16:29.296+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:16:29.296+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:16:29.296+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:16:29.296+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:16:29.867+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:16:29.921+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:16:29.921+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:16:29.931+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:16:29.931+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-04-15 16:00:00+00:00, run_after=2025-04-16 16:00:00+00:00
+[2025-04-17T20:16:29.940+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 2.376 seconds
+[2025-04-17T20:18:12.377+0800] {processor.py:186} INFO - Started process (PID=22847) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:18:12.378+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-04-17T20:18:12.379+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:18:12.379+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:18:14.447+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.449+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:18:14.450+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.500+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:18:14.500+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt_tab to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.519+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt_tab is already up-to-date!
+[2025-04-17T20:18:14.520+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.520+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:18:14.520+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: stopwords
+[2025-04-17T20:18:14.520+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.521+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:18:14.521+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: punkt
+[2025-04-17T20:18:14.521+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.560+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:18:14.560+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:18:14.561+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.561+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:18:14.561+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:18:14.561+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.562+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:18:14.562+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:18:14.563+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:18:14.563+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:18:14.563+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:18:15.126+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:18:15.179+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:18:15.179+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:18:15.191+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:18:15.191+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-04-15 16:00:00+00:00, run_after=2025-04-16 16:00:00+00:00
+[2025-04-17T20:18:15.201+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 2.826 seconds
+[2025-04-17T20:19:55.583+0800] {processor.py:186} INFO - Started process (PID=23064) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:19:55.584+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py for tasks to queue
+[2025-04-17T20:19:55.585+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:55.585+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:19:57.220+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.221+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:19:57.221+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.269+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:19:57.269+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt_tab to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.293+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt_tab is already up-to-date!
+[2025-04-17T20:19:57.294+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.294+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-04-17T20:19:57.294+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: stopwords
+[2025-04-17T20:19:57.294+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package punkt to /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.294+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-04-17T20:19:57.294+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: punkt
+[2025-04-17T20:19:57.295+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.330+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:19:57.330+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:19:57.331+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.331+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package wordnet is already up-to-date!
+[2025-04-17T20:19:57.331+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: wordnet
+[2025-04-17T20:19:57.332+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.333+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:19:57.333+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:19:57.333+0800] {logging_mixin.py:190} WARNING - [nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /Users/ervinyeoh/nltk_data...
+[2025-04-17T20:19:57.333+0800] {logging_mixin.py:190} WARNING - [nltk_data]   Package vader_lexicon is already up-to-date!
+[2025-04-17T20:19:57.333+0800] {logging_mixin.py:190} INFO - ✅ Downloaded: vader_lexicon
+[2025-04-17T20:19:57.887+0800] {processor.py:925} INFO - DAG(s) 'reddit_yf_scraper' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py
+[2025-04-17T20:19:57.941+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:57.940+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:19:57.951+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:57.951+0800] {dag.py:4180} INFO - Setting next_dagrun for reddit_yf_scraper to 2025-04-15 16:00:00+00:00, run_after=2025-04-16 16:00:00+00:00
+[2025-04-17T20:19:57.960+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/dags/dag.py took 2.379 seconds

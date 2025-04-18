@@ -1,0 +1,28 @@
+[2025-04-18T17:29:34.496+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-18T17:29:34.505+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs manual__2025-04-18T09:28:20.702328+00:00 [queued]>
+[2025-04-18T17:29:34.518+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs manual__2025-04-18T09:28:20.702328+00:00 [queued]>
+[2025-04-18T17:29:34.519+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-18T17:29:34.540+0800] {taskinstance.py:2890} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_reddit_to_gcs> on 2025-04-18 09:28:20.702328+00:00
+[2025-04-18T17:29:34.548+0800] {standard_task_runner.py:72} INFO - Started process 33292 to run task
+[2025-04-18T17:29:34.574+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'upload_reddit_to_gcs', 'manual__2025-04-18T09:28:20.702328+00:00', '--job-id', '475', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/xg/h9xj0trn3dxds251bj2q6hf80000gn/T/tmpd424e1md']
+[2025-04-18T17:29:34.578+0800] {standard_task_runner.py:105} INFO - Job 475: Subtask upload_reddit_to_gcs
+[2025-04-18T17:29:34.630+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs manual__2025-04-18T09:28:20.702328+00:00 [running]> on host ervins-macbook-air-2.local
+[2025-04-18T17:29:34.951+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='upload_reddit_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-04-18T09:28:20.702328+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-18T09:28:20.702328+00:00'
+[2025-04-18T17:29:34.955+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-18T17:29:34.955+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-18T17:29:34.956+0800] {logging_mixin.py:190} INFO - Current task name:upload_reddit_to_gcs state:running start_date:2025-04-18 09:29:34.505590+00:00
+[2025-04-18T17:29:34.956+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-18T17:29:34.956+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-18T17:29:34.961+0800] {connection.py:277} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-04-18T17:29:34.963+0800] {base.py:84} INFO - Retrieving connection 'google_cloud_default'
+[2025-04-18T17:29:36.608+0800] {gcs.py:579} INFO - File /Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/snp500-reddit-test/AAPL_reddit_20250418.csv uploaded to reddit-test/AAPL_reddit_20250418.csv in my-data-is3107 bucket
+[2025-04-18T17:29:36.610+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-18T17:29:36.623+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-18T17:29:36.624+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=upload_reddit_to_gcs, run_id=manual__2025-04-18T09:28:20.702328+00:00, execution_date=20250418T092820, start_date=20250418T092934, end_date=20250418T092936
+[2025-04-18T17:29:36.634+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-18T17:29:36.634+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-18T17:29:36.634+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-18 09:28:20.732996+00:00
+[2025-04-18T17:29:36.635+0800] {logging_mixin.py:190} INFO - Task hostname:ervins-macbook-air-2.local operator:LocalFilesystemToGCSOperator
+[2025-04-18T17:29:36.669+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-18T17:29:36.693+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-18T17:29:36.694+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

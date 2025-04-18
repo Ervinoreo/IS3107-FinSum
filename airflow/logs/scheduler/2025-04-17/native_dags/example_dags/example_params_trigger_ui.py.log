@@ -40,3 +40,17 @@
 [2025-04-17T20:12:14.563+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:12:14.563+0800] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-17T20:12:14.569+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:12:14.568+0800] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
 [2025-04-17T20:12:14.580+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.135 seconds
+[2025-04-17T20:16:01.628+0800] {processor.py:186} INFO - Started process (PID=22580) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-04-17T20:16:01.629+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2025-04-17T20:16:01.630+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:16:01.630+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-04-17T20:16:01.682+0800] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-04-17T20:16:01.744+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:16:01.744+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:16:01.751+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:16:01.751+0800] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2025-04-17T20:16:01.761+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.135 seconds
+[2025-04-17T20:19:28.935+0800] {processor.py:186} INFO - Started process (PID=23003) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-04-17T20:19:28.937+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2025-04-17T20:19:28.937+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:28.937+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-04-17T20:19:28.996+0800] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-04-17T20:19:29.058+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:29.058+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:19:29.064+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:29.064+0800] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2025-04-17T20:19:29.074+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.141 seconds

@@ -40,3 +40,31 @@
 [2025-04-17T20:12:00.471+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:12:00.470+0800] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-17T20:12:00.476+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:12:00.476+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
 [2025-04-17T20:12:00.486+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.503 seconds
+[2025-04-17T20:13:43.561+0800] {processor.py:186} INFO - Started process (PID=22266) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:13:43.562+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-17T20:13:43.563+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:13:43.562+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:13:43.573+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:13:44.190+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:13:44.190+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:13:44.197+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:13:44.197+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-17T20:13:44.207+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.648 seconds
+[2025-04-17T20:15:44.222+0800] {processor.py:186} INFO - Started process (PID=22532) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:15:44.223+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-17T20:15:44.224+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:15:44.224+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:15:44.236+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:15:45.025+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:15:45.025+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:15:45.031+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:15:45.031+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-17T20:15:45.041+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.820 seconds
+[2025-04-17T20:17:33.132+0800] {processor.py:186} INFO - Started process (PID=22755) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:17:33.133+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-17T20:17:33.134+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:17:33.133+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:17:33.144+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:17:33.666+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:17:33.666+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:17:33.673+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:17:33.673+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-17T20:17:33.683+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.553 seconds
+[2025-04-17T20:19:14.408+0800] {processor.py:186} INFO - Started process (PID=22977) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:19:14.409+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-17T20:19:14.410+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:14.410+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:19:14.420+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-17T20:19:15.009+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:15.009+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:19:15.015+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:19:15.015+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-17T20:19:15.025+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.619 seconds

@@ -33,3 +33,17 @@
 [2025-04-17T20:10:40.781+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:10:40.781+0800] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-17T20:10:40.788+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:10:40.787+0800] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
 [2025-04-17T20:10:40.799+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py took 0.122 seconds
+[2025-04-17T20:14:09.184+0800] {processor.py:186} INFO - Started process (PID=22297) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2025-04-17T20:14:09.185+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-04-17T20:14:09.186+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:14:09.186+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2025-04-17T20:14:09.194+0800] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2025-04-17T20:14:09.284+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:14:09.283+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:14:09.290+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:14:09.290+0800] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-04-17T20:14:09.302+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py took 0.120 seconds
+[2025-04-17T20:17:55.845+0800] {processor.py:186} INFO - Started process (PID=22809) to work on /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2025-04-17T20:17:55.846+0800] {processor.py:914} INFO - Processing file /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-04-17T20:17:55.846+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:17:55.846+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2025-04-17T20:17:55.854+0800] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2025-04-17T20:17:55.943+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:17:55.943+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T20:17:55.950+0800] {logging_mixin.py:190} INFO - [2025-04-17T20:17:55.950+0800] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-04-17T20:17:55.961+0800] {processor.py:208} INFO - Processing /Users/ervinyeoh/Desktop/unimods/is3107/project/.venv/lib/python3.11/site-packages/airflow/example_dags/example_complex.py took 0.118 seconds
