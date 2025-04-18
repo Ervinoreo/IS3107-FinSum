@@ -3,13 +3,16 @@
 import pandas as pd
 import requests
 import sys
+import csv
 import os
 import pendulum
 import string
 import pandas as pd
 import re
+import shutil
 from datetime import datetime, timedelta
 from nltk.corpus import stopwords
+from google.cloud import storage
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.sentiment import SentimentIntensityAnalyzer
@@ -470,7 +473,9 @@ def reddit_yf_scraper():
             updated_row['Summary'] = summary
             updated_rows.append(updated_row)
 
-        pd.DataFrame(updated_rows).to_csv(SUMMARY_OUTPUT_PATH, index=False)
+        pd.DataFrame(updated_rows).to_csv(SUMMARY_OUTPUT_PATH, index=False, quoting=csv.QUOTE_ALL,
+    doublequote=True,
+    escapechar="\\",)
 
     @task()
     def store_into_summary_table():
@@ -505,7 +510,53 @@ def reddit_yf_scraper():
 
         load_job.result()  
         print("✅ CSV successfully uploaded to BigQuery")
+    
+    @task()
+    def cleaning():
+        """
+        Clear all files inside specified directories.
+        """
+        directories_to_clean = [
+            os.path.join(DOWNLOAD_DIR, "reddit"),
+            os.path.join(DOWNLOAD_DIR, "yf"),
+            REDDIT_OUTPUT_DIR,
+            YF_OUTPUT_DIR,
+            PROCESSED_DIR,
+            os.path.join(AIRFLOW_DIR, "ollama-dir")
+        ]
+
+        for dir_path in directories_to_clean:
+            if os.path.exists(dir_path):
+                for filename in os.listdir(dir_path):
+                    file_path = os.path.join(dir_path, filename)
+                    try:
+                        if os.path.isfile(file_path) or os.path.islink(file_path):
+                            os.unlink(file_path)  # Remove file or symlink
+                            print(f"🧹 Deleted file: {file_path}")
+                        elif os.path.isdir(file_path):
+                            shutil.rmtree(file_path)  # Remove folder and its contents
+                            print(f"🧹 Deleted directory: {file_path}")
+                    except Exception as e:
+                        print(f"⚠️ Failed to delete {file_path}. Reason: {e}")
+            else:
+                print(f"⚠️ Directory does not exist: {dir_path}")
         
+        # 🧹 Step 2: Clean GCS Buckets
+        client = storage.Client()
+        bucket = client.bucket(GCS_BUCKET_NAME)
+
+        prefixes_to_clean = ["reddit-test/", "yf-test/"]
+
+        for prefix in prefixes_to_clean:
+            blobs = bucket.list_blobs(prefix=prefix)
+            for blob in blobs:
+                if not blob.name.endswith('/'):  # Skip folder placeholders
+                    print(f"🧹 Deleting GCS file: {blob.name}")
+                    blob.delete()
+
+        print("✅ Cleaning of local files and GCS folders completed.")
+
+            
     merge_downloads = EmptyOperator(task_id="merge_downloads")
     
     # Task Dependencies
@@ -520,11 +571,13 @@ def reddit_yf_scraper():
     summary_read = fetch_yesterday_data()
     summary_gen = generate_summaries()
     summary_store = store_into_summary_table()
+    cleaning_task = cleaning()
+
     
     (yf_task >> check_yf_files >> upload_yf_to_gcs >> list_gcs_folders_task >> download_yf_files >> merge_downloads)
     (reddit_task >> check_reddit_files >> upload_reddit_to_gcs >> list_gcs_folders_task >> download_reddit_files >> merge_downloads)
 
-    merge_downloads >> unique_tickers >> preprocess_task >> load_task >> summary_read >> summary_gen >> summary_store
-    
+    merge_downloads >> unique_tickers >> preprocess_task >> load_task >> summary_read >> summary_gen >> summary_store >> cleaning_task
+     
 reddit_yf_scraper()
 
