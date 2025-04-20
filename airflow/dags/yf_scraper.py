@@ -6,7 +6,11 @@ import os
 from pytz import timezone
 
 API_KEY = "DrZFwagFdP48WQjiJ7hfLqM61SX3ikGZ"
-BASE_DIR = "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow"
+# BASE_DIR = "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow"
+
+# yueyaoz
+BASE_DIR = "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow"
+
 # YF_OUTPUT_DIR = os.path.join(BASE_DIR, "snp500-yf")
 YF_OUTPUT_DIR = os.path.join(BASE_DIR, "snp500-yf-test")
 YF_API_URL = "https://api.polygon.io/v2/reference/news"

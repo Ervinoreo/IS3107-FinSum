@@ -1,6 +1,7 @@
 
 # export AIRFLOW_HOME=$(pwd)/airflow
 import pandas as pd
+import numpy as np
 import requests
 import sys
 import csv
@@ -59,7 +60,10 @@ from airflow.operators.empty import EmptyOperator
 
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/test-62769-b846daf36f71.json"
 # os.environ["GOOGLE_BIGQUERY_CREDENTIALS"] = "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/test-62769-dbadfd9eaab9.json"
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/test-62769-e009f254cc4b.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/ervinyeoh/Desktop/unimods/is3107/project/airflow/test-62769-e009f254cc4b.json"
+
+#yueyaoz
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/is3107zyy-7bfd94aff019.json"
 
 # ✅ Define Correct Output Directories (Inside airflow/)
 # REDDIT_OUTPUT_DIR = os.path.join(AIRFLOW_DIR, "snp500-reddit")
@@ -76,9 +80,15 @@ DOWNLOAD_DIR = os.path.join(AIRFLOW_DIR, "downloads")
 PROCESSED_DIR = os.path.join(AIRFLOW_DIR, "processed")
 
 # Define GCS Bucket
-GCS_BUCKET_NAME = "my-data-is3107"
-DATASET_ID = "test-62769.finance_project"
+# GCS_BUCKET_NAME = "my-data-is3107"
+# DATASET_ID = "test-62769.finance_project"
+# TABLE_ID = "preprocessed"
+
+# yueyaoz
+GCS_BUCKET_NAME = "is3107_bucket"
+DATASET_ID = "is3107zyy.finance_project_crypto"
 TABLE_ID = "preprocessed"
+
 
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "deepseek-r1:1.5b"
@@ -332,8 +342,15 @@ def reddit_yf_scraper():
             aggregated_df['Sentiment_Volatility'] = aggregated_df['Sentiment_Volatility'].fillna(0)
 
             # Round the mean and standard deviation to 3 decimal places
-            aggregated_df['Sentiment'] = aggregated_df['Sentiment'].round(3)
-            aggregated_df['Sentiment_Volatility'] = aggregated_df['Sentiment_Volatility'].round(3)
+            # aggregated_df['Sentiment'] = aggregated_df['Sentiment'].round(3)
+            # aggregated_df['Sentiment_Volatility'] = aggregated_df['Sentiment_Volatility'].round(3)
+            if not isinstance(aggregated_df['Sentiment'], pd.Series):
+                aggregated_df['Sentiment'] = pd.Series([aggregated_df['Sentiment']])
+            if not isinstance(aggregated_df['Sentiment_Volatility'], pd.Series):
+                aggregated_df['Sentiment_Volatility'] = pd.Series([aggregated_df['Sentiment_Volatility']])
+
+            aggregated_df['Sentiment'] = aggregated_df['Sentiment'].apply(lambda x: round(x, 3) if pd.notnull(x) else x)
+            aggregated_df['Sentiment_Volatility'] = aggregated_df['Sentiment_Volatility'].apply(lambda x: round(x, 3) if pd.notnull(x) else x)
 
             # Calculating "Mentions_Change"
             aggregated_df["Mentions_Change"] = aggregated_df["Mentions"] - ystd_mentions
@@ -343,6 +360,7 @@ def reddit_yf_scraper():
 
             # Reorder the DataFrame columns
             aggregated_df = aggregated_df[new_order]
+            os.makedirs(PROCESSED_DIR, exist_ok=True)
             
             processed_path = os.path.join(PROCESSED_DIR, f"{ticker}_processed_{date}.csv")
             aggregated_df.to_csv(processed_path, index=False)
@@ -355,7 +373,8 @@ def reddit_yf_scraper():
         client = bigquery.Client()
 
         # BigQuery configuration
-        dataset_id = "test-62769.finance_project"
+        # dataset_id = "test-62769.finance_project"
+        dataset_id = "is3107zyy.finance_project_crypto"
         table_id = "preprocessed"
         
         schema = [
@@ -372,7 +391,8 @@ def reddit_yf_scraper():
             source_format=bigquery.SourceFormat.CSV,
             skip_leading_rows=1,
             autodetect=False,
-            schema=schema
+            schema=schema,
+            write_disposition="WRITE_APPEND"
         )
 
         for ticker in ticker_list:
@@ -412,6 +432,7 @@ def reddit_yf_scraper():
         """
 
         df = client.query(query).to_dataframe()
+        os.makedirs(os.path.dirname(PICKLE_PATH), exist_ok=True)
         df.to_pickle(PICKLE_PATH)
         
     @task()
@@ -498,7 +519,11 @@ def reddit_yf_scraper():
             schema=schema,
             skip_leading_rows=1,
             source_format=bigquery.SourceFormat.CSV,
-            autodetect=False
+            autodetect=False,
+            write_disposition="WRITE_APPEND",
+            allow_quoted_newlines=True,           # ✅ handles multi-line text fields
+            allow_jagged_rows=True,               # ✅ handles slightly inconsistent row lengths
+            max_bad_records=1000
         )
 
         with open(SUMMARY_OUTPUT_PATH, "rb") as source_file:
@@ -547,12 +572,21 @@ def reddit_yf_scraper():
 
         prefixes_to_clean = ["reddit-test/", "yf-test/"]
 
+        # for prefix in prefixes_to_clean:
+        #     blobs = bucket.list_blobs(prefix=prefix)
+        #     for blob in blobs:
+        #         if not blob.name.endswith('/'):  # Skip folder placeholders
+        #             print(f"🧹 Deleting GCS file: {blob.name}")
+        #             blob.delete()
         for prefix in prefixes_to_clean:
             blobs = bucket.list_blobs(prefix=prefix)
             for blob in blobs:
                 if not blob.name.endswith('/'):  # Skip folder placeholders
-                    print(f"🧹 Deleting GCS file: {blob.name}")
-                    blob.delete()
+                    if bucket.blob(blob.name).exists(client=client):
+                        print(f"🧹 Deleting GCS file: {blob.name}")
+                        blob.delete()
+                    else:
+                        print(f"⚠️ Skipped missing GCS file: {blob.name}")
 
         print("✅ Cleaning of local files and GCS folders completed.")
 

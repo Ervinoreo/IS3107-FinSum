@@ -1,0 +1,1724 @@
+[2025-04-19T15:11:03.276+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-19T15:11:03.290+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-19T05:23:16.481934+00:00 [queued]>
+[2025-04-19T15:11:03.297+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-19T05:23:16.481934+00:00 [queued]>
+[2025-04-19T15:11:03.297+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-19T15:11:03.302+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_reddit> on 2025-04-19 05:23:16.481934+00:00
+[2025-04-19T15:11:03.307+0800] {standard_task_runner.py:72} INFO - Started process 24234 to run task
+[2025-04-19T15:11:03.311+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_reddit', 'manual__2025-04-19T05:23:16.481934+00:00', '--job-id', '723', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpdue26xhb']
+[2025-04-19T15:11:03.311+0800] {standard_task_runner.py:105} INFO - Job 723: Subtask run_reddit
+[2025-04-19T15:11:03.336+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-19T05:23:16.481934+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-19T15:11:03.365+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_reddit' AIRFLOW_CTX_EXECUTION_DATE='2025-04-19T05:23:16.481934+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-19T05:23:16.481934+00:00'
+[2025-04-19T15:11:03.366+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-19T15:11:03.366+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-19T15:11:03.366+0800] {logging_mixin.py:190} INFO - Current task name:run_reddit state:running start_date:2025-04-19 07:11:03.290472+00:00
+[2025-04-19T15:11:03.366+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-19T15:11:03.367+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-19T15:11:15.053+0800] {patcher.py:346} INFO - patching driver executable /Users/yueyaoz/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2025-04-19T15:11:18.236+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AAPL...
+[2025-04-19T15:11:22.787+0800] {logging_mixin.py:190} INFO - No posts found for AAPL. Saving an empty file.
+[2025-04-19T15:11:22.801+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NVDA...
+[2025-04-19T15:11:26.012+0800] {logging_mixin.py:190} INFO - No posts found for NVDA. Saving an empty file.
+[2025-04-19T15:11:26.016+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MSFT...
+[2025-04-19T15:11:30.939+0800] {logging_mixin.py:190} INFO - No posts found for MSFT. Saving an empty file.
+[2025-04-19T15:11:30.942+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMZN...
+[2025-04-19T15:11:35.157+0800] {logging_mixin.py:190} INFO - No posts found for AMZN. Saving an empty file.
+[2025-04-19T15:11:35.160+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GOOGL...
+[2025-04-19T15:11:40.826+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for GOOGL successfully!
+[2025-04-19T15:11:44.543+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:11:47.316+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for GOOGL successfully!
+[2025-04-19T15:11:50.984+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:11:52.989+0800] {logging_mixin.py:190} INFO - ✅ All posts for GOOGL have been processed.
+[2025-04-19T15:11:52.995+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GOOGL_reddit_20250419.csv
+[2025-04-19T15:11:52.995+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GOOG...
+[2025-04-19T15:11:57.186+0800] {logging_mixin.py:190} INFO - No posts found for GOOG. Saving an empty file.
+[2025-04-19T15:11:57.189+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for META...
+[2025-04-19T15:12:00.594+0800] {logging_mixin.py:190} INFO - No posts found for META. Saving an empty file.
+[2025-04-19T15:12:00.599+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TSLA...
+[2025-04-19T15:12:04.696+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for TSLA successfully!
+[2025-04-19T15:12:08.397+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:12:11.369+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for TSLA successfully!
+[2025-04-19T15:12:15.072+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:12:17.075+0800] {logging_mixin.py:190} INFO - ✅ All posts for TSLA have been processed.
+[2025-04-19T15:12:17.077+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TSLA_reddit_20250419.csv
+[2025-04-19T15:12:17.077+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AVGO...
+[2025-04-19T15:12:19.452+0800] {logging_mixin.py:190} INFO - No posts found for AVGO. Saving an empty file.
+[2025-04-19T15:12:19.454+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BRK-B...
+[2025-04-19T15:12:23.567+0800] {logging_mixin.py:190} INFO - No posts found for BRK-B. Saving an empty file.
+[2025-04-19T15:12:23.571+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WMT...
+[2025-04-19T15:12:28.479+0800] {logging_mixin.py:190} INFO - No posts found for WMT. Saving an empty file.
+[2025-04-19T15:12:28.482+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LLY...
+[2025-04-19T15:12:32.580+0800] {logging_mixin.py:190} INFO - No posts found for LLY. Saving an empty file.
+[2025-04-19T15:12:32.584+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for JPM...
+[2025-04-19T15:12:37.556+0800] {logging_mixin.py:190} INFO - No posts found for JPM. Saving an empty file.
+[2025-04-19T15:12:37.559+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for V...
+[2025-04-19T15:12:42.374+0800] {logging_mixin.py:190} INFO - No posts found for V. Saving an empty file.
+[2025-04-19T15:12:42.379+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MA...
+[2025-04-19T15:12:47.471+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for MA successfully!
+[2025-04-19T15:12:51.211+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:12:53.213+0800] {logging_mixin.py:190} INFO - ✅ All posts for MA have been processed.
+[2025-04-19T15:12:53.217+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MA_reddit_20250419.csv
+[2025-04-19T15:12:53.217+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ORCL...
+[2025-04-19T15:12:57.656+0800] {logging_mixin.py:190} INFO - No posts found for ORCL. Saving an empty file.
+[2025-04-19T15:12:57.659+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for XOM...
+[2025-04-19T15:13:01.417+0800] {logging_mixin.py:190} INFO - No posts found for XOM. Saving an empty file.
+[2025-04-19T15:13:01.422+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for UNH...
+[2025-04-19T15:13:05.609+0800] {logging_mixin.py:190} INFO - No posts found for UNH. Saving an empty file.
+[2025-04-19T15:13:05.611+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for COST...
+[2025-04-19T15:13:09.582+0800] {logging_mixin.py:190} INFO - No posts found for COST. Saving an empty file.
+[2025-04-19T15:13:09.587+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PG...
+[2025-04-19T15:13:13.201+0800] {logging_mixin.py:190} INFO - No posts found for PG. Saving an empty file.
+[2025-04-19T15:13:13.204+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HD...
+[2025-04-19T15:13:16.864+0800] {logging_mixin.py:190} INFO - No posts found for HD. Saving an empty file.
+[2025-04-19T15:13:16.867+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NFLX...
+[2025-04-19T15:13:20.785+0800] {logging_mixin.py:190} INFO - No posts found for NFLX. Saving an empty file.
+[2025-04-19T15:13:20.787+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for JNJ...
+[2025-04-19T15:13:24.968+0800] {logging_mixin.py:190} INFO - No posts found for JNJ. Saving an empty file.
+[2025-04-19T15:13:24.972+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BAC...
+[2025-04-19T15:13:29.139+0800] {logging_mixin.py:190} INFO - No posts found for BAC. Saving an empty file.
+[2025-04-19T15:13:29.142+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CRM...
+[2025-04-19T15:13:34.047+0800] {logging_mixin.py:190} INFO - No posts found for CRM. Saving an empty file.
+[2025-04-19T15:13:34.051+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ABBV...
+[2025-04-19T15:13:38.205+0800] {logging_mixin.py:190} INFO - No posts found for ABBV. Saving an empty file.
+[2025-04-19T15:13:38.208+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KO...
+[2025-04-19T15:13:42.310+0800] {logging_mixin.py:190} INFO - No posts found for KO. Saving an empty file.
+[2025-04-19T15:13:42.313+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TMUS...
+[2025-04-19T15:13:46.560+0800] {logging_mixin.py:190} INFO - No posts found for TMUS. Saving an empty file.
+[2025-04-19T15:13:46.563+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CVX...
+[2025-04-19T15:13:50.784+0800] {logging_mixin.py:190} INFO - No posts found for CVX. Saving an empty file.
+[2025-04-19T15:13:50.787+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MRK...
+[2025-04-19T15:13:53.963+0800] {logging_mixin.py:190} INFO - No posts found for MRK. Saving an empty file.
+[2025-04-19T15:13:53.966+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WFC...
+[2025-04-19T15:13:58.079+0800] {logging_mixin.py:190} INFO - No posts found for WFC. Saving an empty file.
+[2025-04-19T15:13:58.083+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CSCO...
+[2025-04-19T15:14:02.312+0800] {logging_mixin.py:190} INFO - No posts found for CSCO. Saving an empty file.
+[2025-04-19T15:14:02.315+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ACN...
+[2025-04-19T15:14:06.491+0800] {logging_mixin.py:190} INFO - No posts found for ACN. Saving an empty file.
+[2025-04-19T15:14:06.492+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NOW...
+[2025-04-19T15:14:11.341+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for NOW successfully!
+[2025-04-19T15:14:15.063+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:14:17.066+0800] {logging_mixin.py:190} INFO - ✅ All posts for NOW have been processed.
+[2025-04-19T15:14:17.072+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NOW_reddit_20250419.csv
+[2025-04-19T15:14:17.072+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AXP...
+[2025-04-19T15:14:21.187+0800] {logging_mixin.py:190} INFO - No posts found for AXP. Saving an empty file.
+[2025-04-19T15:14:21.191+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MCD...
+[2025-04-19T15:14:25.326+0800] {logging_mixin.py:190} INFO - No posts found for MCD. Saving an empty file.
+[2025-04-19T15:14:25.329+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PEP...
+[2025-04-19T15:14:29.622+0800] {logging_mixin.py:190} INFO - No posts found for PEP. Saving an empty file.
+[2025-04-19T15:14:29.626+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BX...
+[2025-04-19T15:14:33.866+0800] {logging_mixin.py:190} INFO - No posts found for BX. Saving an empty file.
+[2025-04-19T15:14:33.867+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IBM...
+[2025-04-19T15:14:37.253+0800] {logging_mixin.py:190} INFO - No posts found for IBM. Saving an empty file.
+[2025-04-19T15:14:37.256+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DIS...
+[2025-04-19T15:14:42.205+0800] {logging_mixin.py:190} INFO - No posts found for DIS. Saving an empty file.
+[2025-04-19T15:14:42.208+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LIN...
+[2025-04-19T15:14:46.290+0800] {logging_mixin.py:190} INFO - No posts found for LIN. Saving an empty file.
+[2025-04-19T15:14:46.294+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TMO...
+[2025-04-19T15:14:50.402+0800] {logging_mixin.py:190} INFO - No posts found for TMO. Saving an empty file.
+[2025-04-19T15:14:50.405+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MS...
+[2025-04-19T15:14:54.606+0800] {logging_mixin.py:190} INFO - No posts found for MS. Saving an empty file.
+[2025-04-19T15:14:54.609+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ABT...
+[2025-04-19T15:14:58.828+0800] {logging_mixin.py:190} INFO - No posts found for ABT. Saving an empty file.
+[2025-04-19T15:14:58.832+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ADBE...
+[2025-04-19T15:15:02.971+0800] {logging_mixin.py:190} INFO - No posts found for ADBE. Saving an empty file.
+[2025-04-19T15:15:02.974+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMD...
+[2025-04-19T15:15:07.107+0800] {logging_mixin.py:190} INFO - No posts found for AMD. Saving an empty file.
+[2025-04-19T15:15:07.108+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PM...
+[2025-04-19T15:15:11.271+0800] {logging_mixin.py:190} INFO - No posts found for PM. Saving an empty file.
+[2025-04-19T15:15:11.274+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ISRG...
+[2025-04-19T15:15:15.598+0800] {logging_mixin.py:190} INFO - No posts found for ISRG. Saving an empty file.
+[2025-04-19T15:15:15.601+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PLTR...
+[2025-04-19T15:15:19.680+0800] {logging_mixin.py:190} INFO - No posts found for PLTR. Saving an empty file.
+[2025-04-19T15:15:19.682+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GE...
+[2025-04-19T15:15:23.849+0800] {logging_mixin.py:190} INFO - No posts found for GE. Saving an empty file.
+[2025-04-19T15:15:23.852+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for INTU...
+[2025-04-19T15:15:27.987+0800] {logging_mixin.py:190} INFO - No posts found for INTU. Saving an empty file.
+[2025-04-19T15:15:27.991+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GS...
+[2025-04-19T15:15:31.390+0800] {logging_mixin.py:190} INFO - No posts found for GS. Saving an empty file.
+[2025-04-19T15:15:31.393+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CAT...
+[2025-04-19T15:15:34.847+0800] {logging_mixin.py:190} INFO - No posts found for CAT. Saving an empty file.
+[2025-04-19T15:15:34.849+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TXN...
+[2025-04-19T15:15:38.031+0800] {logging_mixin.py:190} INFO - No posts found for TXN. Saving an empty file.
+[2025-04-19T15:15:38.034+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for QCOM...
+[2025-04-19T15:15:41.482+0800] {logging_mixin.py:190} INFO - No posts found for QCOM. Saving an empty file.
+[2025-04-19T15:15:41.486+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VZ...
+[2025-04-19T15:15:45.636+0800] {logging_mixin.py:190} INFO - No posts found for VZ. Saving an empty file.
+[2025-04-19T15:15:45.639+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BKNG...
+[2025-04-19T15:15:50.526+0800] {logging_mixin.py:190} INFO - No posts found for BKNG. Saving an empty file.
+[2025-04-19T15:15:50.530+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DHR...
+[2025-04-19T15:15:54.665+0800] {logging_mixin.py:190} INFO - No posts found for DHR. Saving an empty file.
+[2025-04-19T15:15:54.669+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for T...
+[2025-04-19T15:16:00.296+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for T successfully!
+[2025-04-19T15:16:04.059+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:16:06.062+0800] {logging_mixin.py:190} INFO - ✅ All posts for T have been processed.
+[2025-04-19T15:16:06.065+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/T_reddit_20250419.csv
+[2025-04-19T15:16:06.066+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BLK...
+[2025-04-19T15:16:10.229+0800] {logging_mixin.py:190} INFO - No posts found for BLK. Saving an empty file.
+[2025-04-19T15:16:10.231+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RTX...
+[2025-04-19T15:16:14.452+0800] {logging_mixin.py:190} INFO - No posts found for RTX. Saving an empty file.
+[2025-04-19T15:16:14.454+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SPGI...
+[2025-04-19T15:16:18.555+0800] {logging_mixin.py:190} INFO - No posts found for SPGI. Saving an empty file.
+[2025-04-19T15:16:18.558+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PFE...
+[2025-04-19T15:16:22.745+0800] {logging_mixin.py:190} INFO - No posts found for PFE. Saving an empty file.
+[2025-04-19T15:16:22.749+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HON...
+[2025-04-19T15:16:25.953+0800] {logging_mixin.py:190} INFO - No posts found for HON. Saving an empty file.
+[2025-04-19T15:16:25.956+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NEE...
+[2025-04-19T15:16:30.064+0800] {logging_mixin.py:190} INFO - No posts found for NEE. Saving an empty file.
+[2025-04-19T15:16:30.067+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CMCSA...
+[2025-04-19T15:16:34.298+0800] {logging_mixin.py:190} INFO - No posts found for CMCSA. Saving an empty file.
+[2025-04-19T15:16:34.301+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ANET...
+[2025-04-19T15:16:37.729+0800] {logging_mixin.py:190} INFO - No posts found for ANET. Saving an empty file.
+[2025-04-19T15:16:37.733+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMGN...
+[2025-04-19T15:16:40.944+0800] {logging_mixin.py:190} INFO - No posts found for AMGN. Saving an empty file.
+[2025-04-19T15:16:40.947+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PGR...
+[2025-04-19T15:16:45.831+0800] {logging_mixin.py:190} INFO - No posts found for PGR. Saving an empty file.
+[2025-04-19T15:16:45.834+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LOW...
+[2025-04-19T15:16:50.969+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for LOW successfully!
+[2025-04-19T15:16:54.625+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:16:57.680+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for LOW successfully!
+[2025-04-19T15:17:01.401+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:17:03.406+0800] {logging_mixin.py:190} INFO - ✅ All posts for LOW have been processed.
+[2025-04-19T15:17:03.411+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LOW_reddit_20250419.csv
+[2025-04-19T15:17:03.411+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SYK...
+[2025-04-19T15:17:07.099+0800] {logging_mixin.py:190} INFO - No posts found for SYK. Saving an empty file.
+[2025-04-19T15:17:07.102+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for UNP...
+[2025-04-19T15:17:10.584+0800] {logging_mixin.py:190} INFO - No posts found for UNP. Saving an empty file.
+[2025-04-19T15:17:10.588+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TJX...
+[2025-04-19T15:17:14.690+0800] {logging_mixin.py:190} INFO - No posts found for TJX. Saving an empty file.
+[2025-04-19T15:17:14.693+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KKR...
+[2025-04-19T15:17:18.885+0800] {logging_mixin.py:190} INFO - No posts found for KKR. Saving an empty file.
+[2025-04-19T15:17:18.888+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SCHW...
+[2025-04-19T15:17:22.998+0800] {logging_mixin.py:190} INFO - No posts found for SCHW. Saving an empty file.
+[2025-04-19T15:17:23.000+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ETN...
+[2025-04-19T15:17:26.156+0800] {logging_mixin.py:190} INFO - No posts found for ETN. Saving an empty file.
+[2025-04-19T15:17:26.159+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMAT...
+[2025-04-19T15:17:30.295+0800] {logging_mixin.py:190} INFO - No posts found for AMAT. Saving an empty file.
+[2025-04-19T15:17:30.298+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BA...
+[2025-04-19T15:17:34.463+0800] {logging_mixin.py:190} INFO - No posts found for BA. Saving an empty file.
+[2025-04-19T15:17:34.467+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BSX...
+[2025-04-19T15:17:38.584+0800] {logging_mixin.py:190} INFO - No posts found for BSX. Saving an empty file.
+[2025-04-19T15:17:38.588+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for C...
+[2025-04-19T15:17:41.849+0800] {logging_mixin.py:190} INFO - No posts found for C. Saving an empty file.
+[2025-04-19T15:17:41.852+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for UBER...
+[2025-04-19T15:17:45.259+0800] {logging_mixin.py:190} INFO - No posts found for UBER. Saving an empty file.
+[2025-04-19T15:17:45.262+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for COP...
+[2025-04-19T15:17:48.643+0800] {logging_mixin.py:190} INFO - No posts found for COP. Saving an empty file.
+[2025-04-19T15:17:48.644+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PANW...
+[2025-04-19T15:17:51.794+0800] {logging_mixin.py:190} INFO - No posts found for PANW. Saving an empty file.
+[2025-04-19T15:17:51.796+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ADP...
+[2025-04-19T15:17:55.953+0800] {logging_mixin.py:190} INFO - No posts found for ADP. Saving an empty file.
+[2025-04-19T15:17:55.955+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DE...
+[2025-04-19T15:18:02.592+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for DE successfully!
+[2025-04-19T15:18:06.310+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:18:08.313+0800] {logging_mixin.py:190} INFO - ✅ All posts for DE have been processed.
+[2025-04-19T15:18:08.321+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DE_reddit_20250419.csv
+[2025-04-19T15:18:08.322+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FI...
+[2025-04-19T15:18:12.499+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for FI successfully!
+[2025-04-19T15:18:16.163+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:18:18.946+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for FI successfully!
+[2025-04-19T15:18:22.606+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:18:24.610+0800] {logging_mixin.py:190} INFO - ✅ All posts for FI have been processed.
+[2025-04-19T15:18:24.616+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FI_reddit_20250419.csv
+[2025-04-19T15:18:24.617+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BMY...
+[2025-04-19T15:18:28.793+0800] {logging_mixin.py:190} INFO - No posts found for BMY. Saving an empty file.
+[2025-04-19T15:18:28.796+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LMT...
+[2025-04-19T15:18:32.945+0800] {logging_mixin.py:190} INFO - No posts found for LMT. Saving an empty file.
+[2025-04-19T15:18:32.948+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GILD...
+[2025-04-19T15:18:37.157+0800] {logging_mixin.py:190} INFO - No posts found for GILD. Saving an empty file.
+[2025-04-19T15:18:37.162+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NKE...
+[2025-04-19T15:18:41.458+0800] {logging_mixin.py:190} INFO - No posts found for NKE. Saving an empty file.
+[2025-04-19T15:18:41.461+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CB...
+[2025-04-19T15:18:44.677+0800] {logging_mixin.py:190} INFO - No posts found for CB. Saving an empty file.
+[2025-04-19T15:18:44.680+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for UPS...
+[2025-04-19T15:18:50.540+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for UPS successfully!
+[2025-04-19T15:18:54.309+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:18:57.071+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for UPS successfully!
+[2025-04-19T15:19:00.746+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:19:03.478+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for UPS successfully!
+[2025-04-19T15:19:07.148+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:19:09.151+0800] {logging_mixin.py:190} INFO - ✅ All posts for UPS have been processed.
+[2025-04-19T15:19:09.157+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/UPS_reddit_20250419.csv
+[2025-04-19T15:19:09.158+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ADI...
+[2025-04-19T15:19:14.147+0800] {logging_mixin.py:190} INFO - No posts found for ADI. Saving an empty file.
+[2025-04-19T15:19:14.149+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MMC...
+[2025-04-19T15:19:18.406+0800] {logging_mixin.py:190} INFO - No posts found for MMC. Saving an empty file.
+[2025-04-19T15:19:18.410+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MDT...
+[2025-04-19T15:19:21.840+0800] {logging_mixin.py:190} INFO - No posts found for MDT. Saving an empty file.
+[2025-04-19T15:19:21.843+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VRTX...
+[2025-04-19T15:19:25.279+0800] {logging_mixin.py:190} INFO - No posts found for VRTX. Saving an empty file.
+[2025-04-19T15:19:25.282+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MU...
+[2025-04-19T15:19:30.599+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for MU successfully!
+[2025-04-19T15:19:34.248+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:19:36.254+0800] {logging_mixin.py:190} INFO - ✅ All posts for MU have been processed.
+[2025-04-19T15:19:36.260+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MU_reddit_20250419.csv
+[2025-04-19T15:19:36.261+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SBUX...
+[2025-04-19T15:19:39.463+0800] {logging_mixin.py:190} INFO - No posts found for SBUX. Saving an empty file.
+[2025-04-19T15:19:39.467+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PLD...
+[2025-04-19T15:19:44.384+0800] {logging_mixin.py:190} INFO - No posts found for PLD. Saving an empty file.
+[2025-04-19T15:19:44.388+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GEV...
+[2025-04-19T15:19:48.573+0800] {logging_mixin.py:190} INFO - No posts found for GEV. Saving an empty file.
+[2025-04-19T15:19:48.577+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LRCX...
+[2025-04-19T15:19:53.487+0800] {logging_mixin.py:190} INFO - No posts found for LRCX. Saving an empty file.
+[2025-04-19T15:19:53.489+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MO...
+[2025-04-19T15:19:58.303+0800] {logging_mixin.py:190} INFO - No posts found for MO. Saving an empty file.
+[2025-04-19T15:19:58.306+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SO...
+[2025-04-19T15:20:03.213+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for SO successfully!
+[2025-04-19T15:20:06.954+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:20:09.776+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for SO successfully!
+[2025-04-19T15:20:13.540+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:20:16.526+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for SO successfully!
+[2025-04-19T15:20:20.213+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:20:24.092+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for SO successfully!
+[2025-04-19T15:20:27.767+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:20:29.775+0800] {logging_mixin.py:190} INFO - ✅ All posts for SO have been processed.
+[2025-04-19T15:20:29.782+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/SO_reddit_20250419.csv
+[2025-04-19T15:20:29.782+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EQIX...
+[2025-04-19T15:20:34.006+0800] {logging_mixin.py:190} INFO - No posts found for EQIX. Saving an empty file.
+[2025-04-19T15:20:34.010+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CRWD...
+[2025-04-19T15:20:38.168+0800] {logging_mixin.py:190} INFO - No posts found for CRWD. Saving an empty file.
+[2025-04-19T15:20:38.171+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PYPL...
+[2025-04-19T15:20:42.450+0800] {logging_mixin.py:190} INFO - No posts found for PYPL. Saving an empty file.
+[2025-04-19T15:20:42.453+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SHW...
+[2025-04-19T15:20:45.869+0800] {logging_mixin.py:190} INFO - No posts found for SHW. Saving an empty file.
+[2025-04-19T15:20:45.871+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ICE...
+[2025-04-19T15:20:50.825+0800] {logging_mixin.py:190} INFO - No posts found for ICE. Saving an empty file.
+[2025-04-19T15:20:50.828+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CME...
+[2025-04-19T15:20:54.019+0800] {logging_mixin.py:190} INFO - No posts found for CME. Saving an empty file.
+[2025-04-19T15:20:54.021+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMT...
+[2025-04-19T15:20:58.193+0800] {logging_mixin.py:190} INFO - No posts found for AMT. Saving an empty file.
+[2025-04-19T15:20:58.195+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for APH...
+[2025-04-19T15:21:02.091+0800] {logging_mixin.py:190} INFO - No posts found for APH. Saving an empty file.
+[2025-04-19T15:21:02.094+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ELV...
+[2025-04-19T15:21:05.452+0800] {logging_mixin.py:190} INFO - No posts found for ELV. Saving an empty file.
+[2025-04-19T15:21:05.454+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TT...
+[2025-04-19T15:21:09.344+0800] {logging_mixin.py:190} INFO - No posts found for TT. Saving an empty file.
+[2025-04-19T15:21:09.345+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MCO...
+[2025-04-19T15:21:12.713+0800] {logging_mixin.py:190} INFO - No posts found for MCO. Saving an empty file.
+[2025-04-19T15:21:12.716+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CMG...
+[2025-04-19T15:21:16.151+0800] {logging_mixin.py:190} INFO - No posts found for CMG. Saving an empty file.
+[2025-04-19T15:21:16.152+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for INTC...
+[2025-04-19T15:21:20.318+0800] {logging_mixin.py:190} INFO - No posts found for INTC. Saving an empty file.
+[2025-04-19T15:21:20.321+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KLAC...
+[2025-04-19T15:21:23.492+0800] {logging_mixin.py:190} INFO - No posts found for KLAC. Saving an empty file.
+[2025-04-19T15:21:23.496+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ABNB...
+[2025-04-19T15:21:26.876+0800] {logging_mixin.py:190} INFO - No posts found for ABNB. Saving an empty file.
+[2025-04-19T15:21:26.880+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DUK...
+[2025-04-19T15:21:30.085+0800] {logging_mixin.py:190} INFO - No posts found for DUK. Saving an empty file.
+[2025-04-19T15:21:30.088+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PH...
+[2025-04-19T15:21:33.569+0800] {logging_mixin.py:190} INFO - No posts found for PH. Saving an empty file.
+[2025-04-19T15:21:33.573+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CDNS...
+[2025-04-19T15:21:37.776+0800] {logging_mixin.py:190} INFO - No posts found for CDNS. Saving an empty file.
+[2025-04-19T15:21:37.778+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WM...
+[2025-04-19T15:21:41.015+0800] {logging_mixin.py:190} INFO - No posts found for WM. Saving an empty file.
+[2025-04-19T15:21:41.017+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DELL...
+[2025-04-19T15:21:44.175+0800] {logging_mixin.py:190} INFO - No posts found for DELL. Saving an empty file.
+[2025-04-19T15:21:44.178+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MDLZ...
+[2025-04-19T15:21:47.377+0800] {logging_mixin.py:190} INFO - No posts found for MDLZ. Saving an empty file.
+[2025-04-19T15:21:47.379+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MAR...
+[2025-04-19T15:21:51.498+0800] {logging_mixin.py:190} INFO - No posts found for MAR. Saving an empty file.
+[2025-04-19T15:21:51.501+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MSI...
+[2025-04-19T15:21:54.879+0800] {logging_mixin.py:190} INFO - No posts found for MSI. Saving an empty file.
+[2025-04-19T15:21:54.883+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WELL...
+[2025-04-19T15:21:59.775+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for WELL successfully!
+[2025-04-19T15:22:03.453+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:22:06.375+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for WELL successfully!
+[2025-04-19T15:22:10.174+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:22:12.181+0800] {logging_mixin.py:190} INFO - ✅ All posts for WELL have been processed.
+[2025-04-19T15:22:12.186+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/WELL_reddit_20250419.csv
+[2025-04-19T15:22:12.186+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AON...
+[2025-04-19T15:22:16.356+0800] {logging_mixin.py:190} INFO - No posts found for AON. Saving an empty file.
+[2025-04-19T15:22:16.359+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for REGN...
+[2025-04-19T15:22:19.868+0800] {logging_mixin.py:190} INFO - No posts found for REGN. Saving an empty file.
+[2025-04-19T15:22:19.875+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CI...
+[2025-04-19T15:22:24.832+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for CI successfully!
+[2025-04-19T15:22:28.508+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:22:30.512+0800] {logging_mixin.py:190} INFO - ✅ All posts for CI have been processed.
+[2025-04-19T15:22:30.517+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CI_reddit_20250419.csv
+[2025-04-19T15:22:30.518+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HCA...
+[2025-04-19T15:22:34.007+0800] {logging_mixin.py:190} INFO - No posts found for HCA. Saving an empty file.
+[2025-04-19T15:22:34.010+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PNC...
+[2025-04-19T15:22:38.151+0800] {logging_mixin.py:190} INFO - No posts found for PNC. Saving an empty file.
+[2025-04-19T15:22:38.153+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ITW...
+[2025-04-19T15:22:41.653+0800] {logging_mixin.py:190} INFO - No posts found for ITW. Saving an empty file.
+[2025-04-19T15:22:41.657+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SNPS...
+[2025-04-19T15:22:45.072+0800] {logging_mixin.py:190} INFO - No posts found for SNPS. Saving an empty file.
+[2025-04-19T15:22:45.075+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CTAS...
+[2025-04-19T15:22:49.341+0800] {logging_mixin.py:190} INFO - No posts found for CTAS. Saving an empty file.
+[2025-04-19T15:22:49.345+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CL...
+[2025-04-19T15:22:53.471+0800] {logging_mixin.py:190} INFO - No posts found for CL. Saving an empty file.
+[2025-04-19T15:22:53.474+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for USB...
+[2025-04-19T15:22:57.650+0800] {logging_mixin.py:190} INFO - No posts found for USB. Saving an empty file.
+[2025-04-19T15:22:57.655+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FTNT...
+[2025-04-19T15:23:01.797+0800] {logging_mixin.py:190} INFO - No posts found for FTNT. Saving an empty file.
+[2025-04-19T15:23:01.801+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ZTS...
+[2025-04-19T15:23:05.934+0800] {logging_mixin.py:190} INFO - No posts found for ZTS. Saving an empty file.
+[2025-04-19T15:23:05.937+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MCK...
+[2025-04-19T15:23:10.909+0800] {logging_mixin.py:190} INFO - No posts found for MCK. Saving an empty file.
+[2025-04-19T15:23:10.912+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GD...
+[2025-04-19T15:23:15.966+0800] {logging_mixin.py:190} INFO - No posts found for GD. Saving an empty file.
+[2025-04-19T15:23:15.971+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TDG...
+[2025-04-19T15:23:20.157+0800] {logging_mixin.py:190} INFO - No posts found for TDG. Saving an empty file.
+[2025-04-19T15:23:20.161+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CEG...
+[2025-04-19T15:23:25.767+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for CEG successfully!
+[2025-04-19T15:23:29.429+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:23:32.429+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for CEG successfully!
+[2025-04-19T15:23:36.073+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:23:38.077+0800] {logging_mixin.py:190} INFO - ✅ All posts for CEG have been processed.
+[2025-04-19T15:23:38.082+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CEG_reddit_20250419.csv
+[2025-04-19T15:23:38.082+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AJG...
+[2025-04-19T15:23:43.023+0800] {logging_mixin.py:190} INFO - No posts found for AJG. Saving an empty file.
+[2025-04-19T15:23:43.025+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EMR...
+[2025-04-19T15:23:47.161+0800] {logging_mixin.py:190} INFO - No posts found for EMR. Saving an empty file.
+[2025-04-19T15:23:47.164+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MMM...
+[2025-04-19T15:23:51.368+0800] {logging_mixin.py:190} INFO - No posts found for MMM. Saving an empty file.
+[2025-04-19T15:23:51.371+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ORLY...
+[2025-04-19T15:23:55.753+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for ORLY successfully!
+[2025-04-19T15:23:59.405+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:24:02.120+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for ORLY successfully!
+[2025-04-19T15:24:05.889+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:24:08.729+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for ORLY successfully!
+[2025-04-19T15:24:12.463+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:24:15.285+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for ORLY successfully!
+[2025-04-19T15:24:18.969+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:24:20.973+0800] {logging_mixin.py:190} INFO - ✅ All posts for ORLY have been processed.
+[2025-04-19T15:24:20.985+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ORLY_reddit_20250419.csv
+[2025-04-19T15:24:20.986+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NOC...
+[2025-04-19T15:24:25.246+0800] {logging_mixin.py:190} INFO - No posts found for NOC. Saving an empty file.
+[2025-04-19T15:24:25.250+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for COF...
+[2025-04-19T15:24:30.192+0800] {logging_mixin.py:190} INFO - No posts found for COF. Saving an empty file.
+[2025-04-19T15:24:30.197+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ECL...
+[2025-04-19T15:24:34.314+0800] {logging_mixin.py:190} INFO - No posts found for ECL. Saving an empty file.
+[2025-04-19T15:24:34.318+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EOG...
+[2025-04-19T15:24:39.240+0800] {logging_mixin.py:190} INFO - No posts found for EOG. Saving an empty file.
+[2025-04-19T15:24:39.243+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FDX...
+[2025-04-19T15:24:43.151+0800] {logging_mixin.py:190} INFO - No posts found for FDX. Saving an empty file.
+[2025-04-19T15:24:43.153+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BDX...
+[2025-04-19T15:24:46.519+0800] {logging_mixin.py:190} INFO - No posts found for BDX. Saving an empty file.
+[2025-04-19T15:24:46.521+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for APD...
+[2025-04-19T15:24:50.768+0800] {logging_mixin.py:190} INFO - No posts found for APD. Saving an empty file.
+[2025-04-19T15:24:50.771+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WMB...
+[2025-04-19T15:24:54.860+0800] {logging_mixin.py:190} INFO - No posts found for WMB. Saving an empty file.
+[2025-04-19T15:24:54.863+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SPG...
+[2025-04-19T15:24:58.969+0800] {logging_mixin.py:190} INFO - No posts found for SPG. Saving an empty file.
+[2025-04-19T15:24:58.973+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ADSK...
+[2025-04-19T15:25:02.118+0800] {logging_mixin.py:190} INFO - No posts found for ADSK. Saving an empty file.
+[2025-04-19T15:25:02.121+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RCL...
+[2025-04-19T15:25:06.284+0800] {logging_mixin.py:190} INFO - No posts found for RCL. Saving an empty file.
+[2025-04-19T15:25:06.287+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RSG...
+[2025-04-19T15:25:11.205+0800] {logging_mixin.py:190} INFO - No posts found for RSG. Saving an empty file.
+[2025-04-19T15:25:11.208+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CARR...
+[2025-04-19T15:25:16.815+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for CARR successfully!
+[2025-04-19T15:25:20.594+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:25:22.598+0800] {logging_mixin.py:190} INFO - ✅ All posts for CARR have been processed.
+[2025-04-19T15:25:22.605+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CARR_reddit_20250419.csv
+[2025-04-19T15:25:22.606+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CSX...
+[2025-04-19T15:25:26.020+0800] {logging_mixin.py:190} INFO - No posts found for CSX. Saving an empty file.
+[2025-04-19T15:25:26.024+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HLT...
+[2025-04-19T15:25:30.110+0800] {logging_mixin.py:190} INFO - No posts found for HLT. Saving an empty file.
+[2025-04-19T15:25:30.113+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DLR...
+[2025-04-19T15:25:34.780+0800] {logging_mixin.py:190} INFO - No posts found for DLR. Saving an empty file.
+[2025-04-19T15:25:34.783+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TGT...
+[2025-04-19T15:25:39.008+0800] {logging_mixin.py:190} INFO - No posts found for TGT. Saving an empty file.
+[2025-04-19T15:25:39.012+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KMI...
+[2025-04-19T15:25:42.248+0800] {logging_mixin.py:190} INFO - No posts found for KMI. Saving an empty file.
+[2025-04-19T15:25:42.250+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for OKE...
+[2025-04-19T15:25:46.355+0800] {logging_mixin.py:190} INFO - No posts found for OKE. Saving an empty file.
+[2025-04-19T15:25:46.358+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TFC...
+[2025-04-19T15:25:50.605+0800] {logging_mixin.py:190} INFO - No posts found for TFC. Saving an empty file.
+[2025-04-19T15:25:50.609+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AFL...
+[2025-04-19T15:25:57.446+0800] {logging_mixin.py:190} INFO - No posts found for AFL. Saving an empty file.
+[2025-04-19T15:25:57.447+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GM...
+[2025-04-19T15:26:01.626+0800] {logging_mixin.py:190} INFO - No posts found for GM. Saving an empty file.
+[2025-04-19T15:26:01.629+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BK...
+[2025-04-19T15:26:05.767+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for BK successfully!
+[2025-04-19T15:26:09.433+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:26:12.174+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for BK successfully!
+[2025-04-19T15:26:15.808+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:26:17.811+0800] {logging_mixin.py:190} INFO - ✅ All posts for BK have been processed.
+[2025-04-19T15:26:17.835+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BK_reddit_20250419.csv
+[2025-04-19T15:26:17.836+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ROP...
+[2025-04-19T15:26:21.986+0800] {logging_mixin.py:190} INFO - No posts found for ROP. Saving an empty file.
+[2025-04-19T15:26:21.990+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MET...
+[2025-04-19T15:26:25.474+0800] {logging_mixin.py:190} INFO - No posts found for MET. Saving an empty file.
+[2025-04-19T15:26:25.478+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CPRT...
+[2025-04-19T15:26:30.395+0800] {logging_mixin.py:190} INFO - No posts found for CPRT. Saving an empty file.
+[2025-04-19T15:26:30.397+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FCX...
+[2025-04-19T15:26:35.030+0800] {logging_mixin.py:190} INFO - No posts found for FCX. Saving an empty file.
+[2025-04-19T15:26:35.033+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CVS...
+[2025-04-19T15:26:39.245+0800] {logging_mixin.py:190} INFO - No posts found for CVS. Saving an empty file.
+[2025-04-19T15:26:39.248+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PCAR...
+[2025-04-19T15:26:42.656+0800] {logging_mixin.py:190} INFO - No posts found for PCAR. Saving an empty file.
+[2025-04-19T15:26:42.659+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SRE...
+[2025-04-19T15:26:46.785+0800] {logging_mixin.py:190} INFO - No posts found for SRE. Saving an empty file.
+[2025-04-19T15:26:46.788+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AZO...
+[2025-04-19T15:26:50.949+0800] {logging_mixin.py:190} INFO - No posts found for AZO. Saving an empty file.
+[2025-04-19T15:26:50.951+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TRV...
+[2025-04-19T15:26:54.338+0800] {logging_mixin.py:190} INFO - No posts found for TRV. Saving an empty file.
+[2025-04-19T15:26:54.341+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NXPI...
+[2025-04-19T15:26:58.438+0800] {logging_mixin.py:190} INFO - No posts found for NXPI. Saving an empty file.
+[2025-04-19T15:26:58.440+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for JCI...
+[2025-04-19T15:27:02.525+0800] {logging_mixin.py:190} INFO - No posts found for JCI. Saving an empty file.
+[2025-04-19T15:27:02.528+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GWW...
+[2025-04-19T15:27:07.440+0800] {logging_mixin.py:190} INFO - No posts found for GWW. Saving an empty file.
+[2025-04-19T15:27:07.442+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NSC...
+[2025-04-19T15:27:11.628+0800] {logging_mixin.py:190} INFO - No posts found for NSC. Saving an empty file.
+[2025-04-19T15:27:11.630+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PSA...
+[2025-04-19T15:27:15.917+0800] {logging_mixin.py:190} INFO - No posts found for PSA. Saving an empty file.
+[2025-04-19T15:27:15.920+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SLB...
+[2025-04-19T15:27:19.286+0800] {logging_mixin.py:190} INFO - No posts found for SLB. Saving an empty file.
+[2025-04-19T15:27:19.289+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMP...
+[2025-04-19T15:27:23.193+0800] {logging_mixin.py:190} INFO - No posts found for AMP. Saving an empty file.
+[2025-04-19T15:27:23.196+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ALL...
+[2025-04-19T15:27:28.496+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for ALL successfully!
+[2025-04-19T15:27:32.187+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:27:35.155+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for ALL successfully!
+[2025-04-19T15:27:38.885+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:27:40.887+0800] {logging_mixin.py:190} INFO - ✅ All posts for ALL have been processed.
+[2025-04-19T15:27:40.889+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ALL_reddit_20250419.csv
+[2025-04-19T15:27:40.889+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FICO...
+[2025-04-19T15:27:44.414+0800] {logging_mixin.py:190} INFO - No posts found for FICO. Saving an empty file.
+[2025-04-19T15:27:44.417+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MNST...
+[2025-04-19T15:27:47.666+0800] {logging_mixin.py:190} INFO - No posts found for MNST. Saving an empty file.
+[2025-04-19T15:27:47.669+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PAYX...
+[2025-04-19T15:27:51.229+0800] {logging_mixin.py:190} INFO - No posts found for PAYX. Saving an empty file.
+[2025-04-19T15:27:51.230+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CHTR...
+[2025-04-19T15:27:54.456+0800] {logging_mixin.py:190} INFO - No posts found for CHTR. Saving an empty file.
+[2025-04-19T15:27:54.458+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AEP...
+[2025-04-19T15:27:57.622+0800] {logging_mixin.py:190} INFO - No posts found for AEP. Saving an empty file.
+[2025-04-19T15:27:57.624+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ROST...
+[2025-04-19T15:28:01.015+0800] {logging_mixin.py:190} INFO - No posts found for ROST. Saving an empty file.
+[2025-04-19T15:28:01.018+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PWR...
+[2025-04-19T15:28:05.164+0800] {logging_mixin.py:190} INFO - No posts found for PWR. Saving an empty file.
+[2025-04-19T15:28:05.166+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CMI...
+[2025-04-19T15:28:09.337+0800] {logging_mixin.py:190} INFO - No posts found for CMI. Saving an empty file.
+[2025-04-19T15:28:09.340+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AXON...
+[2025-04-19T15:28:13.504+0800] {logging_mixin.py:190} INFO - No posts found for AXON. Saving an empty file.
+[2025-04-19T15:28:13.507+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VST...
+[2025-04-19T15:28:17.649+0800] {logging_mixin.py:190} INFO - No posts found for VST. Saving an empty file.
+[2025-04-19T15:28:17.651+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for URI...
+[2025-04-19T15:28:21.742+0800] {logging_mixin.py:190} INFO - No posts found for URI. Saving an empty file.
+[2025-04-19T15:28:21.743+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MSCI...
+[2025-04-19T15:28:28.066+0800] {logging_mixin.py:190} INFO - No posts found for MSCI. Saving an empty file.
+[2025-04-19T15:28:28.068+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LULU...
+[2025-04-19T15:28:32.401+0800] {logging_mixin.py:190} INFO - No posts found for LULU. Saving an empty file.
+[2025-04-19T15:28:32.404+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for O...
+[2025-04-19T15:28:37.000+0800] {logging_mixin.py:190} INFO - No posts found for O. Saving an empty file.
+[2025-04-19T15:28:37.002+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PSX...
+[2025-04-19T15:28:41.866+0800] {logging_mixin.py:190} INFO - No posts found for PSX. Saving an empty file.
+[2025-04-19T15:28:41.867+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AIG...
+[2025-04-19T15:28:45.028+0800] {logging_mixin.py:190} INFO - No posts found for AIG. Saving an empty file.
+[2025-04-19T15:28:45.030+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FANG...
+[2025-04-19T15:28:48.380+0800] {logging_mixin.py:190} INFO - No posts found for FANG. Saving an empty file.
+[2025-04-19T15:28:48.385+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for D...
+[2025-04-19T15:28:54.297+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for D successfully!
+[2025-04-19T15:28:58.031+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:29:00.032+0800] {logging_mixin.py:190} INFO - ✅ All posts for D have been processed.
+[2025-04-19T15:29:00.034+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/D_reddit_20250419.csv
+[2025-04-19T15:29:00.034+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HWM...
+[2025-04-19T15:29:05.024+0800] {logging_mixin.py:190} INFO - No posts found for HWM. Saving an empty file.
+[2025-04-19T15:29:05.027+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DHI...
+[2025-04-19T15:29:08.498+0800] {logging_mixin.py:190} INFO - No posts found for DHI. Saving an empty file.
+[2025-04-19T15:29:08.500+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KR...
+[2025-04-19T15:29:12.695+0800] {logging_mixin.py:190} INFO - No posts found for KR. Saving an empty file.
+[2025-04-19T15:29:12.699+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NDAQ...
+[2025-04-19T15:29:16.850+0800] {logging_mixin.py:190} INFO - No posts found for NDAQ. Saving an empty file.
+[2025-04-19T15:29:16.852+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for OXY...
+[2025-04-19T15:29:21.849+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for OXY successfully!
+[2025-04-19T15:29:25.551+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:29:27.552+0800] {logging_mixin.py:190} INFO - ✅ All posts for OXY have been processed.
+[2025-04-19T15:29:27.554+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/OXY_reddit_20250419.csv
+[2025-04-19T15:29:27.555+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EW...
+[2025-04-19T15:29:31.777+0800] {logging_mixin.py:190} INFO - No posts found for EW. Saving an empty file.
+[2025-04-19T15:29:31.778+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for COR...
+[2025-04-19T15:29:35.931+0800] {logging_mixin.py:190} INFO - No posts found for COR. Saving an empty file.
+[2025-04-19T15:29:35.946+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KDP...
+[2025-04-19T15:29:40.081+0800] {logging_mixin.py:190} INFO - No posts found for KDP. Saving an empty file.
+[2025-04-19T15:29:40.084+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FIS...
+[2025-04-19T15:29:44.958+0800] {logging_mixin.py:190} INFO - No posts found for FIS. Saving an empty file.
+[2025-04-19T15:29:44.963+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KMB...
+[2025-04-19T15:29:48.408+0800] {logging_mixin.py:190} INFO - No posts found for KMB. Saving an empty file.
+[2025-04-19T15:29:48.411+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NEM...
+[2025-04-19T15:29:52.001+0800] {logging_mixin.py:190} INFO - No posts found for NEM. Saving an empty file.
+[2025-04-19T15:29:52.002+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DFS...
+[2025-04-19T15:29:56.152+0800] {logging_mixin.py:190} INFO - No posts found for DFS. Saving an empty file.
+[2025-04-19T15:29:56.153+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PCG...
+[2025-04-19T15:30:00.517+0800] {logging_mixin.py:190} INFO - No posts found for PCG. Saving an empty file.
+[2025-04-19T15:30:00.520+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TEL...
+[2025-04-19T15:30:04.723+0800] {logging_mixin.py:190} INFO - No posts found for TEL. Saving an empty file.
+[2025-04-19T15:30:04.726+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MPC...
+[2025-04-19T15:30:08.898+0800] {logging_mixin.py:190} INFO - No posts found for MPC. Saving an empty file.
+[2025-04-19T15:30:08.901+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FAST...
+[2025-04-19T15:30:13.104+0800] {logging_mixin.py:190} INFO - No posts found for FAST. Saving an empty file.
+[2025-04-19T15:30:13.105+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AME...
+[2025-04-19T15:30:17.450+0800] {logging_mixin.py:190} INFO - No posts found for AME. Saving an empty file.
+[2025-04-19T15:30:17.453+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PEG...
+[2025-04-19T15:30:21.663+0800] {logging_mixin.py:190} INFO - No posts found for PEG. Saving an empty file.
+[2025-04-19T15:30:21.666+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PRU...
+[2025-04-19T15:30:25.844+0800] {logging_mixin.py:190} INFO - No posts found for PRU. Saving an empty file.
+[2025-04-19T15:30:25.847+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KVUE...
+[2025-04-19T15:30:29.944+0800] {logging_mixin.py:190} INFO - No posts found for KVUE. Saving an empty file.
+[2025-04-19T15:30:29.946+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for STZ...
+[2025-04-19T15:30:33.159+0800] {logging_mixin.py:190} INFO - No posts found for STZ. Saving an empty file.
+[2025-04-19T15:30:33.161+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GLW...
+[2025-04-19T15:30:37.329+0800] {logging_mixin.py:190} INFO - No posts found for GLW. Saving an empty file.
+[2025-04-19T15:30:37.331+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LHX...
+[2025-04-19T15:30:40.514+0800] {logging_mixin.py:190} INFO - No posts found for LHX. Saving an empty file.
+[2025-04-19T15:30:40.517+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GRMN...
+[2025-04-19T15:30:44.734+0800] {logging_mixin.py:190} INFO - No posts found for GRMN. Saving an empty file.
+[2025-04-19T15:30:44.736+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BKR...
+[2025-04-19T15:30:48.914+0800] {logging_mixin.py:190} INFO - No posts found for BKR. Saving an empty file.
+[2025-04-19T15:30:48.917+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CBRE...
+[2025-04-19T15:30:52.351+0800] {logging_mixin.py:190} INFO - No posts found for CBRE. Saving an empty file.
+[2025-04-19T15:30:52.352+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CTVA...
+[2025-04-19T15:30:56.513+0800] {logging_mixin.py:190} INFO - No posts found for CTVA. Saving an empty file.
+[2025-04-19T15:30:56.516+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HES...
+[2025-04-19T15:31:01.390+0800] {logging_mixin.py:190} INFO - No posts found for HES. Saving an empty file.
+[2025-04-19T15:31:01.393+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CCI...
+[2025-04-19T15:31:05.638+0800] {logging_mixin.py:190} INFO - No posts found for CCI. Saving an empty file.
+[2025-04-19T15:31:05.640+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DAL...
+[2025-04-19T15:31:09.753+0800] {logging_mixin.py:190} INFO - No posts found for DAL. Saving an empty file.
+[2025-04-19T15:31:09.755+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CTSH...
+[2025-04-19T15:31:13.955+0800] {logging_mixin.py:190} INFO - No posts found for CTSH. Saving an empty file.
+[2025-04-19T15:31:13.958+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for F...
+[2025-04-19T15:31:17.409+0800] {logging_mixin.py:190} INFO - No posts found for F. Saving an empty file.
+[2025-04-19T15:31:17.411+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VRSK...
+[2025-04-19T15:31:22.773+0800] {logging_mixin.py:190} INFO - No posts found for VRSK. Saving an empty file.
+[2025-04-19T15:31:22.776+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EA...
+[2025-04-19T15:31:25.929+0800] {logging_mixin.py:190} INFO - No posts found for EA. Saving an empty file.
+[2025-04-19T15:31:25.932+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ODFL...
+[2025-04-19T15:31:29.230+0800] {logging_mixin.py:190} INFO - No posts found for ODFL. Saving an empty file.
+[2025-04-19T15:31:29.233+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for XEL...
+[2025-04-19T15:31:32.794+0800] {logging_mixin.py:190} INFO - No posts found for XEL. Saving an empty file.
+[2025-04-19T15:31:32.795+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TRGP...
+[2025-04-19T15:31:37.036+0800] {logging_mixin.py:190} INFO - No posts found for TRGP. Saving an empty file.
+[2025-04-19T15:31:37.038+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for A...
+[2025-04-19T15:31:42.121+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for A successfully!
+[2025-04-19T15:31:45.784+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:31:48.658+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for A successfully!
+[2025-04-19T15:31:52.433+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:31:55.095+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for A successfully!
+[2025-04-19T15:31:58.735+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:01.475+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for A successfully!
+[2025-04-19T15:32:05.116+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:07.909+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for A successfully!
+[2025-04-19T15:32:11.650+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:14.306+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 6 for A successfully!
+[2025-04-19T15:32:17.982+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:20.974+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 7 for A successfully!
+[2025-04-19T15:32:24.617+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:27.643+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 8 for A successfully!
+[2025-04-19T15:32:31.408+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:34.402+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 9 for A successfully!
+[2025-04-19T15:32:38.080+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:40.082+0800] {logging_mixin.py:190} INFO - ✅ All posts for A have been processed.
+[2025-04-19T15:32:40.087+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/A_reddit_20250419.csv
+[2025-04-19T15:32:40.087+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IT...
+[2025-04-19T15:32:44.313+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for IT successfully!
+[2025-04-19T15:32:48.206+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:51.209+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for IT successfully!
+[2025-04-19T15:32:54.907+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:32:57.722+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for IT successfully!
+[2025-04-19T15:33:01.399+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:33:04.275+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for IT successfully!
+[2025-04-19T15:33:08.004+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:33:10.767+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for IT successfully!
+[2025-04-19T15:33:14.431+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:33:17.181+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 6 for IT successfully!
+[2025-04-19T15:33:20.862+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:33:24.125+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 7 for IT successfully!
+[2025-04-19T15:33:27.810+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:33:30.933+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 8 for IT successfully!
+[2025-04-19T15:33:34.781+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:33:36.784+0800] {logging_mixin.py:190} INFO - ✅ All posts for IT have been processed.
+[2025-04-19T15:33:36.791+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/IT_reddit_20250419.csv
+[2025-04-19T15:33:36.792+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LVS...
+[2025-04-19T15:33:40.306+0800] {logging_mixin.py:190} INFO - No posts found for LVS. Saving an empty file.
+[2025-04-19T15:33:40.312+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SYY...
+[2025-04-19T15:33:44.448+0800] {logging_mixin.py:190} INFO - No posts found for SYY. Saving an empty file.
+[2025-04-19T15:33:44.451+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VLO...
+[2025-04-19T15:33:48.631+0800] {logging_mixin.py:190} INFO - No posts found for VLO. Saving an empty file.
+[2025-04-19T15:33:48.636+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for OTIS...
+[2025-04-19T15:33:52.803+0800] {logging_mixin.py:190} INFO - No posts found for OTIS. Saving an empty file.
+[2025-04-19T15:33:52.806+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LEN...
+[2025-04-19T15:33:57.788+0800] {logging_mixin.py:190} INFO - No posts found for LEN. Saving an empty file.
+[2025-04-19T15:33:57.792+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EXC...
+[2025-04-19T15:34:01.255+0800] {logging_mixin.py:190} INFO - No posts found for EXC. Saving an empty file.
+[2025-04-19T15:34:01.259+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IR...
+[2025-04-19T15:34:05.483+0800] {logging_mixin.py:190} INFO - No posts found for IR. Saving an empty file.
+[2025-04-19T15:34:05.485+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for YUM...
+[2025-04-19T15:34:08.888+0800] {logging_mixin.py:190} INFO - No posts found for YUM. Saving an empty file.
+[2025-04-19T15:34:08.891+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KHC...
+[2025-04-19T15:34:13.892+0800] {logging_mixin.py:190} INFO - No posts found for KHC. Saving an empty file.
+[2025-04-19T15:34:13.895+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GEHC...
+[2025-04-19T15:34:17.315+0800] {logging_mixin.py:190} INFO - No posts found for GEHC. Saving an empty file.
+[2025-04-19T15:34:17.317+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IQV...
+[2025-04-19T15:34:20.671+0800] {logging_mixin.py:190} INFO - No posts found for IQV. Saving an empty file.
+[2025-04-19T15:34:20.672+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GIS...
+[2025-04-19T15:34:25.579+0800] {logging_mixin.py:190} INFO - No posts found for GIS. Saving an empty file.
+[2025-04-19T15:34:25.581+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CCL...
+[2025-04-19T15:34:28.980+0800] {logging_mixin.py:190} INFO - No posts found for CCL. Saving an empty file.
+[2025-04-19T15:34:28.982+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RMD...
+[2025-04-19T15:34:33.135+0800] {logging_mixin.py:190} INFO - No posts found for RMD. Saving an empty file.
+[2025-04-19T15:34:33.138+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VMC...
+[2025-04-19T15:34:36.544+0800] {logging_mixin.py:190} INFO - No posts found for VMC. Saving an empty file.
+[2025-04-19T15:34:36.547+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HSY...
+[2025-04-19T15:34:40.712+0800] {logging_mixin.py:190} INFO - No posts found for HSY. Saving an empty file.
+[2025-04-19T15:34:40.715+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ACGL...
+[2025-04-19T15:34:44.914+0800] {logging_mixin.py:190} INFO - No posts found for ACGL. Saving an empty file.
+[2025-04-19T15:34:44.916+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IDXX...
+[2025-04-19T15:34:49.087+0800] {logging_mixin.py:190} INFO - No posts found for IDXX. Saving an empty file.
+[2025-04-19T15:34:49.088+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WAB...
+[2025-04-19T15:34:53.279+0800] {logging_mixin.py:190} INFO - No posts found for WAB. Saving an empty file.
+[2025-04-19T15:34:53.282+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ROK...
+[2025-04-19T15:34:57.136+0800] {logging_mixin.py:190} INFO - No posts found for ROK. Saving an empty file.
+[2025-04-19T15:34:57.138+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MLM...
+[2025-04-19T15:35:00.523+0800] {logging_mixin.py:190} INFO - No posts found for MLM. Saving an empty file.
+[2025-04-19T15:35:00.525+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EXR...
+[2025-04-19T15:35:04.659+0800] {logging_mixin.py:190} INFO - No posts found for EXR. Saving an empty file.
+[2025-04-19T15:35:04.663+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DD...
+[2025-04-19T15:35:10.503+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for DD successfully!
+[2025-04-19T15:35:14.180+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:35:16.185+0800] {logging_mixin.py:190} INFO - ✅ All posts for DD have been processed.
+[2025-04-19T15:35:16.189+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DD_reddit_20250419.csv
+[2025-04-19T15:35:16.190+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ETR...
+[2025-04-19T15:35:20.334+0800] {logging_mixin.py:190} INFO - No posts found for ETR. Saving an empty file.
+[2025-04-19T15:35:20.337+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DECK...
+[2025-04-19T15:35:24.481+0800] {logging_mixin.py:190} INFO - No posts found for DECK. Saving an empty file.
+[2025-04-19T15:35:24.484+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EFX...
+[2025-04-19T15:35:28.425+0800] {logging_mixin.py:190} INFO - No posts found for EFX. Saving an empty file.
+[2025-04-19T15:35:28.429+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for UAL...
+[2025-04-19T15:35:32.610+0800] {logging_mixin.py:190} INFO - No posts found for UAL. Saving an empty file.
+[2025-04-19T15:35:32.613+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WTW...
+[2025-04-19T15:35:36.835+0800] {logging_mixin.py:190} INFO - No posts found for WTW. Saving an empty file.
+[2025-04-19T15:35:36.836+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TTWO...
+[2025-04-19T15:35:40.962+0800] {logging_mixin.py:190} INFO - No posts found for TTWO. Saving an empty file.
+[2025-04-19T15:35:40.965+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HIG...
+[2025-04-19T15:35:44.400+0800] {logging_mixin.py:190} INFO - No posts found for HIG. Saving an empty file.
+[2025-04-19T15:35:44.401+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RJF...
+[2025-04-19T15:35:48.556+0800] {logging_mixin.py:190} INFO - No posts found for RJF. Saving an empty file.
+[2025-04-19T15:35:48.558+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AVB...
+[2025-04-19T15:35:51.966+0800] {logging_mixin.py:190} INFO - No posts found for AVB. Saving an empty file.
+[2025-04-19T15:35:51.967+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MTB...
+[2025-04-19T15:35:55.398+0800] {logging_mixin.py:190} INFO - No posts found for MTB. Saving an empty file.
+[2025-04-19T15:35:55.401+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DXCM...
+[2025-04-19T15:36:00.227+0800] {logging_mixin.py:190} INFO - No posts found for DXCM. Saving an empty file.
+[2025-04-19T15:36:00.230+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ED...
+[2025-04-19T15:36:03.656+0800] {logging_mixin.py:190} INFO - No posts found for ED. Saving an empty file.
+[2025-04-19T15:36:03.660+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EBAY...
+[2025-04-19T15:36:07.183+0800] {logging_mixin.py:190} INFO - No posts found for EBAY. Saving an empty file.
+[2025-04-19T15:36:07.185+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HPQ...
+[2025-04-19T15:36:11.405+0800] {logging_mixin.py:190} INFO - No posts found for HPQ. Saving an empty file.
+[2025-04-19T15:36:11.408+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IRM...
+[2025-04-19T15:36:15.524+0800] {logging_mixin.py:190} INFO - No posts found for IRM. Saving an empty file.
+[2025-04-19T15:36:15.527+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EIX...
+[2025-04-19T15:36:19.671+0800] {logging_mixin.py:190} INFO - No posts found for EIX. Saving an empty file.
+[2025-04-19T15:36:19.674+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LYV...
+[2025-04-19T15:36:24.522+0800] {logging_mixin.py:190} INFO - No posts found for LYV. Saving an empty file.
+[2025-04-19T15:36:24.526+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VICI...
+[2025-04-19T15:36:28.723+0800] {logging_mixin.py:190} INFO - No posts found for VICI. Saving an empty file.
+[2025-04-19T15:36:28.725+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CNC...
+[2025-04-19T15:36:32.888+0800] {logging_mixin.py:190} INFO - No posts found for CNC. Saving an empty file.
+[2025-04-19T15:36:32.891+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WEC...
+[2025-04-19T15:36:36.427+0800] {logging_mixin.py:190} INFO - No posts found for WEC. Saving an empty file.
+[2025-04-19T15:36:36.430+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MCHP...
+[2025-04-19T15:36:41.337+0800] {logging_mixin.py:190} INFO - No posts found for MCHP. Saving an empty file.
+[2025-04-19T15:36:41.341+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HUM...
+[2025-04-19T15:36:45.503+0800] {logging_mixin.py:190} INFO - No posts found for HUM. Saving an empty file.
+[2025-04-19T15:36:45.506+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ANSS...
+[2025-04-19T15:36:49.713+0800] {logging_mixin.py:190} INFO - No posts found for ANSS. Saving an empty file.
+[2025-04-19T15:36:49.715+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BRO...
+[2025-04-19T15:36:54.101+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for BRO successfully!
+[2025-04-19T15:36:57.774+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:37:01.015+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for BRO successfully!
+[2025-04-19T15:37:04.691+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:37:07.475+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for BRO successfully!
+[2025-04-19T15:37:11.198+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:37:13.201+0800] {logging_mixin.py:190} INFO - ✅ All posts for BRO have been processed.
+[2025-04-19T15:37:13.207+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BRO_reddit_20250419.csv
+[2025-04-19T15:37:13.207+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CSGP...
+[2025-04-19T15:37:16.676+0800] {logging_mixin.py:190} INFO - No posts found for CSGP. Saving an empty file.
+[2025-04-19T15:37:16.681+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MPWR...
+[2025-04-19T15:37:21.027+0800] {logging_mixin.py:190} INFO - No posts found for MPWR. Saving an empty file.
+[2025-04-19T15:37:21.030+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GDDY...
+[2025-04-19T15:37:25.928+0800] {logging_mixin.py:190} INFO - No posts found for GDDY. Saving an empty file.
+[2025-04-19T15:37:25.931+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TSCO...
+[2025-04-19T15:37:29.831+0800] {logging_mixin.py:190} INFO - No posts found for TSCO. Saving an empty file.
+[2025-04-19T15:37:29.834+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for STT...
+[2025-04-19T15:37:33.947+0800] {logging_mixin.py:190} INFO - No posts found for STT. Saving an empty file.
+[2025-04-19T15:37:33.950+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CAH...
+[2025-04-19T15:37:38.182+0800] {logging_mixin.py:190} INFO - No posts found for CAH. Saving an empty file.
+[2025-04-19T15:37:38.184+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GPN...
+[2025-04-19T15:37:43.107+0800] {logging_mixin.py:190} INFO - No posts found for GPN. Saving an empty file.
+[2025-04-19T15:37:43.110+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FITB...
+[2025-04-19T15:37:47.300+0800] {logging_mixin.py:190} INFO - No posts found for FITB. Saving an empty file.
+[2025-04-19T15:37:47.301+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for XYL...
+[2025-04-19T15:37:50.840+0800] {logging_mixin.py:190} INFO - No posts found for XYL. Saving an empty file.
+[2025-04-19T15:37:50.841+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HPE...
+[2025-04-19T15:37:54.988+0800] {logging_mixin.py:190} INFO - No posts found for HPE. Saving an empty file.
+[2025-04-19T15:37:54.991+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KEYS...
+[2025-04-19T15:37:59.966+0800] {logging_mixin.py:190} INFO - No posts found for KEYS. Saving an empty file.
+[2025-04-19T15:37:59.970+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DOW...
+[2025-04-19T15:38:04.098+0800] {logging_mixin.py:190} INFO - No posts found for DOW. Saving an empty file.
+[2025-04-19T15:38:04.101+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EQR...
+[2025-04-19T15:38:08.304+0800] {logging_mixin.py:190} INFO - No posts found for EQR. Saving an empty file.
+[2025-04-19T15:38:08.307+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ON...
+[2025-04-19T15:38:12.316+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for ON successfully!
+[2025-04-19T15:38:16.078+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:38:18.797+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for ON successfully!
+[2025-04-19T15:38:22.511+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:38:25.364+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for ON successfully!
+[2025-04-19T15:38:29.028+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:38:32.053+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for ON successfully!
+[2025-04-19T15:38:35.870+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:38:38.716+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for ON successfully!
+[2025-04-19T15:38:42.442+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:38:44.447+0800] {logging_mixin.py:190} INFO - ✅ All posts for ON have been processed.
+[2025-04-19T15:38:44.456+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ON_reddit_20250419.csv
+[2025-04-19T15:38:44.456+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PPG...
+[2025-04-19T15:38:48.631+0800] {logging_mixin.py:190} INFO - No posts found for PPG. Saving an empty file.
+[2025-04-19T15:38:48.632+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for K...
+[2025-04-19T15:38:52.139+0800] {logging_mixin.py:190} INFO - No posts found for K. Saving an empty file.
+[2025-04-19T15:38:52.140+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SW...
+[2025-04-19T15:38:55.613+0800] {logging_mixin.py:190} INFO - No posts found for SW. Saving an empty file.
+[2025-04-19T15:38:55.616+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NUE...
+[2025-04-19T15:38:59.560+0800] {logging_mixin.py:190} INFO - No posts found for NUE. Saving an empty file.
+[2025-04-19T15:38:59.563+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EL...
+[2025-04-19T15:39:03.046+0800] {logging_mixin.py:190} INFO - No posts found for EL. Saving an empty file.
+[2025-04-19T15:39:03.048+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BR...
+[2025-04-19T15:39:07.181+0800] {logging_mixin.py:190} INFO - No posts found for BR. Saving an empty file.
+[2025-04-19T15:39:07.183+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WBD...
+[2025-04-19T15:39:11.386+0800] {logging_mixin.py:190} INFO - No posts found for WBD. Saving an empty file.
+[2025-04-19T15:39:11.389+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TPL...
+[2025-04-19T15:39:15.419+0800] {logging_mixin.py:190} INFO - No posts found for TPL. Saving an empty file.
+[2025-04-19T15:39:15.422+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CHD...
+[2025-04-19T15:39:19.665+0800] {logging_mixin.py:190} INFO - No posts found for CHD. Saving an empty file.
+[2025-04-19T15:39:19.669+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MTD...
+[2025-04-19T15:39:23.107+0800] {logging_mixin.py:190} INFO - No posts found for MTD. Saving an empty file.
+[2025-04-19T15:39:23.109+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DOV...
+[2025-04-19T15:39:26.689+0800] {logging_mixin.py:190} INFO - No posts found for DOV. Saving an empty file.
+[2025-04-19T15:39:26.692+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TYL...
+[2025-04-19T15:39:30.049+0800] {logging_mixin.py:190} INFO - No posts found for TYL. Saving an empty file.
+[2025-04-19T15:39:30.053+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FTV...
+[2025-04-19T15:39:33.942+0800] {logging_mixin.py:190} INFO - No posts found for FTV. Saving an empty file.
+[2025-04-19T15:39:33.945+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TROW...
+[2025-04-19T15:39:38.920+0800] {logging_mixin.py:190} INFO - No posts found for TROW. Saving an empty file.
+[2025-04-19T15:39:38.923+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VLTO...
+[2025-04-19T15:39:43.098+0800] {logging_mixin.py:190} INFO - No posts found for VLTO. Saving an empty file.
+[2025-04-19T15:39:43.101+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EQT...
+[2025-04-19T15:39:46.527+0800] {logging_mixin.py:190} INFO - No posts found for EQT. Saving an empty file.
+[2025-04-19T15:39:46.530+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SYF...
+[2025-04-19T15:39:51.513+0800] {logging_mixin.py:190} INFO - No posts found for SYF. Saving an empty file.
+[2025-04-19T15:39:51.516+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NVR...
+[2025-04-19T15:39:55.701+0800] {logging_mixin.py:190} INFO - No posts found for NVR. Saving an empty file.
+[2025-04-19T15:39:55.704+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DTE...
+[2025-04-19T15:39:59.877+0800] {logging_mixin.py:190} INFO - No posts found for DTE. Saving an empty file.
+[2025-04-19T15:39:59.880+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VTR...
+[2025-04-19T15:40:04.007+0800] {logging_mixin.py:190} INFO - No posts found for VTR. Saving an empty file.
+[2025-04-19T15:40:04.010+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AWK...
+[2025-04-19T15:40:08.123+0800] {logging_mixin.py:190} INFO - No posts found for AWK. Saving an empty file.
+[2025-04-19T15:40:08.126+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ADM...
+[2025-04-19T15:40:12.335+0800] {logging_mixin.py:190} INFO - No posts found for ADM. Saving an empty file.
+[2025-04-19T15:40:12.337+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NTAP...
+[2025-04-19T15:40:15.495+0800] {logging_mixin.py:190} INFO - No posts found for NTAP. Saving an empty file.
+[2025-04-19T15:40:15.498+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WST...
+[2025-04-19T15:40:19.679+0800] {logging_mixin.py:190} INFO - No posts found for WST. Saving an empty file.
+[2025-04-19T15:40:19.682+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CPAY...
+[2025-04-19T15:40:24.608+0800] {logging_mixin.py:190} INFO - No posts found for CPAY. Saving an empty file.
+[2025-04-19T15:40:24.611+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PPL...
+[2025-04-19T15:40:28.163+0800] {logging_mixin.py:190} INFO - No posts found for PPL. Saving an empty file.
+[2025-04-19T15:40:28.166+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LYB...
+[2025-04-19T15:40:31.648+0800] {logging_mixin.py:190} INFO - No posts found for LYB. Saving an empty file.
+[2025-04-19T15:40:31.652+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AEE...
+[2025-04-19T15:40:34.916+0800] {logging_mixin.py:190} INFO - No posts found for AEE. Saving an empty file.
+[2025-04-19T15:40:34.919+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EXPE...
+[2025-04-19T15:40:38.757+0800] {logging_mixin.py:190} INFO - No posts found for EXPE. Saving an empty file.
+[2025-04-19T15:40:38.759+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HBAN...
+[2025-04-19T15:40:42.941+0800] {logging_mixin.py:190} INFO - No posts found for HBAN. Saving an empty file.
+[2025-04-19T15:40:42.944+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CDW...
+[2025-04-19T15:40:46.942+0800] {logging_mixin.py:190} INFO - No posts found for CDW. Saving an empty file.
+[2025-04-19T15:40:46.945+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FE...
+[2025-04-19T15:40:50.364+0800] {logging_mixin.py:190} INFO - No posts found for FE. Saving an empty file.
+[2025-04-19T15:40:50.367+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HUBB...
+[2025-04-19T15:40:53.813+0800] {logging_mixin.py:190} INFO - No posts found for HUBB. Saving an empty file.
+[2025-04-19T15:40:53.815+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HAL...
+[2025-04-19T15:40:57.952+0800] {logging_mixin.py:190} INFO - No posts found for HAL. Saving an empty file.
+[2025-04-19T15:40:57.955+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ROL...
+[2025-04-19T15:41:01.451+0800] {logging_mixin.py:190} INFO - No posts found for ROL. Saving an empty file.
+[2025-04-19T15:41:01.455+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PHM...
+[2025-04-19T15:41:05.564+0800] {logging_mixin.py:190} INFO - No posts found for PHM. Saving an empty file.
+[2025-04-19T15:41:05.567+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CINF...
+[2025-04-19T15:41:09.770+0800] {logging_mixin.py:190} INFO - No posts found for CINF. Saving an empty file.
+[2025-04-19T15:41:09.774+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PTC...
+[2025-04-19T15:41:12.944+0800] {logging_mixin.py:190} INFO - No posts found for PTC. Saving an empty file.
+[2025-04-19T15:41:12.947+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WRB...
+[2025-04-19T15:41:17.101+0800] {logging_mixin.py:190} INFO - No posts found for WRB. Saving an empty file.
+[2025-04-19T15:41:17.104+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DRI...
+[2025-04-19T15:41:20.530+0800] {logging_mixin.py:190} INFO - No posts found for DRI. Saving an empty file.
+[2025-04-19T15:41:20.533+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FOXA...
+[2025-04-19T15:41:25.497+0800] {logging_mixin.py:190} INFO - No posts found for FOXA. Saving an empty file.
+[2025-04-19T15:41:25.500+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FOX...
+[2025-04-19T15:41:29.770+0800] {logging_mixin.py:190} INFO - No posts found for FOX. Saving an empty file.
+[2025-04-19T15:41:29.775+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IFF...
+[2025-04-19T15:41:34.017+0800] {logging_mixin.py:190} INFO - No posts found for IFF. Saving an empty file.
+[2025-04-19T15:41:34.020+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SBAC...
+[2025-04-19T15:41:38.883+0800] {logging_mixin.py:190} INFO - No posts found for SBAC. Saving an empty file.
+[2025-04-19T15:41:38.886+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WAT...
+[2025-04-19T15:41:42.386+0800] {logging_mixin.py:190} INFO - No posts found for WAT. Saving an empty file.
+[2025-04-19T15:41:42.390+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ERIE...
+[2025-04-19T15:41:46.330+0800] {logging_mixin.py:190} INFO - No posts found for ERIE. Saving an empty file.
+[2025-04-19T15:41:46.331+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TDY...
+[2025-04-19T15:41:50.468+0800] {logging_mixin.py:190} INFO - No posts found for TDY. Saving an empty file.
+[2025-04-19T15:41:50.473+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ATO...
+[2025-04-19T15:41:55.440+0800] {logging_mixin.py:190} INFO - No posts found for ATO. Saving an empty file.
+[2025-04-19T15:41:55.442+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RF...
+[2025-04-19T15:41:58.813+0800] {logging_mixin.py:190} INFO - No posts found for RF. Saving an empty file.
+[2025-04-19T15:41:58.814+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BIIB...
+[2025-04-19T15:42:03.005+0800] {logging_mixin.py:190} INFO - No posts found for BIIB. Saving an empty file.
+[2025-04-19T15:42:03.009+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ZBH...
+[2025-04-19T15:42:06.430+0800] {logging_mixin.py:190} INFO - No posts found for ZBH. Saving an empty file.
+[2025-04-19T15:42:06.432+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CNP...
+[2025-04-19T15:42:09.946+0800] {logging_mixin.py:190} INFO - No posts found for CNP. Saving an empty file.
+[2025-04-19T15:42:09.949+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MKC...
+[2025-04-19T15:42:13.371+0800] {logging_mixin.py:190} INFO - No posts found for MKC. Saving an empty file.
+[2025-04-19T15:42:13.373+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ES...
+[2025-04-19T15:42:17.496+0800] {logging_mixin.py:190} INFO - No posts found for ES. Saving an empty file.
+[2025-04-19T15:42:17.498+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WDC...
+[2025-04-19T15:42:20.905+0800] {logging_mixin.py:190} INFO - No posts found for WDC. Saving an empty file.
+[2025-04-19T15:42:20.908+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TSN...
+[2025-04-19T15:42:25.133+0800] {logging_mixin.py:190} INFO - No posts found for TSN. Saving an empty file.
+[2025-04-19T15:42:25.137+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TER...
+[2025-04-19T15:42:29.350+0800] {logging_mixin.py:190} INFO - No posts found for TER. Saving an empty file.
+[2025-04-19T15:42:29.353+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for STE...
+[2025-04-19T15:42:32.774+0800] {logging_mixin.py:190} INFO - No posts found for STE. Saving an empty file.
+[2025-04-19T15:42:32.777+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PKG...
+[2025-04-19T15:42:36.231+0800] {logging_mixin.py:190} INFO - No posts found for PKG. Saving an empty file.
+[2025-04-19T15:42:36.234+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CLX...
+[2025-04-19T15:42:40.411+0800] {logging_mixin.py:190} INFO - No posts found for CLX. Saving an empty file.
+[2025-04-19T15:42:40.414+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NTRS...
+[2025-04-19T15:42:45.275+0800] {logging_mixin.py:190} INFO - No posts found for NTRS. Saving an empty file.
+[2025-04-19T15:42:45.277+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ZBRA...
+[2025-04-19T15:42:49.466+0800] {logging_mixin.py:190} INFO - No posts found for ZBRA. Saving an empty file.
+[2025-04-19T15:42:49.469+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DVN...
+[2025-04-19T15:42:52.868+0800] {logging_mixin.py:190} INFO - No posts found for DVN. Saving an empty file.
+[2025-04-19T15:42:52.870+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CBOE...
+[2025-04-19T15:42:57.823+0800] {logging_mixin.py:190} INFO - No posts found for CBOE. Saving an empty file.
+[2025-04-19T15:42:57.825+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WY...
+[2025-04-19T15:43:01.960+0800] {logging_mixin.py:190} INFO - No posts found for WY. Saving an empty file.
+[2025-04-19T15:43:01.963+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LUV...
+[2025-04-19T15:43:06.131+0800] {logging_mixin.py:190} INFO - No posts found for LUV. Saving an empty file.
+[2025-04-19T15:43:06.135+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ULTA...
+[2025-04-19T15:43:09.331+0800] {logging_mixin.py:190} INFO - No posts found for ULTA. Saving an empty file.
+[2025-04-19T15:43:09.334+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CMS...
+[2025-04-19T15:43:13.292+0800] {logging_mixin.py:190} INFO - No posts found for CMS. Saving an empty file.
+[2025-04-19T15:43:13.297+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for INVH...
+[2025-04-19T15:43:17.559+0800] {logging_mixin.py:190} INFO - No posts found for INVH. Saving an empty file.
+[2025-04-19T15:43:17.561+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FSLR...
+[2025-04-19T15:43:22.439+0800] {logging_mixin.py:190} INFO - No posts found for FSLR. Saving an empty file.
+[2025-04-19T15:43:22.442+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BF-B...
+[2025-04-19T15:43:25.595+0800] {logging_mixin.py:190} INFO - No posts found for BF-B. Saving an empty file.
+[2025-04-19T15:43:25.598+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LDOS...
+[2025-04-19T15:43:30.599+0800] {logging_mixin.py:190} INFO - No posts found for LDOS. Saving an empty file.
+[2025-04-19T15:43:30.601+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CFG...
+[2025-04-19T15:43:34.811+0800] {logging_mixin.py:190} INFO - No posts found for CFG. Saving an empty file.
+[2025-04-19T15:43:34.815+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LH...
+[2025-04-19T15:43:38.220+0800] {logging_mixin.py:190} INFO - No posts found for LH. Saving an empty file.
+[2025-04-19T15:43:38.223+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VRSN...
+[2025-04-19T15:43:40.651+0800] {logging_mixin.py:190} INFO - No posts found for VRSN. Saving an empty file.
+[2025-04-19T15:43:40.653+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IP...
+[2025-04-19T15:43:44.875+0800] {logging_mixin.py:190} INFO - No posts found for IP. Saving an empty file.
+[2025-04-19T15:43:44.877+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ESS...
+[2025-04-19T15:43:48.043+0800] {logging_mixin.py:190} INFO - No posts found for ESS. Saving an empty file.
+[2025-04-19T15:43:48.045+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PODD...
+[2025-04-19T15:43:53.092+0800] {logging_mixin.py:190} INFO - No posts found for PODD. Saving an empty file.
+[2025-04-19T15:43:53.093+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for COO...
+[2025-04-19T15:43:56.990+0800] {logging_mixin.py:190} INFO - No posts found for COO. Saving an empty file.
+[2025-04-19T15:43:56.992+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SMCI...
+[2025-04-19T15:44:00.113+0800] {logging_mixin.py:190} INFO - No posts found for SMCI. Saving an empty file.
+[2025-04-19T15:44:00.115+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for STX...
+[2025-04-19T15:44:04.046+0800] {logging_mixin.py:190} INFO - No posts found for STX. Saving an empty file.
+[2025-04-19T15:44:04.049+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MAA...
+[2025-04-19T15:44:07.438+0800] {logging_mixin.py:190} INFO - No posts found for MAA. Saving an empty file.
+[2025-04-19T15:44:07.441+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FDS...
+[2025-04-19T15:44:10.630+0800] {logging_mixin.py:190} INFO - No posts found for FDS. Saving an empty file.
+[2025-04-19T15:44:10.633+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NRG...
+[2025-04-19T15:44:14.818+0800] {logging_mixin.py:190} INFO - No posts found for NRG. Saving an empty file.
+[2025-04-19T15:44:14.821+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BBY...
+[2025-04-19T15:44:19.791+0800] {logging_mixin.py:190} INFO - No posts found for BBY. Saving an empty file.
+[2025-04-19T15:44:19.794+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SNA...
+[2025-04-19T15:44:24.748+0800] {logging_mixin.py:190} INFO - No posts found for SNA. Saving an empty file.
+[2025-04-19T15:44:24.749+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for L...
+[2025-04-19T15:44:28.838+0800] {logging_mixin.py:190} INFO - No posts found for L. Saving an empty file.
+[2025-04-19T15:44:28.841+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PFG...
+[2025-04-19T15:44:33.101+0800] {logging_mixin.py:190} INFO - No posts found for PFG. Saving an empty file.
+[2025-04-19T15:44:33.106+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for STLD...
+[2025-04-19T15:44:37.497+0800] {logging_mixin.py:190} INFO - No posts found for STLD. Saving an empty file.
+[2025-04-19T15:44:37.500+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TRMB...
+[2025-04-19T15:44:41.725+0800] {logging_mixin.py:190} INFO - No posts found for TRMB. Saving an empty file.
+[2025-04-19T15:44:41.728+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for OMC...
+[2025-04-19T15:44:45.156+0800] {logging_mixin.py:190} INFO - No posts found for OMC. Saving an empty file.
+[2025-04-19T15:44:45.159+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CTRA...
+[2025-04-19T15:44:48.334+0800] {logging_mixin.py:190} INFO - No posts found for CTRA. Saving an empty file.
+[2025-04-19T15:44:48.337+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HRL...
+[2025-04-19T15:44:52.464+0800] {logging_mixin.py:190} INFO - No posts found for HRL. Saving an empty file.
+[2025-04-19T15:44:52.468+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ARE...
+[2025-04-19T15:44:57.206+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for ARE successfully!
+[2025-04-19T15:45:00.900+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:45:03.927+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for ARE successfully!
+[2025-04-19T15:45:07.669+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:45:11.341+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for ARE successfully!
+[2025-04-19T15:45:15.011+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:45:18.525+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for ARE successfully!
+[2025-04-19T15:45:22.403+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:45:25.403+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 5 for ARE successfully!
+[2025-04-19T15:45:29.162+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:45:31.167+0800] {logging_mixin.py:190} INFO - ✅ All posts for ARE have been processed.
+[2025-04-19T15:45:31.172+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ARE_reddit_20250419.csv
+[2025-04-19T15:45:31.173+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BLDR...
+[2025-04-19T15:45:34.573+0800] {logging_mixin.py:190} INFO - No posts found for BLDR. Saving an empty file.
+[2025-04-19T15:45:34.575+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for JBHT...
+[2025-04-19T15:45:38.700+0800] {logging_mixin.py:190} INFO - No posts found for JBHT. Saving an empty file.
+[2025-04-19T15:45:38.705+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GEN...
+[2025-04-19T15:45:42.944+0800] {logging_mixin.py:190} INFO - No posts found for GEN. Saving an empty file.
+[2025-04-19T15:45:42.947+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DGX...
+[2025-04-19T15:45:47.995+0800] {logging_mixin.py:190} INFO - No posts found for DGX. Saving an empty file.
+[2025-04-19T15:45:47.999+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KEY...
+[2025-04-19T15:45:52.155+0800] {logging_mixin.py:190} INFO - No posts found for KEY. Saving an empty file.
+[2025-04-19T15:45:52.158+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NI...
+[2025-04-19T15:45:57.167+0800] {logging_mixin.py:190} INFO - No posts found for NI. Saving an empty file.
+[2025-04-19T15:45:57.170+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MOH...
+[2025-04-19T15:46:01.167+0800] {logging_mixin.py:190} INFO - No posts found for MOH. Saving an empty file.
+[2025-04-19T15:46:01.170+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PNR...
+[2025-04-19T15:46:06.114+0800] {logging_mixin.py:190} INFO - No posts found for PNR. Saving an empty file.
+[2025-04-19T15:46:06.117+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for J...
+[2025-04-19T15:46:09.356+0800] {logging_mixin.py:190} INFO - No posts found for J. Saving an empty file.
+[2025-04-19T15:46:09.358+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DG...
+[2025-04-19T15:46:13.556+0800] {logging_mixin.py:190} INFO - No posts found for DG. Saving an empty file.
+[2025-04-19T15:46:13.560+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BALL...
+[2025-04-19T15:46:17.734+0800] {logging_mixin.py:190} INFO - No posts found for BALL. Saving an empty file.
+[2025-04-19T15:46:17.737+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NWS...
+[2025-04-19T15:46:26.081+0800] {logging_mixin.py:190} INFO - No posts found for NWS. Saving an empty file.
+[2025-04-19T15:46:26.084+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NWSA...
+[2025-04-19T15:46:29.315+0800] {logging_mixin.py:190} INFO - No posts found for NWSA. Saving an empty file.
+[2025-04-19T15:46:29.321+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for UDR...
+[2025-04-19T15:46:33.650+0800] {logging_mixin.py:190} INFO - No posts found for UDR. Saving an empty file.
+[2025-04-19T15:46:33.653+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HOLX...
+[2025-04-19T15:46:37.822+0800] {logging_mixin.py:190} INFO - No posts found for HOLX. Saving an empty file.
+[2025-04-19T15:46:37.823+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for JBL...
+[2025-04-19T15:46:42.694+0800] {logging_mixin.py:190} INFO - No posts found for JBL. Saving an empty file.
+[2025-04-19T15:46:42.697+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GPC...
+[2025-04-19T15:46:46.813+0800] {logging_mixin.py:190} INFO - No posts found for GPC. Saving an empty file.
+[2025-04-19T15:46:46.816+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IEX...
+[2025-04-19T15:46:50.951+0800] {logging_mixin.py:190} INFO - No posts found for IEX. Saving an empty file.
+[2025-04-19T15:46:50.952+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MAS...
+[2025-04-19T15:46:54.897+0800] {logging_mixin.py:190} INFO - No posts found for MAS. Saving an empty file.
+[2025-04-19T15:46:54.901+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KIM...
+[2025-04-19T15:46:59.775+0800] {logging_mixin.py:190} INFO - No posts found for KIM. Saving an empty file.
+[2025-04-19T15:46:59.779+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ALGN...
+[2025-04-19T15:47:03.238+0800] {logging_mixin.py:190} INFO - No posts found for ALGN. Saving an empty file.
+[2025-04-19T15:47:03.239+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DLTR...
+[2025-04-19T15:47:07.669+0800] {logging_mixin.py:190} INFO - No posts found for DLTR. Saving an empty file.
+[2025-04-19T15:47:07.671+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EXPD...
+[2025-04-19T15:47:11.922+0800] {logging_mixin.py:190} INFO - No posts found for EXPD. Saving an empty file.
+[2025-04-19T15:47:11.925+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EG...
+[2025-04-19T15:47:18.016+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for EG successfully!
+[2025-04-19T15:47:21.685+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:47:25.489+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for EG successfully!
+[2025-04-19T15:47:29.131+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:47:31.134+0800] {logging_mixin.py:190} INFO - ✅ All posts for EG have been processed.
+[2025-04-19T15:47:31.141+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EG_reddit_20250419.csv
+[2025-04-19T15:47:31.142+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MRNA...
+[2025-04-19T15:47:34.609+0800] {logging_mixin.py:190} INFO - No posts found for MRNA. Saving an empty file.
+[2025-04-19T15:47:34.611+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LNT...
+[2025-04-19T15:47:38.815+0800] {logging_mixin.py:190} INFO - No posts found for LNT. Saving an empty file.
+[2025-04-19T15:47:38.820+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AVY...
+[2025-04-19T15:47:42.005+0800] {logging_mixin.py:190} INFO - No posts found for AVY. Saving an empty file.
+[2025-04-19T15:47:42.008+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BAX...
+[2025-04-19T15:47:45.415+0800] {logging_mixin.py:190} INFO - No posts found for BAX. Saving an empty file.
+[2025-04-19T15:47:45.419+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TPR...
+[2025-04-19T15:47:48.886+0800] {logging_mixin.py:190} INFO - No posts found for TPR. Saving an empty file.
+[2025-04-19T15:47:48.888+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VTRS...
+[2025-04-19T15:47:52.271+0800] {logging_mixin.py:190} INFO - No posts found for VTRS. Saving an empty file.
+[2025-04-19T15:47:52.272+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CF...
+[2025-04-19T15:47:56.445+0800] {logging_mixin.py:190} INFO - No posts found for CF. Saving an empty file.
+[2025-04-19T15:47:56.448+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FFIV...
+[2025-04-19T15:48:00.663+0800] {logging_mixin.py:190} INFO - No posts found for FFIV. Saving an empty file.
+[2025-04-19T15:48:00.666+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DPZ...
+[2025-04-19T15:48:05.528+0800] {logging_mixin.py:190} INFO - No posts found for DPZ. Saving an empty file.
+[2025-04-19T15:48:05.531+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AKAM...
+[2025-04-19T15:48:09.786+0800] {logging_mixin.py:190} INFO - No posts found for AKAM. Saving an empty file.
+[2025-04-19T15:48:09.788+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RL...
+[2025-04-19T15:48:13.243+0800] {logging_mixin.py:190} INFO - No posts found for RL. Saving an empty file.
+[2025-04-19T15:48:13.246+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TXT...
+[2025-04-19T15:48:17.141+0800] {logging_mixin.py:190} INFO - No posts found for TXT. Saving an empty file.
+[2025-04-19T15:48:17.145+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SWKS...
+[2025-04-19T15:48:22.035+0800] {logging_mixin.py:190} INFO - No posts found for SWKS. Saving an empty file.
+[2025-04-19T15:48:22.040+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EVRG...
+[2025-04-19T15:48:25.279+0800] {logging_mixin.py:190} INFO - No posts found for EVRG. Saving an empty file.
+[2025-04-19T15:48:25.282+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EPAM...
+[2025-04-19T15:48:28.741+0800] {logging_mixin.py:190} INFO - No posts found for EPAM. Saving an empty file.
+[2025-04-19T15:48:28.742+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DOC...
+[2025-04-19T15:48:32.954+0800] {logging_mixin.py:190} INFO - No posts found for DOC. Saving an empty file.
+[2025-04-19T15:48:32.956+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for APTV...
+[2025-04-19T15:48:37.142+0800] {logging_mixin.py:190} INFO - No posts found for APTV. Saving an empty file.
+[2025-04-19T15:48:37.146+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RVTY...
+[2025-04-19T15:48:40.601+0800] {logging_mixin.py:190} INFO - No posts found for RVTY. Saving an empty file.
+[2025-04-19T15:48:40.604+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMCR...
+[2025-04-19T15:48:44.810+0800] {logging_mixin.py:190} INFO - No posts found for AMCR. Saving an empty file.
+[2025-04-19T15:48:44.814+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for REG...
+[2025-04-19T15:48:48.999+0800] {logging_mixin.py:190} INFO - No posts found for REG. Saving an empty file.
+[2025-04-19T15:48:49.002+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for POOL...
+[2025-04-19T15:48:54.844+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for POOL successfully!
+[2025-04-19T15:48:58.580+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:49:00.585+0800] {logging_mixin.py:190} INFO - ✅ All posts for POOL have been processed.
+[2025-04-19T15:49:00.590+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/POOL_reddit_20250419.csv
+[2025-04-19T15:49:00.591+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for INCY...
+[2025-04-19T15:49:03.760+0800] {logging_mixin.py:190} INFO - No posts found for INCY. Saving an empty file.
+[2025-04-19T15:49:03.764+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BXP...
+[2025-04-19T15:49:07.951+0800] {logging_mixin.py:190} INFO - No posts found for BXP. Saving an empty file.
+[2025-04-19T15:49:07.955+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KMX...
+[2025-04-19T15:49:11.524+0800] {logging_mixin.py:190} INFO - No posts found for KMX. Saving an empty file.
+[2025-04-19T15:49:11.526+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CAG...
+[2025-04-19T15:49:15.657+0800] {logging_mixin.py:190} INFO - No posts found for CAG. Saving an empty file.
+[2025-04-19T15:49:15.661+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HST...
+[2025-04-19T15:49:18.826+0800] {logging_mixin.py:190} INFO - No posts found for HST. Saving an empty file.
+[2025-04-19T15:49:18.829+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for JKHY...
+[2025-04-19T15:49:22.267+0800] {logging_mixin.py:190} INFO - No posts found for JKHY. Saving an empty file.
+[2025-04-19T15:49:22.269+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SWK...
+[2025-04-19T15:49:26.579+0800] {logging_mixin.py:190} INFO - No posts found for SWK. Saving an empty file.
+[2025-04-19T15:49:26.582+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DVA...
+[2025-04-19T15:49:30.787+0800] {logging_mixin.py:190} INFO - No posts found for DVA. Saving an empty file.
+[2025-04-19T15:49:30.790+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CPB...
+[2025-04-19T15:49:34.267+0800] {logging_mixin.py:190} INFO - No posts found for CPB. Saving an empty file.
+[2025-04-19T15:49:34.272+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CHRW...
+[2025-04-19T15:49:37.710+0800] {logging_mixin.py:190} INFO - No posts found for CHRW. Saving an empty file.
+[2025-04-19T15:49:37.712+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for JNPR...
+[2025-04-19T15:49:41.123+0800] {logging_mixin.py:190} INFO - No posts found for JNPR. Saving an empty file.
+[2025-04-19T15:49:41.127+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CPT...
+[2025-04-19T15:49:45.299+0800] {logging_mixin.py:190} INFO - No posts found for CPT. Saving an empty file.
+[2025-04-19T15:49:45.301+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TAP...
+[2025-04-19T15:49:48.716+0800] {logging_mixin.py:190} INFO - No posts found for TAP. Saving an empty file.
+[2025-04-19T15:49:48.719+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NDSN...
+[2025-04-19T15:49:51.946+0800] {logging_mixin.py:190} INFO - No posts found for NDSN. Saving an empty file.
+[2025-04-19T15:49:51.948+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PAYC...
+[2025-04-19T15:49:56.177+0800] {logging_mixin.py:190} INFO - No posts found for PAYC. Saving an empty file.
+[2025-04-19T15:49:56.180+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for UHS...
+[2025-04-19T15:50:00.578+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for UHS successfully!
+[2025-04-19T15:50:04.311+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:50:06.315+0800] {logging_mixin.py:190} INFO - ✅ All posts for UHS have been processed.
+[2025-04-19T15:50:06.319+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/UHS_reddit_20250419.csv
+[2025-04-19T15:50:06.319+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NCLH...
+[2025-04-19T15:50:11.279+0800] {logging_mixin.py:190} INFO - No posts found for NCLH. Saving an empty file.
+[2025-04-19T15:50:11.282+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DAY...
+[2025-04-19T15:50:15.478+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for DAY successfully!
+[2025-04-19T15:50:19.139+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:50:22.148+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for DAY successfully!
+[2025-04-19T15:50:26.043+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:50:28.046+0800] {logging_mixin.py:190} INFO - ✅ All posts for DAY have been processed.
+[2025-04-19T15:50:28.054+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DAY_reddit_20250419.csv
+[2025-04-19T15:50:28.054+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SJM...
+[2025-04-19T15:50:32.310+0800] {logging_mixin.py:190} INFO - No posts found for SJM. Saving an empty file.
+[2025-04-19T15:50:32.312+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TECH...
+[2025-04-19T15:50:36.467+0800] {logging_mixin.py:190} INFO - No posts found for TECH. Saving an empty file.
+[2025-04-19T15:50:36.470+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SOLV...
+[2025-04-19T15:50:40.579+0800] {logging_mixin.py:190} INFO - No posts found for SOLV. Saving an empty file.
+[2025-04-19T15:50:40.585+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ALLE...
+[2025-04-19T15:50:45.543+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for ALLE successfully!
+[2025-04-19T15:50:49.250+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:50:52.290+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for ALLE successfully!
+[2025-04-19T15:50:56.038+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:50:59.233+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for ALLE successfully!
+[2025-04-19T15:51:02.955+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:51:04.958+0800] {logging_mixin.py:190} INFO - ✅ All posts for ALLE have been processed.
+[2025-04-19T15:51:04.972+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ALLE_reddit_20250419.csv
+[2025-04-19T15:51:04.972+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BG...
+[2025-04-19T15:51:10.060+0800] {logging_mixin.py:190} INFO - No posts found for BG. Saving an empty file.
+[2025-04-19T15:51:10.065+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AIZ...
+[2025-04-19T15:51:14.817+0800] {logging_mixin.py:190} INFO - No posts found for AIZ. Saving an empty file.
+[2025-04-19T15:51:14.821+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IPG...
+[2025-04-19T15:51:19.037+0800] {logging_mixin.py:190} INFO - No posts found for IPG. Saving an empty file.
+[2025-04-19T15:51:19.039+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BEN...
+[2025-04-19T15:51:23.246+0800] {logging_mixin.py:190} INFO - No posts found for BEN. Saving an empty file.
+[2025-04-19T15:51:23.248+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EMN...
+[2025-04-19T15:51:27.444+0800] {logging_mixin.py:190} INFO - No posts found for EMN. Saving an empty file.
+[2025-04-19T15:51:27.448+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ALB...
+[2025-04-19T15:51:31.622+0800] {logging_mixin.py:190} INFO - No posts found for ALB. Saving an empty file.
+[2025-04-19T15:51:31.626+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MGM...
+[2025-04-19T15:51:34.982+0800] {logging_mixin.py:190} INFO - No posts found for MGM. Saving an empty file.
+[2025-04-19T15:51:34.984+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AOS...
+[2025-04-19T15:51:39.262+0800] {logging_mixin.py:190} INFO - No posts found for AOS. Saving an empty file.
+[2025-04-19T15:51:39.267+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WYNN...
+[2025-04-19T15:51:42.899+0800] {logging_mixin.py:190} INFO - No posts found for WYNN. Saving an empty file.
+[2025-04-19T15:51:42.902+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PNW...
+[2025-04-19T15:51:47.118+0800] {logging_mixin.py:190} INFO - No posts found for PNW. Saving an empty file.
+[2025-04-19T15:51:47.122+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ENPH...
+[2025-04-19T15:51:51.381+0800] {logging_mixin.py:190} INFO - No posts found for ENPH. Saving an empty file.
+[2025-04-19T15:51:51.384+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LKQ...
+[2025-04-19T15:51:56.295+0800] {logging_mixin.py:190} INFO - No posts found for LKQ. Saving an empty file.
+[2025-04-19T15:51:56.297+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FRT...
+[2025-04-19T15:51:59.741+0800] {logging_mixin.py:190} INFO - No posts found for FRT. Saving an empty file.
+[2025-04-19T15:51:59.742+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CRL...
+[2025-04-19T15:52:03.889+0800] {logging_mixin.py:190} INFO - No posts found for CRL. Saving an empty file.
+[2025-04-19T15:52:03.893+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GNRC...
+[2025-04-19T15:52:07.360+0800] {logging_mixin.py:190} INFO - No posts found for GNRC. Saving an empty file.
+[2025-04-19T15:52:07.363+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AES...
+[2025-04-19T15:52:11.649+0800] {logging_mixin.py:190} INFO - No posts found for AES. Saving an empty file.
+[2025-04-19T15:52:11.651+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GL...
+[2025-04-19T15:52:15.920+0800] {logging_mixin.py:190} INFO - No posts found for GL. Saving an empty file.
+[2025-04-19T15:52:15.924+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LW...
+[2025-04-19T15:52:19.524+0800] {logging_mixin.py:190} INFO - No posts found for LW. Saving an empty file.
+[2025-04-19T15:52:19.530+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HSIC...
+[2025-04-19T15:52:23.808+0800] {logging_mixin.py:190} INFO - No posts found for HSIC. Saving an empty file.
+[2025-04-19T15:52:23.809+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MKTX...
+[2025-04-19T15:52:28.009+0800] {logging_mixin.py:190} INFO - No posts found for MKTX. Saving an empty file.
+[2025-04-19T15:52:28.012+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MTCH...
+[2025-04-19T15:52:32.228+0800] {logging_mixin.py:190} INFO - No posts found for MTCH. Saving an empty file.
+[2025-04-19T15:52:32.231+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TFX...
+[2025-04-19T15:52:37.117+0800] {logging_mixin.py:190} INFO - No posts found for TFX. Saving an empty file.
+[2025-04-19T15:52:37.121+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WBA...
+[2025-04-19T15:52:42.166+0800] {logging_mixin.py:190} INFO - No posts found for WBA. Saving an empty file.
+[2025-04-19T15:52:42.169+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HAS...
+[2025-04-19T15:52:46.294+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for HAS successfully!
+[2025-04-19T15:52:50.047+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:52:52.888+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for HAS successfully!
+[2025-04-19T15:52:56.621+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:52:59.324+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for HAS successfully!
+[2025-04-19T15:53:03.067+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-19T15:53:05.069+0800] {logging_mixin.py:190} INFO - ✅ All posts for HAS have been processed.
+[2025-04-19T15:53:05.073+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/HAS_reddit_20250419.csv
+[2025-04-19T15:53:05.073+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IVZ...
+[2025-04-19T15:53:09.413+0800] {logging_mixin.py:190} INFO - No posts found for IVZ. Saving an empty file.
+[2025-04-19T15:53:09.416+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for APA...
+[2025-04-19T15:53:13.698+0800] {logging_mixin.py:190} INFO - No posts found for APA. Saving an empty file.
+[2025-04-19T15:53:13.701+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MOS...
+[2025-04-19T15:53:17.129+0800] {logging_mixin.py:190} INFO - No posts found for MOS. Saving an empty file.
+[2025-04-19T15:53:17.132+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PARA...
+[2025-04-19T15:53:21.333+0800] {logging_mixin.py:190} INFO - No posts found for PARA. Saving an empty file.
+[2025-04-19T15:53:21.337+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MHK...
+[2025-04-19T15:53:24.863+0800] {logging_mixin.py:190} INFO - No posts found for MHK. Saving an empty file.
+[2025-04-19T15:53:24.865+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CE...
+[2025-04-19T15:53:28.953+0800] {logging_mixin.py:190} INFO - No posts found for CE. Saving an empty file.
+[2025-04-19T15:53:28.958+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HII...
+[2025-04-19T15:53:34.043+0800] {logging_mixin.py:190} INFO - No posts found for HII. Saving an empty file.
+[2025-04-19T15:53:34.045+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CZR...
+[2025-04-19T15:53:39.009+0800] {logging_mixin.py:190} INFO - No posts found for CZR. Saving an empty file.
+[2025-04-19T15:53:39.013+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BWA...
+[2025-04-19T15:53:43.208+0800] {logging_mixin.py:190} INFO - No posts found for BWA. Saving an empty file.
+[2025-04-19T15:53:43.210+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for QRVO...
+[2025-04-19T15:53:46.735+0800] {logging_mixin.py:190} INFO - No posts found for QRVO. Saving an empty file.
+[2025-04-19T15:53:46.739+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FMC...
+[2025-04-19T15:53:50.931+0800] {logging_mixin.py:190} INFO - No posts found for FMC. Saving an empty file.
+[2025-04-19T15:53:50.936+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMTM...
+[2025-04-19T15:53:55.073+0800] {logging_mixin.py:190} INFO - No posts found for AMTM. Saving an empty file.
+[2025-04-19T15:53:55.647+0800] {logging_mixin.py:190} INFO - 
+✅ Done scraping Reddit posts for all tickers.
+[2025-04-19T15:53:55.648+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-19T15:53:55.656+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-19T15:53:55.657+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=run_reddit, run_id=manual__2025-04-19T05:23:16.481934+00:00, execution_date=20250419T052316, start_date=20250419T071103, end_date=20250419T075355
+[2025-04-19T15:53:55.669+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-19T15:53:55.669+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-19T15:53:55.669+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-19 05:23:16.489987+00:00
+[2025-04-19T15:53:55.669+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-19T15:53:55.720+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-19T15:53:55.738+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-19T15:53:55.738+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

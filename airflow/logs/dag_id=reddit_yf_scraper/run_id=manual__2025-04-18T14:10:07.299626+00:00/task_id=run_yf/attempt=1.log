@@ -1,0 +1,27 @@
+[2025-04-18T22:10:14.390+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-18T22:10:14.396+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf manual__2025-04-18T14:10:07.299626+00:00 [queued]>
+[2025-04-18T22:10:14.399+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf manual__2025-04-18T14:10:07.299626+00:00 [queued]>
+[2025-04-18T22:10:14.399+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-18T22:10:14.406+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_yf> on 2025-04-18 14:10:07.299626+00:00
+[2025-04-18T22:10:14.411+0800] {standard_task_runner.py:72} INFO - Started process 96773 to run task
+[2025-04-18T22:10:14.416+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_yf', 'manual__2025-04-18T14:10:07.299626+00:00', '--job-id', '516', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpf7xa9vs4']
+[2025-04-18T22:10:14.417+0800] {standard_task_runner.py:105} INFO - Job 516: Subtask run_yf
+[2025-04-18T22:10:14.438+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_yf manual__2025-04-18T14:10:07.299626+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-18T22:10:14.467+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_yf' AIRFLOW_CTX_EXECUTION_DATE='2025-04-18T14:10:07.299626+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-18T14:10:07.299626+00:00'
+[2025-04-18T22:10:14.468+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-18T22:10:14.468+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-18T22:10:14.468+0800] {logging_mixin.py:190} INFO - Current task name:run_yf state:running start_date:2025-04-18 14:10:14.396766+00:00
+[2025-04-18T22:10:14.468+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-18T22:10:14.468+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-18T22:10:14.469+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for AAPL (1/1)...
+[2025-04-18T22:10:15.266+0800] {logging_mixin.py:190} INFO - ✅ Saved 6 articles for AAPL
+[2025-04-18T22:10:27.269+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-18T22:10:27.278+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-18T22:10:27.279+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=run_yf, run_id=manual__2025-04-18T14:10:07.299626+00:00, execution_date=20250418T141007, start_date=20250418T141014, end_date=20250418T141027
+[2025-04-18T22:10:27.293+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-18T22:10:27.293+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-18T22:10:27.293+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-18 14:10:07.310729+00:00
+[2025-04-18T22:10:27.294+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-18T22:10:27.329+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-18T22:10:27.348+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-18T22:10:27.349+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,219 @@
+[2025-04-20T04:24:20.320+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-20T04:24:20.327+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-18T16:00:00+00:00 [queued]>
+[2025-04-20T04:24:20.331+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-18T16:00:00+00:00 [queued]>
+[2025-04-20T04:24:20.331+0800] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-04-20T04:24:20.335+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): cleaning> on 2025-04-18 16:00:00+00:00
+[2025-04-20T04:24:20.340+0800] {standard_task_runner.py:72} INFO - Started process 52474 to run task
+[2025-04-20T04:24:20.343+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'cleaning', 'scheduled__2025-04-18T16:00:00+00:00', '--job-id', '831', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmp2rwfzhe7']
+[2025-04-20T04:24:20.344+0800] {standard_task_runner.py:105} INFO - Job 831: Subtask cleaning
+[2025-04-20T04:24:20.365+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-18T16:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-20T04:24:20.393+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='cleaning' AIRFLOW_CTX_EXECUTION_DATE='2025-04-18T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-18T16:00:00+00:00'
+[2025-04-20T04:24:20.394+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-20T04:24:20.394+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-20T04:24:20.394+0800] {logging_mixin.py:190} INFO - Current task name:cleaning state:running start_date:2025-04-19 20:24:20.327572+00:00
+[2025-04-20T04:24:20.394+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-20T04:24:20.395+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-20T04:24:21.237+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ACN_reddit_20250420.csv
+[2025-04-20T04:24:22.016+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ADBE_reddit_20250420.csv
+[2025-04-20T04:24:22.557+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ADI_reddit_20250420.csv
+[2025-04-20T04:24:23.304+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ADP_reddit_20250420.csv
+[2025-04-20T04:24:23.973+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AMAT_reddit_20250420.csv
+[2025-04-20T04:24:24.624+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AMD_reddit_20250420.csv
+[2025-04-20T04:24:25.304+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AMGN_reddit_20250420.csv
+[2025-04-20T04:24:25.817+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AMZN_reddit_20250420.csv
+[2025-04-20T04:24:26.172+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ANET_reddit_20250420.csv
+[2025-04-20T04:24:26.528+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AVGO_reddit_20250420.csv
+[2025-04-20T04:24:27.558+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AXP_reddit_20250420.csv
+[2025-04-20T04:24:27.967+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BAC_reddit_20250420.csv
+[2025-04-20T04:24:28.474+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BA_reddit_20250420.csv
+[2025-04-20T04:24:28.852+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BKNG_reddit_20250420.csv
+[2025-04-20T04:24:29.372+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BLK_reddit_20250420.csv
+[2025-04-20T04:24:29.774+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BMY_reddit_20250420.csv
+[2025-04-20T04:24:30.124+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BRK-B_reddit_20250420.csv
+[2025-04-20T04:24:31.165+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BSX_reddit_20250420.csv
+[2025-04-20T04:24:31.554+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BX_reddit_20250420.csv
+[2025-04-20T04:24:32.170+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CAT_reddit_20250420.csv
+[2025-04-20T04:24:32.579+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CB_reddit_20250420.csv
+[2025-04-20T04:24:33.459+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CMCSA_reddit_20250420.csv
+[2025-04-20T04:24:33.878+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/COP_reddit_20250420.csv
+[2025-04-20T04:24:34.225+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/COST_reddit_20250420.csv
+[2025-04-20T04:24:34.627+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CRM_reddit_20250420.csv
+[2025-04-20T04:24:35.510+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CSCO_reddit_20250420.csv
+[2025-04-20T04:24:35.959+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CVX_reddit_20250420.csv
+[2025-04-20T04:24:36.303+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/C_reddit_20250420.csv
+[2025-04-20T04:24:36.675+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DE_reddit_20250420.csv
+[2025-04-20T04:24:37.600+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DHR_reddit_20250420.csv
+[2025-04-20T04:24:38.009+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DIS_reddit_20250420.csv
+[2025-04-20T04:24:38.910+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ETN_reddit_20250420.csv
+[2025-04-20T04:24:39.290+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/FI_reddit_20250420.csv
+[2025-04-20T04:24:39.639+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GEV_reddit_20250420.csv
+[2025-04-20T04:24:40.647+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GE_reddit_20250420.csv
+[2025-04-20T04:24:41.004+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GILD_reddit_20250420.csv
+[2025-04-20T04:24:41.979+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GOOGL_reddit_20250420.csv
+[2025-04-20T04:24:42.426+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GOOG_reddit_20250420.csv
+[2025-04-20T04:24:42.868+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GS_reddit_20250420.csv
+[2025-04-20T04:24:43.222+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/HD_reddit_20250420.csv
+[2025-04-20T04:24:43.580+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/HON_reddit_20250420.csv
+[2025-04-20T04:24:43.931+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/IBM_reddit_20250420.csv
+[2025-04-20T04:24:44.581+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/INTU_reddit_20250420.csv
+[2025-04-20T04:24:44.924+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ISRG_reddit_20250420.csv
+[2025-04-20T04:24:45.382+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/JNJ_reddit_20250420.csv
+[2025-04-20T04:24:45.733+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/JPM_reddit_20250420.csv
+[2025-04-20T04:24:46.098+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/KKR_reddit_20250420.csv
+[2025-04-20T04:24:47.085+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/KO_reddit_20250420.csv
+[2025-04-20T04:24:47.434+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LIN_reddit_20250420.csv
+[2025-04-20T04:24:47.810+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LLY_reddit_20250420.csv
+[2025-04-20T04:24:48.165+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LMT_reddit_20250420.csv
+[2025-04-20T04:24:48.558+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LOW_reddit_20250420.csv
+[2025-04-20T04:24:48.966+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MA_reddit_20250420.csv
+[2025-04-20T04:24:49.315+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MCD_reddit_20250420.csv
+[2025-04-20T04:24:49.890+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MDT_reddit_20250420.csv
+[2025-04-20T04:24:50.503+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/META_reddit_20250420.csv
+[2025-04-20T04:24:50.914+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MMC_reddit_20250420.csv
+[2025-04-20T04:24:51.322+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MRK_reddit_20250420.csv
+[2025-04-20T04:24:51.732+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MSFT_reddit_20250420.csv
+[2025-04-20T04:24:52.139+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MS_reddit_20250420.csv
+[2025-04-20T04:24:52.553+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MU_reddit_20250420.csv
+[2025-04-20T04:24:52.894+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NEE_reddit_20250420.csv
+[2025-04-20T04:24:53.475+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NFLX_reddit_20250420.csv
+[2025-04-20T04:24:54.291+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NKE_reddit_20250420.csv
+[2025-04-20T04:24:54.804+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NOW_reddit_20250420.csv
+[2025-04-20T04:24:55.212+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NVDA_reddit_20250420.csv
+[2025-04-20T04:24:55.623+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ORCL_reddit_20250420.csv
+[2025-04-20T04:24:56.546+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PANW_reddit_20250420.csv
+[2025-04-20T04:24:56.955+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PEP_reddit_20250420.csv
+[2025-04-20T04:24:57.849+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PFE_reddit_20250420.csv
+[2025-04-20T04:24:58.284+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PGR_reddit_20250420.csv
+[2025-04-20T04:24:58.695+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PG_reddit_20250420.csv
+[2025-04-20T04:24:59.619+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PLD_reddit_20250420.csv
+[2025-04-20T04:24:59.960+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PLTR_reddit_20250420.csv
+[2025-04-20T04:25:00.333+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PM_reddit_20250420.csv
+[2025-04-20T04:25:00.743+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/QCOM_reddit_20250420.csv
+[2025-04-20T04:25:01.357+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/RTX_reddit_20250420.csv
+[2025-04-20T04:25:02.021+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/SBUX_reddit_20250420.csv
+[2025-04-20T04:25:02.534+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/SCHW_reddit_20250420.csv
+[2025-04-20T04:25:02.883+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/SPGI_reddit_20250420.csv
+[2025-04-20T04:25:03.835+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/SYK_reddit_20250420.csv
+[2025-04-20T04:25:04.194+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TJX_reddit_20250420.csv
+[2025-04-20T04:40:11.521+0800] {job.py:229} INFO - Heartbeat recovered after 910.90 seconds
+[2025-04-20T04:41:10.348+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py", line 580, in cleaning
+    blob.delete()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 809, in delete
+    self.bucket.delete_blob(
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/bucket.py", line 1765, in delete_blob
+    client._delete_resource(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/client.py", line 792, in _delete_resource
+    return self._connection.api_request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/_http.py", line 90, in api_request
+    return call()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 144, in retry_target
+    result = target()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/_http/__init__.py", line 494, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.NotFound: 404 DELETE https://storage.googleapis.com/storage/v1/b/is3107_bucket/o/reddit-test%2FTJX_reddit_20250420.csv?generation=1745087206405713&prettyPrint=false: No such object: is3107_bucket/reddit-test/TJX_reddit_20250420.csv
+[2025-04-20T04:41:10.367+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-20T04:41:10.368+0800] {logging_mixin.py:190} INFO - Task start:2025-04-19 20:24:20.327572+00:00 end:2025-04-19 20:41:10.366927+00:00 duration:1010.039355
+[2025-04-20T04:41:10.368+0800] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): cleaning> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-04-18 16:00:00+00:00: scheduled__2025-04-18T16:00:00+00:00, state:running, queued_at: 2025-04-19 16:14:57.581484+00:00. externally triggered: False>
+[2025-04-20T04:41:10.368+0800] {logging_mixin.py:190} INFO - Failure caused by 404 DELETE https://storage.googleapis.com/storage/v1/b/is3107_bucket/o/reddit-test%2FTJX_reddit_20250420.csv?generation=1745087206405713&prettyPrint=false: No such object: is3107_bucket/reddit-test/TJX_reddit_20250420.csv
+[2025-04-20T04:41:10.369+0800] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=reddit_yf_scraper, task_id=cleaning, run_id=scheduled__2025-04-18T16:00:00+00:00, execution_date=20250418T160000, start_date=20250419T202420, end_date=20250419T204110
+[2025-04-20T04:41:10.381+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-20T04:41:10.382+0800] {standard_task_runner.py:124} ERROR - Failed to execute job 831 for task cleaning (404 DELETE https://storage.googleapis.com/storage/v1/b/is3107_bucket/o/reddit-test%2FTJX_reddit_20250420.csv?generation=1745087206405713&prettyPrint=false: No such object: is3107_bucket/reddit-test/TJX_reddit_20250420.csv; 52474)
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py", line 580, in cleaning
+    blob.delete()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 809, in delete
+    self.bucket.delete_blob(
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/bucket.py", line 1765, in delete_blob
+    client._delete_resource(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/client.py", line 792, in _delete_resource
+    return self._connection.api_request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/_http.py", line 90, in api_request
+    return call()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 144, in retry_target
+    result = target()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/_http/__init__.py", line 494, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.NotFound: 404 DELETE https://storage.googleapis.com/storage/v1/b/is3107_bucket/o/reddit-test%2FTJX_reddit_20250420.csv?generation=1745087206405713&prettyPrint=false: No such object: is3107_bucket/reddit-test/TJX_reddit_20250420.csv
+[2025-04-20T04:41:10.423+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-20T04:41:10.435+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-20T04:41:10.436+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

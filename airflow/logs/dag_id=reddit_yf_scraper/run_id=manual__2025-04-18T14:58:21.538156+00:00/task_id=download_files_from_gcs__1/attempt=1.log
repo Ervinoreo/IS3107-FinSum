@@ -1,0 +1,27 @@
+[2025-04-18T22:59:59.935+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-18T22:59:59.942+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.download_files_from_gcs__1 manual__2025-04-18T14:58:21.538156+00:00 [queued]>
+[2025-04-18T22:59:59.946+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.download_files_from_gcs__1 manual__2025-04-18T14:58:21.538156+00:00 [queued]>
+[2025-04-18T22:59:59.947+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-18T22:59:59.952+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): download_files_from_gcs__1> on 2025-04-18 14:58:21.538156+00:00
+[2025-04-18T22:59:59.957+0800] {standard_task_runner.py:72} INFO - Started process 1709 to run task
+[2025-04-18T22:59:59.961+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'download_files_from_gcs__1', 'manual__2025-04-18T14:58:21.538156+00:00', '--job-id', '581', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpth3uv2kt']
+[2025-04-18T22:59:59.962+0800] {standard_task_runner.py:105} INFO - Job 581: Subtask download_files_from_gcs__1
+[2025-04-18T22:59:59.983+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.download_files_from_gcs__1 manual__2025-04-18T14:58:21.538156+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-18T23:00:00.010+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='download_files_from_gcs__1' AIRFLOW_CTX_EXECUTION_DATE='2025-04-18T14:58:21.538156+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-18T14:58:21.538156+00:00'
+[2025-04-18T23:00:00.011+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-18T23:00:00.011+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-18T23:00:00.012+0800] {logging_mixin.py:190} INFO - Current task name:download_files_from_gcs__1 state:running start_date:2025-04-18 14:59:59.943207+00:00
+[2025-04-18T23:00:00.012+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-18T23:00:00.012+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-18T23:00:00.481+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/AAPL_yf_20250418.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/AAPL_yf_20250418.csv
+[2025-04-18T23:00:01.512+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/AAPL_yf_20250418.csv
+[2025-04-18T23:00:01.513+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-18T23:00:01.520+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-18T23:00:01.521+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=download_files_from_gcs__1, run_id=manual__2025-04-18T14:58:21.538156+00:00, execution_date=20250418T145821, start_date=20250418T145959, end_date=20250418T150001
+[2025-04-18T23:00:01.533+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-18T23:00:01.533+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-18T23:00:01.533+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-18 14:58:21.544427+00:00
+[2025-04-18T23:00:01.533+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-18T23:00:01.580+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-18T23:00:01.601+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-18T23:00:01.602+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

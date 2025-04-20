@@ -1,0 +1,61 @@
+[2025-04-20T16:49:31.501+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-20T16:49:31.508+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-18T16:00:00+00:00 [queued]>
+[2025-04-20T16:49:31.512+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-18T16:00:00+00:00 [queued]>
+[2025-04-20T16:49:31.512+0800] {taskinstance.py:2867} INFO - Starting attempt 3 of 4
+[2025-04-20T16:49:31.517+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): cleaning> on 2025-04-18 16:00:00+00:00
+[2025-04-20T16:49:31.521+0800] {standard_task_runner.py:72} INFO - Started process 65396 to run task
+[2025-04-20T16:49:31.525+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'cleaning', 'scheduled__2025-04-18T16:00:00+00:00', '--job-id', '832', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpa5r5_zhi']
+[2025-04-20T16:49:31.526+0800] {standard_task_runner.py:105} INFO - Job 832: Subtask cleaning
+[2025-04-20T16:49:31.551+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-18T16:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-20T16:49:31.577+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='cleaning' AIRFLOW_CTX_EXECUTION_DATE='2025-04-18T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-18T16:00:00+00:00'
+[2025-04-20T16:49:31.578+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-20T16:49:31.578+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-20T16:49:31.578+0800] {logging_mixin.py:190} INFO - Current task name:cleaning state:running start_date:2025-04-20 08:49:31.508842+00:00
+[2025-04-20T16:49:31.578+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-20T16:49:31.578+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-20T16:49:32.978+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TMO_reddit_20250420.csv
+[2025-04-20T16:49:34.143+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TMUS_reddit_20250420.csv
+[2025-04-20T16:49:35.345+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TSLA_reddit_20250420.csv
+[2025-04-20T16:49:36.504+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TXN_reddit_20250420.csv
+[2025-04-20T16:49:37.793+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/T_reddit_20250420.csv
+[2025-04-20T16:49:39.080+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/UBER_reddit_20250420.csv
+[2025-04-20T16:49:40.375+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/UNH_reddit_20250420.csv
+[2025-04-20T16:49:41.657+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/UNP_reddit_20250420.csv
+[2025-04-20T16:49:42.981+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/UPS_reddit_20250420.csv
+[2025-04-20T16:49:44.255+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/VRTX_reddit_20250420.csv
+[2025-04-20T16:49:45.531+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/VZ_reddit_20250420.csv
+[2025-04-20T16:49:47.079+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/V_reddit_20250420.csv
+[2025-04-20T16:49:48.309+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/WFC_reddit_20250420.csv
+[2025-04-20T16:49:49.533+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/WMT_reddit_20250420.csv
+[2025-04-20T16:49:50.713+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/XOM_reddit_20250420.csv
+[2025-04-20T16:49:52.504+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/AAPL_yf_20250420.csv
+[2025-04-20T16:49:53.730+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/ABBV_yf_20250420.csv
+[2025-04-20T16:49:54.890+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/AMAT_yf_20250420.csv
+[2025-04-20T16:49:56.065+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/AMD_yf_20250420.csv
+[2025-04-20T16:49:57.366+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/AMZN_yf_20250420.csv
+[2025-04-20T16:49:58.648+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/AVGO_yf_20250420.csv
+[2025-04-20T16:50:00.013+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/BA_yf_20250420.csv
+[2025-04-20T16:50:01.411+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/CRM_yf_20250420.csv
+[2025-04-20T16:50:02.662+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/GOOGL_yf_20250420.csv
+[2025-04-20T16:50:04.076+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/GOOG_yf_20250420.csv
+[2025-04-20T16:50:05.905+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/IBM_yf_20250420.csv
+[2025-04-20T16:50:06.841+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/JNJ_yf_20250420.csv
+[2025-04-20T16:50:07.582+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/JPM_yf_20250420.csv
+[2025-04-20T16:50:08.734+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/LLY_yf_20250420.csv
+[2025-04-20T16:50:10.111+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/META_yf_20250420.csv
+[2025-04-20T16:50:10.698+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/MSFT_yf_20250420.csv
+[2025-04-20T16:50:11.344+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/MU_yf_20250420.csv
+[2025-04-20T16:50:12.063+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/NVDA_yf_20250420.csv
+[2025-04-20T16:50:12.780+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/PLTR_yf_20250420.csv
+[2025-04-20T16:50:14.033+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/TMUS_yf_20250420.csv
+[2025-04-20T16:50:15.103+0800] {logging_mixin.py:190} INFO - ✅ Cleaning of local files and GCS folders completed.
+[2025-04-20T16:50:15.105+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-20T16:50:15.110+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-20T16:50:15.111+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=cleaning, run_id=scheduled__2025-04-18T16:00:00+00:00, execution_date=20250418T160000, start_date=20250420T084931, end_date=20250420T085015
+[2025-04-20T16:50:15.120+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-20T16:50:15.120+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-20T16:50:15.120+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-20 08:49:28.705365+00:00
+[2025-04-20T16:50:15.120+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-20T16:50:15.154+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-20T16:50:15.161+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-20T16:50:15.162+0800] {local_task_job_runner.py:245} INFO - ::endgroup::
