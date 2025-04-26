@@ -1,0 +1,32 @@
+.company-block {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.company-block.positive {
+    background-color: green;
+}
+.company-block.neutral {
+    background-color: blue;
+}
+.company-block.negative {
+    background-color: red;
+}
+.company-block:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+}
