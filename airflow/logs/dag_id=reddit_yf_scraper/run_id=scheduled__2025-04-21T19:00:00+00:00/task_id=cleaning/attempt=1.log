@@ -1,0 +1,515 @@
+[2025-04-23T20:35:03.150+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-23T20:35:03.156+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-21T19:00:00+00:00 [queued]>
+[2025-04-23T20:35:03.159+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-21T19:00:00+00:00 [queued]>
+[2025-04-23T20:35:03.159+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-23T20:35:03.164+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): cleaning> on 2025-04-21 19:00:00+00:00
+[2025-04-23T20:35:03.169+0800] {standard_task_runner.py:72} INFO - Started process 27193 to run task
+[2025-04-23T20:35:03.172+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'cleaning', 'scheduled__2025-04-21T19:00:00+00:00', '--job-id', '906', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpf2z1yc9t']
+[2025-04-23T20:35:03.173+0800] {standard_task_runner.py:105} INFO - Job 906: Subtask cleaning
+[2025-04-23T20:35:03.195+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.cleaning scheduled__2025-04-21T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-23T20:35:03.220+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='cleaning' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-21T19:00:00+00:00'
+[2025-04-23T20:35:03.221+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-23T20:35:03.221+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-23T20:35:03.221+0800] {logging_mixin.py:190} INFO - Current task name:cleaning state:running start_date:2025-04-23 12:35:03.156727+00:00
+[2025-04-23T20:35:03.221+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-23T20:35:03.221+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-23T20:35:03.222+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ORLY_reddit_20250423.csv
+[2025-04-23T20:35:03.223+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IPG_reddit_20250423.csv
+[2025-04-23T20:35:03.223+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DECK_reddit_20250423.csv
+[2025-04-23T20:35:03.223+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/APD_reddit_20250423.csv
+[2025-04-23T20:35:03.224+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LIN_reddit_20250423.csv
+[2025-04-23T20:35:03.224+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CZR_reddit_20250423.csv
+[2025-04-23T20:35:03.224+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FOXA_reddit_20250423.csv
+[2025-04-23T20:35:03.224+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LYB_reddit_20250423.csv
+[2025-04-23T20:35:03.225+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HD_reddit_20250423.csv
+[2025-04-23T20:35:03.225+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BBY_reddit_20250423.csv
+[2025-04-23T20:35:03.225+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MOS_reddit_20250423.csv
+[2025-04-23T20:35:03.225+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BALL_reddit_20250423.csv
+[2025-04-23T20:35:03.225+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FMC_reddit_20250423.csv
+[2025-04-23T20:35:03.226+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HLT_reddit_20250423.csv
+[2025-04-23T20:35:03.226+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AMCR_reddit_20250423.csv
+[2025-04-23T20:35:03.226+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LVS_reddit_20250423.csv
+[2025-04-23T20:35:03.226+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FCX_reddit_20250423.csv
+[2025-04-23T20:35:03.227+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DRI_reddit_20250423.csv
+[2025-04-23T20:35:03.227+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ROL_reddit_20250423.csv
+[2025-04-23T20:35:03.227+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PPG_reddit_20250423.csv
+[2025-04-23T20:35:03.228+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MTCH_reddit_20250423.csv
+[2025-04-23T20:35:03.228+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LYV_reddit_20250423.csv
+[2025-04-23T20:35:03.229+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SW_reddit_20250423.csv
+[2025-04-23T20:35:03.229+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CTVA_reddit_20250423.csv
+[2025-04-23T20:35:03.230+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TSLA_reddit_20250423.csv
+[2025-04-23T20:35:03.230+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EBAY_reddit_20250423.csv
+[2025-04-23T20:35:03.230+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PKG_reddit_20250423.csv
+[2025-04-23T20:35:03.230+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/RL_reddit_20250423.csv
+[2025-04-23T20:35:03.230+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/WBD_reddit_20250423.csv
+[2025-04-23T20:35:03.231+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BWA_reddit_20250423.csv
+[2025-04-23T20:35:03.231+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NVR_reddit_20250423.csv
+[2025-04-23T20:35:03.231+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GM_reddit_20250423.csv
+[2025-04-23T20:35:03.231+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GPC_reddit_20250423.csv
+[2025-04-23T20:35:03.231+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TJX_reddit_20250423.csv
+[2025-04-23T20:35:03.232+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CE_reddit_20250423.csv
+[2025-04-23T20:35:03.232+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CHTR_reddit_20250423.csv
+[2025-04-23T20:35:03.232+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ABNB_reddit_20250423.csv
+[2025-04-23T20:35:03.233+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/VZ_reddit_20250423.csv
+[2025-04-23T20:35:03.233+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MAR_reddit_20250423.csv
+[2025-04-23T20:35:03.233+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TSCO_reddit_20250423.csv
+[2025-04-23T20:35:03.233+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TMUS_reddit_20250423.csv
+[2025-04-23T20:35:03.234+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CF_reddit_20250423.csv
+[2025-04-23T20:35:03.234+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AZO_reddit_20250423.csv
+[2025-04-23T20:35:03.234+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NWS_reddit_20250423.csv
+[2025-04-23T20:35:03.234+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DIS_reddit_20250423.csv
+[2025-04-23T20:35:03.235+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TPR_reddit_20250423.csv
+[2025-04-23T20:35:03.235+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SHW_reddit_20250423.csv
+[2025-04-23T20:35:03.235+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IP_reddit_20250423.csv
+[2025-04-23T20:35:03.235+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DHI_reddit_20250423.csv
+[2025-04-23T20:35:03.236+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NCLH_reddit_20250423.csv
+[2025-04-23T20:35:03.236+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PARA_reddit_20250423.csv
+[2025-04-23T20:35:03.236+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AVY_reddit_20250423.csv
+[2025-04-23T20:35:03.236+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/STZ_reddit_20250423.csv
+[2025-04-23T20:35:03.237+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/KMX_reddit_20250423.csv
+[2025-04-23T20:35:03.237+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IFF_reddit_20250423.csv
+[2025-04-23T20:35:03.237+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/VMC_reddit_20250423.csv
+[2025-04-23T20:35:03.237+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NWSA_reddit_20250423.csv
+[2025-04-23T20:35:03.238+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MLM_reddit_20250423.csv
+[2025-04-23T20:35:03.238+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ECL_reddit_20250423.csv
+[2025-04-23T20:35:03.238+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TTWO_reddit_20250423.csv
+[2025-04-23T20:35:03.238+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/OMC_reddit_20250423.csv
+[2025-04-23T20:35:03.238+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PHM_reddit_20250423.csv
+[2025-04-23T20:35:03.239+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HAS_reddit_20250423.csv
+[2025-04-23T20:35:03.239+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EA_reddit_20250423.csv
+[2025-04-23T20:35:03.239+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GOOG_reddit_20250423.csv
+[2025-04-23T20:35:03.239+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GOOGL_reddit_20250423.csv
+[2025-04-23T20:35:03.240+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ALB_reddit_20250423.csv
+[2025-04-23T20:35:03.240+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/APTV_reddit_20250423.csv
+[2025-04-23T20:35:03.240+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DPZ_reddit_20250423.csv
+[2025-04-23T20:35:03.240+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LOW_reddit_20250423.csv
+[2025-04-23T20:35:03.241+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/META_reddit_20250423.csv
+[2025-04-23T20:35:03.241+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LULU_reddit_20250423.csv
+[2025-04-23T20:35:03.241+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NFLX_reddit_20250423.csv
+[2025-04-23T20:35:03.241+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DOW_reddit_20250423.csv
+[2025-04-23T20:35:03.241+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/F_reddit_20250423.csv
+[2025-04-23T20:35:03.242+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BKNG_reddit_20250423.csv
+[2025-04-23T20:35:03.242+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MCD_reddit_20250423.csv
+[2025-04-23T20:35:03.242+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NKE_reddit_20250423.csv
+[2025-04-23T20:35:03.242+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MGM_reddit_20250423.csv
+[2025-04-23T20:35:03.242+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LKQ_reddit_20250423.csv
+[2025-04-23T20:35:03.243+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ROST_reddit_20250423.csv
+[2025-04-23T20:35:03.243+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/T_reddit_20250423.csv
+[2025-04-23T20:35:03.243+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CMCSA_reddit_20250423.csv
+[2025-04-23T20:35:03.243+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EMN_reddit_20250423.csv
+[2025-04-23T20:35:03.243+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NEM_reddit_20250423.csv
+[2025-04-23T20:35:03.244+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/YUM_reddit_20250423.csv
+[2025-04-23T20:35:03.244+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EXPE_reddit_20250423.csv
+[2025-04-23T20:35:03.244+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/WYNN_reddit_20250423.csv
+[2025-04-23T20:35:03.244+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DD_reddit_20250423.csv
+[2025-04-23T20:35:03.245+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MHK_reddit_20250423.csv
+[2025-04-23T20:35:03.245+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LEN_reddit_20250423.csv
+[2025-04-23T20:35:03.245+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NUE_reddit_20250423.csv
+[2025-04-23T20:35:03.245+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AMZN_reddit_20250423.csv
+[2025-04-23T20:35:03.246+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/STLD_reddit_20250423.csv
+[2025-04-23T20:35:03.246+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CCL_reddit_20250423.csv
+[2025-04-23T20:35:03.246+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SBUX_reddit_20250423.csv
+[2025-04-23T20:35:03.246+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ULTA_reddit_20250423.csv
+[2025-04-23T20:35:03.246+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FOX_reddit_20250423.csv
+[2025-04-23T20:35:03.247+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/RCL_reddit_20250423.csv
+[2025-04-23T20:35:03.247+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CMG_reddit_20250423.csv
+[2025-04-23T20:35:03.247+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/DD_yf_20250423.csv
+[2025-04-23T20:35:03.248+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/ROL_yf_20250423.csv
+[2025-04-23T20:35:03.248+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/F_yf_20250423.csv
+[2025-04-23T20:35:03.248+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NKE_yf_20250423.csv
+[2025-04-23T20:35:03.249+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/VZ_yf_20250423.csv
+[2025-04-23T20:35:03.249+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GOOGL_yf_20250423.csv
+[2025-04-23T20:35:03.249+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/T_yf_20250423.csv
+[2025-04-23T20:35:03.249+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/AZO_yf_20250423.csv
+[2025-04-23T20:35:03.249+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/LULU_yf_20250423.csv
+[2025-04-23T20:35:03.250+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/CCL_yf_20250423.csv
+[2025-04-23T20:35:03.250+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NCLH_yf_20250423.csv
+[2025-04-23T20:35:03.250+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NEM_yf_20250423.csv
+[2025-04-23T20:35:03.250+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/DPZ_yf_20250423.csv
+[2025-04-23T20:35:03.251+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NFLX_yf_20250423.csv
+[2025-04-23T20:35:03.251+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/CMG_yf_20250423.csv
+[2025-04-23T20:35:03.251+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/TTWO_yf_20250423.csv
+[2025-04-23T20:35:03.251+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/TSLA_yf_20250423.csv
+[2025-04-23T20:35:03.251+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/META_yf_20250423.csv
+[2025-04-23T20:35:03.252+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/WBD_yf_20250423.csv
+[2025-04-23T20:35:03.252+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/SBUX_yf_20250423.csv
+[2025-04-23T20:35:03.252+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/ORLY_yf_20250423.csv
+[2025-04-23T20:35:03.252+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/PARA_yf_20250423.csv
+[2025-04-23T20:35:03.252+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GPC_yf_20250423.csv
+[2025-04-23T20:35:03.253+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/STZ_yf_20250423.csv
+[2025-04-23T20:35:03.253+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/AMZN_yf_20250423.csv
+[2025-04-23T20:35:03.253+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/PHM_yf_20250423.csv
+[2025-04-23T20:35:03.253+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/MCD_yf_20250423.csv
+[2025-04-23T20:35:03.253+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GOOG_yf_20250423.csv
+[2025-04-23T20:35:03.254+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/RCL_yf_20250423.csv
+[2025-04-23T20:35:03.254+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ORLY_reddit_20250423.csv
+[2025-04-23T20:35:03.255+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/IPG_reddit_20250423.csv
+[2025-04-23T20:35:03.255+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DECK_reddit_20250423.csv
+[2025-04-23T20:35:03.255+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/APD_reddit_20250423.csv
+[2025-04-23T20:35:03.256+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LIN_reddit_20250423.csv
+[2025-04-23T20:35:03.256+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CZR_reddit_20250423.csv
+[2025-04-23T20:35:03.256+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FOXA_reddit_20250423.csv
+[2025-04-23T20:35:03.257+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LYB_reddit_20250423.csv
+[2025-04-23T20:35:03.257+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/HD_reddit_20250423.csv
+[2025-04-23T20:35:03.257+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BBY_reddit_20250423.csv
+[2025-04-23T20:35:03.258+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MOS_reddit_20250423.csv
+[2025-04-23T20:35:03.258+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BALL_reddit_20250423.csv
+[2025-04-23T20:35:03.258+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FMC_reddit_20250423.csv
+[2025-04-23T20:35:03.258+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/HLT_reddit_20250423.csv
+[2025-04-23T20:35:03.259+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/AMCR_reddit_20250423.csv
+[2025-04-23T20:35:03.259+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LVS_reddit_20250423.csv
+[2025-04-23T20:35:03.259+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FCX_reddit_20250423.csv
+[2025-04-23T20:35:03.260+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DRI_reddit_20250423.csv
+[2025-04-23T20:35:03.260+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ROL_reddit_20250423.csv
+[2025-04-23T20:35:03.260+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/PPG_reddit_20250423.csv
+[2025-04-23T20:35:03.260+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MTCH_reddit_20250423.csv
+[2025-04-23T20:35:03.261+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LYV_reddit_20250423.csv
+[2025-04-23T20:35:03.261+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/SW_reddit_20250423.csv
+[2025-04-23T20:35:03.261+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CTVA_reddit_20250423.csv
+[2025-04-23T20:35:03.262+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TSLA_reddit_20250423.csv
+[2025-04-23T20:35:03.262+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EBAY_reddit_20250423.csv
+[2025-04-23T20:35:03.262+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/PKG_reddit_20250423.csv
+[2025-04-23T20:35:03.262+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/RL_reddit_20250423.csv
+[2025-04-23T20:35:03.263+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/WBD_reddit_20250423.csv
+[2025-04-23T20:35:03.263+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BWA_reddit_20250423.csv
+[2025-04-23T20:35:03.263+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NVR_reddit_20250423.csv
+[2025-04-23T20:35:03.263+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GM_reddit_20250423.csv
+[2025-04-23T20:35:03.264+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GPC_reddit_20250423.csv
+[2025-04-23T20:35:03.264+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TJX_reddit_20250423.csv
+[2025-04-23T20:35:03.264+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CE_reddit_20250423.csv
+[2025-04-23T20:35:03.264+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CHTR_reddit_20250423.csv
+[2025-04-23T20:35:03.264+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ABNB_reddit_20250423.csv
+[2025-04-23T20:35:03.265+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/VZ_reddit_20250423.csv
+[2025-04-23T20:35:03.265+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MAR_reddit_20250423.csv
+[2025-04-23T20:35:03.265+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TSCO_reddit_20250423.csv
+[2025-04-23T20:35:03.265+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TMUS_reddit_20250423.csv
+[2025-04-23T20:35:03.265+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CF_reddit_20250423.csv
+[2025-04-23T20:35:03.266+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/AZO_reddit_20250423.csv
+[2025-04-23T20:35:03.266+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NWS_reddit_20250423.csv
+[2025-04-23T20:35:03.266+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DIS_reddit_20250423.csv
+[2025-04-23T20:35:03.266+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TPR_reddit_20250423.csv
+[2025-04-23T20:35:03.266+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/SHW_reddit_20250423.csv
+[2025-04-23T20:35:03.267+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/IP_reddit_20250423.csv
+[2025-04-23T20:35:03.267+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DHI_reddit_20250423.csv
+[2025-04-23T20:35:03.267+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NCLH_reddit_20250423.csv
+[2025-04-23T20:35:03.267+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/PARA_reddit_20250423.csv
+[2025-04-23T20:35:03.268+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/AVY_reddit_20250423.csv
+[2025-04-23T20:35:03.268+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/STZ_reddit_20250423.csv
+[2025-04-23T20:35:03.268+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/KMX_reddit_20250423.csv
+[2025-04-23T20:35:03.268+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/IFF_reddit_20250423.csv
+[2025-04-23T20:35:03.268+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/VMC_reddit_20250423.csv
+[2025-04-23T20:35:03.269+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NWSA_reddit_20250423.csv
+[2025-04-23T20:35:03.269+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MLM_reddit_20250423.csv
+[2025-04-23T20:35:03.269+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ECL_reddit_20250423.csv
+[2025-04-23T20:35:03.269+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TTWO_reddit_20250423.csv
+[2025-04-23T20:35:03.269+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/OMC_reddit_20250423.csv
+[2025-04-23T20:35:03.270+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/PHM_reddit_20250423.csv
+[2025-04-23T20:35:03.270+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/HAS_reddit_20250423.csv
+[2025-04-23T20:35:03.271+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EA_reddit_20250423.csv
+[2025-04-23T20:35:03.271+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GOOG_reddit_20250423.csv
+[2025-04-23T20:35:03.271+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GOOGL_reddit_20250423.csv
+[2025-04-23T20:35:03.271+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ALB_reddit_20250423.csv
+[2025-04-23T20:35:03.272+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/APTV_reddit_20250423.csv
+[2025-04-23T20:35:03.272+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DPZ_reddit_20250423.csv
+[2025-04-23T20:35:03.272+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LOW_reddit_20250423.csv
+[2025-04-23T20:35:03.272+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/META_reddit_20250423.csv
+[2025-04-23T20:35:03.273+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LULU_reddit_20250423.csv
+[2025-04-23T20:35:03.273+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NFLX_reddit_20250423.csv
+[2025-04-23T20:35:03.273+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DOW_reddit_20250423.csv
+[2025-04-23T20:35:03.273+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/F_reddit_20250423.csv
+[2025-04-23T20:35:03.273+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BKNG_reddit_20250423.csv
+[2025-04-23T20:35:03.274+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MCD_reddit_20250423.csv
+[2025-04-23T20:35:03.274+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NKE_reddit_20250423.csv
+[2025-04-23T20:35:03.274+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MGM_reddit_20250423.csv
+[2025-04-23T20:35:03.274+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LKQ_reddit_20250423.csv
+[2025-04-23T20:35:03.275+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ROST_reddit_20250423.csv
+[2025-04-23T20:35:03.275+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/T_reddit_20250423.csv
+[2025-04-23T20:35:03.275+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CMCSA_reddit_20250423.csv
+[2025-04-23T20:35:03.275+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EMN_reddit_20250423.csv
+[2025-04-23T20:35:03.275+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NEM_reddit_20250423.csv
+[2025-04-23T20:35:03.276+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/YUM_reddit_20250423.csv
+[2025-04-23T20:35:03.276+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EXPE_reddit_20250423.csv
+[2025-04-23T20:35:03.276+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/WYNN_reddit_20250423.csv
+[2025-04-23T20:35:03.276+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DD_reddit_20250423.csv
+[2025-04-23T20:35:03.276+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MHK_reddit_20250423.csv
+[2025-04-23T20:35:03.277+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LEN_reddit_20250423.csv
+[2025-04-23T20:35:03.277+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NUE_reddit_20250423.csv
+[2025-04-23T20:35:03.277+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/AMZN_reddit_20250423.csv
+[2025-04-23T20:35:03.277+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/STLD_reddit_20250423.csv
+[2025-04-23T20:35:03.277+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CCL_reddit_20250423.csv
+[2025-04-23T20:35:03.278+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/SBUX_reddit_20250423.csv
+[2025-04-23T20:35:03.278+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ULTA_reddit_20250423.csv
+[2025-04-23T20:35:03.278+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FOX_reddit_20250423.csv
+[2025-04-23T20:35:03.278+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/RCL_reddit_20250423.csv
+[2025-04-23T20:35:03.279+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CMG_reddit_20250423.csv
+[2025-04-23T20:35:03.279+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/DD_yf_20250423.csv
+[2025-04-23T20:35:03.279+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/ROL_yf_20250423.csv
+[2025-04-23T20:35:03.280+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/F_yf_20250423.csv
+[2025-04-23T20:35:03.280+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/NKE_yf_20250423.csv
+[2025-04-23T20:35:03.280+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/VZ_yf_20250423.csv
+[2025-04-23T20:35:03.281+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/GOOGL_yf_20250423.csv
+[2025-04-23T20:35:03.281+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/T_yf_20250423.csv
+[2025-04-23T20:35:03.282+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/AZO_yf_20250423.csv
+[2025-04-23T20:35:03.282+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/LULU_yf_20250423.csv
+[2025-04-23T20:35:03.282+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/CCL_yf_20250423.csv
+[2025-04-23T20:35:03.282+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/NCLH_yf_20250423.csv
+[2025-04-23T20:35:03.283+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/NEM_yf_20250423.csv
+[2025-04-23T20:35:03.283+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/DPZ_yf_20250423.csv
+[2025-04-23T20:35:03.283+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/NFLX_yf_20250423.csv
+[2025-04-23T20:35:03.284+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/CMG_yf_20250423.csv
+[2025-04-23T20:35:03.284+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/TTWO_yf_20250423.csv
+[2025-04-23T20:35:03.284+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/TSLA_yf_20250423.csv
+[2025-04-23T20:35:03.284+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/META_yf_20250423.csv
+[2025-04-23T20:35:03.285+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/WBD_yf_20250423.csv
+[2025-04-23T20:35:03.285+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/SBUX_yf_20250423.csv
+[2025-04-23T20:35:03.285+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/ORLY_yf_20250423.csv
+[2025-04-23T20:35:03.285+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/PARA_yf_20250423.csv
+[2025-04-23T20:35:03.286+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/GPC_yf_20250423.csv
+[2025-04-23T20:35:03.286+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/STZ_yf_20250423.csv
+[2025-04-23T20:35:03.286+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/AMZN_yf_20250423.csv
+[2025-04-23T20:35:03.287+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/PHM_yf_20250423.csv
+[2025-04-23T20:35:03.287+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/MCD_yf_20250423.csv
+[2025-04-23T20:35:03.287+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/GOOG_yf_20250423.csv
+[2025-04-23T20:35:03.288+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-yf-test/RCL_yf_20250423.csv
+[2025-04-23T20:35:03.288+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NCLH_processed_20250423.csv
+[2025-04-23T20:35:03.289+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/EMN_processed_20250423.csv
+[2025-04-23T20:35:03.289+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DOW_processed_20250423.csv
+[2025-04-23T20:35:03.289+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/IP_processed_20250423.csv
+[2025-04-23T20:35:03.290+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/BKNG_processed_20250423.csv
+[2025-04-23T20:35:03.290+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/STZ_processed_20250423.csv
+[2025-04-23T20:35:03.290+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/AVY_processed_20250423.csv
+[2025-04-23T20:35:03.290+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/HD_processed_20250423.csv
+[2025-04-23T20:35:03.291+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/T_processed_20250423.csv
+[2025-04-23T20:35:03.291+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/PPG_processed_20250423.csv
+[2025-04-23T20:35:03.291+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NWS_processed_20250423.csv
+[2025-04-23T20:35:03.292+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/WYNN_processed_20250423.csv
+[2025-04-23T20:35:03.292+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LOW_processed_20250423.csv
+[2025-04-23T20:35:03.292+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ROL_processed_20250423.csv
+[2025-04-23T20:35:03.292+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/STLD_processed_20250423.csv
+[2025-04-23T20:35:03.292+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NUE_processed_20250423.csv
+[2025-04-23T20:35:03.293+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/SW_processed_20250423.csv
+[2025-04-23T20:35:03.293+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MTCH_processed_20250423.csv
+[2025-04-23T20:35:03.293+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CCL_processed_20250423.csv
+[2025-04-23T20:35:03.293+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LYV_processed_20250423.csv
+[2025-04-23T20:35:03.294+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/GOOGL_processed_20250423.csv
+[2025-04-23T20:35:03.294+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LEN_processed_20250423.csv
+[2025-04-23T20:35:03.294+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/GM_processed_20250423.csv
+[2025-04-23T20:35:03.294+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/KMX_processed_20250423.csv
+[2025-04-23T20:35:03.294+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NKE_processed_20250423.csv
+[2025-04-23T20:35:03.295+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/BBY_processed_20250423.csv
+[2025-04-23T20:35:03.295+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LULU_processed_20250423.csv
+[2025-04-23T20:35:03.295+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/IPG_processed_20250423.csv
+[2025-04-23T20:35:03.295+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LIN_processed_20250423.csv
+[2025-04-23T20:35:03.296+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/HLT_processed_20250423.csv
+[2025-04-23T20:35:03.296+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CE_processed_20250423.csv
+[2025-04-23T20:35:03.296+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MOS_processed_20250423.csv
+[2025-04-23T20:35:03.296+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ORLY_processed_20250423.csv
+[2025-04-23T20:35:03.297+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LKQ_processed_20250423.csv
+[2025-04-23T20:35:03.297+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CF_processed_20250423.csv
+[2025-04-23T20:35:03.297+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/AMCR_processed_20250423.csv
+[2025-04-23T20:35:03.297+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ROST_processed_20250423.csv
+[2025-04-23T20:35:03.298+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/SBUX_processed_20250423.csv
+[2025-04-23T20:35:03.298+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/RCL_processed_20250423.csv
+[2025-04-23T20:35:03.298+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/APD_processed_20250423.csv
+[2025-04-23T20:35:03.298+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DD_processed_20250423.csv
+[2025-04-23T20:35:03.299+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/BALL_processed_20250423.csv
+[2025-04-23T20:35:03.299+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/IFF_processed_20250423.csv
+[2025-04-23T20:35:03.299+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/RL_processed_20250423.csv
+[2025-04-23T20:35:03.299+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ULTA_processed_20250423.csv
+[2025-04-23T20:35:03.299+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CMCSA_processed_20250423.csv
+[2025-04-23T20:35:03.300+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LVS_processed_20250423.csv
+[2025-04-23T20:35:03.300+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/HAS_processed_20250423.csv
+[2025-04-23T20:35:03.300+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/VMC_processed_20250423.csv
+[2025-04-23T20:35:03.300+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/AZO_processed_20250423.csv
+[2025-04-23T20:35:03.300+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/FOX_processed_20250423.csv
+[2025-04-23T20:35:03.301+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TMUS_processed_20250423.csv
+[2025-04-23T20:35:03.301+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ABNB_processed_20250423.csv
+[2025-04-23T20:35:03.301+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/PKG_processed_20250423.csv
+[2025-04-23T20:35:03.301+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/EA_processed_20250423.csv
+[2025-04-23T20:35:03.302+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LYB_processed_20250423.csv
+[2025-04-23T20:35:03.302+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/PARA_processed_20250423.csv
+[2025-04-23T20:35:03.302+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MAR_processed_20250423.csv
+[2025-04-23T20:35:03.302+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MLM_processed_20250423.csv
+[2025-04-23T20:35:03.302+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MCD_processed_20250423.csv
+[2025-04-23T20:35:03.303+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/FMC_processed_20250423.csv
+[2025-04-23T20:35:03.303+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/GPC_processed_20250423.csv
+[2025-04-23T20:35:03.303+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DECK_processed_20250423.csv
+[2025-04-23T20:35:03.303+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/FOXA_processed_20250423.csv
+[2025-04-23T20:35:03.303+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/META_processed_20250423.csv
+[2025-04-23T20:35:03.304+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/VZ_processed_20250423.csv
+[2025-04-23T20:35:03.304+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CHTR_processed_20250423.csv
+[2025-04-23T20:35:03.304+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DPZ_processed_20250423.csv
+[2025-04-23T20:35:03.304+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MGM_processed_20250423.csv
+[2025-04-23T20:35:03.304+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NWSA_processed_20250423.csv
+[2025-04-23T20:35:03.305+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NEM_processed_20250423.csv
+[2025-04-23T20:35:03.305+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/GOOG_processed_20250423.csv
+[2025-04-23T20:35:03.305+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/F_processed_20250423.csv
+[2025-04-23T20:35:03.305+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/SHW_processed_20250423.csv
+[2025-04-23T20:35:03.306+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DIS_processed_20250423.csv
+[2025-04-23T20:35:03.306+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TPR_processed_20250423.csv
+[2025-04-23T20:35:03.306+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CZR_processed_20250423.csv
+[2025-04-23T20:35:03.306+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TSCO_processed_20250423.csv
+[2025-04-23T20:35:03.307+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/BWA_processed_20250423.csv
+[2025-04-23T20:35:03.307+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/AMZN_processed_20250423.csv
+[2025-04-23T20:35:03.307+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MHK_processed_20250423.csv
+[2025-04-23T20:35:03.307+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ALB_processed_20250423.csv
+[2025-04-23T20:35:03.308+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DRI_processed_20250423.csv
+[2025-04-23T20:35:03.308+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/OMC_processed_20250423.csv
+[2025-04-23T20:35:03.308+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NVR_processed_20250423.csv
+[2025-04-23T20:35:03.308+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CMG_processed_20250423.csv
+[2025-04-23T20:35:03.309+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/APTV_processed_20250423.csv
+[2025-04-23T20:35:03.309+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TJX_processed_20250423.csv
+[2025-04-23T20:35:03.309+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/PHM_processed_20250423.csv
+[2025-04-23T20:35:03.310+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TTWO_processed_20250423.csv
+[2025-04-23T20:35:03.310+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CTVA_processed_20250423.csv
+[2025-04-23T20:35:03.310+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DHI_processed_20250423.csv
+[2025-04-23T20:35:03.310+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/FCX_processed_20250423.csv
+[2025-04-23T20:35:03.311+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/EXPE_processed_20250423.csv
+[2025-04-23T20:35:03.311+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/YUM_processed_20250423.csv
+[2025-04-23T20:35:03.311+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/WBD_processed_20250423.csv
+[2025-04-23T20:35:03.311+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TSLA_processed_20250423.csv
+[2025-04-23T20:35:03.311+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/EBAY_processed_20250423.csv
+[2025-04-23T20:35:03.312+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NFLX_processed_20250423.csv
+[2025-04-23T20:35:03.312+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ECL_processed_20250423.csv
+[2025-04-23T20:35:03.312+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/ollama-dir/data_summaries.csv
+[2025-04-23T20:35:03.312+0800] {logging_mixin.py:190} INFO - 🧹 Deleted file: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/ollama-dir/yesterday_data.pkl
+[2025-04-23T20:35:04.237+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ABNB_reddit_20250423.csv
+[2025-04-23T20:35:05.109+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ALB_reddit_20250423.csv
+[2025-04-23T20:35:05.771+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AMCR_reddit_20250423.csv
+[2025-04-23T20:35:06.644+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AMZN_reddit_20250423.csv
+[2025-04-23T20:35:07.350+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/APD_reddit_20250423.csv
+[2025-04-23T20:35:07.921+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/APTV_reddit_20250423.csv
+[2025-04-23T20:35:09.111+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AVY_reddit_20250423.csv
+[2025-04-23T20:35:09.719+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/AZO_reddit_20250423.csv
+[2025-04-23T20:35:10.536+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BALL_reddit_20250423.csv
+[2025-04-23T20:35:11.134+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BBY_reddit_20250423.csv
+[2025-04-23T20:35:11.781+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BKNG_reddit_20250423.csv
+[2025-04-23T20:35:12.357+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/BWA_reddit_20250423.csv
+[2025-04-23T20:35:13.006+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CCL_reddit_20250423.csv
+[2025-04-23T20:35:13.639+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CE_reddit_20250423.csv
+[2025-04-23T20:35:14.244+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CF_reddit_20250423.csv
+[2025-04-23T20:35:15.042+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CHTR_reddit_20250423.csv
+[2025-04-23T20:35:15.738+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CMCSA_reddit_20250423.csv
+[2025-04-23T20:35:16.455+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CMG_reddit_20250423.csv
+[2025-04-23T20:35:17.089+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CTVA_reddit_20250423.csv
+[2025-04-23T20:35:17.909+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/CZR_reddit_20250423.csv
+[2025-04-23T20:35:18.657+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DD_reddit_20250423.csv
+[2025-04-23T20:35:19.448+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DECK_reddit_20250423.csv
+[2025-04-23T20:35:20.032+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DHI_reddit_20250423.csv
+[2025-04-23T20:35:20.694+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DIS_reddit_20250423.csv
+[2025-04-23T20:35:21.285+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DOW_reddit_20250423.csv
+[2025-04-23T20:35:22.030+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DPZ_reddit_20250423.csv
+[2025-04-23T20:35:22.619+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/DRI_reddit_20250423.csv
+[2025-04-23T20:35:23.360+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/EA_reddit_20250423.csv
+[2025-04-23T20:35:23.950+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/EBAY_reddit_20250423.csv
+[2025-04-23T20:35:24.644+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ECL_reddit_20250423.csv
+[2025-04-23T20:35:25.321+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/EMN_reddit_20250423.csv
+[2025-04-23T20:35:26.100+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/EXPE_reddit_20250423.csv
+[2025-04-23T20:35:26.744+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/FCX_reddit_20250423.csv
+[2025-04-23T20:35:27.639+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/FMC_reddit_20250423.csv
+[2025-04-23T20:35:28.322+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/FOXA_reddit_20250423.csv
+[2025-04-23T20:35:29.173+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/FOX_reddit_20250423.csv
+[2025-04-23T20:35:29.889+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/F_reddit_20250423.csv
+[2025-04-23T20:35:30.522+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GM_reddit_20250423.csv
+[2025-04-23T20:35:31.323+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GOOGL_reddit_20250423.csv
+[2025-04-23T20:35:31.984+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GOOG_reddit_20250423.csv
+[2025-04-23T20:35:32.569+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/GPC_reddit_20250423.csv
+[2025-04-23T20:35:33.371+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/HAS_reddit_20250423.csv
+[2025-04-23T20:35:34.084+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/HD_reddit_20250423.csv
+[2025-04-23T20:35:34.723+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/HLT_reddit_20250423.csv
+[2025-04-23T20:35:35.522+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/IFF_reddit_20250423.csv
+[2025-04-23T20:35:36.178+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/IPG_reddit_20250423.csv
+[2025-04-23T20:35:37.056+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/IP_reddit_20250423.csv
+[2025-04-23T20:35:37.755+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/KMX_reddit_20250423.csv
+[2025-04-23T20:35:38.594+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LEN_reddit_20250423.csv
+[2025-04-23T20:35:39.414+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LIN_reddit_20250423.csv
+[2025-04-23T20:35:40.232+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LKQ_reddit_20250423.csv
+[2025-04-23T20:35:40.902+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LOW_reddit_20250423.csv
+[2025-04-23T20:35:41.473+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LULU_reddit_20250423.csv
+[2025-04-23T20:35:42.183+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LVS_reddit_20250423.csv
+[2025-04-23T20:35:42.763+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LYB_reddit_20250423.csv
+[2025-04-23T20:35:43.425+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/LYV_reddit_20250423.csv
+[2025-04-23T20:35:44.047+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MAR_reddit_20250423.csv
+[2025-04-23T20:35:44.660+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MCD_reddit_20250423.csv
+[2025-04-23T20:35:45.453+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/META_reddit_20250423.csv
+[2025-04-23T20:35:46.146+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MGM_reddit_20250423.csv
+[2025-04-23T20:35:46.987+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MHK_reddit_20250423.csv
+[2025-04-23T20:35:47.812+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MLM_reddit_20250423.csv
+[2025-04-23T20:35:48.629+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MOS_reddit_20250423.csv
+[2025-04-23T20:35:49.289+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/MTCH_reddit_20250423.csv
+[2025-04-23T20:35:49.886+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NCLH_reddit_20250423.csv
+[2025-04-23T20:35:50.677+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NEM_reddit_20250423.csv
+[2025-04-23T20:35:51.387+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NFLX_reddit_20250423.csv
+[2025-04-23T20:35:51.988+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NKE_reddit_20250423.csv
+[2025-04-23T20:35:52.829+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NUE_reddit_20250423.csv
+[2025-04-23T20:35:53.486+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NVR_reddit_20250423.csv
+[2025-04-23T20:35:54.079+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NWSA_reddit_20250423.csv
+[2025-04-23T20:35:54.877+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/NWS_reddit_20250423.csv
+[2025-04-23T20:35:55.581+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/OMC_reddit_20250423.csv
+[2025-04-23T20:35:56.310+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ORLY_reddit_20250423.csv
+[2025-04-23T20:35:57.026+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PARA_reddit_20250423.csv
+[2025-04-23T20:35:57.679+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PHM_reddit_20250423.csv
+[2025-04-23T20:35:58.565+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PKG_reddit_20250423.csv
+[2025-04-23T20:35:59.245+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/PPG_reddit_20250423.csv
+[2025-04-23T20:36:00.100+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/RCL_reddit_20250423.csv
+[2025-04-23T20:36:00.826+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/RL_reddit_20250423.csv
+[2025-04-23T20:36:01.737+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ROL_reddit_20250423.csv
+[2025-04-23T20:36:02.393+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ROST_reddit_20250423.csv
+[2025-04-23T20:36:02.991+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/SBUX_reddit_20250423.csv
+[2025-04-23T20:36:03.707+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/SHW_reddit_20250423.csv
+[2025-04-23T20:36:04.295+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/STLD_reddit_20250423.csv
+[2025-04-23T20:36:04.887+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/STZ_reddit_20250423.csv
+[2025-04-23T20:36:05.550+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/SW_reddit_20250423.csv
+[2025-04-23T20:36:06.126+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TJX_reddit_20250423.csv
+[2025-04-23T20:36:06.959+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TMUS_reddit_20250423.csv
+[2025-04-23T20:36:07.636+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TPR_reddit_20250423.csv
+[2025-04-23T20:36:08.495+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TSCO_reddit_20250423.csv
+[2025-04-23T20:36:09.242+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TSLA_reddit_20250423.csv
+[2025-04-23T20:36:10.134+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/TTWO_reddit_20250423.csv
+[2025-04-23T20:36:10.955+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/T_reddit_20250423.csv
+[2025-04-23T20:36:11.670+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/ULTA_reddit_20250423.csv
+[2025-04-23T20:36:12.358+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/VMC_reddit_20250423.csv
+[2025-04-23T20:36:13.204+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/VZ_reddit_20250423.csv
+[2025-04-23T20:36:14.024+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/WBD_reddit_20250423.csv
+[2025-04-23T20:36:14.985+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/WYNN_reddit_20250423.csv
+[2025-04-23T20:36:15.589+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: reddit-test/YUM_reddit_20250423.csv
+[2025-04-23T20:36:16.606+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/AMZN_yf_20250423.csv
+[2025-04-23T20:36:17.405+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/AZO_yf_20250423.csv
+[2025-04-23T20:36:18.122+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/CCL_yf_20250423.csv
+[2025-04-23T20:36:19.042+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/CMG_yf_20250423.csv
+[2025-04-23T20:36:19.695+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/DD_yf_20250423.csv
+[2025-04-23T20:36:20.293+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/DPZ_yf_20250423.csv
+[2025-04-23T20:36:20.867+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/F_yf_20250423.csv
+[2025-04-23T20:36:21.500+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/GOOGL_yf_20250423.csv
+[2025-04-23T20:36:22.078+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/GOOG_yf_20250423.csv
+[2025-04-23T20:36:22.932+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/GPC_yf_20250423.csv
+[2025-04-23T20:36:23.650+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/LULU_yf_20250423.csv
+[2025-04-23T20:36:24.470+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/MCD_yf_20250423.csv
+[2025-04-23T20:36:25.288+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/META_yf_20250423.csv
+[2025-04-23T20:36:25.895+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/NCLH_yf_20250423.csv
+[2025-04-23T20:36:26.728+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/NEM_yf_20250423.csv
+[2025-04-23T20:36:27.337+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/NFLX_yf_20250423.csv
+[2025-04-23T20:36:28.155+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/NKE_yf_20250423.csv
+[2025-04-23T20:36:28.976+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/ORLY_yf_20250423.csv
+[2025-04-23T20:36:29.654+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/PARA_yf_20250423.csv
+[2025-04-23T20:36:30.513+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/PHM_yf_20250423.csv
+[2025-04-23T20:36:31.231+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/RCL_yf_20250423.csv
+[2025-04-23T20:36:31.865+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/ROL_yf_20250423.csv
+[2025-04-23T20:36:32.665+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/SBUX_yf_20250423.csv
+[2025-04-23T20:36:33.330+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/STZ_yf_20250423.csv
+[2025-04-23T20:36:33.912+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/TSLA_yf_20250423.csv
+[2025-04-23T20:36:34.710+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/TTWO_yf_20250423.csv
+[2025-04-23T20:36:35.427+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/T_yf_20250423.csv
+[2025-04-23T20:36:36.040+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/VZ_yf_20250423.csv
+[2025-04-23T20:36:36.704+0800] {logging_mixin.py:190} INFO - 🧹 Deleting GCS file: yf-test/WBD_yf_20250423.csv
+[2025-04-23T20:36:37.072+0800] {logging_mixin.py:190} INFO - ✅ Cleaning of local files and GCS folders completed.
+[2025-04-23T20:36:37.073+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-23T20:36:37.082+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-23T20:36:37.083+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=cleaning, run_id=scheduled__2025-04-21T19:00:00+00:00, execution_date=20250421T190000, start_date=20250423T123503, end_date=20250423T123637
+[2025-04-23T20:36:37.098+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-23T20:36:37.098+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-23T20:36:37.099+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-22 19:09:02.807640+00:00
+[2025-04-23T20:36:37.099+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-23T20:36:37.146+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-23T20:36:37.158+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-23T20:36:37.159+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

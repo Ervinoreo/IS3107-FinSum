@@ -1,0 +1,26 @@
+[2025-04-22T03:13:37.249+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T03:13:37.254+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.get_tickers scheduled__2025-04-20T19:00:00+00:00 [queued]>
+[2025-04-22T03:13:37.257+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.get_tickers scheduled__2025-04-20T19:00:00+00:00 [queued]>
+[2025-04-22T03:13:37.257+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T03:13:37.261+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): get_tickers> on 2025-04-20 19:00:00+00:00
+[2025-04-22T03:13:37.266+0800] {standard_task_runner.py:72} INFO - Started process 12537 to run task
+[2025-04-22T03:13:37.269+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'get_tickers', 'scheduled__2025-04-20T19:00:00+00:00', '--job-id', '860', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpphprtmen']
+[2025-04-22T03:13:37.270+0800] {standard_task_runner.py:105} INFO - Job 860: Subtask get_tickers
+[2025-04-22T03:13:37.292+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.get_tickers scheduled__2025-04-20T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-22T03:13:37.318+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='get_tickers' AIRFLOW_CTX_EXECUTION_DATE='2025-04-20T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-20T19:00:00+00:00'
+[2025-04-22T03:13:37.318+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T03:13:37.318+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T03:13:37.319+0800] {logging_mixin.py:190} INFO - Current task name:get_tickers state:running start_date:2025-04-21 19:13:37.254574+00:00
+[2025-04-22T03:13:37.319+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-22T03:13:37.319+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T03:13:38.604+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/table.py:1933 UserWarning: BigQuery Storage module not found, fetch data with the REST endpoint instead.
+[2025-04-22T03:13:38.939+0800] {python.py:240} INFO - Done. Returned value was: ['CTVA', 'CF', 'MOS', 'FMC', 'VMC', 'MLM', 'DOW', 'CE', 'FCX', 'NEM', 'LIN', 'SHW', 'ECL', 'APD', 'DD', 'PPG', 'LYB', 'IFF', 'EMN', 'ALB', 'NUE', 'STLD', 'OMC', 'IPG', 'EA', 'TTWO', 'NFLX', 'DIS', 'LYV', 'WBD', 'FOXA', 'FOX', 'NWS', 'NWSA', 'PARA', 'GOOGL', 'GOOG', 'META', 'MTCH', 'TMUS', 'VZ', 'T', 'CMCSA', 'CHTR', 'RL', 'TJX', 'ROST', 'LULU', 'KMX', 'TSLA', 'GM', 'F', 'GPC', 'APTV', 'LKQ', 'BWA', 'NKE', 'DECK', 'MHK', 'HD', 'LOW', 'AMZN', 'EBAY', 'HAS', 'MAR', 'HLT', 'TPR', 'SW', 'PKG', 'IP', 'BALL', 'AVY', 'AMCR', 'ROL', 'DHI', 'LEN', 'NVR', 'PHM', 'LVS', 'MGM', 'WYNN', 'CZR', 'MCD', 'SBUX', 'CMG', 'YUM', 'DRI', 'DPZ', 'ORLY', 'AZO', 'TSCO', 'ULTA', 'BBY', 'BKNG', 'ABNB', 'RCL', 'CCL', 'EXPE', 'NCLH', 'STZ']
+[2025-04-22T03:13:38.951+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T03:13:38.951+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=get_tickers, run_id=scheduled__2025-04-20T19:00:00+00:00, execution_date=20250420T190000, start_date=20250421T191337, end_date=20250421T191338
+[2025-04-22T03:13:38.958+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T03:13:38.958+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T03:13:38.958+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-21 19:13:34.851036+00:00
+[2025-04-22T03:13:38.959+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-22T03:13:38.990+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T03:13:39.007+0800] {taskinstance.py:3901} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T03:13:39.008+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

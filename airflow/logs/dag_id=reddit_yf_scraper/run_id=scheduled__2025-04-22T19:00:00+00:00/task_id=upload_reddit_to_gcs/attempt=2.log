@@ -1,0 +1,210 @@
+[2025-04-24T23:49:04.637+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-24T23:49:04.643+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs scheduled__2025-04-22T19:00:00+00:00 [queued]>
+[2025-04-24T23:49:04.646+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs scheduled__2025-04-22T19:00:00+00:00 [queued]>
+[2025-04-24T23:49:04.647+0800] {taskinstance.py:2867} INFO - Starting attempt 2 of 3
+[2025-04-24T23:49:04.651+0800] {taskinstance.py:2890} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_reddit_to_gcs> on 2025-04-22 19:00:00+00:00
+[2025-04-24T23:49:04.656+0800] {standard_task_runner.py:72} INFO - Started process 39872 to run task
+[2025-04-24T23:49:04.659+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'upload_reddit_to_gcs', 'scheduled__2025-04-22T19:00:00+00:00', '--job-id', '914', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmp152loqd0']
+[2025-04-24T23:49:04.660+0800] {standard_task_runner.py:105} INFO - Job 914: Subtask upload_reddit_to_gcs
+[2025-04-24T23:49:04.681+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs scheduled__2025-04-22T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-24T23:49:04.709+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='upload_reddit_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-22T19:00:00+00:00'
+[2025-04-24T23:49:04.710+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-24T23:49:04.710+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-24T23:49:04.710+0800] {logging_mixin.py:190} INFO - Current task name:upload_reddit_to_gcs state:running start_date:2025-04-24 15:49:04.643651+00:00
+[2025-04-24T23:49:04.710+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-24T23:49:04.710+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-24T23:49:04.713+0800] {connection.py:277} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-04-24T23:49:04.715+0800] {base.py:84} INFO - Retrieving connection 'google_cloud_default'
+[2025-04-24T23:49:05.252+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/PKG_reddit_20250424.csv uploaded to reddit-test/PKG_reddit_20250424.csv in is3107_bucket bucket
+[2025-04-24T23:49:05.253+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-24T23:49:06.170+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-24T23:49:06.173+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EBAY_reddit_20250424.csv uploaded to reddit-test/EBAY_reddit_20250424.csv in is3107_bucket bucket
+[2025-04-24T23:49:06.174+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-24T23:49:06.684+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-24T23:49:06.686+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CTVA_reddit_20250424.csv uploaded to reddit-test/CTVA_reddit_20250424.csv in is3107_bucket bucket
+[2025-04-24T23:49:06.687+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-24T23:49:06.887+0800] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-24T23:49:06.900+0800] {process_utils.py:132} INFO - Sending 15 to group 39872. PIDs of all processes in the group: [39872]
+[2025-04-24T23:49:06.900+0800] {process_utils.py:87} INFO - Sending the signal 15 to group 39872
+[2025-04-24T23:49:06.901+0800] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-04-24T23:49:06.913+0800] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/providers/google/cloud/transfers/local_to_gcs.py", line 115, in execute
+    hook.upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 570, in upload
+    _call_with_retry(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 528, in _call_with_retry
+    f()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 3006, in upload_from_filename
+    self._handle_filename_and_upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 2884, in _handle_filename_and_upload
+    self._prep_and_do_upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 2700, in _prep_and_do_upload
+    created_json = self._do_upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 2506, in _do_upload
+    response = self._do_multipart_upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 2007, in _do_multipart_upload
+    response = upload.transmit(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/resumable_media/requests/upload.py", line 153, in transmit
+    return _request_helpers.wait_and_retry(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/resumable_media/requests/_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/resumable_media/requests/upload.py", line 145, in retriable_request
+    result = transport.request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/auth/transport/requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-04-24T23:49:06.920+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/providers/google/cloud/transfers/local_to_gcs.py", line 115, in execute
+    hook.upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 570, in upload
+    _call_with_retry(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 528, in _call_with_retry
+    f()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 3006, in upload_from_filename
+    self._handle_filename_and_upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 2884, in _handle_filename_and_upload
+    self._prep_and_do_upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 2700, in _prep_and_do_upload
+    created_json = self._do_upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 2506, in _do_upload
+    response = self._do_multipart_upload(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/storage/blob.py", line 2007, in _do_multipart_upload
+    response = upload.transmit(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/resumable_media/requests/upload.py", line 153, in transmit
+    return _request_helpers.wait_and_retry(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/resumable_media/requests/_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/resumable_media/requests/upload.py", line 145, in retriable_request
+    result = transport.request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/auth/transport/requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3097, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-04-24T23:49:06.924+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-24T23:49:06.924+0800] {logging_mixin.py:190} INFO - Task start:2025-04-24 15:49:04.643651+00:00 end:2025-04-24 15:49:06.923942+00:00 duration:2.280291
+[2025-04-24T23:49:06.925+0800] {logging_mixin.py:190} INFO - Task:<Task(LocalFilesystemToGCSOperator): upload_reddit_to_gcs> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-04-22 19:00:00+00:00: scheduled__2025-04-22T19:00:00+00:00, state:running, queued_at: 2025-04-23 19:16:43.831245+00:00. externally triggered: False>
+[2025-04-24T23:49:06.925+0800] {logging_mixin.py:190} INFO - Failure caused by Task received SIGTERM signal
+[2025-04-24T23:49:06.925+0800] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=reddit_yf_scraper, task_id=upload_reddit_to_gcs, run_id=scheduled__2025-04-22T19:00:00+00:00, execution_date=20250422T190000, start_date=20250424T154904, end_date=20250424T154906
+[2025-04-24T23:49:06.934+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-24T23:49:06.963+0800] {process_utils.py:80} INFO - Process psutil.Process(pid=39872, status='terminated', exitcode=2, started='23:49:04') (39872) terminated with exit code 2
+[2025-04-24T23:49:10.408+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-24T23:49:10.411+0800] {taskinstance.py:2604} INFO - Dependencies not met for <TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs scheduled__2025-04-22T19:00:00+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2025-04-24T15:49:10.411323+00:00 and task will be retried at 2025-04-24T15:54:06.923942+00:00.
+[2025-04-24T23:49:10.420+0800] {local_task_job_runner.py:166} INFO - Task is not able to be run

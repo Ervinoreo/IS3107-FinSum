@@ -1,0 +1,539 @@
+[2025-04-22T17:20:13.932+0800] {processor.py:186} INFO - Started process (PID=13452) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T17:20:13.933+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T17:20:13.933+0800] {logging_mixin.py:190} INFO - [2025-04-22T17:20:13.933+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T17:20:13.936+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T17:20:13.979+0800] {logging_mixin.py:190} INFO - [2025-04-22T17:20:13.979+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T17:20:13.987+0800] {logging_mixin.py:190} INFO - [2025-04-22T17:20:13.986+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T17:20:13.993+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T18:11:14.485+0800] {processor.py:186} INFO - Started process (PID=13606) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T18:11:14.485+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T18:11:14.485+0800] {logging_mixin.py:190} INFO - [2025-04-22T18:11:14.485+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T18:11:14.489+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T18:11:14.533+0800] {logging_mixin.py:190} INFO - [2025-04-22T18:11:14.533+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T18:11:14.540+0800] {logging_mixin.py:190} INFO - [2025-04-22T18:11:14.540+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T18:11:14.548+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T19:23:41.765+0800] {processor.py:186} INFO - Started process (PID=13809) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T19:23:41.766+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T19:23:41.767+0800] {logging_mixin.py:190} INFO - [2025-04-22T19:23:41.767+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T19:23:41.771+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T19:23:41.816+0800] {logging_mixin.py:190} INFO - [2025-04-22T19:23:41.816+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T19:23:41.824+0800] {logging_mixin.py:190} INFO - [2025-04-22T19:23:41.824+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T19:23:41.832+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.068 seconds
+[2025-04-22T20:09:22.973+0800] {processor.py:186} INFO - Started process (PID=16026) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:09:22.974+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:09:22.975+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:09:22.975+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:09:22.979+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:09:23.021+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:09:23.021+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:09:23.029+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:09:23.029+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:09:23.036+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T20:11:07.939+0800] {processor.py:186} INFO - Started process (PID=16164) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:11:07.941+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:11:07.941+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:11:07.941+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:11:07.945+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:11:07.989+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:11:07.989+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:11:07.997+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:11:07.996+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:11:08.004+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.066 seconds
+[2025-04-22T20:12:20.127+0800] {processor.py:186} INFO - Started process (PID=16257) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:12:20.129+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:12:20.129+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:12:20.129+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:12:20.133+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:12:20.175+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:12:20.175+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:12:20.182+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:12:20.182+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:12:20.188+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T20:13:38.953+0800] {processor.py:186} INFO - Started process (PID=16352) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:13:38.954+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:13:38.954+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:13:38.954+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:13:38.958+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:13:39.002+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:13:39.002+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:13:39.009+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:13:39.009+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:13:39.016+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:14:55.950+0800] {processor.py:186} INFO - Started process (PID=16452) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:14:55.951+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:14:55.951+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:14:55.951+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:14:55.955+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:14:55.998+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:14:55.998+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:14:56.005+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:14:56.004+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:14:56.012+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:16:09.060+0800] {processor.py:186} INFO - Started process (PID=16547) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:16:09.060+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:16:09.061+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:16:09.061+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:16:09.065+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:16:09.108+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:16:09.107+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:16:09.114+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:16:09.114+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:16:09.122+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:17:20.429+0800] {processor.py:186} INFO - Started process (PID=16642) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:17:20.429+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:17:20.430+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:17:20.429+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:17:20.433+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:17:20.476+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:17:20.476+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:17:20.483+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:17:20.483+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:17:20.490+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:18:37.767+0800] {processor.py:186} INFO - Started process (PID=16738) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:18:37.767+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:18:37.767+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:18:37.767+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:18:37.771+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:18:37.813+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:18:37.813+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:18:37.820+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:18:37.820+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:18:37.828+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T20:19:54.861+0800] {processor.py:186} INFO - Started process (PID=16836) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:19:54.861+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:19:54.861+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:19:54.861+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:19:54.865+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:19:54.906+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:19:54.906+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:19:54.913+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:19:54.913+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:19:54.921+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T20:21:07.839+0800] {processor.py:186} INFO - Started process (PID=16933) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:21:07.839+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:21:07.840+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:21:07.840+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:21:07.843+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:21:07.886+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:21:07.886+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:21:07.893+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:21:07.893+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:21:07.901+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T20:22:26.103+0800] {processor.py:186} INFO - Started process (PID=17040) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:22:26.103+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:22:26.104+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:22:26.104+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:22:26.108+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:22:26.151+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:22:26.151+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:22:26.158+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:22:26.158+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:22:26.166+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T20:23:43.741+0800] {processor.py:186} INFO - Started process (PID=17152) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:23:43.741+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:23:43.742+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:23:43.741+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:23:43.745+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:23:43.787+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:23:43.787+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:23:43.793+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:23:43.793+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:23:43.800+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.061 seconds
+[2025-04-22T20:24:59.622+0800] {processor.py:186} INFO - Started process (PID=17254) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:24:59.623+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:24:59.624+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:24:59.624+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:24:59.628+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:24:59.671+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:24:59.671+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:24:59.678+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:24:59.678+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:24:59.686+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T20:26:17.582+0800] {processor.py:186} INFO - Started process (PID=17364) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:26:17.583+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:26:17.584+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:26:17.584+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:26:17.588+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:26:17.630+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:26:17.630+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:26:17.639+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:26:17.639+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:26:17.645+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T20:27:34.788+0800] {processor.py:186} INFO - Started process (PID=17463) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:27:34.789+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:27:34.790+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:27:34.790+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:27:34.794+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:27:34.838+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:27:34.837+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:27:34.845+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:27:34.845+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:27:34.853+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.066 seconds
+[2025-04-22T20:28:51.800+0800] {processor.py:186} INFO - Started process (PID=17563) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:28:51.802+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:28:51.802+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:28:51.802+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:28:51.806+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:28:51.848+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:28:51.848+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:28:51.857+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:28:51.857+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:28:51.864+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T20:30:06.997+0800] {processor.py:186} INFO - Started process (PID=17683) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:30:06.998+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:30:06.999+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:30:06.999+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:30:07.003+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:30:07.046+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:30:07.046+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:30:07.053+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:30:07.052+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:30:07.060+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T20:31:24.576+0800] {processor.py:186} INFO - Started process (PID=17784) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:31:24.577+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:31:24.578+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:31:24.578+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:31:24.581+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:31:24.625+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:31:24.625+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:31:24.633+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:31:24.633+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:31:24.640+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.066 seconds
+[2025-04-22T20:32:39.015+0800] {processor.py:186} INFO - Started process (PID=17879) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:32:39.015+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:32:39.016+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:32:39.015+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:32:39.019+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:32:39.063+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:32:39.063+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:32:39.070+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:32:39.070+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:32:39.077+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T20:33:54.328+0800] {processor.py:186} INFO - Started process (PID=17978) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:33:54.329+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:33:54.329+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:33:54.329+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:33:54.334+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:33:54.376+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:33:54.376+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:33:54.384+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:33:54.384+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:33:54.391+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T20:35:09.871+0800] {processor.py:186} INFO - Started process (PID=18096) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:35:09.872+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:35:09.872+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:35:09.872+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:35:09.876+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:35:09.920+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:35:09.920+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:35:09.927+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:35:09.927+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:35:09.934+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T20:36:27.324+0800] {processor.py:186} INFO - Started process (PID=18190) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:36:27.325+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:36:27.325+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:36:27.325+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:36:27.329+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:36:27.371+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:36:27.371+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:36:27.378+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:36:27.378+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:36:27.385+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T20:37:46.917+0800] {processor.py:186} INFO - Started process (PID=18286) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:37:46.918+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:37:46.919+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:37:46.918+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:37:46.923+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:37:46.966+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:37:46.965+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:37:46.974+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:37:46.974+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:37:46.981+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.066 seconds
+[2025-04-22T20:39:02.914+0800] {processor.py:186} INFO - Started process (PID=18385) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:39:02.914+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:39:02.915+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:39:02.914+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:39:02.918+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:39:02.961+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:39:02.960+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:39:02.967+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:39:02.967+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:39:02.974+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T20:40:19.305+0800] {processor.py:186} INFO - Started process (PID=18482) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:40:19.306+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:40:19.306+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:40:19.306+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:40:19.310+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:40:19.352+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:40:19.352+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:40:19.359+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:40:19.359+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:40:19.366+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T20:41:39.033+0800] {processor.py:186} INFO - Started process (PID=18581) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:41:39.033+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:41:39.034+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:41:39.034+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:41:39.038+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:41:39.079+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:41:39.079+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:41:39.086+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:41:39.086+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:41:39.093+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T20:42:56.853+0800] {processor.py:186} INFO - Started process (PID=18686) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:42:56.854+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:42:56.854+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:42:56.854+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:42:56.858+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:42:56.900+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:42:56.900+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:42:56.907+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:42:56.907+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:42:56.914+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:44:14.315+0800] {processor.py:186} INFO - Started process (PID=18788) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:44:14.317+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:44:14.317+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:44:14.317+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:44:14.321+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:44:14.363+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:44:14.363+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:44:14.371+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:44:14.371+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:44:14.378+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T20:45:31.216+0800] {processor.py:186} INFO - Started process (PID=18880) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:45:31.217+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:45:31.217+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:45:31.217+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:45:31.220+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:45:31.263+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:45:31.263+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:45:31.270+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:45:31.270+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:45:31.278+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:46:49.002+0800] {processor.py:186} INFO - Started process (PID=18974) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:46:49.003+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:46:49.004+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:46:49.003+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:46:49.007+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:46:49.051+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:46:49.051+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:46:49.059+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:46:49.059+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:46:49.066+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T20:48:04.448+0800] {processor.py:186} INFO - Started process (PID=19072) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:48:04.449+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:48:04.450+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:48:04.450+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:48:04.454+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:48:04.496+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:48:04.496+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:48:04.503+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:48:04.503+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:48:04.510+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:49:21.618+0800] {processor.py:186} INFO - Started process (PID=19170) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:49:21.620+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:49:21.620+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:49:21.620+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:49:21.624+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:49:21.666+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:49:21.665+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:49:21.673+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:49:21.673+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:49:21.680+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T20:50:38.100+0800] {processor.py:186} INFO - Started process (PID=19265) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:50:38.101+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:50:38.102+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:50:38.102+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:50:38.106+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:50:38.148+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:50:38.148+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:50:38.155+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:50:38.155+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:50:38.163+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T20:51:55.718+0800] {processor.py:186} INFO - Started process (PID=19370) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:51:55.719+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:51:55.719+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:51:55.719+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:51:55.723+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:51:55.765+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:51:55.765+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:51:55.772+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:51:55.772+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:51:55.779+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:53:14.647+0800] {processor.py:186} INFO - Started process (PID=19468) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:53:14.647+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:53:14.648+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:53:14.648+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:53:14.652+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:53:14.693+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:53:14.693+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:53:14.700+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:53:14.700+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:53:14.707+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T20:54:30.037+0800] {processor.py:186} INFO - Started process (PID=19562) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:54:30.038+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:54:30.039+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:54:30.039+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:54:30.043+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:54:30.085+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:54:30.085+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:54:30.092+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:54:30.092+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:54:30.099+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:55:44.207+0800] {processor.py:186} INFO - Started process (PID=19664) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:55:44.207+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:55:44.208+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:55:44.208+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:55:44.212+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:55:44.254+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:55:44.254+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:55:44.261+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:55:44.260+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:55:44.268+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:57:00.339+0800] {processor.py:186} INFO - Started process (PID=19758) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:57:00.339+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:57:00.340+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:57:00.340+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:57:00.344+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:57:00.387+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:57:00.387+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:57:00.394+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:57:00.394+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:57:00.401+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T20:58:17.069+0800] {processor.py:186} INFO - Started process (PID=19854) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:58:17.070+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:58:17.071+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:58:17.070+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:58:17.074+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:58:17.116+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:58:17.116+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:58:17.125+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:58:17.125+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:58:17.132+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T20:59:37.128+0800] {processor.py:186} INFO - Started process (PID=19967) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:59:37.129+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T20:59:37.129+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:59:37.129+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:59:37.133+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T20:59:37.176+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:59:37.176+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T20:59:37.184+0800] {logging_mixin.py:190} INFO - [2025-04-22T20:59:37.184+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T20:59:37.191+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T21:00:56.569+0800] {processor.py:186} INFO - Started process (PID=20157) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:00:56.569+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:00:56.569+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:00:56.569+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:00:56.573+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:00:56.615+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:00:56.615+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:00:56.622+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:00:56.622+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:00:56.629+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T21:02:11.695+0800] {processor.py:186} INFO - Started process (PID=20273) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:02:11.696+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:02:11.696+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:02:11.696+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:02:11.700+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:02:11.742+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:02:11.742+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:02:11.751+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:02:11.751+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:02:11.758+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T21:03:27.834+0800] {processor.py:186} INFO - Started process (PID=20366) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:03:27.836+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:03:27.836+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:03:27.836+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:03:27.840+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:03:27.883+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:03:27.883+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:03:27.890+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:03:27.890+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:03:27.898+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T21:04:46.231+0800] {processor.py:186} INFO - Started process (PID=20466) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:04:46.231+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:04:46.232+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:04:46.232+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:04:46.236+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:04:46.278+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:04:46.278+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:04:46.287+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:04:46.287+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:04:46.294+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T21:06:02.053+0800] {processor.py:186} INFO - Started process (PID=20563) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:06:02.055+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:06:02.055+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:06:02.055+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:06:02.059+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:06:02.101+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:06:02.100+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:06:02.107+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:06:02.107+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:06:02.115+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:07:20.811+0800] {processor.py:186} INFO - Started process (PID=20662) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:07:20.812+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:07:20.813+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:07:20.813+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:07:20.816+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:07:20.858+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:07:20.858+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:07:20.867+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:07:20.867+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:07:20.874+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T21:08:36.349+0800] {processor.py:186} INFO - Started process (PID=20756) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:08:36.350+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:08:36.350+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:08:36.350+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:08:36.355+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:08:36.397+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:08:36.397+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:08:36.404+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:08:36.404+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:08:36.411+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:09:52.177+0800] {processor.py:186} INFO - Started process (PID=20855) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:09:52.178+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:09:52.179+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:09:52.179+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:09:52.182+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:09:52.224+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:09:52.224+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:09:52.231+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:09:52.231+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:09:52.238+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T21:11:05.961+0800] {processor.py:186} INFO - Started process (PID=20962) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:11:05.961+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:11:05.962+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:11:05.962+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:11:05.966+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:11:06.008+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:11:06.008+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:11:06.015+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:11:06.015+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:11:06.022+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:12:21.995+0800] {processor.py:186} INFO - Started process (PID=21057) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:12:21.995+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:12:21.996+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:12:21.996+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:12:22.000+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:12:22.041+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:12:22.041+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:12:22.050+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:12:22.050+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:12:22.057+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T21:13:36.047+0800] {processor.py:186} INFO - Started process (PID=21150) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:13:36.049+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:13:36.049+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:13:36.049+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:13:36.053+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:13:36.095+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:13:36.095+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:13:36.101+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:13:36.101+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:13:36.109+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:14:51.725+0800] {processor.py:186} INFO - Started process (PID=21246) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:14:51.726+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:14:51.726+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:14:51.726+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:14:51.731+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:14:51.773+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:14:51.772+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:14:51.782+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:14:51.782+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:14:51.789+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T21:16:08.186+0800] {processor.py:186} INFO - Started process (PID=21343) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:16:08.187+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:16:08.188+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:16:08.188+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:16:08.192+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:16:08.233+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:16:08.233+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:16:08.240+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:16:08.240+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:16:08.247+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T21:17:24.051+0800] {processor.py:186} INFO - Started process (PID=21449) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:17:24.052+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:17:24.052+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:17:24.052+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:17:24.056+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:17:24.100+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:17:24.100+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:17:24.108+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:17:24.108+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:17:24.115+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.066 seconds
+[2025-04-22T21:18:41.085+0800] {processor.py:186} INFO - Started process (PID=21540) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:18:41.085+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:18:41.085+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:18:41.085+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:18:41.089+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:18:41.133+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:18:41.132+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:18:41.139+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:18:41.139+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:18:41.146+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:20:00.274+0800] {processor.py:186} INFO - Started process (PID=21639) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:20:00.275+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:20:00.275+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:20:00.275+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:20:00.278+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:20:00.320+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:20:00.320+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:20:00.327+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:20:00.327+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:20:00.334+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.061 seconds
+[2025-04-22T21:21:19.001+0800] {processor.py:186} INFO - Started process (PID=21739) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:21:19.002+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:21:19.002+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:21:19.002+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:21:19.006+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:21:19.048+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:21:19.048+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:21:19.055+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:21:19.055+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:21:19.063+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:22:36.808+0800] {processor.py:186} INFO - Started process (PID=21840) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:22:36.809+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:22:36.809+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:22:36.809+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:22:36.813+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:22:36.855+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:22:36.855+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:22:36.864+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:22:36.864+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:22:36.871+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T21:23:54.293+0800] {processor.py:186} INFO - Started process (PID=21935) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:23:54.294+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:23:54.295+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:23:54.294+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:23:54.299+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:23:54.342+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:23:54.342+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:23:54.349+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:23:54.349+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:23:54.357+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.066 seconds
+[2025-04-22T21:25:12.472+0800] {processor.py:186} INFO - Started process (PID=22041) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:25:12.474+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:25:12.474+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:25:12.474+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:25:12.478+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:25:12.520+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:25:12.520+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:25:12.529+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:25:12.529+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:25:12.536+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T21:26:33.281+0800] {processor.py:186} INFO - Started process (PID=22144) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:26:33.282+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:26:33.282+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:26:33.282+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:26:33.286+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:26:33.329+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:26:33.328+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:26:33.336+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:26:33.335+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:26:33.343+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:27:51.315+0800] {processor.py:186} INFO - Started process (PID=22242) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:27:51.316+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:27:51.317+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:27:51.317+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:27:51.321+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:27:51.363+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:27:51.363+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:27:51.371+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:27:51.371+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:27:51.378+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T21:29:08.636+0800] {processor.py:186} INFO - Started process (PID=22363) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:29:08.636+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:29:08.637+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:29:08.637+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:29:08.640+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:29:08.682+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:29:08.682+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:29:08.689+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:29:08.689+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:29:08.696+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T21:30:25.520+0800] {processor.py:186} INFO - Started process (PID=22487) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:30:25.521+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:30:25.521+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:30:25.521+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:30:25.525+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:30:25.567+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:30:25.567+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:30:25.575+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:30:25.574+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:30:25.581+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:31:43.407+0800] {processor.py:186} INFO - Started process (PID=22628) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:31:43.408+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:31:43.408+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:31:43.408+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:31:43.412+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:31:43.454+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:31:43.454+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:31:43.461+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:31:43.461+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:31:43.468+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T21:33:02.201+0800] {processor.py:186} INFO - Started process (PID=22731) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:33:02.202+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:33:02.202+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:33:02.202+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:33:02.206+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:33:02.248+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:33:02.248+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:33:02.257+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:33:02.257+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:33:02.264+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2025-04-22T21:34:18.170+0800] {processor.py:186} INFO - Started process (PID=22833) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:34:18.171+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:34:18.172+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:34:18.172+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:34:18.175+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:34:18.217+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:34:18.217+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:34:18.224+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:34:18.224+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:34:18.231+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds
+[2025-04-22T21:35:37.448+0800] {processor.py:186} INFO - Started process (PID=22983) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:35:37.450+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:35:37.450+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:35:37.450+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:35:37.454+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:35:37.495+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:35:37.495+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:35:37.505+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:35:37.505+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:35:37.512+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T21:52:28.936+0800] {processor.py:186} INFO - Started process (PID=23096) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:52:28.937+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T21:52:28.937+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:52:28.937+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:52:28.940+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T21:52:28.983+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:52:28.983+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T21:52:28.990+0800] {logging_mixin.py:190} INFO - [2025-04-22T21:52:28.990+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T21:52:28.998+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.063 seconds
+[2025-04-22T22:59:52.549+0800] {processor.py:186} INFO - Started process (PID=23264) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T22:59:52.551+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T22:59:52.551+0800] {logging_mixin.py:190} INFO - [2025-04-22T22:59:52.551+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T22:59:52.555+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T22:59:52.597+0800] {logging_mixin.py:190} INFO - [2025-04-22T22:59:52.597+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T22:59:52.606+0800] {logging_mixin.py:190} INFO - [2025-04-22T22:59:52.606+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T22:59:52.613+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-22T23:01:09.611+0800] {processor.py:186} INFO - Started process (PID=23361) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T23:01:09.611+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-22T23:01:09.612+0800] {logging_mixin.py:190} INFO - [2025-04-22T23:01:09.612+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T23:01:09.616+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-22T23:01:09.659+0800] {logging_mixin.py:190} INFO - [2025-04-22T23:01:09.659+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T23:01:09.666+0800] {logging_mixin.py:190} INFO - [2025-04-22T23:01:09.666+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T23:01:09.674+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-23T00:27:13.107+0800] {processor.py:186} INFO - Started process (PID=23511) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T00:27:13.108+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-23T00:27:13.109+0800] {logging_mixin.py:190} INFO - [2025-04-23T00:27:13.108+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T00:27:13.113+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T00:27:13.158+0800] {logging_mixin.py:190} INFO - [2025-04-23T00:27:13.157+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T00:27:13.165+0800] {logging_mixin.py:190} INFO - [2025-04-23T00:27:13.165+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T00:27:13.173+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.068 seconds
+[2025-04-23T01:45:13.415+0800] {processor.py:186} INFO - Started process (PID=23679) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T01:45:13.416+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-23T01:45:13.416+0800] {logging_mixin.py:190} INFO - [2025-04-23T01:45:13.416+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T01:45:13.420+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T01:45:13.462+0800] {logging_mixin.py:190} INFO - [2025-04-23T01:45:13.461+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T01:45:13.471+0800] {logging_mixin.py:190} INFO - [2025-04-23T01:45:13.471+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T01:45:13.478+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.065 seconds
+[2025-04-23T01:46:30.895+0800] {processor.py:186} INFO - Started process (PID=23777) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T01:46:30.896+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2025-04-23T01:46:30.896+0800] {logging_mixin.py:190} INFO - [2025-04-23T01:46:30.896+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T01:46:30.900+0800] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2025-04-23T01:46:30.941+0800] {logging_mixin.py:190} INFO - [2025-04-23T01:46:30.941+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T01:46:30.948+0800] {logging_mixin.py:190} INFO - [2025-04-23T01:46:30.948+0800] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-04-21 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-23T01:46:30.955+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.062 seconds

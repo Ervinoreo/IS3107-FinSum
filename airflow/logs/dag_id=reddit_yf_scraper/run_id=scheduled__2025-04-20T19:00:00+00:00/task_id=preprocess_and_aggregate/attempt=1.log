@@ -1,0 +1,143 @@
+[2025-04-22T19:51:32.289+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T19:51:32.296+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.preprocess_and_aggregate scheduled__2025-04-20T19:00:00+00:00 [queued]>
+[2025-04-22T19:51:32.300+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.preprocess_and_aggregate scheduled__2025-04-20T19:00:00+00:00 [queued]>
+[2025-04-22T19:51:32.300+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T19:51:32.305+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): preprocess_and_aggregate> on 2025-04-20 19:00:00+00:00
+[2025-04-22T19:51:32.309+0800] {standard_task_runner.py:72} INFO - Started process 15252 to run task
+[2025-04-22T19:51:32.313+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'preprocess_and_aggregate', 'scheduled__2025-04-20T19:00:00+00:00', '--job-id', '881', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpmdcby35n']
+[2025-04-22T19:51:32.314+0800] {standard_task_runner.py:105} INFO - Job 881: Subtask preprocess_and_aggregate
+[2025-04-22T19:51:32.336+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.preprocess_and_aggregate scheduled__2025-04-20T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-22T19:51:32.364+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='preprocess_and_aggregate' AIRFLOW_CTX_EXECUTION_DATE='2025-04-20T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-20T19:00:00+00:00'
+[2025-04-22T19:51:32.364+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T19:51:32.365+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T19:51:32.365+0800] {logging_mixin.py:190} INFO - Current task name:preprocess_and_aggregate state:running start_date:2025-04-22 11:51:32.296840+00:00
+[2025-04-22T19:51:32.365+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-22T19:51:32.365+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T19:51:34.563+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ABNB_processed_20250422.csv
+[2025-04-22T19:51:36.190+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ALB_processed_20250422.csv
+[2025-04-22T19:51:37.823+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/AMCR_processed_20250422.csv
+[2025-04-22T19:51:41.006+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/AMZN_processed_20250422.csv
+[2025-04-22T19:51:42.741+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/APD_processed_20250422.csv
+[2025-04-22T19:51:44.283+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/APTV_processed_20250422.csv
+[2025-04-22T19:51:45.715+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:51:45.724+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/AVY_processed_20250422.csv
+[2025-04-22T19:51:47.148+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/AZO_processed_20250422.csv
+[2025-04-22T19:51:48.679+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:51:48.689+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/BALL_processed_20250422.csv
+[2025-04-22T19:51:50.207+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/BBY_processed_20250422.csv
+[2025-04-22T19:51:52.157+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/BKNG_processed_20250422.csv
+[2025-04-22T19:51:53.603+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/BWA_processed_20250422.csv
+[2025-04-22T19:51:59.230+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CCL_processed_20250422.csv
+[2025-04-22T19:52:00.764+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CE_processed_20250422.csv
+[2025-04-22T19:52:02.234+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CF_processed_20250422.csv
+[2025-04-22T19:52:03.947+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CHTR_processed_20250422.csv
+[2025-04-22T19:52:05.336+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CMCSA_processed_20250422.csv
+[2025-04-22T19:52:06.809+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CMG_processed_20250422.csv
+[2025-04-22T19:52:08.342+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CTVA_processed_20250422.csv
+[2025-04-22T19:52:09.778+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/CZR_processed_20250422.csv
+[2025-04-22T19:52:11.402+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:52:11.408+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DD_processed_20250422.csv
+[2025-04-22T19:52:12.639+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DECK_processed_20250422.csv
+[2025-04-22T19:52:14.069+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DHI_processed_20250422.csv
+[2025-04-22T19:52:15.504+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:52:15.514+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DIS_processed_20250422.csv
+[2025-04-22T19:52:16.922+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DOW_processed_20250422.csv
+[2025-04-22T19:52:18.385+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DPZ_processed_20250422.csv
+[2025-04-22T19:52:19.907+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/DRI_processed_20250422.csv
+[2025-04-22T19:52:21.555+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/EA_processed_20250422.csv
+[2025-04-22T19:52:23.091+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/EBAY_processed_20250422.csv
+[2025-04-22T19:52:24.727+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ECL_processed_20250422.csv
+[2025-04-22T19:52:26.253+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/EMN_processed_20250422.csv
+[2025-04-22T19:52:27.594+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:52:27.603+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/EXPE_processed_20250422.csv
+[2025-04-22T19:52:29.425+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:52:29.431+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/F_processed_20250422.csv
+[2025-04-22T19:52:30.769+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/FCX_processed_20250422.csv
+[2025-04-22T19:52:32.100+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/FMC_processed_20250422.csv
+[2025-04-22T19:52:33.534+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/FOX_processed_20250422.csv
+[2025-04-22T19:52:35.167+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/FOXA_processed_20250422.csv
+[2025-04-22T19:52:36.498+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/GM_processed_20250422.csv
+[2025-04-22T19:52:37.725+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:52:37.736+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/GOOG_processed_20250422.csv
+[2025-04-22T19:52:39.167+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/GOOGL_processed_20250422.csv
+[2025-04-22T19:52:40.703+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/GPC_processed_20250422.csv
+[2025-04-22T19:52:42.128+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:52:42.138+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/HAS_processed_20250422.csv
+[2025-04-22T19:52:43.461+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/HD_processed_20250422.csv
+[2025-04-22T19:52:44.900+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/HLT_processed_20250422.csv
+[2025-04-22T19:52:46.333+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/IFF_processed_20250422.csv
+[2025-04-22T19:52:47.857+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:52:47.867+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/IP_processed_20250422.csv
+[2025-04-22T19:52:49.304+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/IPG_processed_20250422.csv
+[2025-04-22T19:52:50.840+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/KMX_processed_20250422.csv
+[2025-04-22T19:52:52.375+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LEN_processed_20250422.csv
+[2025-04-22T19:52:53.698+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LIN_processed_20250422.csv
+[2025-04-22T19:52:54.935+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LKQ_processed_20250422.csv
+[2025-04-22T19:52:56.261+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:52:56.271+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LOW_processed_20250422.csv
+[2025-04-22T19:52:57.560+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LULU_processed_20250422.csv
+[2025-04-22T19:52:58.820+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LVS_processed_20250422.csv
+[2025-04-22T19:53:00.265+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LYB_processed_20250422.csv
+[2025-04-22T19:53:01.797+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/LYV_processed_20250422.csv
+[2025-04-22T19:53:03.122+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MAR_processed_20250422.csv
+[2025-04-22T19:53:04.657+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:53:04.667+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MCD_processed_20250422.csv
+[2025-04-22T19:53:06.295+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:53:06.305+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/META_processed_20250422.csv
+[2025-04-22T19:53:07.837+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MGM_processed_20250422.csv
+[2025-04-22T19:53:09.268+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MHK_processed_20250422.csv
+[2025-04-22T19:53:10.910+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MLM_processed_20250422.csv
+[2025-04-22T19:53:12.338+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MOS_processed_20250422.csv
+[2025-04-22T19:53:13.777+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/MTCH_processed_20250422.csv
+[2025-04-22T19:53:14.992+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NCLH_processed_20250422.csv
+[2025-04-22T19:53:16.945+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NEM_processed_20250422.csv
+[2025-04-22T19:53:18.374+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:53:18.386+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NFLX_processed_20250422.csv
+[2025-04-22T19:53:19.709+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:53:19.719+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NKE_processed_20250422.csv
+[2025-04-22T19:53:21.151+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NUE_processed_20250422.csv
+[2025-04-22T19:53:22.655+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NVR_processed_20250422.csv
+[2025-04-22T19:53:24.013+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NWS_processed_20250422.csv
+[2025-04-22T19:53:25.443+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/NWSA_processed_20250422.csv
+[2025-04-22T19:53:26.780+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/OMC_processed_20250422.csv
+[2025-04-22T19:53:28.107+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:53:28.117+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ORLY_processed_20250422.csv
+[2025-04-22T19:53:29.540+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/PARA_processed_20250422.csv
+[2025-04-22T19:53:30.962+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/PHM_processed_20250422.csv
+[2025-04-22T19:53:32.508+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/PKG_processed_20250422.csv
+[2025-04-22T19:53:34.364+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/PPG_processed_20250422.csv
+[2025-04-22T19:53:35.601+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/RCL_processed_20250422.csv
+[2025-04-22T19:53:36.812+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/RL_processed_20250422.csv
+[2025-04-22T19:53:38.148+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ROL_processed_20250422.csv
+[2025-04-22T19:53:39.678+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ROST_processed_20250422.csv
+[2025-04-22T19:53:41.215+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:53:41.225+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/SBUX_processed_20250422.csv
+[2025-04-22T19:53:42.547+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/SHW_processed_20250422.csv
+[2025-04-22T19:53:43.883+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/STLD_processed_20250422.csv
+[2025-04-22T19:53:45.311+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/STZ_processed_20250422.csv
+[2025-04-22T19:53:46.751+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/SW_processed_20250422.csv
+[2025-04-22T19:53:48.483+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:53:48.493+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/T_processed_20250422.csv
+[2025-04-22T19:53:50.029+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TJX_processed_20250422.csv
+[2025-04-22T19:53:51.352+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TMUS_processed_20250422.csv
+[2025-04-22T19:53:52.790+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TPR_processed_20250422.csv
+[2025-04-22T19:53:54.329+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TSCO_processed_20250422.csv
+[2025-04-22T19:53:55.754+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TSLA_processed_20250422.csv
+[2025-04-22T19:53:57.086+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/TTWO_processed_20250422.csv
+[2025-04-22T19:53:58.322+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/ULTA_processed_20250422.csv
+[2025-04-22T19:53:59.648+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/VMC_processed_20250422.csv
+[2025-04-22T19:54:01.082+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/VZ_processed_20250422.csv
+[2025-04-22T19:54:02.722+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/WBD_processed_20250422.csv
+[2025-04-22T19:54:03.941+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/WYNN_processed_20250422.csv
+[2025-04-22T19:54:05.174+0800] {logging_mixin.py:190} WARNING - /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py:330 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2025-04-22T19:54:05.184+0800] {logging_mixin.py:190} INFO - ✅ Processed and saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/processed/YUM_processed_20250422.csv
+[2025-04-22T19:54:05.184+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-22T19:54:05.190+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T19:54:05.190+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=preprocess_and_aggregate, run_id=scheduled__2025-04-20T19:00:00+00:00, execution_date=20250420T190000, start_date=20250422T115132, end_date=20250422T115405
+[2025-04-22T19:54:05.202+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T19:54:05.202+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T19:54:05.202+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-22 11:23:57.885261+00:00
+[2025-04-22T19:54:05.203+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-22T19:54:05.248+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T19:54:05.265+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T19:54:05.266+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

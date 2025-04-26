@@ -1,0 +1,75 @@
+[2025-04-25T21:56:05.382+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-25T21:56:05.388+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.download_files_from_gcs__1 scheduled__2025-04-23T19:00:00+00:00 [queued]>
+[2025-04-25T21:56:05.392+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.download_files_from_gcs__1 scheduled__2025-04-23T19:00:00+00:00 [queued]>
+[2025-04-25T21:56:05.392+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-25T21:56:05.396+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): download_files_from_gcs__1> on 2025-04-23 19:00:00+00:00
+[2025-04-25T21:56:05.400+0800] {standard_task_runner.py:72} INFO - Started process 44140 to run task
+[2025-04-25T21:56:05.404+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'download_files_from_gcs__1', 'scheduled__2025-04-23T19:00:00+00:00', '--job-id', '939', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpqb30bedv']
+[2025-04-25T21:56:05.404+0800] {standard_task_runner.py:105} INFO - Job 939: Subtask download_files_from_gcs__1
+[2025-04-25T21:56:05.425+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.download_files_from_gcs__1 scheduled__2025-04-23T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-25T21:56:05.450+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='download_files_from_gcs__1' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-23T19:00:00+00:00'
+[2025-04-25T21:56:05.451+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-25T21:56:05.451+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-25T21:56:05.452+0800] {logging_mixin.py:190} INFO - Current task name:download_files_from_gcs__1 state:running start_date:2025-04-25 13:56:05.388539+00:00
+[2025-04-25T21:56:05.452+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-25T21:56:05.452+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-25T21:56:06.047+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/ABNB_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/ABNB_yf_20250425.csv
+[2025-04-25T21:56:06.870+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/ABNB_yf_20250425.csv
+[2025-04-25T21:56:06.871+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/AMCR_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/AMCR_yf_20250425.csv
+[2025-04-25T21:56:07.275+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/AMCR_yf_20250425.csv
+[2025-04-25T21:56:07.277+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/AMZN_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/AMZN_yf_20250425.csv
+[2025-04-25T21:56:08.196+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/AMZN_yf_20250425.csv
+[2025-04-25T21:56:08.197+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/BALL_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/BALL_yf_20250425.csv
+[2025-04-25T21:56:08.486+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/BALL_yf_20250425.csv
+[2025-04-25T21:56:08.487+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/CMCSA_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/CMCSA_yf_20250425.csv
+[2025-04-25T21:56:09.425+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/CMCSA_yf_20250425.csv
+[2025-04-25T21:56:09.427+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/CMG_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/CMG_yf_20250425.csv
+[2025-04-25T21:56:09.687+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/CMG_yf_20250425.csv
+[2025-04-25T21:56:09.689+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/DIS_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/DIS_yf_20250425.csv
+[2025-04-25T21:56:10.738+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/DIS_yf_20250425.csv
+[2025-04-25T21:56:10.740+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/DOW_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/DOW_yf_20250425.csv
+[2025-04-25T21:56:11.062+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/DOW_yf_20250425.csv
+[2025-04-25T21:56:11.064+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/F_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/F_yf_20250425.csv
+[2025-04-25T21:56:11.963+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/F_yf_20250425.csv
+[2025-04-25T21:56:11.965+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/GM_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GM_yf_20250425.csv
+[2025-04-25T21:56:12.312+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GM_yf_20250425.csv
+[2025-04-25T21:56:12.314+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/GOOGL_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GOOGL_yf_20250425.csv
+[2025-04-25T21:56:13.145+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GOOGL_yf_20250425.csv
+[2025-04-25T21:56:13.146+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/GOOG_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GOOG_yf_20250425.csv
+[2025-04-25T21:56:13.512+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/GOOG_yf_20250425.csv
+[2025-04-25T21:56:13.513+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/HAS_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/HAS_yf_20250425.csv
+[2025-04-25T21:56:14.425+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/HAS_yf_20250425.csv
+[2025-04-25T21:56:14.427+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/HD_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/HD_yf_20250425.csv
+[2025-04-25T21:56:14.711+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/HD_yf_20250425.csv
+[2025-04-25T21:56:14.713+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/LYB_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/LYB_yf_20250425.csv
+[2025-04-25T21:56:15.642+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/LYB_yf_20250425.csv
+[2025-04-25T21:56:15.643+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/META_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/META_yf_20250425.csv
+[2025-04-25T21:56:15.997+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/META_yf_20250425.csv
+[2025-04-25T21:56:15.999+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/NEM_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NEM_yf_20250425.csv
+[2025-04-25T21:56:16.843+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NEM_yf_20250425.csv
+[2025-04-25T21:56:16.844+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/NFLX_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NFLX_yf_20250425.csv
+[2025-04-25T21:56:17.208+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NFLX_yf_20250425.csv
+[2025-04-25T21:56:17.209+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/NKE_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NKE_yf_20250425.csv
+[2025-04-25T21:56:18.129+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/NKE_yf_20250425.csv
+[2025-04-25T21:56:18.130+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/SBUX_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/SBUX_yf_20250425.csv
+[2025-04-25T21:56:18.401+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/SBUX_yf_20250425.csv
+[2025-04-25T21:56:18.402+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/TMUS_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/TMUS_yf_20250425.csv
+[2025-04-25T21:56:19.354+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/TMUS_yf_20250425.csv
+[2025-04-25T21:56:19.355+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/TSLA_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/TSLA_yf_20250425.csv
+[2025-04-25T21:56:19.650+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/TSLA_yf_20250425.csv
+[2025-04-25T21:56:19.651+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/TTWO_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/TTWO_yf_20250425.csv
+[2025-04-25T21:56:20.582+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/TTWO_yf_20250425.csv
+[2025-04-25T21:56:20.582+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/T_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/T_yf_20250425.csv
+[2025-04-25T21:56:20.890+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/T_yf_20250425.csv
+[2025-04-25T21:56:20.891+0800] {logging_mixin.py:190} INFO - 📥 Downloading: yf-test/VZ_yf_20250425.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/VZ_yf_20250425.csv
+[2025-04-25T21:56:21.816+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/yf/VZ_yf_20250425.csv
+[2025-04-25T21:56:21.817+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-25T21:56:21.831+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-25T21:56:21.832+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=download_files_from_gcs__1, run_id=scheduled__2025-04-23T19:00:00+00:00, execution_date=20250423T190000, start_date=20250425T135605, end_date=20250425T135621
+[2025-04-25T21:56:21.840+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-25T21:56:21.841+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-25T21:56:21.841+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-24 19:00:02.147595+00:00
+[2025-04-25T21:56:21.841+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-25T21:56:21.893+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-25T21:56:21.904+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-25T21:56:21.904+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

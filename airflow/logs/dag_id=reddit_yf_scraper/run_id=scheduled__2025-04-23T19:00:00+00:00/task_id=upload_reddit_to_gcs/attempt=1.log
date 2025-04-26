@@ -1,0 +1,316 @@
+[2025-04-25T21:54:07.318+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-25T21:54:07.323+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs scheduled__2025-04-23T19:00:00+00:00 [queued]>
+[2025-04-25T21:54:07.326+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs scheduled__2025-04-23T19:00:00+00:00 [queued]>
+[2025-04-25T21:54:07.327+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-25T21:54:07.331+0800] {taskinstance.py:2890} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_reddit_to_gcs> on 2025-04-23 19:00:00+00:00
+[2025-04-25T21:54:07.335+0800] {standard_task_runner.py:72} INFO - Started process 44084 to run task
+[2025-04-25T21:54:07.339+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'upload_reddit_to_gcs', 'scheduled__2025-04-23T19:00:00+00:00', '--job-id', '935', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpxpshs4qx']
+[2025-04-25T21:54:07.340+0800] {standard_task_runner.py:105} INFO - Job 935: Subtask upload_reddit_to_gcs
+[2025-04-25T21:54:07.362+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.upload_reddit_to_gcs scheduled__2025-04-23T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-25T21:54:07.388+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='upload_reddit_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-23T19:00:00+00:00'
+[2025-04-25T21:54:07.389+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-25T21:54:07.389+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-25T21:54:07.389+0800] {logging_mixin.py:190} INFO - Current task name:upload_reddit_to_gcs state:running start_date:2025-04-25 13:54:07.324134+00:00
+[2025-04-25T21:54:07.390+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-25T21:54:07.390+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-25T21:54:07.392+0800] {connection.py:277} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-04-25T21:54:07.394+0800] {base.py:84} INFO - Retrieving connection 'google_cloud_default'
+[2025-04-25T21:54:08.082+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MTCH_reddit_20250425.csv uploaded to reddit-test/MTCH_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:08.085+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:08.895+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:08.895+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LYV_reddit_20250425.csv uploaded to reddit-test/LYV_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:08.896+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:09.409+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:09.412+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/SW_reddit_20250425.csv uploaded to reddit-test/SW_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:09.413+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:10.153+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:10.156+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TSLA_reddit_20250425.csv uploaded to reddit-test/TSLA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:10.157+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:10.742+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:10.745+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CTVA_reddit_20250425.csv uploaded to reddit-test/CTVA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:10.746+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:11.460+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:11.461+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EBAY_reddit_20250425.csv uploaded to reddit-test/EBAY_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:11.462+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:12.073+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:12.075+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/PKG_reddit_20250425.csv uploaded to reddit-test/PKG_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:12.076+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:12.789+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:12.792+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/WBD_reddit_20250425.csv uploaded to reddit-test/WBD_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:12.793+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:13.403+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:13.406+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/RL_reddit_20250425.csv uploaded to reddit-test/RL_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:13.407+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:14.122+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:14.124+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BWA_reddit_20250425.csv uploaded to reddit-test/BWA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:14.126+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:14.736+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:14.739+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NVR_reddit_20250425.csv uploaded to reddit-test/NVR_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:14.740+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:15.451+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:15.453+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ORLY_reddit_20250425.csv uploaded to reddit-test/ORLY_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:15.453+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:16.065+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:16.067+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/IPG_reddit_20250425.csv uploaded to reddit-test/IPG_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:16.068+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:16.782+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:16.785+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DECK_reddit_20250425.csv uploaded to reddit-test/DECK_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:16.786+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:17.397+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:17.400+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/APD_reddit_20250425.csv uploaded to reddit-test/APD_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:17.401+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:18.111+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:18.112+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LIN_reddit_20250425.csv uploaded to reddit-test/LIN_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:18.113+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:18.833+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:18.836+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CZR_reddit_20250425.csv uploaded to reddit-test/CZR_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:18.837+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:19.445+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:19.448+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FOXA_reddit_20250425.csv uploaded to reddit-test/FOXA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:19.448+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:20.116+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:20.116+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/HD_reddit_20250425.csv uploaded to reddit-test/HD_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:20.117+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:20.980+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:20.982+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BBY_reddit_20250425.csv uploaded to reddit-test/BBY_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:20.983+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:21.390+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:21.392+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BALL_reddit_20250425.csv uploaded to reddit-test/BALL_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:21.394+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:22.314+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:22.317+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MOS_reddit_20250425.csv uploaded to reddit-test/MOS_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:22.318+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:22.822+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:22.823+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FMC_reddit_20250425.csv uploaded to reddit-test/FMC_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:22.823+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:23.643+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:23.645+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/HLT_reddit_20250425.csv uploaded to reddit-test/HLT_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:23.646+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:24.062+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:24.064+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FCX_reddit_20250425.csv uploaded to reddit-test/FCX_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:24.064+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:24.548+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:24.551+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LVS_reddit_20250425.csv uploaded to reddit-test/LVS_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:24.552+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:24.917+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:24.919+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/AMCR_reddit_20250425.csv uploaded to reddit-test/AMCR_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:24.920+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:25.389+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:25.391+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DRI_reddit_20250425.csv uploaded to reddit-test/DRI_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:25.392+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:25.793+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:25.795+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ROL_reddit_20250425.csv uploaded to reddit-test/ROL_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:25.796+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:26.306+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:26.309+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NWS_reddit_20250425.csv uploaded to reddit-test/NWS_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:26.310+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:26.719+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:26.721+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DIS_reddit_20250425.csv uploaded to reddit-test/DIS_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:26.722+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:27.042+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:27.044+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TPR_reddit_20250425.csv uploaded to reddit-test/TPR_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:27.045+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:27.366+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:27.368+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/SHW_reddit_20250425.csv uploaded to reddit-test/SHW_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:27.368+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:27.843+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:27.848+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/IP_reddit_20250425.csv uploaded to reddit-test/IP_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:27.849+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:28.249+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:28.250+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DHI_reddit_20250425.csv uploaded to reddit-test/DHI_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:28.251+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:28.631+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:28.633+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NCLH_reddit_20250425.csv uploaded to reddit-test/NCLH_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:28.634+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:29.070+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:29.073+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GM_reddit_20250425.csv uploaded to reddit-test/GM_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:29.074+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:29.401+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:29.404+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GPC_reddit_20250425.csv uploaded to reddit-test/GPC_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:29.405+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:29.725+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:29.728+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TJX_reddit_20250425.csv uploaded to reddit-test/TJX_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:29.729+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:30.093+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:30.095+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CE_reddit_20250425.csv uploaded to reddit-test/CE_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:30.096+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:30.504+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:30.506+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CHTR_reddit_20250425.csv uploaded to reddit-test/CHTR_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:30.507+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:31.016+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:31.018+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ABNB_reddit_20250425.csv uploaded to reddit-test/ABNB_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:31.019+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:31.527+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:31.530+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/VZ_reddit_20250425.csv uploaded to reddit-test/VZ_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:31.531+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:32.039+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:32.041+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TSCO_reddit_20250425.csv uploaded to reddit-test/TSCO_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:32.042+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:32.450+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:32.453+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MAR_reddit_20250425.csv uploaded to reddit-test/MAR_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:32.454+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:32.806+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:32.808+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TMUS_reddit_20250425.csv uploaded to reddit-test/TMUS_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:32.809+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:33.266+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:33.267+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/AZO_reddit_20250425.csv uploaded to reddit-test/AZO_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:33.268+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:33.590+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:33.593+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CF_reddit_20250425.csv uploaded to reddit-test/CF_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:33.594+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:33.966+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:33.968+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GOOGL_reddit_20250425.csv uploaded to reddit-test/GOOGL_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:33.969+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:34.325+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:34.326+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ALB_reddit_20250425.csv uploaded to reddit-test/ALB_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:34.326+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:34.806+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:34.808+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/APTV_reddit_20250425.csv uploaded to reddit-test/APTV_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:34.809+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:35.217+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:35.219+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DPZ_reddit_20250425.csv uploaded to reddit-test/DPZ_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:35.220+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:35.624+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:35.627+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LOW_reddit_20250425.csv uploaded to reddit-test/LOW_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:35.628+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:35.954+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:35.956+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/META_reddit_20250425.csv uploaded to reddit-test/META_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:35.957+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:36.444+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:36.446+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LULU_reddit_20250425.csv uploaded to reddit-test/LULU_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:36.447+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:36.955+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:36.958+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NFLX_reddit_20250425.csv uploaded to reddit-test/NFLX_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:36.959+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:37.412+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:37.413+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DOW_reddit_20250425.csv uploaded to reddit-test/DOW_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:37.413+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:37.777+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:37.778+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/AVY_reddit_20250425.csv uploaded to reddit-test/AVY_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:37.779+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:38.186+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:38.187+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/PARA_reddit_20250425.csv uploaded to reddit-test/PARA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:38.188+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:38.502+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:38.505+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/KMX_reddit_20250425.csv uploaded to reddit-test/KMX_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:38.505+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:38.822+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:38.825+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NWSA_reddit_20250425.csv uploaded to reddit-test/NWSA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:38.826+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:39.209+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:39.211+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/VMC_reddit_20250425.csv uploaded to reddit-test/VMC_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:39.212+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:39.516+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:39.518+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/IFF_reddit_20250425.csv uploaded to reddit-test/IFF_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:39.519+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:39.925+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:39.927+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ECL_reddit_20250425.csv uploaded to reddit-test/ECL_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:39.928+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:40.334+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:40.336+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MLM_reddit_20250425.csv uploaded to reddit-test/MLM_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:40.337+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:40.643+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:40.645+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TTWO_reddit_20250425.csv uploaded to reddit-test/TTWO_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:40.646+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:41.153+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:41.155+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/OMC_reddit_20250425.csv uploaded to reddit-test/OMC_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:41.155+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:41.669+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:41.672+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/PHM_reddit_20250425.csv uploaded to reddit-test/PHM_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:41.673+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:42.177+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:42.180+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/HAS_reddit_20250425.csv uploaded to reddit-test/HAS_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:42.181+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:42.490+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:42.490+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EA_reddit_20250425.csv uploaded to reddit-test/EA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:42.491+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:42.894+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:42.896+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GOOG_reddit_20250425.csv uploaded to reddit-test/GOOG_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:42.897+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:43.239+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:43.241+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/WYNN_reddit_20250425.csv uploaded to reddit-test/WYNN_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:43.242+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:43.611+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:43.614+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DD_reddit_20250425.csv uploaded to reddit-test/DD_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:43.615+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:44.125+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:44.127+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MHK_reddit_20250425.csv uploaded to reddit-test/MHK_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:44.128+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:44.530+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:44.530+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LEN_reddit_20250425.csv uploaded to reddit-test/LEN_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:44.531+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:44.848+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:44.850+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/AMZN_reddit_20250425.csv uploaded to reddit-test/AMZN_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:44.850+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:45.357+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:45.358+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NUE_reddit_20250425.csv uploaded to reddit-test/NUE_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:45.358+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:45.864+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:45.867+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CCL_reddit_20250425.csv uploaded to reddit-test/CCL_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:45.868+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:46.380+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:46.382+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/STLD_reddit_20250425.csv uploaded to reddit-test/STLD_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:46.382+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:46.888+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:46.890+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ULTA_reddit_20250425.csv uploaded to reddit-test/ULTA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:46.890+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:47.401+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:47.403+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/SBUX_reddit_20250425.csv uploaded to reddit-test/SBUX_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:47.404+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:47.810+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:47.812+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/FOX_reddit_20250425.csv uploaded to reddit-test/FOX_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:47.813+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:48.325+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:48.327+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/RCL_reddit_20250425.csv uploaded to reddit-test/RCL_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:48.328+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:48.734+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:48.736+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CMG_reddit_20250425.csv uploaded to reddit-test/CMG_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:48.737+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:49.037+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:49.039+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/BKNG_reddit_20250425.csv uploaded to reddit-test/BKNG_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:49.040+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:49.550+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:49.551+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/F_reddit_20250425.csv uploaded to reddit-test/F_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:49.552+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:50.062+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:50.066+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MCD_reddit_20250425.csv uploaded to reddit-test/MCD_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:50.067+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:50.576+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:50.578+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NKE_reddit_20250425.csv uploaded to reddit-test/NKE_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:50.579+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:51.088+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:51.090+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LKQ_reddit_20250425.csv uploaded to reddit-test/LKQ_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:51.091+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:51.598+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:51.601+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/MGM_reddit_20250425.csv uploaded to reddit-test/MGM_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:51.602+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:52.005+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:52.006+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ROST_reddit_20250425.csv uploaded to reddit-test/ROST_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:52.006+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:52.404+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:52.406+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/T_reddit_20250425.csv uploaded to reddit-test/T_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:52.407+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:52.723+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:52.724+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/CMCSA_reddit_20250425.csv uploaded to reddit-test/CMCSA_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:52.725+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:53.241+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:53.243+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EMN_reddit_20250425.csv uploaded to reddit-test/EMN_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:53.244+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:53.750+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:53.752+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/NEM_reddit_20250425.csv uploaded to reddit-test/NEM_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:53.753+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:54.074+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:54.076+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/YUM_reddit_20250425.csv uploaded to reddit-test/YUM_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:54.077+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:54.465+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:54.467+0800] {gcs.py:579} INFO - File /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/EXPE_reddit_20250425.csv uploaded to reddit-test/EXPE_reddit_20250425.csv in is3107_bucket bucket
+[2025-04-25T21:54:54.469+0800] {hook.py:208} WARNING - Data lineage tracking is disabled. Register a hook lineage reader to start tracking hook lineage.
+[2025-04-25T21:54:54.481+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-25T21:54:54.482+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=upload_reddit_to_gcs, run_id=scheduled__2025-04-23T19:00:00+00:00, execution_date=20250423T190000, start_date=20250425T135407, end_date=20250425T135454
+[2025-04-25T21:54:54.494+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-25T21:54:54.495+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-25T21:54:54.495+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-24 19:00:02.147595+00:00
+[2025-04-25T21:54:54.495+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:LocalFilesystemToGCSOperator
+[2025-04-25T21:54:54.521+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-25T21:54:54.536+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-25T21:54:54.536+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

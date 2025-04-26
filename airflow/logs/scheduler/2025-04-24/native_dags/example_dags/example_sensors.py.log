@@ -1,0 +1,77 @@
+[2025-04-25T00:10:48.608+0800] {processor.py:186} INFO - Started process (PID=40830) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:10:48.608+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T00:10:48.609+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:10:48.609+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:10:48.616+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:10:48.916+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:10:48.916+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T00:10:48.923+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:10:48.923+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T00:10:48.936+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.330 seconds
+[2025-04-25T00:12:35.781+0800] {processor.py:186} INFO - Started process (PID=40974) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:12:35.782+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T00:12:35.782+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:12:35.782+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:12:35.789+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:12:36.114+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:12:36.114+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T00:12:36.118+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:12:36.118+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T00:12:36.126+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.347 seconds
+[2025-04-25T00:15:17.296+0800] {processor.py:186} INFO - Started process (PID=41178) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:15:17.296+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T00:15:17.297+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:15:17.297+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:15:17.303+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:15:17.625+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:15:17.625+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T00:15:17.629+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:15:17.629+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T00:15:17.638+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.343 seconds
+[2025-04-25T00:17:56.425+0800] {processor.py:186} INFO - Started process (PID=41379) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:17:56.426+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T00:17:56.426+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:17:56.426+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:17:56.432+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:17:56.743+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:17:56.743+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T00:17:56.749+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:17:56.749+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T00:17:56.758+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.334 seconds
+[2025-04-25T00:20:23.869+0800] {processor.py:186} INFO - Started process (PID=41576) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:20:23.869+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T00:20:23.870+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:20:23.870+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:20:23.876+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:20:24.190+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:20:24.190+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T00:20:24.194+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:20:24.194+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T00:20:24.202+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.334 seconds
+[2025-04-25T00:22:54.770+0800] {processor.py:186} INFO - Started process (PID=41782) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:22:54.770+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T00:22:54.770+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:22:54.770+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:22:54.777+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:22:55.102+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:22:55.102+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T00:22:55.106+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:22:55.106+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T00:22:55.115+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.346 seconds
+[2025-04-25T00:25:27.704+0800] {processor.py:186} INFO - Started process (PID=41975) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:25:27.705+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T00:25:27.705+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:25:27.705+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:25:27.711+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T00:25:28.053+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:25:28.053+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T00:25:28.058+0800] {logging_mixin.py:190} INFO - [2025-04-25T00:25:28.058+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T00:25:28.066+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.363 seconds
+[2025-04-25T01:33:33.859+0800] {processor.py:186} INFO - Started process (PID=42188) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:33:33.860+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T01:33:33.860+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:33:33.860+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:33:33.867+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:33:34.200+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:33:34.200+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T01:33:34.204+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:33:34.204+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T01:33:34.212+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.354 seconds
+[2025-04-25T01:52:12.423+0800] {processor.py:186} INFO - Started process (PID=42299) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:52:12.424+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T01:52:12.425+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:52:12.424+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:52:12.432+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:52:12.772+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:52:12.771+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T01:52:12.777+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:52:12.777+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T01:52:12.785+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.363 seconds
+[2025-04-25T01:53:36.385+0800] {processor.py:186} INFO - Started process (PID=42407) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:53:36.385+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T01:53:36.386+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:53:36.386+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:53:36.392+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T01:53:36.729+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:53:36.729+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T01:53:36.734+0800] {logging_mixin.py:190} INFO - [2025-04-25T01:53:36.734+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T01:53:36.742+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.359 seconds
+[2025-04-25T02:59:32.259+0800] {processor.py:186} INFO - Started process (PID=42544) to work on /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T02:59:32.259+0800] {processor.py:914} INFO - Processing file /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2025-04-25T02:59:32.259+0800] {logging_mixin.py:190} INFO - [2025-04-25T02:59:32.259+0800] {dagbag.py:588} INFO - Filling up the DagBag from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T02:59:32.266+0800] {processor.py:925} INFO - DAG(s) 'example_sensors' retrieved from /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2025-04-25T02:59:32.587+0800] {logging_mixin.py:190} INFO - [2025-04-25T02:59:32.587+0800] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T02:59:32.592+0800] {logging_mixin.py:190} INFO - [2025-04-25T02:59:32.592+0800] {dag.py:4180} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2025-04-25T02:59:32.600+0800] {processor.py:208} INFO - Processing /Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.343 seconds

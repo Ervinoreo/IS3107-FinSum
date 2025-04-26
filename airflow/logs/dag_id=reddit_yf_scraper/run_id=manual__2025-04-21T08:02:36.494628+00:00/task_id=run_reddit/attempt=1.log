@@ -1,0 +1,541 @@
+[2025-04-21T16:24:21.588+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-21T16:24:21.603+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-21T08:02:36.494628+00:00 [queued]>
+[2025-04-21T16:24:21.611+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-21T08:02:36.494628+00:00 [queued]>
+[2025-04-21T16:24:21.611+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-21T16:24:21.617+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_reddit> on 2025-04-21 08:02:36.494628+00:00
+[2025-04-21T16:24:21.621+0800] {standard_task_runner.py:72} INFO - Started process 8669 to run task
+[2025-04-21T16:24:21.625+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_reddit', 'manual__2025-04-21T08:02:36.494628+00:00', '--job-id', '845', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmp9cp1kryz']
+[2025-04-21T16:24:21.626+0800] {standard_task_runner.py:105} INFO - Job 845: Subtask run_reddit
+[2025-04-21T16:24:21.647+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_reddit manual__2025-04-21T08:02:36.494628+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-21T16:24:21.680+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_reddit' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T08:02:36.494628+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-21T08:02:36.494628+00:00'
+[2025-04-21T16:24:21.680+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-21T16:24:21.680+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-21T16:24:21.681+0800] {logging_mixin.py:190} INFO - Current task name:run_reddit state:running start_date:2025-04-21 08:24:21.603925+00:00
+[2025-04-21T16:24:21.681+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-21T16:24:21.681+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-21T16:24:24.002+0800] {patcher.py:346} INFO - patching driver executable /Users/yueyaoz/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+[2025-04-21T16:24:27.000+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CTVA...
+[2025-04-21T16:24:31.580+0800] {logging_mixin.py:190} INFO - No posts found for CTVA. Saving an empty file.
+[2025-04-21T16:24:31.596+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CF...
+[2025-04-21T16:24:35.850+0800] {logging_mixin.py:190} INFO - No posts found for CF. Saving an empty file.
+[2025-04-21T16:24:35.851+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MOS...
+[2025-04-21T16:24:40.822+0800] {logging_mixin.py:190} INFO - No posts found for MOS. Saving an empty file.
+[2025-04-21T16:24:40.826+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FMC...
+[2025-04-21T16:24:44.006+0800] {logging_mixin.py:190} INFO - No posts found for FMC. Saving an empty file.
+[2025-04-21T16:24:44.010+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VMC...
+[2025-04-21T16:24:47.169+0800] {logging_mixin.py:190} INFO - No posts found for VMC. Saving an empty file.
+[2025-04-21T16:24:47.171+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MLM...
+[2025-04-21T16:24:50.365+0800] {logging_mixin.py:190} INFO - No posts found for MLM. Saving an empty file.
+[2025-04-21T16:24:50.368+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DOW...
+[2025-04-21T16:24:53.761+0800] {logging_mixin.py:190} INFO - No posts found for DOW. Saving an empty file.
+[2025-04-21T16:24:53.767+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CE...
+[2025-04-21T16:24:57.694+0800] {logging_mixin.py:190} INFO - No posts found for CE. Saving an empty file.
+[2025-04-21T16:24:57.697+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FCX...
+[2025-04-21T16:25:01.889+0800] {logging_mixin.py:190} INFO - No posts found for FCX. Saving an empty file.
+[2025-04-21T16:25:01.891+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NEM...
+[2025-04-21T16:25:05.329+0800] {logging_mixin.py:190} INFO - No posts found for NEM. Saving an empty file.
+[2025-04-21T16:25:05.332+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LIN...
+[2025-04-21T16:25:09.435+0800] {logging_mixin.py:190} INFO - No posts found for LIN. Saving an empty file.
+[2025-04-21T16:25:09.438+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SHW...
+[2025-04-21T16:25:12.687+0800] {logging_mixin.py:190} INFO - No posts found for SHW. Saving an empty file.
+[2025-04-21T16:25:12.692+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ECL...
+[2025-04-21T16:25:16.634+0800] {logging_mixin.py:190} INFO - No posts found for ECL. Saving an empty file.
+[2025-04-21T16:25:16.637+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for APD...
+[2025-04-21T16:25:20.833+0800] {logging_mixin.py:190} INFO - No posts found for APD. Saving an empty file.
+[2025-04-21T16:25:20.837+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DD...
+[2025-04-21T16:25:25.777+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for DD successfully!
+[2025-04-21T16:25:29.554+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:25:32.396+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 2 for DD successfully!
+[2025-04-21T16:25:36.566+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:25:39.343+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 3 for DD successfully!
+[2025-04-21T16:25:43.035+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:25:46.020+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 4 for DD successfully!
+[2025-04-21T16:25:49.694+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:25:51.698+0800] {logging_mixin.py:190} INFO - ✅ All posts for DD have been processed.
+[2025-04-21T16:25:51.709+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/DD_reddit_20250421.csv
+[2025-04-21T16:25:51.710+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PPG...
+[2025-04-21T16:25:55.848+0800] {logging_mixin.py:190} INFO - No posts found for PPG. Saving an empty file.
+[2025-04-21T16:25:55.853+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LYB...
+[2025-04-21T16:25:59.997+0800] {logging_mixin.py:190} INFO - No posts found for LYB. Saving an empty file.
+[2025-04-21T16:26:00.000+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IFF...
+[2025-04-21T16:26:04.136+0800] {logging_mixin.py:190} INFO - No posts found for IFF. Saving an empty file.
+[2025-04-21T16:26:04.139+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EMN...
+[2025-04-21T16:26:07.529+0800] {logging_mixin.py:190} INFO - No posts found for EMN. Saving an empty file.
+[2025-04-21T16:26:07.533+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ALB...
+[2025-04-21T16:26:11.636+0800] {logging_mixin.py:190} INFO - No posts found for ALB. Saving an empty file.
+[2025-04-21T16:26:11.639+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NUE...
+[2025-04-21T16:26:15.078+0800] {logging_mixin.py:190} INFO - No posts found for NUE. Saving an empty file.
+[2025-04-21T16:26:15.082+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for STLD...
+[2025-04-21T16:26:18.555+0800] {logging_mixin.py:190} INFO - No posts found for STLD. Saving an empty file.
+[2025-04-21T16:26:18.558+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for OMC...
+[2025-04-21T16:26:22.473+0800] {logging_mixin.py:190} INFO - No posts found for OMC. Saving an empty file.
+[2025-04-21T16:26:22.476+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IPG...
+[2025-04-21T16:26:26.405+0800] {logging_mixin.py:190} INFO - No posts found for IPG. Saving an empty file.
+[2025-04-21T16:26:26.409+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EA...
+[2025-04-21T16:26:29.812+0800] {logging_mixin.py:190} INFO - No posts found for EA. Saving an empty file.
+[2025-04-21T16:26:29.815+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TTWO...
+[2025-04-21T16:26:33.996+0800] {logging_mixin.py:190} INFO - No posts found for TTWO. Saving an empty file.
+[2025-04-21T16:26:34.005+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NFLX...
+[2025-04-21T16:26:38.195+0800] {logging_mixin.py:190} INFO - No posts found for NFLX. Saving an empty file.
+[2025-04-21T16:26:38.198+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DIS...
+[2025-04-21T16:26:42.636+0800] {logging_mixin.py:190} INFO - No posts found for DIS. Saving an empty file.
+[2025-04-21T16:26:42.639+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LYV...
+[2025-04-21T16:26:46.210+0800] {logging_mixin.py:190} INFO - No posts found for LYV. Saving an empty file.
+[2025-04-21T16:26:46.213+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WBD...
+[2025-04-21T16:26:49.520+0800] {logging_mixin.py:190} INFO - No posts found for WBD. Saving an empty file.
+[2025-04-21T16:26:49.523+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FOXA...
+[2025-04-21T16:26:53.155+0800] {logging_mixin.py:190} INFO - No posts found for FOXA. Saving an empty file.
+[2025-04-21T16:26:53.157+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for FOX...
+[2025-04-21T16:26:57.494+0800] {logging_mixin.py:190} INFO - No posts found for FOX. Saving an empty file.
+[2025-04-21T16:26:57.497+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NWS...
+[2025-04-21T16:27:01.045+0800] {logging_mixin.py:190} INFO - No posts found for NWS. Saving an empty file.
+[2025-04-21T16:27:01.049+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NWSA...
+[2025-04-21T16:27:04.560+0800] {logging_mixin.py:190} INFO - No posts found for NWSA. Saving an empty file.
+[2025-04-21T16:27:04.563+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PARA...
+[2025-04-21T16:27:07.881+0800] {logging_mixin.py:190} INFO - No posts found for PARA. Saving an empty file.
+[2025-04-21T16:27:07.884+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GOOGL...
+[2025-04-21T16:27:11.513+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for GOOGL successfully!
+[2025-04-21T16:27:15.152+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:27:17.168+0800] {logging_mixin.py:190} INFO - ❌ Error processing post 2 for GOOGL: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   undetected_chromedriver             0x0000000102946568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x000000010293e17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x00000001023dd540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x00000001023f0c1b undetected_chromedriver + 494619
+4   undetected_chromedriver             0x00000001023ef9d2 undetected_chromedriver + 489938
+5   undetected_chromedriver             0x00000001023e4d19 undetected_chromedriver + 445721
+6   undetected_chromedriver             0x00000001023e2d98 undetected_chromedriver + 437656
+7   undetected_chromedriver             0x00000001023e6b53 undetected_chromedriver + 453459
+8   undetected_chromedriver             0x00000001023e6c03 undetected_chromedriver + 453635
+9   undetected_chromedriver             0x0000000102430d9e undetected_chromedriver + 757150
+10  undetected_chromedriver             0x0000000102423123 undetected_chromedriver + 700707
+11  undetected_chromedriver             0x00000001024553f2 undetected_chromedriver + 906226
+12  undetected_chromedriver             0x0000000102422b28 undetected_chromedriver + 699176
+13  undetected_chromedriver             0x00000001024555ae undetected_chromedriver + 906670
+14  undetected_chromedriver             0x000000010247ca19 undetected_chromedriver + 1067545
+15  undetected_chromedriver             0x00000001024551c3 undetected_chromedriver + 905667
+16  undetected_chromedriver             0x000000010242105a undetected_chromedriver + 692314
+17  undetected_chromedriver             0x00000001024221b1 undetected_chromedriver + 696753
+18  undetected_chromedriver             0x0000000102905c90 undetected_chromedriver + 5823632
+19  undetected_chromedriver             0x0000000102909b44 undetected_chromedriver + 5839684
+20  undetected_chromedriver             0x00000001028e0e86 undetected_chromedriver + 5672582
+21  undetected_chromedriver             0x000000010290a53b undetected_chromedriver + 5842235
+22  undetected_chromedriver             0x00000001028cf824 undetected_chromedriver + 5601316
+23  undetected_chromedriver             0x000000010292c618 undetected_chromedriver + 5981720
+24  undetected_chromedriver             0x000000010292c7df undetected_chromedriver + 5982175
+25  undetected_chromedriver             0x000000010293dd58 undetected_chromedriver + 6053208
+26  libsystem_pthread.dylib             0x00007ff80816418b _pthread_start + 99
+27  libsystem_pthread.dylib             0x00007ff80815fae3 thread_start + 15
+[2025-04-21T16:27:17.171+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/GOOGL_reddit_20250421.csv
+[2025-04-21T16:27:17.171+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GOOG...
+[2025-04-21T16:27:20.848+0800] {logging_mixin.py:190} INFO - No posts found for GOOG. Saving an empty file.
+[2025-04-21T16:27:20.852+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for META...
+[2025-04-21T16:27:24.464+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for META successfully!
+[2025-04-21T16:27:28.104+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:27:30.107+0800] {logging_mixin.py:190} INFO - ✅ All posts for META have been processed.
+[2025-04-21T16:27:30.114+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/META_reddit_20250421.csv
+[2025-04-21T16:27:30.115+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MTCH...
+[2025-04-21T16:27:33.393+0800] {logging_mixin.py:190} INFO - No posts found for MTCH. Saving an empty file.
+[2025-04-21T16:27:33.396+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TMUS...
+[2025-04-21T16:27:37.667+0800] {logging_mixin.py:190} INFO - No posts found for TMUS. Saving an empty file.
+[2025-04-21T16:27:37.670+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for VZ...
+[2025-04-21T16:27:41.305+0800] {logging_mixin.py:190} INFO - No posts found for VZ. Saving an empty file.
+[2025-04-21T16:27:41.307+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for T...
+[2025-04-21T16:27:44.970+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for T successfully!
+[2025-04-21T16:27:48.617+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:27:50.624+0800] {logging_mixin.py:190} INFO - ❌ Error processing post 2 for T: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   undetected_chromedriver             0x0000000102946568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x000000010293e17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x00000001023dd540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x00000001023f0c1b undetected_chromedriver + 494619
+4   undetected_chromedriver             0x00000001023ef9d2 undetected_chromedriver + 489938
+5   undetected_chromedriver             0x00000001023e4d19 undetected_chromedriver + 445721
+6   undetected_chromedriver             0x00000001023e2d98 undetected_chromedriver + 437656
+7   undetected_chromedriver             0x00000001023e6b53 undetected_chromedriver + 453459
+8   undetected_chromedriver             0x00000001023e6c03 undetected_chromedriver + 453635
+9   undetected_chromedriver             0x0000000102430d9e undetected_chromedriver + 757150
+10  undetected_chromedriver             0x0000000102423123 undetected_chromedriver + 700707
+11  undetected_chromedriver             0x00000001024553f2 undetected_chromedriver + 906226
+12  undetected_chromedriver             0x0000000102422b28 undetected_chromedriver + 699176
+13  undetected_chromedriver             0x00000001024555ae undetected_chromedriver + 906670
+14  undetected_chromedriver             0x000000010247ca19 undetected_chromedriver + 1067545
+15  undetected_chromedriver             0x00000001024551c3 undetected_chromedriver + 905667
+16  undetected_chromedriver             0x000000010242105a undetected_chromedriver + 692314
+17  undetected_chromedriver             0x00000001024221b1 undetected_chromedriver + 696753
+18  undetected_chromedriver             0x0000000102905c90 undetected_chromedriver + 5823632
+19  undetected_chromedriver             0x0000000102909b44 undetected_chromedriver + 5839684
+20  undetected_chromedriver             0x00000001028e0e86 undetected_chromedriver + 5672582
+21  undetected_chromedriver             0x000000010290a53b undetected_chromedriver + 5842235
+22  undetected_chromedriver             0x00000001028cf824 undetected_chromedriver + 5601316
+23  undetected_chromedriver             0x000000010292c618 undetected_chromedriver + 5981720
+24  undetected_chromedriver             0x000000010292c7df undetected_chromedriver + 5982175
+25  undetected_chromedriver             0x000000010293dd58 undetected_chromedriver + 6053208
+26  libsystem_pthread.dylib             0x00007ff80816418b _pthread_start + 99
+27  libsystem_pthread.dylib             0x00007ff80815fae3 thread_start + 15
+[2025-04-21T16:27:50.627+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/T_reddit_20250421.csv
+[2025-04-21T16:27:50.627+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CMCSA...
+[2025-04-21T16:27:55.018+0800] {logging_mixin.py:190} INFO - No posts found for CMCSA. Saving an empty file.
+[2025-04-21T16:27:55.021+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CHTR...
+[2025-04-21T16:27:59.298+0800] {logging_mixin.py:190} INFO - No posts found for CHTR. Saving an empty file.
+[2025-04-21T16:27:59.299+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RL...
+[2025-04-21T16:28:02.617+0800] {logging_mixin.py:190} INFO - No posts found for RL. Saving an empty file.
+[2025-04-21T16:28:02.620+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TJX...
+[2025-04-21T16:28:06.207+0800] {logging_mixin.py:190} INFO - No posts found for TJX. Saving an empty file.
+[2025-04-21T16:28:06.210+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ROST...
+[2025-04-21T16:28:09.796+0800] {logging_mixin.py:190} INFO - No posts found for ROST. Saving an empty file.
+[2025-04-21T16:28:09.800+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LULU...
+[2025-04-21T16:28:13.476+0800] {logging_mixin.py:190} INFO - No posts found for LULU. Saving an empty file.
+[2025-04-21T16:28:13.479+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for KMX...
+[2025-04-21T16:28:16.811+0800] {logging_mixin.py:190} INFO - No posts found for KMX. Saving an empty file.
+[2025-04-21T16:28:16.814+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TSLA...
+[2025-04-21T16:28:20.511+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for TSLA successfully!
+[2025-04-21T16:28:24.152+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:28:26.165+0800] {logging_mixin.py:190} INFO - ❌ Error processing post 2 for TSLA: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   undetected_chromedriver             0x0000000102946568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x000000010293e17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x00000001023dd540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x00000001023f0c1b undetected_chromedriver + 494619
+4   undetected_chromedriver             0x00000001023ef9d2 undetected_chromedriver + 489938
+5   undetected_chromedriver             0x00000001023e4d19 undetected_chromedriver + 445721
+6   undetected_chromedriver             0x00000001023e2d98 undetected_chromedriver + 437656
+7   undetected_chromedriver             0x00000001023e6b53 undetected_chromedriver + 453459
+8   undetected_chromedriver             0x00000001023e6c03 undetected_chromedriver + 453635
+9   undetected_chromedriver             0x0000000102430d9e undetected_chromedriver + 757150
+10  undetected_chromedriver             0x0000000102423123 undetected_chromedriver + 700707
+11  undetected_chromedriver             0x00000001024553f2 undetected_chromedriver + 906226
+12  undetected_chromedriver             0x0000000102422b28 undetected_chromedriver + 699176
+13  undetected_chromedriver             0x00000001024555ae undetected_chromedriver + 906670
+14  undetected_chromedriver             0x000000010247ca19 undetected_chromedriver + 1067545
+15  undetected_chromedriver             0x00000001024551c3 undetected_chromedriver + 905667
+16  undetected_chromedriver             0x000000010242105a undetected_chromedriver + 692314
+17  undetected_chromedriver             0x00000001024221b1 undetected_chromedriver + 696753
+18  undetected_chromedriver             0x0000000102905c90 undetected_chromedriver + 5823632
+19  undetected_chromedriver             0x0000000102909b44 undetected_chromedriver + 5839684
+20  undetected_chromedriver             0x00000001028e0e86 undetected_chromedriver + 5672582
+21  undetected_chromedriver             0x000000010290a53b undetected_chromedriver + 5842235
+22  undetected_chromedriver             0x00000001028cf824 undetected_chromedriver + 5601316
+23  undetected_chromedriver             0x000000010292c618 undetected_chromedriver + 5981720
+24  undetected_chromedriver             0x000000010292c7df undetected_chromedriver + 5982175
+25  undetected_chromedriver             0x000000010293dd58 undetected_chromedriver + 6053208
+26  libsystem_pthread.dylib             0x00007ff80816418b _pthread_start + 99
+27  libsystem_pthread.dylib             0x00007ff80815fae3 thread_start + 15
+[2025-04-21T16:28:26.168+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/TSLA_reddit_20250421.csv
+[2025-04-21T16:28:26.169+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GM...
+[2025-04-21T16:28:29.907+0800] {logging_mixin.py:190} INFO - No posts found for GM. Saving an empty file.
+[2025-04-21T16:28:29.910+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for F...
+[2025-04-21T16:28:34.990+0800] {logging_mixin.py:190} INFO - No posts found for F. Saving an empty file.
+[2025-04-21T16:28:34.993+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for GPC...
+[2025-04-21T16:28:38.644+0800] {logging_mixin.py:190} INFO - No posts found for GPC. Saving an empty file.
+[2025-04-21T16:28:38.647+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for APTV...
+[2025-04-21T16:28:41.994+0800] {logging_mixin.py:190} INFO - No posts found for APTV. Saving an empty file.
+[2025-04-21T16:28:41.997+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LKQ...
+[2025-04-21T16:28:45.945+0800] {logging_mixin.py:190} INFO - No posts found for LKQ. Saving an empty file.
+[2025-04-21T16:28:45.947+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BWA...
+[2025-04-21T16:28:49.956+0800] {logging_mixin.py:190} INFO - No posts found for BWA. Saving an empty file.
+[2025-04-21T16:28:49.959+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NKE...
+[2025-04-21T16:28:55.354+0800] {logging_mixin.py:190} INFO - No posts found for NKE. Saving an empty file.
+[2025-04-21T16:28:55.356+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DECK...
+[2025-04-21T16:28:58.953+0800] {logging_mixin.py:190} INFO - No posts found for DECK. Saving an empty file.
+[2025-04-21T16:28:58.957+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MHK...
+[2025-04-21T16:29:02.304+0800] {logging_mixin.py:190} INFO - No posts found for MHK. Saving an empty file.
+[2025-04-21T16:29:02.306+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HD...
+[2025-04-21T16:29:05.662+0800] {logging_mixin.py:190} INFO - No posts found for HD. Saving an empty file.
+[2025-04-21T16:29:05.665+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LOW...
+[2025-04-21T16:29:09.190+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for LOW successfully!
+[2025-04-21T16:29:12.839+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:29:14.852+0800] {logging_mixin.py:190} INFO - ❌ Error processing post 2 for LOW: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   undetected_chromedriver             0x0000000102946568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x000000010293e17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x00000001023dd540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x00000001023f0c1b undetected_chromedriver + 494619
+4   undetected_chromedriver             0x00000001023ef9d2 undetected_chromedriver + 489938
+5   undetected_chromedriver             0x00000001023e4d19 undetected_chromedriver + 445721
+6   undetected_chromedriver             0x00000001023e2d98 undetected_chromedriver + 437656
+7   undetected_chromedriver             0x00000001023e6b53 undetected_chromedriver + 453459
+8   undetected_chromedriver             0x00000001023e6c03 undetected_chromedriver + 453635
+9   undetected_chromedriver             0x0000000102430d9e undetected_chromedriver + 757150
+10  undetected_chromedriver             0x0000000102423123 undetected_chromedriver + 700707
+11  undetected_chromedriver             0x00000001024553f2 undetected_chromedriver + 906226
+12  undetected_chromedriver             0x0000000102422b28 undetected_chromedriver + 699176
+13  undetected_chromedriver             0x00000001024555ae undetected_chromedriver + 906670
+14  undetected_chromedriver             0x000000010247ca19 undetected_chromedriver + 1067545
+15  undetected_chromedriver             0x00000001024551c3 undetected_chromedriver + 905667
+16  undetected_chromedriver             0x000000010242105a undetected_chromedriver + 692314
+17  undetected_chromedriver             0x00000001024221b1 undetected_chromedriver + 696753
+18  undetected_chromedriver             0x0000000102905c90 undetected_chromedriver + 5823632
+19  undetected_chromedriver             0x0000000102909b44 undetected_chromedriver + 5839684
+20  undetected_chromedriver             0x00000001028e0e86 undetected_chromedriver + 5672582
+21  undetected_chromedriver             0x000000010290a53b undetected_chromedriver + 5842235
+22  undetected_chromedriver             0x00000001028cf824 undetected_chromedriver + 5601316
+23  undetected_chromedriver             0x000000010292c618 undetected_chromedriver + 5981720
+24  undetected_chromedriver             0x000000010292c7df undetected_chromedriver + 5982175
+25  undetected_chromedriver             0x000000010293dd58 undetected_chromedriver + 6053208
+26  libsystem_pthread.dylib             0x00007ff80816418b _pthread_start + 99
+27  libsystem_pthread.dylib             0x00007ff80815fae3 thread_start + 15
+[2025-04-21T16:29:14.855+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/LOW_reddit_20250421.csv
+[2025-04-21T16:29:14.855+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMZN...
+[2025-04-21T16:29:18.451+0800] {logging_mixin.py:190} INFO - No posts found for AMZN. Saving an empty file.
+[2025-04-21T16:29:18.453+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EBAY...
+[2025-04-21T16:29:22.188+0800] {logging_mixin.py:190} INFO - No posts found for EBAY. Saving an empty file.
+[2025-04-21T16:29:22.191+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HAS...
+[2025-04-21T16:29:26.243+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for HAS successfully!
+[2025-04-21T16:29:29.896+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:29:31.902+0800] {logging_mixin.py:190} INFO - ❌ Error processing post 2 for HAS: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   undetected_chromedriver             0x0000000102946568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x000000010293e17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x00000001023dd540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x00000001023f0c1b undetected_chromedriver + 494619
+4   undetected_chromedriver             0x00000001023ef9d2 undetected_chromedriver + 489938
+5   undetected_chromedriver             0x00000001023e4d19 undetected_chromedriver + 445721
+6   undetected_chromedriver             0x00000001023e2d98 undetected_chromedriver + 437656
+7   undetected_chromedriver             0x00000001023e6b53 undetected_chromedriver + 453459
+8   undetected_chromedriver             0x00000001023e6c03 undetected_chromedriver + 453635
+9   undetected_chromedriver             0x0000000102430d9e undetected_chromedriver + 757150
+10  undetected_chromedriver             0x0000000102423123 undetected_chromedriver + 700707
+11  undetected_chromedriver             0x00000001024553f2 undetected_chromedriver + 906226
+12  undetected_chromedriver             0x0000000102422b28 undetected_chromedriver + 699176
+13  undetected_chromedriver             0x00000001024555ae undetected_chromedriver + 906670
+14  undetected_chromedriver             0x000000010247ca19 undetected_chromedriver + 1067545
+15  undetected_chromedriver             0x00000001024551c3 undetected_chromedriver + 905667
+16  undetected_chromedriver             0x000000010242105a undetected_chromedriver + 692314
+17  undetected_chromedriver             0x00000001024221b1 undetected_chromedriver + 696753
+18  undetected_chromedriver             0x0000000102905c90 undetected_chromedriver + 5823632
+19  undetected_chromedriver             0x0000000102909b44 undetected_chromedriver + 5839684
+20  undetected_chromedriver             0x00000001028e0e86 undetected_chromedriver + 5672582
+21  undetected_chromedriver             0x000000010290a53b undetected_chromedriver + 5842235
+22  undetected_chromedriver             0x00000001028cf824 undetected_chromedriver + 5601316
+23  undetected_chromedriver             0x000000010292c618 undetected_chromedriver + 5981720
+24  undetected_chromedriver             0x000000010292c7df undetected_chromedriver + 5982175
+25  undetected_chromedriver             0x000000010293dd58 undetected_chromedriver + 6053208
+26  libsystem_pthread.dylib             0x00007ff80816418b _pthread_start + 99
+27  libsystem_pthread.dylib             0x00007ff80815fae3 thread_start + 15
+[2025-04-21T16:29:31.904+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/HAS_reddit_20250421.csv
+[2025-04-21T16:29:31.905+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MAR...
+[2025-04-21T16:29:35.306+0800] {logging_mixin.py:190} INFO - No posts found for MAR. Saving an empty file.
+[2025-04-21T16:29:35.308+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for HLT...
+[2025-04-21T16:29:40.213+0800] {logging_mixin.py:190} INFO - No posts found for HLT. Saving an empty file.
+[2025-04-21T16:29:40.216+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TPR...
+[2025-04-21T16:29:44.622+0800] {logging_mixin.py:190} INFO - No posts found for TPR. Saving an empty file.
+[2025-04-21T16:29:44.625+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SW...
+[2025-04-21T16:29:47.972+0800] {logging_mixin.py:190} INFO - No posts found for SW. Saving an empty file.
+[2025-04-21T16:29:47.974+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PKG...
+[2025-04-21T16:29:52.525+0800] {logging_mixin.py:190} INFO - No posts found for PKG. Saving an empty file.
+[2025-04-21T16:29:52.528+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for IP...
+[2025-04-21T16:29:56.913+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for IP successfully!
+[2025-04-21T16:30:00.555+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:30:02.558+0800] {logging_mixin.py:190} INFO - ✅ All posts for IP have been processed.
+[2025-04-21T16:30:02.560+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/IP_reddit_20250421.csv
+[2025-04-21T16:30:02.560+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BALL...
+[2025-04-21T16:30:06.208+0800] {logging_mixin.py:190} INFO - No posts found for BALL. Saving an empty file.
+[2025-04-21T16:30:06.211+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AVY...
+[2025-04-21T16:30:10.649+0800] {logging_mixin.py:190} INFO - No posts found for AVY. Saving an empty file.
+[2025-04-21T16:30:10.652+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AMCR...
+[2025-04-21T16:30:14.056+0800] {logging_mixin.py:190} INFO - No posts found for AMCR. Saving an empty file.
+[2025-04-21T16:30:14.059+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ROL...
+[2025-04-21T16:30:18.458+0800] {logging_mixin.py:190} INFO - No posts found for ROL. Saving an empty file.
+[2025-04-21T16:30:18.461+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DHI...
+[2025-04-21T16:30:22.191+0800] {logging_mixin.py:190} INFO - No posts found for DHI. Saving an empty file.
+[2025-04-21T16:30:22.194+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LEN...
+[2025-04-21T16:30:25.515+0800] {logging_mixin.py:190} INFO - No posts found for LEN. Saving an empty file.
+[2025-04-21T16:30:25.518+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NVR...
+[2025-04-21T16:30:29.238+0800] {logging_mixin.py:190} INFO - No posts found for NVR. Saving an empty file.
+[2025-04-21T16:30:29.241+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for PHM...
+[2025-04-21T16:30:32.594+0800] {logging_mixin.py:190} INFO - No posts found for PHM. Saving an empty file.
+[2025-04-21T16:30:32.596+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for LVS...
+[2025-04-21T16:30:36.244+0800] {logging_mixin.py:190} INFO - No posts found for LVS. Saving an empty file.
+[2025-04-21T16:30:36.247+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MGM...
+[2025-04-21T16:30:39.944+0800] {logging_mixin.py:190} INFO - No posts found for MGM. Saving an empty file.
+[2025-04-21T16:30:39.947+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for WYNN...
+[2025-04-21T16:30:44.408+0800] {logging_mixin.py:190} INFO - No posts found for WYNN. Saving an empty file.
+[2025-04-21T16:30:44.409+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CZR...
+[2025-04-21T16:30:48.401+0800] {logging_mixin.py:190} INFO - No posts found for CZR. Saving an empty file.
+[2025-04-21T16:30:48.404+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for MCD...
+[2025-04-21T16:30:52.723+0800] {logging_mixin.py:190} INFO - No posts found for MCD. Saving an empty file.
+[2025-04-21T16:30:52.726+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for SBUX...
+[2025-04-21T16:30:56.107+0800] {logging_mixin.py:190} INFO - No posts found for SBUX. Saving an empty file.
+[2025-04-21T16:30:56.110+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CMG...
+[2025-04-21T16:31:00.433+0800] {logging_mixin.py:190} INFO - No posts found for CMG. Saving an empty file.
+[2025-04-21T16:31:00.436+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for YUM...
+[2025-04-21T16:31:04.818+0800] {logging_mixin.py:190} INFO - No posts found for YUM. Saving an empty file.
+[2025-04-21T16:31:04.821+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DRI...
+[2025-04-21T16:31:09.181+0800] {logging_mixin.py:190} INFO - No posts found for DRI. Saving an empty file.
+[2025-04-21T16:31:09.183+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for DPZ...
+[2025-04-21T16:31:12.818+0800] {logging_mixin.py:190} INFO - No posts found for DPZ. Saving an empty file.
+[2025-04-21T16:31:12.821+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ORLY...
+[2025-04-21T16:31:16.340+0800] {logging_mixin.py:190} INFO - ✅ Clicked on post 1 for ORLY successfully!
+[2025-04-21T16:31:19.984+0800] {logging_mixin.py:190} INFO - 🔙 Navigated back to search results!
+[2025-04-21T16:31:21.997+0800] {logging_mixin.py:190} INFO - ❌ Error processing post 2 for ORLY: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   undetected_chromedriver             0x0000000102946568 undetected_chromedriver + 6088040
+1   undetected_chromedriver             0x000000010293e17a undetected_chromedriver + 6054266
+2   undetected_chromedriver             0x00000001023dd540 undetected_chromedriver + 415040
+3   undetected_chromedriver             0x00000001023f0c1b undetected_chromedriver + 494619
+4   undetected_chromedriver             0x00000001023ef9d2 undetected_chromedriver + 489938
+5   undetected_chromedriver             0x00000001023e4d19 undetected_chromedriver + 445721
+6   undetected_chromedriver             0x00000001023e2d98 undetected_chromedriver + 437656
+7   undetected_chromedriver             0x00000001023e6b53 undetected_chromedriver + 453459
+8   undetected_chromedriver             0x00000001023e6c03 undetected_chromedriver + 453635
+9   undetected_chromedriver             0x0000000102430d9e undetected_chromedriver + 757150
+10  undetected_chromedriver             0x0000000102423123 undetected_chromedriver + 700707
+11  undetected_chromedriver             0x00000001024553f2 undetected_chromedriver + 906226
+12  undetected_chromedriver             0x0000000102422b28 undetected_chromedriver + 699176
+13  undetected_chromedriver             0x00000001024555ae undetected_chromedriver + 906670
+14  undetected_chromedriver             0x000000010247ca19 undetected_chromedriver + 1067545
+15  undetected_chromedriver             0x00000001024551c3 undetected_chromedriver + 905667
+16  undetected_chromedriver             0x000000010242105a undetected_chromedriver + 692314
+17  undetected_chromedriver             0x00000001024221b1 undetected_chromedriver + 696753
+18  undetected_chromedriver             0x0000000102905c90 undetected_chromedriver + 5823632
+19  undetected_chromedriver             0x0000000102909b44 undetected_chromedriver + 5839684
+20  undetected_chromedriver             0x00000001028e0e86 undetected_chromedriver + 5672582
+21  undetected_chromedriver             0x000000010290a53b undetected_chromedriver + 5842235
+22  undetected_chromedriver             0x00000001028cf824 undetected_chromedriver + 5601316
+23  undetected_chromedriver             0x000000010292c618 undetected_chromedriver + 5981720
+24  undetected_chromedriver             0x000000010292c7df undetected_chromedriver + 5982175
+25  undetected_chromedriver             0x000000010293dd58 undetected_chromedriver + 6053208
+26  libsystem_pthread.dylib             0x00007ff80816418b _pthread_start + 99
+27  libsystem_pthread.dylib             0x00007ff80815fae3 thread_start + 15
+[2025-04-21T16:31:22.000+0800] {logging_mixin.py:190} INFO - 📁 Saved: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/snp500-reddit-test/ORLY_reddit_20250421.csv
+[2025-04-21T16:31:22.000+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for AZO...
+[2025-04-21T16:31:25.290+0800] {logging_mixin.py:190} INFO - No posts found for AZO. Saving an empty file.
+[2025-04-21T16:31:25.292+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for TSCO...
+[2025-04-21T16:31:28.685+0800] {logging_mixin.py:190} INFO - No posts found for TSCO. Saving an empty file.
+[2025-04-21T16:31:28.688+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ULTA...
+[2025-04-21T16:31:32.199+0800] {logging_mixin.py:190} INFO - No posts found for ULTA. Saving an empty file.
+[2025-04-21T16:31:32.202+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BBY...
+[2025-04-21T16:31:35.864+0800] {logging_mixin.py:190} INFO - No posts found for BBY. Saving an empty file.
+[2025-04-21T16:31:35.867+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for BKNG...
+[2025-04-21T16:31:39.530+0800] {logging_mixin.py:190} INFO - No posts found for BKNG. Saving an empty file.
+[2025-04-21T16:31:39.533+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for ABNB...
+[2025-04-21T16:31:43.282+0800] {logging_mixin.py:190} INFO - No posts found for ABNB. Saving an empty file.
+[2025-04-21T16:31:43.284+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for RCL...
+[2025-04-21T16:31:46.669+0800] {logging_mixin.py:190} INFO - No posts found for RCL. Saving an empty file.
+[2025-04-21T16:31:46.672+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for CCL...
+[2025-04-21T16:31:51.111+0800] {logging_mixin.py:190} INFO - No posts found for CCL. Saving an empty file.
+[2025-04-21T16:31:51.114+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for EXPE...
+[2025-04-21T16:31:55.193+0800] {logging_mixin.py:190} INFO - No posts found for EXPE. Saving an empty file.
+[2025-04-21T16:31:55.197+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for NCLH...
+[2025-04-21T16:31:59.677+0800] {logging_mixin.py:190} INFO - No posts found for NCLH. Saving an empty file.
+[2025-04-21T16:31:59.681+0800] {logging_mixin.py:190} INFO - 
+🔍 Searching Reddit for STZ...
+[2025-04-21T16:32:04.088+0800] {logging_mixin.py:190} INFO - No posts found for STZ. Saving an empty file.
+[2025-04-21T16:32:04.439+0800] {logging_mixin.py:190} INFO - 
+✅ Done scraping Reddit posts for all tickers.
+[2025-04-21T16:32:04.439+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-21T16:32:04.447+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-21T16:32:04.447+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=run_reddit, run_id=manual__2025-04-21T08:02:36.494628+00:00, execution_date=20250421T080236, start_date=20250421T082421, end_date=20250421T083204
+[2025-04-21T16:32:04.457+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-21T16:32:04.457+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-21T16:32:04.458+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-21 08:02:36.503040+00:00
+[2025-04-21T16:32:04.458+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-21T16:32:04.495+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-21T16:32:04.509+0800] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-21T16:32:04.510+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

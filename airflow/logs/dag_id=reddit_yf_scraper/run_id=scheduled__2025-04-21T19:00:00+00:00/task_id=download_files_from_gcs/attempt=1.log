@@ -1,0 +1,225 @@
+[2025-04-23T20:16:45.169+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-23T20:16:45.175+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.download_files_from_gcs scheduled__2025-04-21T19:00:00+00:00 [queued]>
+[2025-04-23T20:16:45.178+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.download_files_from_gcs scheduled__2025-04-21T19:00:00+00:00 [queued]>
+[2025-04-23T20:16:45.179+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-23T20:16:45.183+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): download_files_from_gcs> on 2025-04-21 19:00:00+00:00
+[2025-04-23T20:16:45.188+0800] {standard_task_runner.py:72} INFO - Started process 26470 to run task
+[2025-04-23T20:16:45.191+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'download_files_from_gcs', 'scheduled__2025-04-21T19:00:00+00:00', '--job-id', '898', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpdsbikdld']
+[2025-04-23T20:16:45.192+0800] {standard_task_runner.py:105} INFO - Job 898: Subtask download_files_from_gcs
+[2025-04-23T20:16:45.214+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.download_files_from_gcs scheduled__2025-04-21T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-23T20:16:45.240+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='download_files_from_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-21T19:00:00+00:00'
+[2025-04-23T20:16:45.241+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-23T20:16:45.241+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-23T20:16:45.241+0800] {logging_mixin.py:190} INFO - Current task name:download_files_from_gcs state:running start_date:2025-04-23 12:16:45.175939+00:00
+[2025-04-23T20:16:45.241+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-23T20:16:45.241+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-23T20:16:45.898+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/ABNB_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ABNB_reddit_20250423.csv
+[2025-04-23T20:16:47.023+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ABNB_reddit_20250423.csv
+[2025-04-23T20:16:47.024+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/ALB_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ALB_reddit_20250423.csv
+[2025-04-23T20:16:47.435+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ALB_reddit_20250423.csv
+[2025-04-23T20:16:47.436+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/AMCR_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AMCR_reddit_20250423.csv
+[2025-04-23T20:16:48.454+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AMCR_reddit_20250423.csv
+[2025-04-23T20:16:48.455+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/AMZN_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AMZN_reddit_20250423.csv
+[2025-04-23T20:16:48.761+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AMZN_reddit_20250423.csv
+[2025-04-23T20:16:48.764+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/APD_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/APD_reddit_20250423.csv
+[2025-04-23T20:16:49.689+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/APD_reddit_20250423.csv
+[2025-04-23T20:16:49.690+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/APTV_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/APTV_reddit_20250423.csv
+[2025-04-23T20:16:50.096+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/APTV_reddit_20250423.csv
+[2025-04-23T20:16:50.096+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/AVY_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AVY_reddit_20250423.csv
+[2025-04-23T20:16:50.917+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AVY_reddit_20250423.csv
+[2025-04-23T20:16:50.918+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/AZO_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AZO_reddit_20250423.csv
+[2025-04-23T20:16:51.285+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/AZO_reddit_20250423.csv
+[2025-04-23T20:16:51.286+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/BALL_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BALL_reddit_20250423.csv
+[2025-04-23T20:16:52.147+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BALL_reddit_20250423.csv
+[2025-04-23T20:16:52.148+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/BBY_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BBY_reddit_20250423.csv
+[2025-04-23T20:16:52.477+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BBY_reddit_20250423.csv
+[2025-04-23T20:16:52.480+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/BKNG_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BKNG_reddit_20250423.csv
+[2025-04-23T20:16:53.474+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BKNG_reddit_20250423.csv
+[2025-04-23T20:16:53.476+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/BWA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BWA_reddit_20250423.csv
+[2025-04-23T20:16:53.724+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/BWA_reddit_20250423.csv
+[2025-04-23T20:16:53.728+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/CCL_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CCL_reddit_20250423.csv
+[2025-04-23T20:16:54.807+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CCL_reddit_20250423.csv
+[2025-04-23T20:16:54.808+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/CE_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CE_reddit_20250423.csv
+[2025-04-23T20:16:55.113+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CE_reddit_20250423.csv
+[2025-04-23T20:16:55.114+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/CF_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CF_reddit_20250423.csv
+[2025-04-23T20:16:56.035+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CF_reddit_20250423.csv
+[2025-04-23T20:16:56.036+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/CHTR_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CHTR_reddit_20250423.csv
+[2025-04-23T20:16:56.366+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CHTR_reddit_20250423.csv
+[2025-04-23T20:16:56.366+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/CMCSA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CMCSA_reddit_20250423.csv
+[2025-04-23T20:16:57.370+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CMCSA_reddit_20250423.csv
+[2025-04-23T20:16:57.371+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/CMG_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CMG_reddit_20250423.csv
+[2025-04-23T20:16:57.673+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CMG_reddit_20250423.csv
+[2025-04-23T20:16:57.674+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/CTVA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CTVA_reddit_20250423.csv
+[2025-04-23T20:16:58.595+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CTVA_reddit_20250423.csv
+[2025-04-23T20:16:58.596+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/CZR_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CZR_reddit_20250423.csv
+[2025-04-23T20:16:59.004+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/CZR_reddit_20250423.csv
+[2025-04-23T20:16:59.005+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/DD_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DD_reddit_20250423.csv
+[2025-04-23T20:16:59.826+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DD_reddit_20250423.csv
+[2025-04-23T20:16:59.827+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/DECK_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DECK_reddit_20250423.csv
+[2025-04-23T20:17:00.228+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DECK_reddit_20250423.csv
+[2025-04-23T20:17:00.229+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/DHI_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DHI_reddit_20250423.csv
+[2025-04-23T20:17:01.052+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DHI_reddit_20250423.csv
+[2025-04-23T20:17:01.053+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/DIS_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DIS_reddit_20250423.csv
+[2025-04-23T20:17:01.564+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DIS_reddit_20250423.csv
+[2025-04-23T20:17:01.565+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/DOW_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DOW_reddit_20250423.csv
+[2025-04-23T20:17:02.279+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DOW_reddit_20250423.csv
+[2025-04-23T20:17:02.279+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/DPZ_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DPZ_reddit_20250423.csv
+[2025-04-23T20:17:02.794+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DPZ_reddit_20250423.csv
+[2025-04-23T20:17:02.795+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/DRI_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DRI_reddit_20250423.csv
+[2025-04-23T20:17:03.512+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/DRI_reddit_20250423.csv
+[2025-04-23T20:17:03.513+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/EA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EA_reddit_20250423.csv
+[2025-04-23T20:17:04.024+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EA_reddit_20250423.csv
+[2025-04-23T20:17:04.025+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/EBAY_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EBAY_reddit_20250423.csv
+[2025-04-23T20:17:04.739+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EBAY_reddit_20250423.csv
+[2025-04-23T20:17:04.740+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/ECL_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ECL_reddit_20250423.csv
+[2025-04-23T20:17:05.246+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ECL_reddit_20250423.csv
+[2025-04-23T20:17:05.247+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/EMN_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EMN_reddit_20250423.csv
+[2025-04-23T20:17:05.967+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EMN_reddit_20250423.csv
+[2025-04-23T20:17:05.968+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/EXPE_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EXPE_reddit_20250423.csv
+[2025-04-23T20:17:07.198+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/EXPE_reddit_20250423.csv
+[2025-04-23T20:17:07.200+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/FCX_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FCX_reddit_20250423.csv
+[2025-04-23T20:17:07.475+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FCX_reddit_20250423.csv
+[2025-04-23T20:17:07.477+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/FMC_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FMC_reddit_20250423.csv
+[2025-04-23T20:17:08.420+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FMC_reddit_20250423.csv
+[2025-04-23T20:17:08.420+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/FOXA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FOXA_reddit_20250423.csv
+[2025-04-23T20:17:08.729+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FOXA_reddit_20250423.csv
+[2025-04-23T20:17:08.730+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/FOX_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FOX_reddit_20250423.csv
+[2025-04-23T20:17:09.039+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/FOX_reddit_20250423.csv
+[2025-04-23T20:17:09.040+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/F_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/F_reddit_20250423.csv
+[2025-04-23T20:17:09.446+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/F_reddit_20250423.csv
+[2025-04-23T20:17:09.446+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/GM_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GM_reddit_20250423.csv
+[2025-04-23T20:17:09.755+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GM_reddit_20250423.csv
+[2025-04-23T20:17:09.756+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/GOOGL_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GOOGL_reddit_20250423.csv
+[2025-04-23T20:17:10.031+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GOOGL_reddit_20250423.csv
+[2025-04-23T20:17:10.031+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/GOOG_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GOOG_reddit_20250423.csv
+[2025-04-23T20:17:10.453+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GOOG_reddit_20250423.csv
+[2025-04-23T20:17:10.453+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/GPC_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GPC_reddit_20250423.csv
+[2025-04-23T20:17:10.717+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/GPC_reddit_20250423.csv
+[2025-04-23T20:17:10.718+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/HAS_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HAS_reddit_20250423.csv
+[2025-04-23T20:17:11.045+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HAS_reddit_20250423.csv
+[2025-04-23T20:17:11.048+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/HD_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HD_reddit_20250423.csv
+[2025-04-23T20:17:11.313+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HD_reddit_20250423.csv
+[2025-04-23T20:17:11.314+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/HLT_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HLT_reddit_20250423.csv
+[2025-04-23T20:17:11.577+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/HLT_reddit_20250423.csv
+[2025-04-23T20:17:11.578+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/IFF_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IFF_reddit_20250423.csv
+[2025-04-23T20:17:11.906+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IFF_reddit_20250423.csv
+[2025-04-23T20:17:11.908+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/IPG_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IPG_reddit_20250423.csv
+[2025-04-23T20:17:12.829+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IPG_reddit_20250423.csv
+[2025-04-23T20:17:12.831+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/IP_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IP_reddit_20250423.csv
+[2025-04-23T20:17:13.125+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/IP_reddit_20250423.csv
+[2025-04-23T20:17:13.126+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/KMX_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/KMX_reddit_20250423.csv
+[2025-04-23T20:17:14.158+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/KMX_reddit_20250423.csv
+[2025-04-23T20:17:14.162+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/LEN_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LEN_reddit_20250423.csv
+[2025-04-23T20:17:14.462+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LEN_reddit_20250423.csv
+[2025-04-23T20:17:14.463+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/LIN_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LIN_reddit_20250423.csv
+[2025-04-23T20:17:14.727+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LIN_reddit_20250423.csv
+[2025-04-23T20:17:14.728+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/LKQ_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LKQ_reddit_20250423.csv
+[2025-04-23T20:17:15.081+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LKQ_reddit_20250423.csv
+[2025-04-23T20:17:15.082+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/LOW_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LOW_reddit_20250423.csv
+[2025-04-23T20:17:15.487+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LOW_reddit_20250423.csv
+[2025-04-23T20:17:15.487+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/LULU_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LULU_reddit_20250423.csv
+[2025-04-23T20:17:15.756+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LULU_reddit_20250423.csv
+[2025-04-23T20:17:15.757+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/LVS_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LVS_reddit_20250423.csv
+[2025-04-23T20:17:16.104+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LVS_reddit_20250423.csv
+[2025-04-23T20:17:16.104+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/LYB_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LYB_reddit_20250423.csv
+[2025-04-23T20:17:16.412+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LYB_reddit_20250423.csv
+[2025-04-23T20:17:16.413+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/LYV_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LYV_reddit_20250423.csv
+[2025-04-23T20:17:16.821+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/LYV_reddit_20250423.csv
+[2025-04-23T20:17:16.822+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/MAR_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MAR_reddit_20250423.csv
+[2025-04-23T20:17:17.334+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MAR_reddit_20250423.csv
+[2025-04-23T20:17:17.335+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/MCD_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MCD_reddit_20250423.csv
+[2025-04-23T20:17:17.638+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MCD_reddit_20250423.csv
+[2025-04-23T20:17:17.639+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/META_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/META_reddit_20250423.csv
+[2025-04-23T20:17:18.050+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/META_reddit_20250423.csv
+[2025-04-23T20:17:18.052+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/MGM_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MGM_reddit_20250423.csv
+[2025-04-23T20:17:18.316+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MGM_reddit_20250423.csv
+[2025-04-23T20:17:18.318+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/MHK_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MHK_reddit_20250423.csv
+[2025-04-23T20:17:18.663+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MHK_reddit_20250423.csv
+[2025-04-23T20:17:18.664+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/MLM_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MLM_reddit_20250423.csv
+[2025-04-23T20:17:19.180+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MLM_reddit_20250423.csv
+[2025-04-23T20:17:19.182+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/MOS_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MOS_reddit_20250423.csv
+[2025-04-23T20:17:19.449+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MOS_reddit_20250423.csv
+[2025-04-23T20:17:19.451+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/MTCH_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MTCH_reddit_20250423.csv
+[2025-04-23T20:17:19.726+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/MTCH_reddit_20250423.csv
+[2025-04-23T20:17:19.727+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NCLH_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NCLH_reddit_20250423.csv
+[2025-04-23T20:17:19.973+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NCLH_reddit_20250423.csv
+[2025-04-23T20:17:19.974+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NEM_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NEM_reddit_20250423.csv
+[2025-04-23T20:17:20.274+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NEM_reddit_20250423.csv
+[2025-04-23T20:17:20.276+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NFLX_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NFLX_reddit_20250423.csv
+[2025-04-23T20:17:20.541+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NFLX_reddit_20250423.csv
+[2025-04-23T20:17:20.542+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NKE_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NKE_reddit_20250423.csv
+[2025-04-23T20:17:20.805+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NKE_reddit_20250423.csv
+[2025-04-23T20:17:20.806+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NUE_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NUE_reddit_20250423.csv
+[2025-04-23T20:17:21.093+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NUE_reddit_20250423.csv
+[2025-04-23T20:17:21.094+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NVR_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NVR_reddit_20250423.csv
+[2025-04-23T20:17:21.470+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NVR_reddit_20250423.csv
+[2025-04-23T20:17:21.472+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NWSA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NWSA_reddit_20250423.csv
+[2025-04-23T20:17:21.712+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NWSA_reddit_20250423.csv
+[2025-04-23T20:17:21.713+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/NWS_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NWS_reddit_20250423.csv
+[2025-04-23T20:17:21.991+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/NWS_reddit_20250423.csv
+[2025-04-23T20:17:21.992+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/OMC_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/OMC_reddit_20250423.csv
+[2025-04-23T20:17:22.558+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/OMC_reddit_20250423.csv
+[2025-04-23T20:17:22.559+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/ORLY_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ORLY_reddit_20250423.csv
+[2025-04-23T20:17:22.876+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ORLY_reddit_20250423.csv
+[2025-04-23T20:17:22.877+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/PARA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PARA_reddit_20250423.csv
+[2025-04-23T20:17:23.143+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PARA_reddit_20250423.csv
+[2025-04-23T20:17:23.145+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/PHM_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PHM_reddit_20250423.csv
+[2025-04-23T20:17:23.401+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PHM_reddit_20250423.csv
+[2025-04-23T20:17:23.402+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/PKG_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PKG_reddit_20250423.csv
+[2025-04-23T20:17:24.194+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PKG_reddit_20250423.csv
+[2025-04-23T20:17:24.195+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/PPG_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PPG_reddit_20250423.csv
+[2025-04-23T20:17:24.704+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/PPG_reddit_20250423.csv
+[2025-04-23T20:17:24.704+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/RCL_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/RCL_reddit_20250423.csv
+[2025-04-23T20:17:25.381+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/RCL_reddit_20250423.csv
+[2025-04-23T20:17:25.382+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/RL_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/RL_reddit_20250423.csv
+[2025-04-23T20:17:25.934+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/RL_reddit_20250423.csv
+[2025-04-23T20:17:25.935+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/ROL_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ROL_reddit_20250423.csv
+[2025-04-23T20:17:26.202+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ROL_reddit_20250423.csv
+[2025-04-23T20:17:26.202+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/ROST_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ROST_reddit_20250423.csv
+[2025-04-23T20:17:26.549+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ROST_reddit_20250423.csv
+[2025-04-23T20:17:26.549+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/SBUX_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SBUX_reddit_20250423.csv
+[2025-04-23T20:17:26.859+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SBUX_reddit_20250423.csv
+[2025-04-23T20:17:26.861+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/SHW_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SHW_reddit_20250423.csv
+[2025-04-23T20:17:27.267+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SHW_reddit_20250423.csv
+[2025-04-23T20:17:27.268+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/STLD_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/STLD_reddit_20250423.csv
+[2025-04-23T20:17:27.774+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/STLD_reddit_20250423.csv
+[2025-04-23T20:17:27.774+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/STZ_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/STZ_reddit_20250423.csv
+[2025-04-23T20:17:28.087+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/STZ_reddit_20250423.csv
+[2025-04-23T20:17:28.090+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/SW_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SW_reddit_20250423.csv
+[2025-04-23T20:17:28.344+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/SW_reddit_20250423.csv
+[2025-04-23T20:17:28.345+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/TJX_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TJX_reddit_20250423.csv
+[2025-04-23T20:17:28.699+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TJX_reddit_20250423.csv
+[2025-04-23T20:17:28.699+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/TMUS_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TMUS_reddit_20250423.csv
+[2025-04-23T20:17:28.989+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TMUS_reddit_20250423.csv
+[2025-04-23T20:17:28.991+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/TPR_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TPR_reddit_20250423.csv
+[2025-04-23T20:17:29.519+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TPR_reddit_20250423.csv
+[2025-04-23T20:17:29.520+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/TSCO_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TSCO_reddit_20250423.csv
+[2025-04-23T20:17:30.033+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TSCO_reddit_20250423.csv
+[2025-04-23T20:17:30.035+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/TSLA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TSLA_reddit_20250423.csv
+[2025-04-23T20:17:30.439+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TSLA_reddit_20250423.csv
+[2025-04-23T20:17:30.440+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/TTWO_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TTWO_reddit_20250423.csv
+[2025-04-23T20:17:31.261+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/TTWO_reddit_20250423.csv
+[2025-04-23T20:17:31.262+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/T_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/T_reddit_20250423.csv
+[2025-04-23T20:17:31.682+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/T_reddit_20250423.csv
+[2025-04-23T20:17:31.683+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/ULTA_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ULTA_reddit_20250423.csv
+[2025-04-23T20:17:31.948+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/ULTA_reddit_20250423.csv
+[2025-04-23T20:17:31.950+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/VMC_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/VMC_reddit_20250423.csv
+[2025-04-23T20:17:32.477+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/VMC_reddit_20250423.csv
+[2025-04-23T20:17:32.478+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/VZ_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/VZ_reddit_20250423.csv
+[2025-04-23T20:17:32.793+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/VZ_reddit_20250423.csv
+[2025-04-23T20:17:32.794+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/WBD_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/WBD_reddit_20250423.csv
+[2025-04-23T20:17:33.206+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/WBD_reddit_20250423.csv
+[2025-04-23T20:17:33.208+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/WYNN_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/WYNN_reddit_20250423.csv
+[2025-04-23T20:17:33.617+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/WYNN_reddit_20250423.csv
+[2025-04-23T20:17:33.618+0800] {logging_mixin.py:190} INFO - 📥 Downloading: reddit-test/YUM_reddit_20250423.csv to /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/YUM_reddit_20250423.csv
+[2025-04-23T20:17:33.922+0800] {logging_mixin.py:190} INFO - ✅ Downloaded to: /Users/yueyaoz/Downloads/IS3107-FinSum/airflow/downloads/reddit/YUM_reddit_20250423.csv
+[2025-04-23T20:17:33.922+0800] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-23T20:17:33.926+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-23T20:17:33.927+0800] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=reddit_yf_scraper, task_id=download_files_from_gcs, run_id=scheduled__2025-04-21T19:00:00+00:00, execution_date=20250421T190000, start_date=20250423T121645, end_date=20250423T121733
+[2025-04-23T20:17:33.937+0800] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-23T20:17:33.938+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-23T20:17:33.938+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper queued_at:2025-04-22 19:09:02.807640+00:00
+[2025-04-23T20:17:33.938+0800] {logging_mixin.py:190} INFO - Task hostname:yueyaos-macbook-pro.local operator:_PythonDecoratedOperator
+[2025-04-23T20:17:33.988+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-23T20:17:34.004+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-23T20:17:34.005+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,165 @@
+[2025-04-20T23:22:24.482+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-20T23:22:24.487+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.get_tickers scheduled__2025-04-18T19:00:00+00:00 [queued]>
+[2025-04-20T23:22:24.490+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.get_tickers scheduled__2025-04-18T19:00:00+00:00 [queued]>
+[2025-04-20T23:22:24.490+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-20T23:22:24.495+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): get_tickers> on 2025-04-18 19:00:00+00:00
+[2025-04-20T23:22:24.499+0800] {standard_task_runner.py:72} INFO - Started process 81750 to run task
+[2025-04-20T23:22:24.502+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'get_tickers', 'scheduled__2025-04-18T19:00:00+00:00', '--job-id', '839', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmp8jo1_fcd']
+[2025-04-20T23:22:24.503+0800] {standard_task_runner.py:105} INFO - Job 839: Subtask get_tickers
+[2025-04-20T23:22:24.534+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.get_tickers scheduled__2025-04-18T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-20T23:22:24.562+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='get_tickers' AIRFLOW_CTX_EXECUTION_DATE='2025-04-18T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-18T19:00:00+00:00'
+[2025-04-20T23:22:24.562+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-20T23:22:24.563+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-20T23:22:24.563+0800] {logging_mixin.py:190} INFO - Current task name:get_tickers state:running start_date:2025-04-20 15:22:24.487758+00:00
+[2025-04-20T23:22:24.563+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-20T23:22:24.563+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-20T23:22:31.304+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/load_tickers.py", line 31, in load_sp500_tickers
+    df = client.query(query).to_dataframe()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/job/query.py", line 2059, in to_dataframe
+    query_result = wait_for_query(self, progress_bar_type, max_results=max_results)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/_tqdm_helpers.py", line 107, in wait_for_query
+    return query_job.result(max_results=max_results)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/job/query.py", line 1681, in result
+    while not is_job_done():
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 144, in retry_target
+    result = target()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/job/query.py", line 1630, in is_job_done
+    raise job_failed_exception
+google.api_core.exceptions.NotFound: 404 Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US; reason: notFound, message: Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US
+
+Location: US
+Job ID: 29919f75-165f-4b44-aac5-9fb6798873d6
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py", line 111, in get_tickers
+    return load_sp500_tickers()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/load_tickers.py", line 35, in load_sp500_tickers
+    raise Exception(f"❌ Error loading S&P 500 tickers from BigQuery: {e}")
+Exception: ❌ Error loading S&P 500 tickers from BigQuery: 404 Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US; reason: notFound, message: Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US
+
+Location: US
+Job ID: 29919f75-165f-4b44-aac5-9fb6798873d6
+
+[2025-04-20T23:22:31.325+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-20T23:22:31.326+0800] {logging_mixin.py:190} INFO - Task start:2025-04-20 15:22:24.487758+00:00 end:2025-04-20 15:22:31.325175+00:00 duration:6.837417
+[2025-04-20T23:22:31.326+0800] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): get_tickers> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-04-18 19:00:00+00:00: scheduled__2025-04-18T19:00:00+00:00, state:running, queued_at: 2025-04-20 15:22:22.174965+00:00. externally triggered: False>
+[2025-04-20T23:22:31.327+0800] {logging_mixin.py:190} INFO - Failure caused by ❌ Error loading S&P 500 tickers from BigQuery: 404 Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US; reason: notFound, message: Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US
+
+Location: US
+Job ID: 29919f75-165f-4b44-aac5-9fb6798873d6
+[2025-04-20T23:22:31.327+0800] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=reddit_yf_scraper, task_id=get_tickers, run_id=scheduled__2025-04-18T19:00:00+00:00, execution_date=20250418T190000, start_date=20250420T152224, end_date=20250420T152231
+[2025-04-20T23:22:31.343+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-20T23:22:31.343+0800] {standard_task_runner.py:124} ERROR - Failed to execute job 839 for task get_tickers (❌ Error loading S&P 500 tickers from BigQuery: 404 Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US; reason: notFound, message: Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US
+
+Location: US
+Job ID: 29919f75-165f-4b44-aac5-9fb6798873d6
+; 81750)
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/load_tickers.py", line 31, in load_sp500_tickers
+    df = client.query(query).to_dataframe()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/job/query.py", line 2059, in to_dataframe
+    query_result = wait_for_query(self, progress_bar_type, max_results=max_results)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/_tqdm_helpers.py", line 107, in wait_for_query
+    return query_job.result(max_results=max_results)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/job/query.py", line 1681, in result
+    while not is_job_done():
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 144, in retry_target
+    result = target()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/google/cloud/bigquery/job/query.py", line 1630, in is_job_done
+    raise job_failed_exception
+google.api_core.exceptions.NotFound: 404 Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US; reason: notFound, message: Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US
+
+Location: US
+Job ID: 29919f75-165f-4b44-aac5-9fb6798873d6
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py", line 111, in get_tickers
+    return load_sp500_tickers()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/load_tickers.py", line 35, in load_sp500_tickers
+    raise Exception(f"❌ Error loading S&P 500 tickers from BigQuery: {e}")
+Exception: ❌ Error loading S&P 500 tickers from BigQuery: 404 Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US; reason: notFound, message: Not found: Table is3107zyy:finance_project_crypto.snp500_companies was not found in location US
+
+Location: US
+Job ID: 29919f75-165f-4b44-aac5-9fb6798873d6
+
+[2025-04-20T23:22:31.380+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-20T23:22:31.397+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-20T23:22:31.397+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

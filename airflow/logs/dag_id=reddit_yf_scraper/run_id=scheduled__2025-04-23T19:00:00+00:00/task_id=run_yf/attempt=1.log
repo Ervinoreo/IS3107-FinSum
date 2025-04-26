@@ -1,0 +1,246 @@
+[2025-04-25T03:16:02.430+0800] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-25T03:16:02.437+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-23T19:00:00+00:00 [queued]>
+[2025-04-25T03:16:02.440+0800] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-23T19:00:00+00:00 [queued]>
+[2025-04-25T03:16:02.440+0800] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-25T03:16:02.445+0800] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): run_yf> on 2025-04-23 19:00:00+00:00
+[2025-04-25T03:16:02.450+0800] {standard_task_runner.py:72} INFO - Started process 42598 to run task
+[2025-04-25T03:16:02.453+0800] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_yf_scraper', 'run_yf', 'scheduled__2025-04-23T19:00:00+00:00', '--job-id', '930', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/var/folders/2f/rw5w89ss6nl38qvq2cxrh29w0000gn/T/tmpsk2qj9ko']
+[2025-04-25T03:16:02.454+0800] {standard_task_runner.py:105} INFO - Job 930: Subtask run_yf
+[2025-04-25T03:16:02.475+0800] {task_command.py:467} INFO - Running <TaskInstance: reddit_yf_scraper.run_yf scheduled__2025-04-23T19:00:00+00:00 [running]> on host yueyaos-macbook-pro.local
+[2025-04-25T03:16:02.500+0800] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_yf_scraper' AIRFLOW_CTX_TASK_ID='run_yf' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-23T19:00:00+00:00'
+[2025-04-25T03:16:02.500+0800] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-25T03:16:02.500+0800] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-25T03:16:02.501+0800] {logging_mixin.py:190} INFO - Current task name:run_yf state:running start_date:2025-04-24 19:16:02.437448+00:00
+[2025-04-25T03:16:02.501+0800] {logging_mixin.py:190} INFO - Dag name:reddit_yf_scraper and current dag run status:running
+[2025-04-25T03:16:02.501+0800] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-25T03:16:02.505+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for CTVA (1/100)...
+[2025-04-25T03:33:48.061+0800] {job.py:229} INFO - Heartbeat recovered after 1065.68 seconds
+[2025-04-25T03:51:11.679+0800] {job.py:229} INFO - Heartbeat recovered after 1043.62 seconds
+[2025-04-25T03:51:14.357+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for CF (2/100)...
+[2025-04-25T04:09:07.302+0800] {job.py:229} INFO - Heartbeat recovered after 1075.62 seconds
+[2025-04-25T04:09:17.672+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for MOS (3/100)...
+[2025-04-25T04:09:30.385+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for FMC (4/100)...
+[2025-04-25T04:09:43.415+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for VMC (5/100)...
+[2025-04-25T04:09:56.140+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for MLM (6/100)...
+[2025-04-25T04:10:09.096+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for DOW (7/100)...
+[2025-04-25T04:10:10.009+0800] {logging_mixin.py:190} INFO - ✅ Saved 2 articles for DOW
+[2025-04-25T04:10:22.012+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for CE (8/100)...
+[2025-04-25T04:10:34.799+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for FCX (9/100)...
+[2025-04-25T04:10:47.599+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for NEM (10/100)...
+[2025-04-25T04:11:00.297+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for LIN (11/100)...
+[2025-04-25T04:11:13.199+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for SHW (12/100)...
+[2025-04-25T04:11:26.717+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for ECL (13/100)...
+[2025-04-25T04:11:39.618+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for APD (14/100)...
+[2025-04-25T04:11:52.317+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for DD (15/100)...
+[2025-04-25T04:12:05.117+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for PPG (16/100)...
+[2025-04-25T04:28:43.473+0800] {job.py:229} INFO - Heartbeat recovered after 994.85 seconds
+[2025-04-25T04:43:49.409+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for LYB (17/100)...
+[2025-04-25T04:43:50.072+0800] {job.py:229} INFO - Heartbeat recovered after 906.60 seconds
+[2025-04-25T04:43:50.185+0800] {logging_mixin.py:190} INFO - ✅ Saved 1 articles for LYB
+[2025-04-25T04:58:55.739+0800] {job.py:229} INFO - Heartbeat recovered after 905.67 seconds
+[2025-04-25T05:15:38.349+0800] {job.py:229} INFO - Heartbeat recovered after 1002.61 seconds
+[2025-04-25T05:31:07.083+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for IFF (18/100)...
+[2025-04-25T05:31:09.794+0800] {job.py:229} INFO - Heartbeat recovered after 931.45 seconds
+[2025-04-25T05:47:35.406+0800] {job.py:229} INFO - Heartbeat recovered after 985.62 seconds
+[2025-04-25T06:03:02.025+0800] {job.py:229} INFO - Heartbeat recovered after 926.62 seconds
+[2025-04-25T06:03:02.438+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for EMN (19/100)...
+[2025-04-25T06:18:08.629+0800] {job.py:229} INFO - Heartbeat recovered after 906.61 seconds
+[2025-04-25T06:20:54.226+0800] {job.py:229} INFO - Heartbeat recovered after 165.60 seconds
+[2025-04-25T06:20:57.265+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for ALB (20/100)...
+[2025-04-25T06:38:39.770+0800] {job.py:229} INFO - Heartbeat recovered after 1060.54 seconds
+[2025-04-25T06:55:07.519+0800] {job.py:229} INFO - Heartbeat recovered after 987.75 seconds
+[2025-04-25T06:55:08.154+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for NUE (21/100)...
+[2025-04-25T06:55:20.870+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for STLD (22/100)...
+[2025-04-25T06:55:33.567+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for OMC (23/100)...
+[2025-04-25T07:12:55.484+0800] {job.py:229} INFO - Heartbeat recovered after 1042.78 seconds
+[2025-04-25T07:30:21.086+0800] {job.py:229} INFO - Heartbeat recovered after 1045.60 seconds
+[2025-04-25T07:30:24.566+0800] {logging_mixin.py:190} INFO - 🔍 Fetching news for IPG (24/100)...
+[2025-04-25T07:46:04.707+0800] {job.py:229} INFO - Heartbeat recovered after 943.62 seconds
+[2025-04-25T08:03:14.191+0800] {job.py:229} INFO - Heartbeat recovered after 1029.49 seconds
+[2025-04-25T08:21:57.412+0800] {job.py:229} INFO - Heartbeat recovered after 941.91 seconds
+[2025-04-25T08:24:58.493+0800] {job.py:229} INFO - Heartbeat recovered after 181.08 seconds
+[2025-04-25T08:25:03.324+0800] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py", line 115, in run_yf
+    run_yf_scraper(tickers)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/yf_scraper.py", line 33, in run_yf_scraper
+    response = requests.get(YF_API_URL, params=params)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2025-04-25T08:25:03.359+0800] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-25T08:25:03.360+0800] {logging_mixin.py:190} INFO - Task start:2025-04-24 19:16:02.437448+00:00 end:2025-04-25 00:25:03.358559+00:00 duration:18540.921111
+[2025-04-25T08:25:03.361+0800] {logging_mixin.py:190} INFO - Task:<Task(_PythonDecoratedOperator): run_yf> dag:<DAG: reddit_yf_scraper> dagrun:<DagRun reddit_yf_scraper @ 2025-04-23 19:00:00+00:00: scheduled__2025-04-23T19:00:00+00:00, state:running, queued_at: 2025-04-24 19:00:02.147595+00:00. externally triggered: False>
+[2025-04-25T08:25:03.361+0800] {logging_mixin.py:190} INFO - Failure caused by ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2025-04-25T08:25:03.361+0800] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=reddit_yf_scraper, task_id=run_yf, run_id=scheduled__2025-04-23T19:00:00+00:00, execution_date=20250423T190000, start_date=20250424T191602, end_date=20250425T002503
+[2025-04-25T08:25:03.385+0800] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-25T08:25:03.385+0800] {standard_task_runner.py:124} ERROR - Failed to execute job 930 for task run_yf (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); 42598)
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/yueyaoz/.pyenv/versions/3.10.13/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/dag.py", line 115, in run_yf
+    run_yf_scraper(tickers)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/airflow/dags/yf_scraper.py", line 33, in run_yf_scraper
+    response = requests.get(YF_API_URL, params=params)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/yueyaoz/Downloads/IS3107-FinSum/.airflow/lib/python3.10/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2025-04-25T08:25:03.441+0800] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-25T08:25:03.455+0800] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-25T08:25:03.456+0800] {local_task_job_runner.py:245} INFO - ::endgroup::

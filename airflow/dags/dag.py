@@ -96,7 +96,8 @@ PICKLE_PATH = os.path.join(AIRFLOW_DIR, "ollama-dir", "yesterday_data.pkl")
 SUMMARY_OUTPUT_PATH = os.path.join(AIRFLOW_DIR, "ollama-dir", "data_summaries.csv")
 
 @dag(
-    schedule="@daily",
+    # schedule="@daily",
+    schedule="0 3 * * *",
     start_date=pendulum.today("Asia/Singapore").subtract(days=1),
     catchup=False,
     default_args={"retries": 1, "retry_delay": timedelta(minutes=5)},
@@ -501,7 +502,7 @@ def reddit_yf_scraper():
     @task()
     def store_into_summary_table():
         client = bigquery.Client()
-        table = "summary"
+        table = "discussion"
 
         # aggregated table + summary
         schema = [
