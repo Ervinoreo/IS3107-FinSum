@@ -65,8 +65,17 @@ deactivate
 
 ## Things to note
 
-- Remember to ollama serve and ollama run the model
+- Remember to ollama serve and ollama run the model to enable llm while running the project
+
 - Commands to start airflow standalone:
   airflow webserver --port 8080
+
   airflow scheduler
+
 - Add service account in google cloud, enable gcs and bigquery roles, then get the key json file. In the airflow ui, add connection and enter the local path of the key json file then save the connection. This connection name will be used in the code.
+
+- GCS_BUCKET_NAME = "is3107_bucket"
+  DATASET_ID = "is3107zyy.finance_project_crypto"
+  TABLE_ID = "preprocessed"
+
+these are some names that we specified in the project
